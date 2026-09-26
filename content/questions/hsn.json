@@ -1,0 +1,435 @@
+[
+ {
+  "id": "HSN-001",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What does HSN stand for?",
+  "options": [
+   "Harmonized System of Nomenclature",
+   "Home Sales Number",
+   "High Standard Norm",
+   "Harmonized Sales Number"
+  ],
+  "answer": 0,
+  "exp": "Developed by the World Customs Organization, used in over 200 countries."
+ },
+ {
+  "id": "HSN-002",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's SAC in GST?",
+  "options": [
+   "Supply Acknowledgement Code",
+   "Services Accounting Code",
+   "Standard Assessment Code",
+   "State Allocation Code"
+  ],
+  "answer": 1,
+  "exp": "SAC codes classify services and start with 99."
+ },
+ {
+  "id": "HSN-003",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "All SAC codes for services start with which digits?",
+  "options": [
+   "00",
+   "99",
+   "98",
+   "SAC has no fixed prefix"
+  ],
+  "answer": 1,
+  "exp": "Chapter 99 covers services, e.g. 9983 for other professional and technical services."
+ },
+ {
+  "id": "HSN-004",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many digits does the Indian HSN (as used in customs tariff) go up to?",
+  "options": [
+   "4",
+   "6",
+   "8",
+   "10"
+  ],
+  "answer": 2,
+  "exp": "The first 6 are internationally harmonised; India adds 2 more for national detail."
+ },
+ {
+  "id": "HSN-005",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Custom software development services generally fall under SAC:",
+  "options": [
+   "9954",
+   "9983 (other professional, technical and business services)",
+   "9971",
+   "9965"
+  ],
+  "answer": 1,
+  "exp": "9954 is construction, 9971 financial services, 9965 goods transport."
+ },
+ {
+  "id": "HSN-006",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "SAC 9963 covers:",
+  "options": [
+   "IT services",
+   "Accommodation, food and beverage services",
+   "Transport",
+   "Education"
+  ],
+  "answer": 1,
+  "exp": "Hotels and restaurants fall here."
+ },
+ {
+  "id": "HSN-007",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "SAC 9965 covers:",
+  "options": [
+   "Goods transport services",
+   "Legal services",
+   "Telecom",
+   "Banking"
+  ],
+  "answer": 0,
+  "exp": "GTA services, freight and so on."
+ },
+ {
+  "id": "HSN-008",
+  "topic": "hsn",
+  "sub": "HSN & SAC",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Pre-packaged 'canned' software sold as a licence is generally classified as:",
+  "options": [
+   "Goods under HSN 8523 or as a service under 9973/9984 depending on the mode",
+   "Always exempt",
+   "Only as goods",
+   "Only under 9983"
+  ],
+  "answer": 0,
+  "exp": "Software is a classic grey area. Both routes attract 18%, so the practical impact is mostly on place of supply and documentation."
+ },
+ {
+  "id": "HSN-009",
+  "topic": "hsn",
+  "sub": "Digits & reporting",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many HSN digits must a business with AATO up to ₹5 crore mention on B2B tax invoices?",
+  "options": [
+   "2",
+   "4",
+   "6",
+   "8"
+  ],
+  "answer": 1,
+  "exp": "Optional for B2C invoices.",
+  "ref": "Notfn. 78/2020-CT",
+  "volatile": true
+ },
+ {
+  "id": "HSN-010",
+  "topic": "hsn",
+  "sub": "Digits & reporting",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many HSN digits must a business with AATO above ₹5 crore mention on all tax invoices?",
+  "options": [
+   "4",
+   "6",
+   "8",
+   "None"
+  ],
+  "answer": 1,
+  "exp": "This applies to both B2B and B2C.",
+  "ref": "Notfn. 78/2020-CT",
+  "volatile": true
+ },
+ {
+  "id": "HSN-011",
+  "topic": "hsn",
+  "sub": "Digits & reporting",
+  "diff": 2,
+  "type": "mcq",
+  "q": "In GSTR-1, the HSN summary in Table 12 has, since 2025, been reported:",
+  "options": [
+   "As a single combined table",
+   "Separately for B2B and B2C supplies, with HSN chosen from a dropdown",
+   "Only for exports",
+   "Not needed"
+  ],
+  "answer": 1,
+  "exp": "This was rolled out in phases from early 2025.",
+  "volatile": true
+ },
+ {
+  "id": "HSN-012",
+  "topic": "hsn",
+  "sub": "Digits & reporting",
+  "diff": 2,
+  "type": "tf",
+  "q": "The HSN code on an e-invoice is validated against the GST master list, so an invalid HSN is rejected by the IRP.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "IRPs validate HSN codes against the master."
+ },
+ {
+  "id": "HSN-013",
+  "topic": "hsn",
+  "sub": "Classification rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many General Rules for Interpretation (GRI) guide HSN classification?",
+  "options": [
+   "3",
+   "6",
+   "8",
+   "10"
+  ],
+  "answer": 1,
+  "exp": "GRI 1 to 6, used for goods classification."
+ },
+ {
+  "id": "HSN-014",
+  "topic": "hsn",
+  "sub": "Classification rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under GRI 1, classification is first determined by:",
+  "options": [
+   "The price",
+   "The terms of the headings and section or chapter notes",
+   "The seller's choice",
+   "The GST rate"
+  ],
+  "answer": 1,
+  "exp": "Titles of sections and chapters are only for reference."
+ },
+ {
+  "id": "HSN-015",
+  "topic": "hsn",
+  "sub": "Classification rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "When goods could be classified under two headings, GRI 3(a) says prefer the heading with:",
+  "options": [
+   "The higher rate",
+   "The most specific description",
+   "The first number",
+   "The lower rate"
+  ],
+  "answer": 1,
+  "exp": "If that doesn't settle it, 3(b) looks at essential character, and 3(c) takes the heading that occurs last in numerical order."
+ },
+ {
+  "id": "HSN-016",
+  "topic": "hsn",
+  "sub": "Classification rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A kit of different items packed for retail sale is classified under GRI 3(b) based on:",
+  "options": [
+   "The costliest item",
+   "The item that gives the set its essential character",
+   "Each item separately",
+   "The heaviest item"
+  ],
+  "answer": 1,
+  "exp": "E.g. a hair-cutting kit is classified as the clippers.",
+  "case": true
+ },
+ {
+  "id": "HSN-017",
+  "topic": "hsn",
+  "sub": "Classification rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who decides classification disputes for a specific taxpayer in advance?",
+  "options": [
+   "GSTN",
+   "Authority for Advance Ruling (AAR)",
+   "The ECO",
+   "The CA"
+  ],
+  "answer": 1,
+  "exp": "The ruling binds only the applicant and its jurisdictional officer.",
+  "ref": "CGST Act, s.97, 103"
+ },
+ {
+  "id": "HSN-018",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which body recommends GST rate changes?",
+  "options": [
+   "CBIC alone",
+   "The GST Council, after which rates are notified by the government",
+   "GSTN",
+   "Parliament directly"
+  ],
+  "answer": 1,
+  "exp": "Rate notifications for goods and services are issued by CBIC."
+ },
+ {
+  "id": "HSN-019",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which notification originally set out GST rates for goods?",
+  "options": [
+   "1/2017-Central Tax (Rate)",
+   "11/2017-Central Tax (Rate)",
+   "12/2017-Central Tax (Rate)",
+   "2/2017-Central Tax (Rate)"
+  ],
+  "answer": 0,
+  "exp": "11/2017 is for services rates, 2/2017 for goods exemptions, 12/2017 for services exemptions. Amended many times since."
+ },
+ {
+  "id": "HSN-020",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 3,
+  "type": "mcq",
+  "q": "After the September 2025 changes, standalone restaurant services (outside hotels with high room tariffs) are taxed at:",
+  "options": [
+   "18% with ITC",
+   "5% without ITC",
+   "12%",
+   "Exempt"
+  ],
+  "answer": 1,
+  "exp": "Restaurants in 'specified premises' (hotels with room tariff above ₹7,500) pay 18% with ITC.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "HSN-021",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Hotel accommodation with a tariff up to ₹7,500 per night, after September 2025, is taxed at:",
+  "options": [
+   "12% with ITC",
+   "5% without ITC",
+   "18%",
+   "Exempt"
+  ],
+  "answer": 1,
+  "exp": "It was 12% with ITC before the rationalisation.",
+  "volatile": true
+ },
+ {
+  "id": "HSN-022",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Items like air-conditioners and televisions (above 32 inches) moved in September 2025 from:",
+  "options": [
+   "18% to 5%",
+   "28% to 18%",
+   "12% to 5%",
+   "28% to 40%"
+  ],
+  "answer": 1,
+  "exp": "Most 28% items moved to 18%; a narrow set of luxury and sin goods went to 40%.",
+  "volatile": true
+ },
+ {
+  "id": "HSN-023",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Sale of a ready-to-move flat with a completion certificate attracts:",
+  "options": [
+   "1% GST",
+   "5% GST",
+   "No GST (Schedule III)",
+   "12% GST"
+  ],
+  "answer": 2,
+  "exp": "Under-construction flats: 1% for affordable housing and 5% for others, without ITC.",
+  "ref": "CGST Act, Sch. III para 5",
+  "volatile": true
+ },
+ {
+  "id": "HSN-024",
+  "topic": "hsn",
+  "sub": "Rates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Coaching classes (not a recognised school) are taxed at:",
+  "options": [
+   "Exempt",
+   "18%",
+   "5%",
+   "12%"
+  ],
+  "answer": 1,
+  "exp": "Services by recognised educational institutions up to higher secondary are exempt, but private coaching isn't.",
+  "volatile": true
+ },
+ {
+  "id": "HSN-025",
+  "topic": "hsn",
+  "sub": "Classification rules",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A company sells a gift box containing a steel water bottle (18%) and a packet of dry fruits (5%) for one price. What rate applies, and how would you set it up in billing software?",
+  "model": "The items aren't naturally bundled, so it's a mixed supply taxed at the highest rate among the items: 18% on the whole price. In software, either create the gift box as a separate SKU with its own HSN (the highest-rate item's classification) and 18%, or bill items separately with their own prices and rates to avoid mixed supply. The second option usually lowers tax if prices are genuinely separate.",
+  "points": [
+   "Mixed supply, s.8(b)",
+   "Highest rate applies to entire value",
+   "Separate SKU with highest-rate HSN",
+   "Alternative: price items separately"
+  ],
+  "exp": "How a product is packaged and priced can change its tax.",
+  "ref": "CGST Act, s.8(b)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "HSN-026",
+  "topic": "hsn",
+  "sub": "Digits & reporting",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client with ₹8 crore turnover prints 4-digit HSN codes on B2B invoices. What's the issue?",
+  "options": [
+   "None",
+   "Above ₹5 crore, 6-digit HSN is required on invoices and in GSTR-1",
+   "8 digits are required",
+   "Only e-invoices need HSN"
+  ],
+  "answer": 1,
+  "exp": "Validation on the portal and IRP increasingly enforces digit counts.",
+  "volatile": true,
+  "case": true
+ }
+]

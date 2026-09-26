@@ -1,0 +1,384 @@
+[
+ {
+  "id": "CMP-001",
+  "topic": "comp",
+  "sub": "Eligibility",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the turnover limit for the composition scheme in most states?",
+  "options": [
+   "₹50 lakh",
+   "₹75 lakh",
+   "₹1.5 crore aggregate turnover in the preceding FY",
+   "₹5 crore"
+  ],
+  "answer": 2,
+  "exp": "₹75 lakh in some special category states.",
+  "ref": "CGST Act, s.10(1); Notfn. 14/2019-CT",
+  "volatile": true
+ },
+ {
+  "id": "CMP-002",
+  "topic": "comp",
+  "sub": "Eligibility",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A service provider (not a restaurant) wants a composition-type scheme. What's available?",
+  "options": [
+   "Not eligible at all",
+   "The section 10(2A) scheme for turnover up to ₹50 lakh, at 6%",
+   "Regular composition at 1%",
+   "Composition at 5%"
+  ],
+  "answer": 1,
+  "exp": "Service providers and mixed suppliers can opt for 6% (3% CGST + 3% SGST) if turnover is up to ₹50 lakh.",
+  "ref": "CGST Act, s.10(2A); Notfn. 2/2019-CT(R)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CMP-003",
+  "topic": "comp",
+  "sub": "Eligibility",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A composition taxpayer can supply services other than restaurant services up to:",
+  "options": [
+   "Nil",
+   "10% of turnover in the state or ₹5 lakh, whichever is higher",
+   "25% of turnover",
+   "₹20 lakh"
+  ],
+  "answer": 1,
+  "exp": "Proviso to s.10(1) allows a small amount of other services.",
+  "ref": "CGST Act, s.10(1) proviso"
+ },
+ {
+  "id": "CMP-004",
+  "topic": "comp",
+  "sub": "Eligibility",
+  "diff": 2,
+  "type": "mcq",
+  "q": "If a business has three GSTINs under the same PAN and one opts for composition, what about the others?",
+  "options": [
+   "They can stay regular",
+   "All registrations under the same PAN must opt for composition",
+   "Only those in the same state",
+   "Only if turnover is below limit"
+  ],
+  "answer": 1,
+  "exp": "Section 10(2) proviso: all registered persons with the same PAN must opt together.",
+  "ref": "CGST Act, s.10(2)"
+ },
+ {
+  "id": "CMP-005",
+  "topic": "comp",
+  "sub": "Eligibility",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Which of these CAN opt for the composition scheme?",
+  "options": [
+   "A manufacturer of ice cream",
+   "A manufacturer of pan masala",
+   "A trader of cloth",
+   "A casual taxable person"
+  ],
+  "answer": 2,
+  "exp": "Manufacturers of ice cream, pan masala, tobacco and certain other notified goods are excluded, as are casual taxable persons and NRTPs.",
+  "ref": "Notfn. 14/2019-CT"
+ },
+ {
+  "id": "CMP-006",
+  "topic": "comp",
+  "sub": "Rates",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the composition rate for a manufacturer of goods?",
+  "options": [
+   "0.5%",
+   "1% (0.5% CGST + 0.5% SGST)",
+   "2%",
+   "5%"
+  ],
+  "answer": 1,
+  "exp": "Manufacturers pay 1% of turnover in the state.",
+  "ref": "CGST Rules, r.7",
+  "volatile": true
+ },
+ {
+  "id": "CMP-007",
+  "topic": "comp",
+  "sub": "Rates",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the composition rate for restaurants not serving alcohol?",
+  "options": [
+   "1%",
+   "2%",
+   "5% (2.5% CGST + 2.5% SGST)",
+   "6%"
+  ],
+  "answer": 2,
+  "exp": "Restaurant services under composition pay 5%.",
+  "ref": "CGST Rules, r.7",
+  "volatile": true
+ },
+ {
+  "id": "CMP-008",
+  "topic": "comp",
+  "sub": "Rates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For a trader under composition, 1% is charged on:",
+  "options": [
+   "Total turnover including exempt",
+   "Turnover of taxable supplies of goods and services in the state",
+   "Purchases",
+   "Profit"
+  ],
+  "answer": 1,
+  "exp": "Rule 7 was amended from 1 January 2018 so traders pay on taxable turnover only.",
+  "ref": "CGST Rules, r.7"
+ },
+ {
+  "id": "CMP-009",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Can a composition taxpayer charge GST separately on its invoice?",
+  "options": [
+   "Yes",
+   "No, it can't collect tax from customers",
+   "Only for B2B",
+   "Only above ₹200"
+  ],
+  "answer": 1,
+  "exp": "It issues a bill of supply and pays tax from its own pocket.",
+  "ref": "CGST Act, s.10(4)"
+ },
+ {
+  "id": "CMP-010",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Can a composition taxpayer claim input tax credit?",
+  "options": [
+   "Yes",
+   "No",
+   "Only on capital goods",
+   "Only on RCM"
+  ],
+  "answer": 1,
+  "exp": "Composition means no ITC for the taxpayer, and buyers also can't claim ITC on its supplies.",
+  "ref": "CGST Act, s.10(4)"
+ },
+ {
+  "id": "CMP-011",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which transaction disqualifies a composition taxpayer?",
+  "options": [
+   "Buying goods from another state",
+   "Making an outward inter-state supply of goods",
+   "Hiring employees",
+   "Paying RCM"
+  ],
+  "answer": 1,
+  "exp": "Outward inter-state supplies of goods aren't allowed. Inward inter-state purchases are fine.",
+  "ref": "CGST Act, s.10(2)(c)"
+ },
+ {
+  "id": "CMP-012",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 2,
+  "type": "tf",
+  "q": "A composition taxpayer can sell goods intra-state through an e-commerce operator (from 1 October 2023, subject to conditions).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "The 50th Council meeting relaxed the bar on composition taxpayers supplying goods through ECOs within the state.",
+  "ref": "Notfn. 36/2023-CT",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CMP-013",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What must a composition taxpayer print on its bill of supply?",
+  "options": [
+   "'Tax invoice'",
+   "'Composition taxable person, not eligible to collect tax on supplies'",
+   "Its turnover",
+   "Nothing special"
+  ],
+  "answer": 1,
+  "exp": "It must also display 'composition taxable person' at its place of business.",
+  "ref": "CGST Rules, r.5"
+ },
+ {
+  "id": "CMP-014",
+  "topic": "comp",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which form do composition taxpayers use to pay tax every quarter?",
+  "options": [
+   "GSTR-3B",
+   "CMP-08, by the 18th of the month after the quarter",
+   "GSTR-4 quarterly",
+   "PMT-06"
+  ],
+  "answer": 1,
+  "exp": "CMP-08 is the quarterly statement-cum-challan.",
+  "ref": "CGST Rules, r.62",
+  "volatile": true
+ },
+ {
+  "id": "CMP-015",
+  "topic": "comp",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the annual return for a composition taxpayer?",
+  "options": [
+   "GSTR-9",
+   "GSTR-4, due 30 April following the FY",
+   "GSTR-9A",
+   "GSTR-9C"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9A was discontinued; GSTR-4 became annual from FY 2019-20.",
+  "ref": "CGST Rules, r.62",
+  "volatile": true
+ },
+ {
+  "id": "CMP-016",
+  "topic": "comp",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "To opt for composition from the start of a financial year, an existing registered person files:",
+  "options": [
+   "CMP-01",
+   "CMP-02 before the start of the FY",
+   "CMP-04",
+   "REG-01"
+  ],
+  "answer": 1,
+  "exp": "CMP-02 is filed on or before the start of the FY. They must also reverse ITC on stock through ITC-03.",
+  "ref": "CGST Rules, r.3(3)"
+ },
+ {
+  "id": "CMP-017",
+  "topic": "comp",
+  "sub": "Compliance",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A composition taxpayer crosses ₹1.5 crore turnover in November. What happens?",
+  "options": [
+   "It continues until the year-end",
+   "It must withdraw by filing CMP-04 within 7 days, and becomes a regular taxpayer from that day",
+   "It pays a penalty",
+   "Nothing if it pays 1% more"
+  ],
+  "answer": 1,
+  "exp": "It can then claim ITC on stock held on the day before, using ITC-01.",
+  "ref": "CGST Rules, r.6",
+  "volatile": true
+ },
+ {
+  "id": "CMP-018",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A shop owner under composition in Rajasthan buys stock from Gujarat, sells mostly locally, and gets one order from a customer in MP. What should the software warn about, and what are the options?",
+  "model": "Buying from Gujarat is fine. The MP order is an outward inter-state supply of goods, which a composition taxpayer can't make. If it goes ahead, it loses eligibility and has to move to the regular scheme from that date, with penalties if it had been claiming composition wrongly. The practical options are to decline, or sell to the customer at the counter in Rajasthan where the customer takes delivery (making it intra-state). Software should block creating an inter-state outward bill for a composition GSTIN, or at least warn clearly.",
+  "points": [
+   "Inter-state inward purchases are allowed",
+   "Outward inter-state supply of goods is not",
+   "Consequence: exit composition, possible penalty",
+   "Validation: block or warn on inter-state bills for composition GSTINs"
+  ],
+  "exp": "Validation rules around taxpayer type are a common source of bugs in billing software.",
+  "ref": "CGST Act, s.10(2)(c), s.10(5)",
+  "case": true
+ },
+ {
+  "id": "CMP-019",
+  "topic": "comp",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A composition taxpayer receives services from a GTA under reverse charge. It pays GST at:",
+  "options": [
+   "1%",
+   "The normal RCM rate, in cash",
+   "Nothing",
+   "5% flat"
+  ],
+  "answer": 1,
+  "exp": "Composition rates apply only to its outward supplies. RCM on inward supplies is at normal rates.",
+  "case": true
+ },
+ {
+  "id": "CMP-020",
+  "topic": "comp",
+  "sub": "Restrictions",
+  "diff": 2,
+  "type": "tf",
+  "q": "A buyer purchasing from a composition taxpayer can claim ITC on the purchase.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "No tax is charged on a bill of supply, so there's nothing to credit."
+ },
+ {
+  "id": "CMP-021",
+  "topic": "comp",
+  "sub": "Eligibility",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can a person registered as a casual taxable person opt for composition?",
+  "options": [
+   "Yes",
+   "No, casual and non-resident taxable persons are excluded",
+   "Only in special category states",
+   "Only for services"
+  ],
+  "answer": 1,
+  "exp": "Section 10(2)(b) and rule 5.",
+  "ref": "CGST Rules, r.5"
+ },
+ {
+  "id": "CMP-022",
+  "topic": "comp",
+  "sub": "Rates",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A composition trader sells both taxable goods (₹60 lakh) and exempt goods (₹20 lakh) in a year. Composition tax is on:",
+  "options": [
+   "₹80 lakh",
+   "₹60 lakh, the taxable turnover",
+   "₹20 lakh",
+   "Nothing"
+  ],
+  "answer": 1,
+  "exp": "For traders, composition tax is on taxable supplies only after the January 2018 amendment. For manufacturers, it's on total turnover in the state.",
+  "ref": "CGST Rules, r.7",
+  "volatile": true,
+  "case": true
+ }
+]

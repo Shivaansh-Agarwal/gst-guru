@@ -1,0 +1,10 @@
+{
+  "name": "GST Guru",
+  "short_name": "GST Guru",
+  "description": "Learn Indian GST a few questions at a time.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#edf1ee",
+  "theme_color": "#17263a",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

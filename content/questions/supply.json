@@ -1,0 +1,439 @@
+[
+ {
+  "id": "SUP-001",
+  "topic": "supply",
+  "sub": "Scope",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which section of the CGST Act defines the scope of supply?",
+  "options": [
+   "Section 2(52)",
+   "Section 7",
+   "Section 9",
+   "Section 15"
+  ],
+  "answer": 1,
+  "exp": "Section 7 defines supply. Section 9 is the charging section and section 15 covers value.",
+  "ref": "CGST Act, s.7"
+ },
+ {
+  "id": "SUP-002",
+  "topic": "supply",
+  "sub": "Scope",
+  "diff": 1,
+  "type": "tf",
+  "q": "For a transaction to be a supply under section 7(1)(a), it generally needs consideration and must be in the course or furtherance of business.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Sale, transfer, barter, exchange, licence, rental, lease or disposal made for consideration in the course or furtherance of business. Schedule I lists exceptions where no consideration is needed.",
+  "ref": "CGST Act, s.7(1)(a)"
+ },
+ {
+  "id": "SUP-003",
+  "topic": "supply",
+  "sub": "Scope",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Import of services for consideration by an individual for personal use is:",
+  "options": [
+   "Not a supply as it's not in the course of business",
+   "A supply, even if not in the course of business",
+   "A supply only if above ₹5,000",
+   "Exempt as a rule"
+  ],
+  "answer": 1,
+  "exp": "Section 7(1)(b) makes import of services for consideration a supply 'whether or not in the course or furtherance of business'.",
+  "ref": "CGST Act, s.7(1)(b)"
+ },
+ {
+  "id": "SUP-004",
+  "topic": "supply",
+  "sub": "Scope",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Barter (exchanging goods for goods) under GST is:",
+  "options": [
+   "Not a supply as no money changes hands",
+   "A supply, both sides are supplies with consideration",
+   "Only a supply of services",
+   "Exempt"
+  ],
+  "answer": 1,
+  "exp": "Consideration need not be money. In a barter, each party makes a supply to the other.",
+  "ref": "CGST Act, s.2(31)"
+ },
+ {
+  "id": "SUP-005",
+  "topic": "supply",
+  "sub": "Schedule I",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A company gifts a laptop worth ₹80,000 to an employee. It had claimed ITC on the laptop. Is this a supply?",
+  "options": [
+   "No, gifts are never supplies",
+   "Yes, gifts to employees above ₹50,000 in a year are treated as supply",
+   "No, because there's no consideration",
+   "Only if the employee pays something"
+  ],
+  "answer": 1,
+  "exp": "Schedule I para 2 covers supplies between related persons without consideration. Employer and employee are related, but gifts up to ₹50,000 per employee per year aren't treated as supply.",
+  "ref": "CGST Act, Schedule I, para 2",
+  "case": true
+ },
+ {
+  "id": "SUP-006",
+  "topic": "supply",
+  "sub": "Schedule I",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Stock transfer of goods from a company's Haryana GSTIN to its Punjab GSTIN (same PAN) is:",
+  "options": [
+   "Not a supply as it's the same company",
+   "A supply even without consideration, since the two are distinct persons",
+   "A supply only if an invoice is raised",
+   "Exempt"
+  ],
+  "answer": 1,
+  "exp": "Registrations of the same PAN in different states are distinct persons (s.25(4)). Schedule I makes supplies between them taxable even without consideration.",
+  "ref": "CGST Act, s.25(4), Sch. I para 2"
+ },
+ {
+  "id": "SUP-007",
+  "topic": "supply",
+  "sub": "Schedule I",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is treated as supply even without consideration?",
+  "options": [
+   "Free samples given where no ITC was taken",
+   "Permanent transfer of business assets on which ITC was availed",
+   "Services of an employee to the employer",
+   "Sale of land"
+  ],
+  "answer": 1,
+  "exp": "Schedule I para 1: permanent transfer or disposal of business assets on which ITC has been availed.",
+  "ref": "CGST Act, Sch. I para 1"
+ },
+ {
+  "id": "SUP-008",
+  "topic": "supply",
+  "sub": "Schedule I",
+  "diff": 3,
+  "type": "tf",
+  "q": "A company in India imports services free of charge from its related entity in the US. This is a supply.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Schedule I para 4 covers import of services by a person from a related person or from its own establishment outside India, in the course of business, even without consideration.",
+  "ref": "CGST Act, Sch. I para 4",
+  "case": true
+ },
+ {
+  "id": "SUP-009",
+  "topic": "supply",
+  "sub": "Schedule III",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Services by an employee to the employer in the course of employment are:",
+  "options": [
+   "Taxable at 18%",
+   "Exempt services",
+   "Neither a supply of goods nor services",
+   "Taxable under reverse charge"
+  ],
+  "answer": 2,
+  "exp": "Schedule III para 1. Salary is outside GST entirely.",
+  "ref": "CGST Act, Sch. III para 1"
+ },
+ {
+  "id": "SUP-010",
+  "topic": "supply",
+  "sub": "Schedule III",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is listed in Schedule III (neither goods nor services)?",
+  "options": [
+   "Sale of a completed building after the completion certificate",
+   "Sale of an under-construction flat",
+   "Lease of land",
+   "Works contract"
+  ],
+  "answer": 0,
+  "exp": "Sale of land, and of a building once the completion certificate is issued (or after first occupation), is in Schedule III. Under-construction flats are a taxable supply of services.",
+  "ref": "CGST Act, Sch. III para 5; Sch. II para 5(b)"
+ },
+ {
+  "id": "SUP-011",
+  "topic": "supply",
+  "sub": "Schedule III",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Goods are shipped from China directly to a buyer in the UAE, arranged and invoiced by a trader in Mumbai without the goods entering India. GST treatment?",
+  "options": [
+   "IGST on the trader's invoice",
+   "Treated as export of goods",
+   "Neither supply of goods nor services (merchant trade)",
+   "Taxable under reverse charge"
+  ],
+  "answer": 2,
+  "exp": "Schedule III para 7 covers supply of goods from a place in a non-taxable territory to another non-taxable territory without the goods entering India.",
+  "ref": "CGST Act, Sch. III para 7"
+ },
+ {
+  "id": "SUP-012",
+  "topic": "supply",
+  "sub": "Schedule III",
+  "diff": 2,
+  "type": "mcq",
+  "q": "High sea sales (goods sold by transferring documents before they cross customs) are:",
+  "options": [
+   "Taxable at the time of each high sea sale",
+   "Neither supply of goods nor services; IGST is paid once at import",
+   "Exempt supplies",
+   "Zero-rated"
+  ],
+  "answer": 1,
+  "exp": "Schedule III para 8(b). IGST is collected at the customs clearance stage instead.",
+  "ref": "CGST Act, Sch. III para 8(b)"
+ },
+ {
+  "id": "SUP-013",
+  "topic": "supply",
+  "sub": "Schedule III",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which actionable claim IS taxable under GST?",
+  "options": [
+   "Sale of a debt",
+   "Transfer of an insurance claim",
+   "Online money gaming",
+   "Assignment of receivables"
+  ],
+  "answer": 2,
+  "exp": "Actionable claims are in Schedule III except specified ones: lottery, betting, gambling, horse racing, casinos and online money gaming.",
+  "ref": "CGST Act, Sch. III para 6"
+ },
+ {
+  "id": "SUP-014",
+  "topic": "supply",
+  "sub": "Schedule III",
+  "diff": 2,
+  "type": "tf",
+  "q": "Transactions in Schedule III count as exempt supplies for ITC reversal purposes.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Mostly not. Schedule III items are outside supply. But the Explanation to s.17(3) specifically includes sale of land and sale of completed buildings as exempt value for ITC reversal. Most other Schedule III items are excluded.",
+  "ref": "CGST Act, s.17(3)"
+ },
+ {
+  "id": "SUP-015",
+  "topic": "supply",
+  "sub": "Composite & mixed",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A composite supply is taxed at:",
+  "options": [
+   "The highest rate among the items",
+   "The rate of the principal supply",
+   "An average rate",
+   "Each item's own rate"
+  ],
+  "answer": 1,
+  "exp": "A composite supply is naturally bundled and supplied together in the ordinary course of business, taxed at the principal supply's rate.",
+  "ref": "CGST Act, s.8(a)"
+ },
+ {
+  "id": "SUP-016",
+  "topic": "supply",
+  "sub": "Composite & mixed",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A Diwali gift pack of sweets, dry fruits and a chocolate box sold for one price is typically a:",
+  "options": [
+   "Composite supply",
+   "Mixed supply",
+   "Continuous supply",
+   "Exempt supply"
+  ],
+  "answer": 1,
+  "exp": "The items aren't naturally bundled; they're packed together for convenience. Mixed supplies are taxed at the highest rate among the items.",
+  "ref": "CGST Act, s.2(74), s.8(b)",
+  "case": true
+ },
+ {
+  "id": "SUP-017",
+  "topic": "supply",
+  "sub": "Composite & mixed",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Goods sold with transport and insurance charged on the same invoice. How is it taxed?",
+  "options": [
+   "Transport at 5%, insurance at 18%, goods at their rate",
+   "Everything at the rate applicable to the goods",
+   "Everything at 18%",
+   "Transport exempt"
+  ],
+  "answer": 1,
+  "exp": "This is a classic composite supply with goods as the principal supply.",
+  "ref": "CGST Act, s.2(30) illustration"
+ },
+ {
+  "id": "SUP-018",
+  "topic": "supply",
+  "sub": "Composite & mixed",
+  "diff": 3,
+  "type": "mcq",
+  "q": "What primarily separates a composite supply from a mixed supply?",
+  "options": [
+   "Whether there's a single price",
+   "Whether the items are naturally bundled in the ordinary course of business",
+   "Whether one item is a service",
+   "Whether the supplier is registered"
+  ],
+  "answer": 1,
+  "exp": "Both can have a single price. The test is natural bundling: would a normal buyer expect these together? If yes, composite; if they're just packaged together, mixed."
+ },
+ {
+  "id": "SUP-019",
+  "topic": "supply",
+  "sub": "Composite & mixed",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A hotel charges ₹6,000 per night for a room with breakfast included. How do you decide the rate, and what's the answer conceptually?",
+  "model": "It's a composite supply because accommodation with breakfast is naturally bundled in the hotel business. Accommodation is the principal supply, so the whole ₹6,000 is taxed at the rate for hotel accommodation at that tariff, not split between room and food.",
+  "points": [
+   "Naturally bundled, so composite supply",
+   "Principal supply is accommodation",
+   "Single rate on the whole value, not split"
+  ],
+  "exp": "The Education Guide's illustration uses exactly this example.",
+  "ref": "CGST Act, s.8(a)",
+  "case": true
+ },
+ {
+  "id": "SUP-020",
+  "topic": "supply",
+  "sub": "Inter vs intra-state",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A Gujarat supplier sells to a unit in a Gujarat SEZ. This is:",
+  "options": [
+   "Intra-state, CGST + SGST",
+   "Inter-state supply, IGST (zero-rated)",
+   "Exempt",
+   "Export"
+  ],
+  "answer": 1,
+  "exp": "Supplies to or by an SEZ unit or developer are treated as inter-state even within the same state.",
+  "ref": "IGST Act, s.7(5)(b)"
+ },
+ {
+  "id": "SUP-021",
+  "topic": "supply",
+  "sub": "Inter vs intra-state",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Whether a supply is inter-state or intra-state depends on:",
+  "options": [
+   "The locations of the supplier and the recipient",
+   "The location of the supplier and the place of supply",
+   "The GSTINs on the invoice",
+   "The route the goods take"
+  ],
+  "answer": 1,
+  "exp": "Compare the supplier's location with the place of supply. Same state is intra-state; different states is inter-state.",
+  "ref": "IGST Act, s.7 & 8"
+ },
+ {
+  "id": "SUP-022",
+  "topic": "supply",
+  "sub": "Inter vs intra-state",
+  "diff": 2,
+  "type": "tf",
+  "q": "Supplies to a foreign tourist in India who will take the goods abroad are treated as inter-state.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Supplies to international tourists are deemed inter-state under s.7(5)(c) IGST.",
+  "ref": "IGST Act, s.7(5)(c)"
+ },
+ {
+  "id": "SUP-023",
+  "topic": "supply",
+  "sub": "Types of supply",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is a 'non-taxable supply' under GST?",
+  "options": [
+   "Nil-rated rice",
+   "Supply of alcoholic liquor for human consumption",
+   "Exports",
+   "Supplies under composition"
+  ],
+  "answer": 1,
+  "exp": "A non-taxable supply is one not leviable to tax under the Act. Exempt supply includes nil-rated, wholly exempt and non-taxable.",
+  "ref": "CGST Act, s.2(78), s.2(47)"
+ },
+ {
+  "id": "SUP-024",
+  "topic": "supply",
+  "sub": "Types of supply",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Deemed exports under section 147 apply to:",
+  "options": [
+   "Goods and services",
+   "Goods only",
+   "Services only",
+   "Only supplies to SEZ"
+  ],
+  "answer": 1,
+  "exp": "Deemed exports are notified supplies of goods manufactured in India that don't leave India, like supplies to EOUs or against Advance Authorisation.",
+  "ref": "CGST Act, s.147"
+ },
+ {
+  "id": "SUP-025",
+  "topic": "supply",
+  "sub": "Types of supply",
+  "diff": 1,
+  "type": "mcq",
+  "q": "An exempt supply includes:",
+  "options": [
+   "Nil-rated, wholly exempt and non-taxable supplies",
+   "Only nil-rated supplies",
+   "Only exports",
+   "Supplies under reverse charge"
+  ],
+  "answer": 0,
+  "exp": "The definition is wide. Zero-rated supplies are separate and are not exempt.",
+  "ref": "CGST Act, s.2(47)"
+ },
+ {
+  "id": "SUP-026",
+  "topic": "supply",
+  "sub": "Schedule I",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client company gives its dealers free gold coins worth ₹20,000 each as a sales incentive. ITC on the coins?",
+  "options": [
+   "Fully available",
+   "Blocked, goods disposed of by way of gift",
+   "Available if under ₹50,000",
+   "Available as a sales promotion expense"
+  ],
+  "answer": 1,
+  "exp": "The ₹50,000 employee gift limit doesn't apply to dealers, and 17(5)(h) blocks ITC on gifts.",
+  "ref": "CGST Act, s.17(5)(h)",
+  "case": true
+ }
+]

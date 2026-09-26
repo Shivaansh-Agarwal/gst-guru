@@ -1,0 +1,562 @@
+[
+ {
+  "id": "ITC-001",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which of these is NOT a condition for claiming ITC under section 16(2)?",
+  "options": [
+   "You have a tax invoice or debit note",
+   "You've received the goods or services",
+   "The supplier has paid the tax to the government",
+   "The supplier is registered in the same state as you"
+  ],
+  "answer": 3,
+  "exp": "Inter-state purchases with IGST are fully creditable. The conditions are: document, receipt, tax actually paid, return filed, and the invoice appears in GSTR-2B.",
+  "ref": "CGST Act, s.16(2)"
+ },
+ {
+  "id": "ITC-002",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 16(2)(aa), ITC is available only if:",
+  "options": [
+   "The invoice is uploaded in your purchase register",
+   "The supplier has reported the invoice in GSTR-1/IFF and it's communicated to you (in GSTR-2B)",
+   "The payment is made by cheque",
+   "The supplier has an e-invoice"
+  ],
+  "answer": 1,
+  "exp": "Since 1 January 2022, ITC is restricted to invoices reflected in GSTR-2B.",
+  "ref": "CGST Act, s.16(2)(aa); r.36(4)"
+ },
+ {
+  "id": "ITC-003",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Goods ordered in one invoice arrive in three lots over three months. When can ITC be claimed?",
+  "options": [
+   "Proportionately with each lot",
+   "On receipt of the last lot",
+   "On invoice date",
+   "On the first lot"
+  ],
+  "answer": 1,
+  "exp": "Proviso to s.16(2)(b).",
+  "ref": "CGST Act, s.16(2) proviso"
+ },
+ {
+  "id": "ITC-004",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "You paid your supplier 200 days after the invoice date. What happens to ITC already claimed?",
+  "options": [
+   "Nothing",
+   "It must be reversed (added to output liability) with interest, and can be re-claimed when you pay",
+   "It lapses permanently",
+   "Only interest is payable"
+  ],
+  "answer": 1,
+  "exp": "If the value plus tax isn't paid within 180 days of the invoice, ITC is reversed with interest and can be re-availed on payment.",
+  "ref": "CGST Act, s.16(2) second proviso; r.37",
+  "case": true
+ },
+ {
+  "id": "ITC-005",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 2,
+  "type": "tf",
+  "q": "Under bill-to ship-to, the person to whom the goods are billed is deemed to have received them, even though they went to a third party.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Explanation to s.16(2)(b), so the billed buyer can claim ITC."
+ },
+ {
+  "id": "ITC-006",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 3,
+  "type": "mcq",
+  "q": "You claimed depreciation under income tax on the full cost of a machine, including the GST. Can you also claim ITC on it?",
+  "options": [
+   "Yes",
+   "No, if depreciation is claimed on the tax component, ITC isn't allowed",
+   "Only 50%",
+   "Yes, but only for IGST"
+  ],
+  "answer": 1,
+  "exp": "Section 16(3) prevents a double benefit.",
+  "ref": "CGST Act, s.16(3)",
+  "case": true
+ },
+ {
+  "id": "ITC-007",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 1,
+  "type": "tf",
+  "q": "ITC on capital goods is available in full in the year of purchase, not spread over years.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Unlike the old CENVAT 50:50 split, GST allows full ITC on capital goods upfront, subject to the other conditions."
+ },
+ {
+  "id": "ITC-008",
+  "topic": "itc",
+  "sub": "Time limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the last date to claim ITC for an invoice dated 15 February 2025 (FY 2024-25)?",
+  "options": [
+   "31 March 2025",
+   "30 November 2025, or the date you file the annual return, whichever is earlier",
+   "31 December 2025",
+   "No time limit"
+  ],
+  "answer": 1,
+  "exp": "Section 16(4): 30 November following the end of the financial year, or the annual return date if earlier.",
+  "ref": "CGST Act, s.16(4)"
+ },
+ {
+  "id": "ITC-009",
+  "topic": "itc",
+  "sub": "Time limits",
+  "diff": 3,
+  "type": "mcq",
+  "q": "For a debit note issued in May 2025 for a supply invoiced in January 2025, the ITC time limit is determined by:",
+  "options": [
+   "The original invoice's financial year",
+   "The financial year of the debit note date",
+   "The earlier of the two",
+   "The shipping date"
+  ],
+  "answer": 1,
+  "exp": "The Finance Act 2021 delinked the debit note from the underlying invoice for the section 16(4) time limit.",
+  "ref": "CGST Act, s.16(4)"
+ },
+ {
+  "id": "ITC-010",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 1,
+  "type": "mcq",
+  "q": "ITC on a car (5-seater) bought for the director's official use is:",
+  "options": [
+   "Fully available",
+   "Blocked",
+   "50% available",
+   "Available only for IGST"
+  ],
+  "answer": 1,
+  "exp": "Motor vehicles for transport of persons with seating capacity up to 13 (including driver) are blocked, unless used for further supply of vehicles, passenger transport or driving training.",
+  "ref": "CGST Act, s.17(5)(a)"
+ },
+ {
+  "id": "ITC-011",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A car dealer buys cars for resale. ITC?",
+  "options": [
+   "Blocked",
+   "Available, since it's for further supply of such vehicles",
+   "Only 50%",
+   "Only for demo cars"
+  ],
+  "answer": 1,
+  "exp": "The exception in s.17(5)(a) covers further supply of vehicles.",
+  "ref": "CGST Act, s.17(5)(a)(A)"
+ },
+ {
+  "id": "ITC-012",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A trucking company buys a truck to carry goods. ITC?",
+  "options": [
+   "Blocked like all vehicles",
+   "Available, blocked credit applies only to vehicles for transporting persons",
+   "Available only if seats exceed 13",
+   "Only for IGST"
+  ],
+  "answer": 1,
+  "exp": "Vehicles for transporting goods aren't in the blocked list.",
+  "ref": "CGST Act, s.17(5)(a)"
+ },
+ {
+  "id": "ITC-013",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "ITC on food and beverages served to employees at an office party is:",
+  "options": [
+   "Available",
+   "Blocked, unless providing it is mandatory under a law or the recipient uses it for the same category of outward supply",
+   "Available if below ₹50,000",
+   "50% available"
+  ],
+  "answer": 1,
+  "exp": "Section 17(5)(b)(i). A caterer buying food services for catering can claim it; an IT company throwing a party can't.",
+  "ref": "CGST Act, s.17(5)(b)"
+ },
+ {
+  "id": "ITC-014",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A company constructs its own office building. ITC on cement and steel is:",
+  "options": [
+   "Available as they're used in business",
+   "Blocked, goods and services for construction of immovable property on own account (other than plant and machinery) are blocked",
+   "Available only if the building is rented out later",
+   "Available at 50%"
+  ],
+  "answer": 1,
+  "exp": "Section 17(5)(d). The Supreme Court in Safari Retreats (2024) held a building can qualify as 'plant' under a functionality test; the law was later amended retrospectively to clarify 'plant or machinery'.",
+  "ref": "CGST Act, s.17(5)(c),(d)",
+  "volatile": true
+ },
+ {
+  "id": "ITC-015",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which is NOT a blocked credit?",
+  "options": [
+   "Membership of a club",
+   "Health insurance for employees where not mandated by law",
+   "Goods used for CSR activities",
+   "Machinery used to manufacture taxable goods"
+  ],
+  "answer": 3,
+  "exp": "Machinery for taxable supplies is fine. CSR spends were added to blocked credits from 1 October 2023.",
+  "ref": "CGST Act, s.17(5)(b),(fa)"
+ },
+ {
+  "id": "ITC-016",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Goods are destroyed in a fire at the warehouse. What happens to the ITC taken on them?",
+  "options": [
+   "Nothing",
+   "ITC must be reversed, goods lost, stolen or destroyed are blocked",
+   "Can be claimed from insurance",
+   "Only reversed if uninsured"
+  ],
+  "answer": 1,
+  "exp": "Section 17(5)(h). This covers goods lost, stolen, destroyed, written off, or disposed of as gifts or free samples.",
+  "ref": "CGST Act, s.17(5)(h)"
+ },
+ {
+  "id": "ITC-017",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Tax paid under section 74 (demand involving fraud or suppression) is:",
+  "options": [
+   "Creditable in the next month",
+   "Not available as ITC",
+   "Creditable after appeal",
+   "Creditable at 50%"
+  ],
+  "answer": 1,
+  "exp": "Section 17(5)(i) blocks ITC of tax paid under sections 74, 129 and 130. For FY 2024-25 onwards the equivalent is tax paid under s.74A in fraud cases.",
+  "ref": "CGST Act, s.17(5)(i)"
+ },
+ {
+  "id": "ITC-018",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "tf",
+  "q": "Works contract services for building a factory shed are blocked, but ITC on plant and machinery installed inside is allowed.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "'Plant and machinery' includes apparatus and equipment fixed to earth by foundation, but excludes land, buildings and civil structures.",
+  "ref": "CGST Act, s.17(5)(c) & Explanation"
+ },
+ {
+  "id": "ITC-019",
+  "topic": "itc",
+  "sub": "Reversal",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A business makes both taxable and exempt supplies and has common ITC on rent. What's the treatment?",
+  "options": [
+   "Claim all",
+   "Claim all, then reverse the portion attributable to exempt supplies under rule 42",
+   "Claim none",
+   "Claim 50%"
+  ],
+  "answer": 1,
+  "exp": "Section 17(2) with rule 42 for inputs and input services, and rule 43 for capital goods.",
+  "ref": "CGST Act, s.17(2); r.42",
+  "case": true
+ },
+ {
+  "id": "ITC-020",
+  "topic": "itc",
+  "sub": "Reversal",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A bank chooses the option under section 17(4). What does it mean?",
+  "options": [
+   "It claims 100% of ITC",
+   "It claims 50% of eligible ITC every month and the rest lapses, instead of doing rule 42 apportionment",
+   "It gets a refund",
+   "It pays tax on reverse charge"
+  ],
+  "answer": 1,
+  "exp": "Banks and financial institutions can take 50% of eligible ITC as a simplified option.",
+  "ref": "CGST Act, s.17(4)"
+ },
+ {
+  "id": "ITC-021",
+  "topic": "itc",
+  "sub": "Reversal",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where is permanent ITC reversal (like section 17(5) blocked credit) reported in GSTR-3B?",
+  "options": [
+   "Table 4(A)",
+   "Table 4(B)(1)",
+   "Table 4(B)(2)",
+   "Table 3.1"
+  ],
+  "answer": 1,
+  "exp": "4(B)(1) is for reversals under rules 38, 42, 43 and s.17(5), which can't be reclaimed. 4(B)(2) is for temporary reversals that may be reclaimed later.",
+  "ref": "GSTR-3B Table 4"
+ },
+ {
+  "id": "ITC-022",
+  "topic": "itc",
+  "sub": "Utilisation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "In what order must ITC be utilised?",
+  "options": [
+   "Any order",
+   "IGST credit first (IGST, then CGST and SGST in any order), then CGST and SGST credits",
+   "CGST first",
+   "SGST first"
+  ],
+  "answer": 1,
+  "exp": "Section 49 and rule 88A: IGST credit must be fully used before CGST or SGST credit. CGST credit can pay CGST then IGST; SGST credit pays SGST then IGST.",
+  "ref": "CGST Act, s.49(5); r.88A"
+ },
+ {
+  "id": "ITC-023",
+  "topic": "itc",
+  "sub": "Utilisation",
+  "diff": 1,
+  "type": "tf",
+  "q": "CGST credit can be used to pay SGST liability.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Never. CGST and SGST go to different governments, so they can't cross-pay. Either can pay IGST.",
+  "ref": "CGST Act, s.49(5)(e),(f)"
+ },
+ {
+  "id": "ITC-024",
+  "topic": "itc",
+  "sub": "Utilisation",
+  "diff": 2,
+  "type": "tf",
+  "q": "ITC in the electronic credit ledger can be used to pay interest and late fees.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Credit ledger can only pay output tax. Interest, penalty and fees must be paid through the cash ledger.",
+  "ref": "CGST Act, s.49(4)"
+ },
+ {
+  "id": "ITC-025",
+  "topic": "itc",
+  "sub": "Utilisation",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Rule 86B restricts use of credit ledger to 99% of output tax. Which taxpayer does it apply to?",
+  "options": [
+   "All taxpayers",
+   "Those with taxable supplies (other than exempt and zero-rated) above ₹50 lakh in a month, unless an exception applies",
+   "Only exporters",
+   "Only composition taxpayers"
+  ],
+  "answer": 1,
+  "exp": "Such taxpayers must pay at least 1% of output tax in cash, unless exceptions apply (e.g. more than ₹1 lakh income tax paid in each of the last two years, or refunds above ₹1 lakh).",
+  "ref": "CGST Rules, r.86B"
+ },
+ {
+  "id": "ITC-026",
+  "topic": "itc",
+  "sub": "Utilisation",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under rule 86A, an officer can block the electronic credit ledger if ITC is suspected to be fraudulent. For how long?",
+  "options": [
+   "30 days",
+   "Up to one year",
+   "Indefinitely",
+   "Until the next return"
+  ],
+  "answer": 1,
+  "exp": "The restriction lapses after one year from the date it's imposed.",
+  "ref": "CGST Rules, r.86A"
+ },
+ {
+  "id": "ITC-027",
+  "topic": "itc",
+  "sub": "ISD & special cases",
+  "diff": 2,
+  "type": "mcq",
+  "q": "From 1 April 2025, a company whose head office receives common input services (like audit fees) for branches in several states must:",
+  "options": [
+   "Claim it all at the head office",
+   "Register as an Input Service Distributor and distribute the credit",
+   "Choose either option",
+   "Claim at the branch with the largest turnover"
+  ],
+  "answer": 1,
+  "exp": "The Finance Act 2024 made ISD registration mandatory for distributing common input service credit, including RCM services.",
+  "ref": "CGST Act, s.20",
+  "volatile": true
+ },
+ {
+  "id": "ITC-028",
+  "topic": "itc",
+  "sub": "ISD & special cases",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How does an ISD distribute credit to its units?",
+  "options": [
+   "By tax invoice",
+   "Through an ISD invoice, reported in GSTR-6",
+   "By journal entry",
+   "Via e-way bill"
+  ],
+  "answer": 1,
+  "exp": "ISD files GSTR-6 monthly; recipients see it in GSTR-2B.",
+  "ref": "CGST Rules, r.54(1)"
+ },
+ {
+  "id": "ITC-029",
+  "topic": "itc",
+  "sub": "ISD & special cases",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A dealer gets newly registered and applies within 30 days of becoming liable. What about ITC on opening stock?",
+  "options": [
+   "Not available",
+   "Available on inputs in stock, semi-finished and finished goods on the day before liability arose",
+   "Available only on capital goods",
+   "Only 50%"
+  ],
+  "answer": 1,
+  "exp": "Section 18(1)(a), claimed via ITC-01 within 30 days.",
+  "ref": "CGST Act, s.18(1)(a)",
+  "case": true
+ },
+ {
+  "id": "ITC-030",
+  "topic": "itc",
+  "sub": "ISD & special cases",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A company bought a machine two years ago for ₹10 lakh plus ₹1.8 lakh GST (ITC claimed). It now sells the machine for ₹4 lakh. How much GST must it pay on the sale?",
+  "model": "Under section 18(6), for capital goods on which ITC was taken, the tax payable on transfer is the higher of: (a) ITC taken reduced by 5 percentage points per quarter of use, or (b) tax on the transaction value. Two years is 8 quarters, so ITC minus 40%: ₹1.8 lakh x 60% = ₹1.08 lakh. Tax on transaction value at 18% is ₹72,000. The company pays the higher, ₹1.08 lakh.",
+  "points": [
+   "Section 18(6)",
+   "5 percentage points per quarter reduction",
+   "Higher of adjusted ITC or tax on transaction value",
+   "Answer: ₹1.08 lakh"
+  ],
+  "exp": "This stops businesses from buying capital goods with full ITC and selling them cheap soon after.",
+  "ref": "CGST Act, s.18(6); r.44(6)",
+  "case": true
+ },
+ {
+  "id": "ITC-031",
+  "topic": "itc",
+  "sub": "Blocked credits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client (IT company) asks if it can claim ITC on a ₹2 lakh bill for an employee offsite at a resort (rooms and food). The CA says:",
+  "options": [
+   "All of it is claimable",
+   "Food and beverages are blocked; accommodation for business purpose may be eligible if the place of supply matches the client's registered state",
+   "None of it, ever",
+   "All claimable if paid by card"
+  ],
+  "answer": 1,
+  "exp": "Section 17(5)(b) blocks food and beverages and outdoor catering. Hotel stay for business isn't in the blocked list, but POS rules often make it unusable.",
+  "ref": "CGST Act, s.17(5)(b)",
+  "case": true
+ },
+ {
+  "id": "ITC-032",
+  "topic": "itc",
+  "sub": "Conditions",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client paid a supplier in full and has the invoice, but the supplier never deposited the GST. The department asks the client to reverse ITC. Is that possible under the law?",
+  "options": [
+   "No, the client paid in good faith",
+   "Yes, section 16(2)(c) requires tax to be actually paid to the government; courts are divided on bona fide buyers, but the department can pursue it",
+   "Only if the client knew",
+   "Only for imports"
+  ],
+  "answer": 1,
+  "exp": "The Supreme Court upheld recovery from buyers in some contexts, while several High Courts protected genuine buyers where the department didn't first pursue the supplier. It's a live litigation area.",
+  "ref": "CGST Act, s.16(2)(c)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "ITC-033",
+  "topic": "itc",
+  "sub": "Time limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "On 5 December 2025, a client finds FY 2024-25 invoices worth ₹3 lakh ITC never claimed. What's the position?",
+  "options": [
+   "Claim now",
+   "The section 16(4) deadline (30 November 2025) has passed, so the ITC is lost",
+   "Claim in GSTR-9",
+   "Claim via refund"
+  ],
+  "answer": 1,
+  "exp": "This is why CAs run an ITC sweep in October and November.",
+  "ref": "CGST Act, s.16(4)",
+  "case": true
+ }
+]

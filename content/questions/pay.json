@@ -1,0 +1,440 @@
+[
+ {
+  "id": "PAY-001",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which three electronic ledgers/registers does each taxpayer have on the portal?",
+  "options": [
+   "Cash, credit and liability",
+   "Sales, purchase and stock",
+   "ITC, refund and interest",
+   "Input, output and RCM"
+  ],
+  "answer": 0,
+  "exp": "Electronic cash ledger, electronic credit ledger, and electronic liability register.",
+  "ref": "CGST Act, s.49"
+ },
+ {
+  "id": "PAY-002",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What goes into the electronic cash ledger?",
+  "options": [
+   "ITC",
+   "Amounts deposited through challans (PMT-06), TDS and TCS credits accepted",
+   "Refunds only",
+   "Output tax"
+  ],
+  "answer": 1,
+  "exp": "TDS and TCS credits are credited to the cash ledger once accepted."
+ },
+ {
+  "id": "PAY-003",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What are the minor heads in the cash ledger?",
+  "options": [
+   "Input and output",
+   "Tax, interest, penalty, fee, and others",
+   "CGST, SGST and IGST",
+   "Current and arrears"
+  ],
+  "answer": 1,
+  "exp": "Under each major head (IGST, CGST, SGST/UTGST, cess)."
+ },
+ {
+  "id": "PAY-004",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Money was deposited under the CGST head by mistake instead of IGST. What can be done?",
+  "options": [
+   "Nothing",
+   "Transfer it within the cash ledger using PMT-09",
+   "Apply for a refund only",
+   "Pay again, no adjustment"
+  ],
+  "answer": 1,
+  "exp": "PMT-09 moves amounts between major and minor heads of the cash ledger. It doesn't work for the credit ledger.",
+  "ref": "CGST Rules, r.87(14)"
+ },
+ {
+  "id": "PAY-005",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 3,
+  "type": "tf",
+  "q": "Since August 2022, balance in the cash ledger can be transferred to the cash ledger of a distinct person with the same PAN (e.g. another state's GSTIN).",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Section 49(10) was amended to allow this, provided there are no unpaid dues.",
+  "ref": "CGST Act, s.49(10)"
+ },
+ {
+  "id": "PAY-006",
+  "topic": "pay",
+  "sub": "Challans",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What form is used to create a GST payment challan?",
+  "options": [
+   "PMT-01",
+   "PMT-06",
+   "PMT-09",
+   "DRC-03"
+  ],
+  "answer": 1,
+  "exp": "The challan gets a CPIN when created."
+ },
+ {
+  "id": "PAY-007",
+  "topic": "pay",
+  "sub": "Challans",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How long is a generated challan (CPIN) valid?",
+  "options": [
+   "1 day",
+   "15 days",
+   "30 days",
+   "Until paid"
+  ],
+  "answer": 1,
+  "exp": "After that, a new challan is needed.",
+  "volatile": true
+ },
+ {
+  "id": "PAY-008",
+  "topic": "pay",
+  "sub": "Challans",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After payment, the bank generates a:",
+  "options": [
+   "CPIN",
+   "CIN (Challan Identification Number)",
+   "ARN",
+   "BRN"
+  ],
+  "answer": 1,
+  "exp": "The CIN is 17 characters: the 14-character CPIN plus a 3-character bank code."
+ },
+ {
+  "id": "PAY-009",
+  "topic": "pay",
+  "sub": "Challans",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Over-the-counter (cash or cheque at the bank) payment is allowed up to:",
+  "options": [
+   "₹5,000 per challan",
+   "₹10,000 per challan per tax period",
+   "₹1 lakh",
+   "No limit"
+  ],
+  "answer": 1,
+  "exp": "Larger payments go through net banking, NEFT/RTGS or other electronic modes. Some specified persons are exempt from this cap.",
+  "ref": "CGST Rules, r.87(3)",
+  "volatile": true
+ },
+ {
+  "id": "PAY-010",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Interest rate on delayed payment of tax under section 50(1):",
+  "options": [
+   "12%",
+   "18% per annum",
+   "24%",
+   "15%"
+  ],
+  "answer": 1,
+  "exp": "Calculated from the day after the due date until payment.",
+  "ref": "Notfn. 13/2017-CT",
+  "volatile": true
+ },
+ {
+  "id": "PAY-011",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Interest on delayed tax is calculated on:",
+  "options": [
+   "Gross liability",
+   "The portion paid in cash (net liability after ITC), except where the return is filed after a notice",
+   "Only IGST",
+   "Total turnover"
+  ],
+  "answer": 1,
+  "exp": "The proviso to s.50(1), made retrospective from 1 July 2017.",
+  "ref": "CGST Act, s.50(1) proviso"
+ },
+ {
+  "id": "PAY-012",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Interest on ITC wrongly availed and utilised is charged at:",
+  "options": [
+   "24%",
+   "18%",
+   "12%",
+   "No interest"
+  ],
+  "answer": 1,
+  "exp": "Section 50(3) was amended in 2022 so interest applies only when wrongly availed ITC is also utilised, at 18%.",
+  "ref": "CGST Act, s.50(3); Notfn. 9/2022-CT",
+  "volatile": true
+ },
+ {
+  "id": "PAY-013",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under rule 88B, when is ITC wrongly availed considered 'utilised'?",
+  "options": [
+   "When claimed",
+   "When the balance in the credit ledger falls below the amount wrongly availed",
+   "At year end",
+   "Never"
+  ],
+  "answer": 1,
+  "exp": "Interest runs from when the balance dropped below that amount.",
+  "ref": "CGST Rules, r.88B"
+ },
+ {
+  "id": "PAY-014",
+  "topic": "pay",
+  "sub": "Rules of payment",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What can the electronic credit ledger NOT be used to pay?",
+  "options": [
+   "IGST output tax",
+   "CGST output tax",
+   "Interest and late fees",
+   "SGST output tax"
+  ],
+  "answer": 2,
+  "exp": "Credit ledger pays only output tax. RCM tax, interest, penalty and fees need cash.",
+  "ref": "CGST Act, s.49(4)"
+ },
+ {
+  "id": "PAY-015",
+  "topic": "pay",
+  "sub": "Rules of payment",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 49(8), in what order are liabilities discharged?",
+  "options": [
+   "Current period first",
+   "Self-assessed tax and other dues of previous periods, then current period, then demands",
+   "Demands first",
+   "Any order"
+  ],
+  "answer": 1,
+  "exp": "Older dues get settled first.",
+  "ref": "CGST Act, s.49(8)"
+ },
+ {
+  "id": "PAY-016",
+  "topic": "pay",
+  "sub": "Rules of payment",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's DRC-03 used for?",
+  "options": [
+   "Registration",
+   "Voluntary payment of tax, interest or penalty (e.g. after audit findings or to settle a notice)",
+   "Refunds",
+   "E-way bill"
+  ],
+  "answer": 1,
+  "exp": "Also used to pay mismatches from DRC-01B intimations."
+ },
+ {
+  "id": "PAY-017",
+  "topic": "pay",
+  "sub": "Rules of payment",
+  "diff": 2,
+  "type": "tf",
+  "q": "Late fees for GSTR-3B can be paid using ITC.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Late fees must be paid in cash."
+ },
+ {
+  "id": "PAY-018",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A taxpayer's GSTR-3B for June (due 20 July) shows ₹5 lakh output tax. It uses ₹3 lakh ITC and pays ₹2 lakh in cash, filing on 19 August (30 days late). How much interest is due?",
+  "model": "Interest under section 50(1) is on the net cash liability: ₹2,00,000 x 18% x 30/365 = about ₹2,959. No interest on the ₹3 lakh paid through ITC. There's also a late fee of ₹50 per day for 30 days (₹1,500 total, split CGST and SGST), subject to the cap. Both are paid in cash.",
+  "points": [
+   "Interest on cash portion only",
+   "18% x days/365",
+   "≈ ₹2,959",
+   "Late fee ₹50/day separately"
+  ],
+  "exp": "This calculation is automated in the portal, but it helps to know how.",
+  "ref": "CGST Act, s.50(1), s.47",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "PAY-019",
+  "topic": "pay",
+  "sub": "Rules of payment",
+  "diff": 2,
+  "type": "mcq",
+  "q": "RCM liability is paid from:",
+  "options": [
+   "Credit ledger",
+   "Cash ledger only",
+   "Either",
+   "Refund"
+  ],
+  "answer": 1,
+  "exp": "Section 49(4) allows credit ledger only for output tax, and RCM tax must be paid in cash."
+ },
+ {
+  "id": "PAY-020",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the electronic liability register?",
+  "options": [
+   "A record of ITC",
+   "A record of all tax, interest, late fee and penalty liabilities, both self-assessed and from demands",
+   "A bank statement",
+   "The cash ledger"
+  ],
+  "answer": 1,
+  "exp": "Payments from cash and credit ledgers are debited against it.",
+  "ref": "CGST Rules, r.85"
+ },
+ {
+  "id": "PAY-021",
+  "topic": "pay",
+  "sub": "Challans",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which payment modes are allowed for GST challans?",
+  "options": [
+   "Only cheque",
+   "Net banking, NEFT/RTGS, credit or debit card, UPI, and over-the-counter within limits",
+   "Only cash",
+   "Only card"
+  ],
+  "answer": 1,
+  "exp": "UPI and card payments were added over time.",
+  "volatile": true
+ },
+ {
+  "id": "PAY-022",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 2,
+  "type": "tf",
+  "q": "If a taxpayer files GSTR-3B late but had enough ITC to cover the entire liability, no interest is payable.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Interest applies only on the part paid in cash, unless the return is filed after a notice under section 73/74.",
+  "ref": "CGST Act, s.50(1) proviso"
+ },
+ {
+  "id": "PAY-023",
+  "topic": "pay",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client has ₹3 lakh in the IGST credit ledger and a ₹1 lakh CGST + ₹1 lakh SGST liability this month. How is it offset?",
+  "options": [
+   "Pay ₹2 lakh cash",
+   "Use IGST credit for both CGST and SGST; ₹1 lakh IGST credit stays for later",
+   "Pay CGST in cash, SGST from IGST",
+   "IGST can't pay CGST or SGST"
+  ],
+  "answer": 1,
+  "exp": "IGST credit can pay IGST, CGST and SGST, and it must be used before CGST and SGST credit.",
+  "ref": "CGST Act, s.49(5); r.88A",
+  "case": true
+ },
+ {
+  "id": "PAY-024",
+  "topic": "pay",
+  "sub": "Challans",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client paid a GST challan through the bank, the money left the account, but the portal still shows the challan as 'Not paid'. What next?",
+  "options": [
+   "Pay again",
+   "Wait for the bank to reconcile (it can take a while), and if it doesn't update, raise a grievance using PMT-07 with the bank details",
+   "Cancel the challan",
+   "File 3B without payment"
+  ],
+  "answer": 1,
+  "exp": "Paying twice is a common reaction but just parks money in the ledger.",
+  "ref": "CGST Rules, r.87(8)",
+  "case": true
+ },
+ {
+  "id": "PAY-025",
+  "topic": "pay",
+  "sub": "Rules of payment",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client owes last month's ₹50,000 unpaid interest and this month's tax. It deposits only enough for this month's tax. How does the portal treat it?",
+  "options": [
+   "Current month's tax is settled",
+   "Under section 49(8), earlier dues are settled first, so this month's tax may remain partly unpaid",
+   "It's split evenly",
+   "The interest is waived"
+  ],
+  "answer": 1,
+  "exp": "In practice, offset happens through the return, but CAs need to plan cash for arrears too.",
+  "ref": "CGST Act, s.49(8)",
+  "case": true
+ },
+ {
+  "id": "PAY-026",
+  "topic": "pay",
+  "sub": "Interest",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's refund application is delayed 100 days after the complete application was acknowledged. Is interest due to the client?",
+  "options": [
+   "No",
+   "Yes, 6% interest from the 61st day until the refund is paid",
+   "Only 18%",
+   "Only if the client asks in court"
+  ],
+  "answer": 1,
+  "exp": "The department pays interest under section 56.",
+  "ref": "CGST Act, s.56",
+  "case": true
+ }
+]

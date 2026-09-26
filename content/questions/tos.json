@@ -1,0 +1,434 @@
+[
+ {
+  "id": "TOS-001",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 1,
+  "type": "mcq",
+  "q": "For goods under forward charge, time of supply is:",
+  "options": [
+   "Date of payment",
+   "Date of invoice, or the last date by which the invoice should have been issued, whichever is earlier",
+   "Date of delivery",
+   "End of the month"
+  ],
+  "answer": 1,
+  "exp": "Section 12(2). Advances for goods are no longer taxed for most taxpayers.",
+  "ref": "CGST Act, s.12(2)"
+ },
+ {
+  "id": "TOS-002",
+  "topic": "tos",
+  "sub": "Advances",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A supplier receives an advance for goods to be supplied next month. Is GST payable on the advance?",
+  "options": [
+   "Yes, at the time of receipt",
+   "No, for most registered persons (other than composition taxpayers), GST on goods is payable at invoice time",
+   "Yes, but only IGST",
+   "Only if above ₹1 lakh"
+  ],
+  "answer": 1,
+  "exp": "Notification 66/2017-CT removed the requirement to pay tax on advances for goods for most taxpayers.",
+  "ref": "Notfn. 66/2017-CT",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "TOS-003",
+  "topic": "tos",
+  "sub": "Advances",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A supplier receives an advance for services on 10 March, and the invoice is issued on 5 April. When is GST due on the advance?",
+  "options": [
+   "April, when invoiced",
+   "March, when the advance is received",
+   "When the service is completed",
+   "Never, advances are exempt"
+  ],
+  "answer": 1,
+  "exp": "For services, time of supply is the earliest of invoice date and payment receipt (if the invoice is issued in time). Advances for services are taxable on receipt and reported in GSTR-1 Table 11.",
+  "ref": "CGST Act, s.13(2)",
+  "case": true
+ },
+ {
+  "id": "TOS-004",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A service is completed on 1 June but the invoice isn't issued until 20 July (beyond the 30-day limit). Payment is received on 25 July. Time of supply?",
+  "options": [
+   "20 July",
+   "25 July",
+   "1 June",
+   "30 June"
+  ],
+  "answer": 2,
+  "exp": "If the invoice isn't issued within the prescribed time, time of supply is the earlier of the date of provision of service and date of payment.",
+  "ref": "CGST Act, s.13(2)(b)",
+  "case": true
+ },
+ {
+  "id": "TOS-005",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under reverse charge for goods, time of supply is the earliest of:",
+  "options": [
+   "Invoice date and payment date",
+   "Date of receipt of goods, date of payment, or the date immediately after 30 days from the supplier's invoice",
+   "Date of receipt and the 60th day",
+   "The self-invoice date"
+  ],
+  "answer": 1,
+  "exp": "For RCM goods it's 30 days from the invoice; for services it's 60 days.",
+  "ref": "CGST Act, s.12(3)"
+ },
+ {
+  "id": "TOS-006",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under reverse charge for services, time of supply is the earlier of the payment date and:",
+  "options": [
+   "30 days from the invoice",
+   "The date immediately after 60 days from the supplier's invoice",
+   "The date of the self-invoice",
+   "The end of the quarter"
+  ],
+  "answer": 1,
+  "exp": "Section 13(3). For associated enterprises abroad, it's the earlier of entry in books or payment.",
+  "ref": "CGST Act, s.13(3)"
+ },
+ {
+  "id": "TOS-007",
+  "topic": "tos",
+  "sub": "Advances",
+  "diff": 2,
+  "type": "tf",
+  "q": "If a customer pays up to ₹1,000 more than the invoice amount, the supplier can treat the invoice date as the time of supply for that excess.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "This is an option to avoid issuing receipts for tiny excess payments.",
+  "ref": "CGST Act, s.12(2) & 13(2) proviso"
+ },
+ {
+  "id": "TOS-008",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GST rate on a service changes from 12% to 18% on 1 October. Service provided in September, invoice issued in September, payment received in October. Which rate applies?",
+  "options": [
+   "18%",
+   "12%",
+   "Average",
+   "Supplier's choice"
+  ],
+  "answer": 1,
+  "exp": "Section 14: if supply was before the change and the invoice was issued before it, the old rate applies regardless of later payment. Two of the three events (supply, invoice, payment) fall before the change.",
+  "ref": "CGST Act, s.14(a)(ii)"
+ },
+ {
+  "id": "TOS-009",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For continuous supply of services, when must the invoice be issued if the due date of payment is ascertainable from the contract?",
+  "options": [
+   "Monthly regardless",
+   "On or before the due date of payment",
+   "Within 30 days of completion",
+   "At the start of the contract"
+  ],
+  "answer": 1,
+  "exp": "Section 31(5)(a).",
+  "ref": "CGST Act, s.31(5)"
+ },
+ {
+  "id": "TOS-010",
+  "topic": "tos",
+  "sub": "Value inclusions",
+  "diff": 1,
+  "type": "mcq",
+  "q": "The basic measure of value for GST is:",
+  "options": [
+   "MRP",
+   "Transaction value, the price actually paid or payable, where parties are unrelated and price is the sole consideration",
+   "Cost plus 10%",
+   "Open market value always"
+  ],
+  "answer": 1,
+  "exp": "Section 15(1). Valuation rules apply when those conditions aren't met.",
+  "ref": "CGST Act, s.15(1)"
+ },
+ {
+  "id": "TOS-011",
+  "topic": "tos",
+  "sub": "Value inclusions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is included in the value of supply?",
+  "options": [
+   "GST itself",
+   "Packing charges and commission charged by the supplier",
+   "Discounts shown on the invoice",
+   "Subsidies from the Central government"
+  ],
+  "answer": 1,
+  "exp": "Incidental expenses like packing and commission are included. GST is excluded, pre-agreed discounts on the invoice are excluded, and government subsidies are excluded.",
+  "ref": "CGST Act, s.15(2)(c)"
+ },
+ {
+  "id": "TOS-012",
+  "topic": "tos",
+  "sub": "Value inclusions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A buyer pays late and is charged ₹2,000 interest by the supplier. GST on the interest?",
+  "options": [
+   "No GST on interest",
+   "GST at the rate of the original supply",
+   "Only if above ₹5,000",
+   "18% always"
+  ],
+  "answer": 1,
+  "exp": "Interest, late fee or penalty for delayed payment of consideration is part of the value of supply.",
+  "ref": "CGST Act, s.15(2)(d)",
+  "case": true
+ },
+ {
+  "id": "TOS-013",
+  "topic": "tos",
+  "sub": "Value inclusions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A state government gives a manufacturer a subsidy directly linked to the price of its goods. Is it included in the value?",
+  "options": [
+   "Yes",
+   "No, subsidies from Central and State governments are excluded",
+   "Only 50%",
+   "Only if shown on the invoice"
+  ],
+  "answer": 1,
+  "exp": "Subsidies linked to price are included except those provided by the Central and State governments.",
+  "ref": "CGST Act, s.15(2)(e)",
+  "case": true
+ },
+ {
+  "id": "TOS-014",
+  "topic": "tos",
+  "sub": "Value inclusions",
+  "diff": 3,
+  "type": "mcq",
+  "q": "The buyer pays freight that was the supplier's contractual liability, directly to the transporter. Is it part of the supplier's taxable value?",
+  "options": [
+   "No, the buyer paid it",
+   "Yes, amounts the supplier was liable to pay but the recipient paid are included",
+   "Only if above ₹10,000",
+   "Freight is always exempt"
+  ],
+  "answer": 1,
+  "exp": "Section 15(2)(b) includes any amount the supplier is liable to pay but which the recipient has incurred and which isn't already in the price.",
+  "ref": "CGST Act, s.15(2)(b)"
+ },
+ {
+  "id": "TOS-015",
+  "topic": "tos",
+  "sub": "Discounts",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A 5% discount is agreed before the sale and shown on the invoice. Is GST charged on the pre-discount value?",
+  "options": [
+   "Yes",
+   "No, a discount given before or at the time of supply and recorded on the invoice is excluded",
+   "Only for B2C",
+   "Only if the buyer is registered"
+  ],
+  "answer": 1,
+  "exp": "Section 15(3)(a).",
+  "ref": "CGST Act, s.15(3)(a)",
+  "case": true
+ },
+ {
+  "id": "TOS-016",
+  "topic": "tos",
+  "sub": "Discounts",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A year-end volume discount is given after supply. When can it reduce the taxable value?",
+  "options": [
+   "Always",
+   "When it's per a pre-existing agreement, can be linked to specific invoices, and is issued through a credit note with the recipient reversing the corresponding ITC",
+   "Never",
+   "Only for exports"
+  ],
+  "answer": 1,
+  "exp": "Post-supply discounts reduce value only with these conditions. Otherwise it's a commercial credit note that doesn't reduce GST.",
+  "ref": "CGST Act, s.15(3)(b), s.34",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "TOS-017",
+  "topic": "tos",
+  "sub": "Discounts",
+  "diff": 2,
+  "type": "tf",
+  "q": "A financial or commercial credit note (without GST) can be issued for a post-sale discount that doesn't meet the section 15(3) conditions.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "The supplier's GST liability stays the same and the recipient doesn't reverse ITC. It's a common practice.",
+  "ref": "CBIC Circular 92/11/2019",
+  "case": true
+ },
+ {
+  "id": "TOS-018",
+  "topic": "tos",
+  "sub": "Valuation rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A holding company sells goods to its subsidiary (related parties). The subsidiary can claim full ITC. What value is used?",
+  "options": [
+   "Always open market value",
+   "The invoice value is deemed to be the open market value",
+   "Cost plus 10%",
+   "90% of the retail price"
+  ],
+  "answer": 1,
+  "exp": "Second proviso to rule 28: where the recipient is eligible for full ITC, the invoice value is accepted as open market value. This matters a lot for intra-group cross-charges.",
+  "ref": "CGST Rules, r.28",
+  "case": true
+ },
+ {
+  "id": "TOS-019",
+  "topic": "tos",
+  "sub": "Valuation rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under rule 30 (cost method), value is taken as:",
+  "options": [
+   "100% of cost",
+   "110% of the cost of production, manufacture or acquisition",
+   "120% of cost",
+   "Market price"
+  ],
+  "answer": 1,
+  "exp": "Rule 30 applies when rules 27 to 29 can't determine value.",
+  "ref": "CGST Rules, r.30"
+ },
+ {
+  "id": "TOS-020",
+  "topic": "tos",
+  "sub": "Valuation rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A dealer in second-hand goods who didn't take ITC on purchase can pay GST on:",
+  "options": [
+   "The full selling price",
+   "The margin, selling price minus purchase price (ignored if negative)",
+   "50% of the price",
+   "Nothing"
+  ],
+  "answer": 1,
+  "exp": "Rule 32(5): margin scheme for second-hand goods where no ITC was availed on purchase.",
+  "ref": "CGST Rules, r.32(5)"
+ },
+ {
+  "id": "TOS-021",
+  "topic": "tos",
+  "sub": "Valuation rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A pure agent recovers expenses from the client (e.g. government fees paid on the client's behalf). How are they treated?",
+  "options": [
+   "Included in taxable value",
+   "Excluded, if pure agent conditions in rule 33 are met",
+   "Taxed at 5%",
+   "Taxed under reverse charge"
+  ],
+  "answer": 1,
+  "exp": "Pure agent expenses are excluded when the agent acts under a contract, doesn't hold title, uses the service only on the client's behalf and recovers the exact amount.",
+  "ref": "CGST Rules, r.33",
+  "case": true
+ },
+ {
+  "id": "TOS-022",
+  "topic": "tos",
+  "sub": "Valuation rules",
+  "diff": 3,
+  "type": "scenario",
+  "q": "An Indian branch of a company provides back-office services to its head office in another state without any charge. The head office can claim full ITC. What value should the branch use for GST?",
+  "model": "Branch and head office in different states are distinct persons, so under Schedule I this is a supply even without consideration. Valuation is under rule 28. Because the recipient is eligible for full ITC, whatever value the branch declares on the invoice is deemed open market value. Circular 199/11/2023 clarified that if the recipient can claim full ITC, even a nil value declared on the invoice is accepted, and for certain components like employee salaries a cross-charge isn't mandatory.",
+  "points": [
+   "Distinct persons, so a supply under Schedule I",
+   "Rule 28 valuation",
+   "Invoice value deemed OMV if full ITC available",
+   "Circular 199/11/2023 on cross-charge"
+  ],
+  "exp": "Cross-charge between head office and branches is a big practical topic for multi-state companies.",
+  "ref": "CGST Rules, r.28; Circular 199/11/2023",
+  "case": true
+ },
+ {
+  "id": "TOS-023",
+  "topic": "tos",
+  "sub": "Time of supply",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For supply of vouchers, how is time of supply generally determined under the original sections 12(4)/13(4)?",
+  "options": [
+   "Redemption date always",
+   "Date of issue if the supply is identifiable at issue; otherwise date of redemption",
+   "Date of purchase",
+   "Never"
+  ],
+  "answer": 1,
+  "exp": "The GST Council later recommended that vouchers be treated as neither goods nor services, and the law was amended. Check the current position.",
+  "ref": "CGST Act, s.12(4)",
+  "volatile": true
+ },
+ {
+  "id": "TOS-024",
+  "topic": "tos",
+  "sub": "Value inclusions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Is TCS under income tax included in the value for GST?",
+  "options": [
+   "Yes",
+   "No, it's an income-tax collection and not part of consideration for supply",
+   "Only for exports",
+   "Only 50%"
+  ],
+  "answer": 1,
+  "exp": "CBIC clarified that GST is calculated on value excluding income-tax TCS.",
+  "ref": "Circular 76/50/2018"
+ },
+ {
+  "id": "TOS-025",
+  "topic": "tos",
+  "sub": "Discounts",
+  "diff": 2,
+  "type": "tf",
+  "q": "Cash discount given for early payment, if known and recorded at the time of the invoice, can be deducted from the taxable value.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "If it's agreed before or at the time of supply and shown on the invoice, it's excluded under section 15(3)(a)."
+ }
+]

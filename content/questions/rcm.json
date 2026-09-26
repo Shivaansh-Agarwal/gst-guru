@@ -1,0 +1,447 @@
+[
+ {
+  "id": "RCM-001",
+  "topic": "rcm",
+  "sub": "Concept",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Under reverse charge, who pays the GST to the government?",
+  "options": [
+   "The supplier",
+   "The recipient",
+   "The transporter",
+   "Both, half each"
+  ],
+  "answer": 1,
+  "exp": "Reverse charge shifts the liability to the recipient.",
+  "ref": "CGST Act, s.2(98)"
+ },
+ {
+  "id": "RCM-002",
+  "topic": "rcm",
+  "sub": "Concept",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the difference between section 9(3) and 9(4) of the CGST Act?",
+  "options": [
+   "9(3) is for goods and 9(4) is for services",
+   "9(3) covers notified supplies regardless of supplier; 9(4) covers notified supplies by unregistered suppliers to notified classes of registered persons",
+   "9(3) is for imports only",
+   "There's no difference"
+  ],
+  "answer": 1,
+  "exp": "9(4) today applies to specific cases like promoters of real estate buying from unregistered persons.",
+  "ref": "CGST Act, s.9(3),(4)"
+ },
+ {
+  "id": "RCM-003",
+  "topic": "rcm",
+  "sub": "Concept",
+  "diff": 2,
+  "type": "tf",
+  "q": "RCM liability can be paid using ITC available in the electronic credit ledger.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "RCM tax must be paid in cash. You can then claim ITC of that tax (if eligible) in the same return.",
+  "ref": "CGST Act, s.49(4) read with s.2(82)"
+ },
+ {
+  "id": "RCM-004",
+  "topic": "rcm",
+  "sub": "Concept",
+  "diff": 2,
+  "type": "tf",
+  "q": "A person who only supplies services that are entirely under reverse charge doesn't need to register.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Section 23(1)(b) exempts persons making only supplies where the recipient pays the entire tax.",
+  "ref": "CGST Act, s.23(1)(b)",
+  "case": true
+ },
+ {
+  "id": "RCM-005",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Legal services by an advocate to a business entity are taxed under:",
+  "options": [
+   "Forward charge",
+   "Reverse charge, the business entity pays",
+   "Exempt always",
+   "Composition"
+  ],
+  "answer": 1,
+  "exp": "Advocates and law firms don't charge GST to business entities; the recipient pays under RCM. Services to individuals and small businesses below the threshold are exempt.",
+  "ref": "Notfn. 13/2017-CT(R)"
+ },
+ {
+  "id": "RCM-006",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A company pays sitting fees to an independent director. GST?",
+  "options": [
+   "Director charges GST",
+   "Company pays GST under reverse charge",
+   "No GST",
+   "Only TDS applies"
+  ],
+  "answer": 1,
+  "exp": "Services by a director to the company are under RCM. Salary to a whole-time director as an employee is outside GST.",
+  "ref": "Notfn. 13/2017-CT(R)"
+ },
+ {
+  "id": "RCM-007",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these services is under reverse charge when supplied to a body corporate?",
+  "options": [
+   "Hotel accommodation",
+   "Sponsorship services",
+   "Software development",
+   "Advertising by a media company"
+  ],
+  "answer": 1,
+  "exp": "Sponsorship to a body corporate or partnership firm is under RCM.",
+  "ref": "Notfn. 13/2017-CT(R)"
+ },
+ {
+  "id": "RCM-008",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An unregistered person rents a shop (commercial property) to a registered business. From 10 October 2024, GST is:",
+  "options": [
+   "Not payable as the landlord is unregistered",
+   "Payable by the registered tenant under reverse charge",
+   "Payable by the landlord",
+   "Exempt"
+  ],
+  "answer": 1,
+  "exp": "This was added on the 54th Council's recommendation. Composition tenants were later excluded.",
+  "ref": "Notfn. 9/2024-CT(R)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "RCM-009",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Renting of a residential dwelling to a registered person (for any use) is:",
+  "options": [
+   "Exempt",
+   "Under reverse charge, payable by the registered tenant",
+   "Forward charge by landlord",
+   "Taxed at 5%"
+  ],
+  "answer": 1,
+  "exp": "From 18 July 2022. There's an exemption when a proprietor rents in personal capacity for residence.",
+  "ref": "Notfn. 5/2022-CT(R)",
+  "volatile": true
+ },
+ {
+  "id": "RCM-010",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A GTA (goods transport agency) that hasn't opted to pay tax itself transports goods for a registered factory. Who pays GST?",
+  "options": [
+   "The GTA",
+   "The factory under reverse charge",
+   "No one, GTA services are exempt",
+   "The consignee always"
+  ],
+  "answer": 1,
+  "exp": "GTA services to specified recipients (factories, companies, registered persons, etc.) are under RCM unless the GTA opts for forward charge.",
+  "ref": "Notfn. 13/2017-CT(R)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "RCM-011",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Security services (supply of security personnel) by an individual or firm (not a body corporate) to a registered person are:",
+  "options": [
+   "Forward charge",
+   "Reverse charge",
+   "Exempt",
+   "Composition"
+  ],
+  "answer": 1,
+  "exp": "Added from 1 January 2019, with exclusions for certain recipients like composition taxpayers.",
+  "ref": "Notfn. 29/2018-CT(R)"
+ },
+ {
+  "id": "RCM-012",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Services by an insurance agent to an insurance company are:",
+  "options": [
+   "Forward charge",
+   "Reverse charge, the insurance company pays",
+   "Exempt",
+   "Taxed at 5%"
+  ],
+  "answer": 1,
+  "exp": "Similarly, recovery agents to banks or NBFCs and business facilitators to banks are under RCM.",
+  "ref": "Notfn. 13/2017-CT(R)"
+ },
+ {
+  "id": "RCM-013",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 3,
+  "type": "mcq",
+  "q": "An Indian company imports consultancy services from a UK firm. How is GST paid?",
+  "options": [
+   "Not taxable, supplier is abroad",
+   "Indian company pays IGST under reverse charge",
+   "UK firm registers and charges IGST",
+   "Only if above ₹20 lakh"
+  ],
+  "answer": 1,
+  "exp": "Import of services (other than OIDAR to non-business recipients) is under RCM for the importer.",
+  "ref": "IGST Act, s.5(3); Notfn. 10/2017-IT(R)"
+ },
+ {
+  "id": "RCM-014",
+  "topic": "rcm",
+  "sub": "Notified services",
+  "diff": 3,
+  "type": "mcq",
+  "q": "In Mohit Minerals (2022), the Supreme Court held what about IGST on ocean freight under reverse charge for CIF imports?",
+  "options": [
+   "It's valid",
+   "It's unconstitutional, because it's part of a composite supply of goods already taxed at import",
+   "It's payable by the shipping line",
+   "It's payable at 5% on 10% of CIF value"
+  ],
+  "answer": 1,
+  "exp": "Taxing the freight separately would double-tax the composite supply. The entry was later omitted.",
+  "ref": "Union of India v. Mohit Minerals, 2022"
+ },
+ {
+  "id": "RCM-015",
+  "topic": "rcm",
+  "sub": "Notified goods",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these goods is under reverse charge?",
+  "options": [
+   "Cashew nuts (not shelled) supplied by an agriculturist",
+   "Branded rice",
+   "Mobile phones",
+   "Cement"
+  ],
+  "answer": 0,
+  "exp": "Raw cashew, bidi wrapper leaves, tobacco leaves, raw cotton from agriculturists and a few others are notified goods under RCM.",
+  "ref": "Notfn. 4/2017-CT(R)"
+ },
+ {
+  "id": "RCM-016",
+  "topic": "rcm",
+  "sub": "Notified goods",
+  "diff": 3,
+  "type": "mcq",
+  "q": "From October 2024, a registered person buying metal scrap from an unregistered supplier must:",
+  "options": [
+   "Pay nothing",
+   "Pay GST under reverse charge",
+   "Deduct TDS only",
+   "Pay TCS"
+  ],
+  "answer": 1,
+  "exp": "Metal scrap from unregistered persons was added to the RCM list, along with a TDS obligation for B2B scrap sales.",
+  "ref": "Notfn. 6/2024-CT(R)",
+  "volatile": true
+ },
+ {
+  "id": "RCM-017",
+  "topic": "rcm",
+  "sub": "Notified goods",
+  "diff": 2,
+  "type": "tf",
+  "q": "Used vehicles and seized goods sold by the government to a registered person are under reverse charge.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "The buyer pays GST under RCM.",
+  "ref": "Notfn. 4/2017-CT(R)"
+ },
+ {
+  "id": "RCM-018",
+  "topic": "rcm",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Since November 2024, when a registered person receives RCM supplies from an unregistered supplier, it must issue a self-invoice within:",
+  "options": [
+   "7 days",
+   "30 days of receipt of the supply",
+   "Same day",
+   "At the end of the FY"
+  ],
+  "answer": 1,
+  "exp": "Rule 47A added a 30-day limit for self-invoices under section 31(3)(f).",
+  "ref": "CGST Rules, r.47A",
+  "volatile": true
+ },
+ {
+  "id": "RCM-019",
+  "topic": "rcm",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What document does the recipient issue to the supplier when making payment under RCM?",
+  "options": [
+   "Tax invoice",
+   "Payment voucher",
+   "Delivery challan",
+   "Bill of supply"
+  ],
+  "answer": 1,
+  "exp": "Section 31(3)(g).",
+  "ref": "CGST Act, s.31(3)(g)"
+ },
+ {
+  "id": "RCM-020",
+  "topic": "rcm",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where is RCM liability reported in GSTR-3B?",
+  "options": [
+   "Table 3.1(a)",
+   "Table 3.1(d), inward supplies liable to reverse charge",
+   "Table 4(A)(5)",
+   "Table 5"
+  ],
+  "answer": 1,
+  "exp": "The ITC on it goes in 4(A)(2) for import of services or 4(A)(3) for other RCM.",
+  "ref": "GSTR-3B"
+ },
+ {
+  "id": "RCM-021",
+  "topic": "rcm",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "tf",
+  "q": "A composition taxpayer receiving a service under RCM must pay tax at the normal rate, not the composition rate.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Composition rates apply only to outward supplies. RCM on inward supplies is at normal rates, and composition taxpayers can't take ITC.",
+  "case": true
+ },
+ {
+  "id": "RCM-022",
+  "topic": "rcm",
+  "sub": "Section 9(5)",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 9(5), which party pays GST on restaurant services ordered through a food delivery app (from 1 January 2022)?",
+  "options": [
+   "The restaurant",
+   "The e-commerce operator (the app)",
+   "The customer",
+   "Delivery partner"
+  ],
+  "answer": 1,
+  "exp": "The ECO is treated as the supplier for these notified services.",
+  "ref": "CGST Act, s.9(5); Notfn. 17/2021-CT(R)"
+ },
+ {
+  "id": "RCM-023",
+  "topic": "rcm",
+  "sub": "Section 9(5)",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is NOT notified under section 9(5)?",
+  "options": [
+   "Passenger transport through a ride-hailing app",
+   "Accommodation services through an app (with some exceptions)",
+   "Housekeeping services like plumbing through an app",
+   "Sale of electronics through a marketplace"
+  ],
+  "answer": 3,
+  "exp": "Goods sales through marketplaces fall under TCS (s.52), not s.9(5).",
+  "ref": "Notfn. 17/2017-CT(R)"
+ },
+ {
+  "id": "RCM-024",
+  "topic": "rcm",
+  "sub": "Section 9(5)",
+  "diff": 3,
+  "type": "tf",
+  "q": "An e-commerce operator paying tax under section 9(5) can use its ITC to pay that liability.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Section 9(5) liability must be paid in cash. It's a liability the ECO discharges as a deemed supplier, and it can't be set off against the ECO's own credit.",
+  "ref": "CBIC Circular 167/23/2021",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "RCM-025",
+  "topic": "rcm",
+  "sub": "Compliance",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A software company in Karnataka pays ₹5 lakh to a UK firm for market research and ₹50,000 as legal fees to an Indian advocate. What GST compliance does it need?",
+  "model": "Both are under reverse charge. The UK research is an import of services: pay IGST at 18% (₹90,000) in cash under RCM, report in GSTR-3B Table 3.1(d), and claim ITC in 4(A)(2). The advocate's fees: pay CGST+SGST at 18% (₹9,000) under RCM in cash, report in 3.1(d), and claim ITC in 4(A)(3). The advocate doesn't issue a GST invoice, so the company issues a self-invoice (within 30 days, since the advocate is typically unregistered) and a payment voucher.",
+  "points": [
+   "Import of services: IGST under RCM",
+   "Advocate: CGST+SGST under RCM",
+   "Pay RCM in cash",
+   "Report in 3.1(d), ITC in 4(A)(2) and 4(A)(3)",
+   "Self-invoice and payment voucher"
+  ],
+  "exp": "ITC on RCM is usually available, so the net cost is cash flow, not tax.",
+  "ref": "IGST Act, s.5(3); CGST Act, s.9(3)",
+  "case": true
+ },
+ {
+  "id": "RCM-026",
+  "topic": "rcm",
+  "sub": "Compliance",
+  "diff": 2,
+  "type": "mcq",
+  "q": "During a GST audit, the officer finds a client paid ₹6 lakh to an advocate over the year without paying RCM. What does the client owe?",
+  "options": [
+   "Nothing, the advocate should have charged GST",
+   "18% RCM on ₹6 lakh with interest; the ITC can then be claimed (subject to time limits)",
+   "Only a penalty",
+   "Only interest"
+  ],
+  "answer": 1,
+  "exp": "RCM paid late still generates ITC, but only if it's within the section 16(4) window. Interest is a real cost.",
+  "ref": "Notfn. 13/2017-CT(R)",
+  "case": true
+ }
+]

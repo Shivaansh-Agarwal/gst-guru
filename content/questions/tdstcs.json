@@ -1,0 +1,422 @@
+[
+ {
+  "id": "TDS-001",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Who deducts TDS under section 51 of the CGST Act?",
+  "options": [
+   "All companies",
+   "Government departments, local authorities, government agencies and other notified persons",
+   "Banks only",
+   "E-commerce operators"
+  ],
+  "answer": 1,
+  "exp": "It's different from income-tax TDS.",
+  "ref": "CGST Act, s.51"
+ },
+ {
+  "id": "TDS-002",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the GST TDS rate?",
+  "options": [
+   "1%",
+   "2% (1% CGST + 1% SGST, or 2% IGST)",
+   "5%",
+   "0.5%"
+  ],
+  "answer": 1,
+  "exp": "Deducted from payments to the supplier.",
+  "ref": "CGST Act, s.51(1)"
+ },
+ {
+  "id": "TDS-003",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GST TDS applies when the total value of supply under a contract exceeds:",
+  "options": [
+   "₹50,000",
+   "₹2.5 lakh (excluding tax)",
+   "₹10 lakh",
+   "₹1 crore"
+  ],
+  "answer": 1,
+  "exp": "The value excludes the tax shown on the invoice.",
+  "ref": "CGST Act, s.51(1) proviso"
+ },
+ {
+  "id": "TDS-004",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A government department registered in Delhi buys services from a Haryana supplier where POS is Haryana. Does TDS apply?",
+  "options": [
+   "Yes",
+   "No, TDS doesn't apply where the supplier's location and place of supply are in a state different from the recipient's registration",
+   "Only IGST TDS",
+   "Only if above ₹10 lakh"
+  ],
+  "answer": 1,
+  "exp": "The proviso avoids cases where TDS would need to be deducted for a state where the deductor isn't registered.",
+  "ref": "CGST Act, s.51(1) proviso",
+  "case": true
+ },
+ {
+  "id": "TDS-005",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "By when does the deductor file GSTR-7?",
+  "options": [
+   "10th of the next month",
+   "20th",
+   "11th",
+   "Quarterly"
+  ],
+  "answer": 0,
+  "exp": "The supplier sees it in the TDS/TCS credit received section and accepts it.",
+  "volatile": true
+ },
+ {
+  "id": "TDS-006",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where does a supplier's accepted TDS credit go?",
+  "options": [
+   "Credit ledger",
+   "Cash ledger",
+   "Liability register",
+   "Refund"
+  ],
+  "answer": 1,
+  "exp": "TDS and TCS credits are cash-equivalent and can pay any liability."
+ },
+ {
+  "id": "TDS-007",
+  "topic": "tdstcs",
+  "sub": "TCS",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Who collects GST TCS under section 52?",
+  "options": [
+   "All sellers",
+   "E-commerce operators, on supplies made through them where they collect the consideration",
+   "Banks",
+   "Transporters"
+  ],
+  "answer": 1,
+  "exp": "Marketplaces like Amazon or Flipkart collect it from sellers' payouts.",
+  "ref": "CGST Act, s.52"
+ },
+ {
+  "id": "TDS-008",
+  "topic": "tdstcs",
+  "sub": "TCS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the GST TCS rate from 10 July 2024?",
+  "options": [
+   "1%",
+   "0.5% (0.25% CGST + 0.25% SGST, or 0.5% IGST)",
+   "2%",
+   "0.1%"
+  ],
+  "answer": 1,
+  "exp": "It was reduced from 1%.",
+  "ref": "Notfn. 15/2024-CT",
+  "volatile": true
+ },
+ {
+  "id": "TDS-009",
+  "topic": "tdstcs",
+  "sub": "TCS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "TCS is calculated on:",
+  "options": [
+   "Gross sales",
+   "Net value of taxable supplies (gross taxable supplies minus returns), excluding supplies notified under section 9(5)",
+   "Commission only",
+   "Profit"
+  ],
+  "answer": 1,
+  "exp": "Returns in the same month reduce the base.",
+  "ref": "CGST Act, s.52(1)"
+ },
+ {
+  "id": "TDS-010",
+  "topic": "tdstcs",
+  "sub": "TCS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which return does an ECO file for TCS?",
+  "options": [
+   "GSTR-7",
+   "GSTR-8, by the 10th of the next month",
+   "GSTR-6",
+   "GSTR-1"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9B is the annual TCS statement.",
+  "volatile": true
+ },
+ {
+  "id": "TDS-011",
+  "topic": "tdstcs",
+  "sub": "Sellers on platforms",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where does a seller report supplies made through an e-commerce operator in GSTR-1?",
+  "options": [
+   "Table 4 only",
+   "Table 14 (supplies through ECO), with the ECO's GSTIN",
+   "Table 12",
+   "Nowhere"
+  ],
+  "answer": 1,
+  "exp": "Table 14 was added in 2022 so ECO-wise supplies can be matched with TCS."
+ },
+ {
+  "id": "TDS-012",
+  "topic": "tdstcs",
+  "sub": "Sellers on platforms",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can a person below the registration threshold sell services through an e-commerce platform without registering?",
+  "options": [
+   "No, registration is compulsory",
+   "Yes, service providers below the threshold are exempt from compulsory registration",
+   "Only for B2C",
+   "Only for exports"
+  ],
+  "answer": 1,
+  "exp": "Notification 65/2017-CT exempted them. Goods sellers have different rules.",
+  "ref": "Notfn. 65/2017-CT"
+ },
+ {
+  "id": "TDS-013",
+  "topic": "tdstcs",
+  "sub": "Sellers on platforms",
+  "diff": 3,
+  "type": "mcq",
+  "q": "From 1 October 2023, which small goods sellers can supply through ECOs without regular registration?",
+  "options": [
+   "Anyone",
+   "Unregistered persons below the threshold making intra-state supplies (with PAN enrolment), and composition taxpayers intra-state",
+   "Only exporters",
+   "Nobody"
+  ],
+  "answer": 1,
+  "exp": "The ECO must not allow inter-state supplies by them.",
+  "ref": "Notfn. 34/2023-CT",
+  "volatile": true
+ },
+ {
+  "id": "TDS-014",
+  "topic": "tdstcs",
+  "sub": "Platform obligations",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Must an e-commerce operator register even if its turnover is small?",
+  "options": [
+   "No",
+   "Yes, ECOs required to collect TCS must register compulsorily",
+   "Only above ₹20 lakh",
+   "Only for goods"
+  ],
+  "answer": 1,
+  "exp": "Section 24(x).",
+  "ref": "CGST Act, s.24(x)"
+ },
+ {
+  "id": "TDS-015",
+  "topic": "tdstcs",
+  "sub": "Platform obligations",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A marketplace also sells its own inventory. For its own sales, it:",
+  "options": [
+   "Collects TCS on itself",
+   "Pays GST as a regular supplier; TCS applies only to supplies by other sellers",
+   "Is exempt",
+   "Pays under RCM"
+  ],
+  "answer": 1,
+  "exp": "TCS is on supplies made by other suppliers through the platform."
+ },
+ {
+  "id": "TDS-016",
+  "topic": "tdstcs",
+  "sub": "Platform obligations",
+  "diff": 3,
+  "type": "mcq",
+  "q": "How is income-tax TCS/TDS under section 194-O related to GST TCS?",
+  "options": [
+   "Same thing",
+   "Separate: 194-O is under the Income Tax Act, GST TCS is under section 52 CGST; both can apply to the same transaction",
+   "194-O replaced GST TCS",
+   "GST TCS is a part of 194-O"
+  ],
+  "answer": 1,
+  "exp": "Sellers see two different deductions in their payouts."
+ },
+ {
+  "id": "TDS-017",
+  "topic": "tdstcs",
+  "sub": "Platform obligations",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A seller on a marketplace sold goods worth ₹10 lakh (taxable value, intra-state) in a month, with ₹1 lakh returns in the same month. How much GST TCS does the marketplace collect, and how does the seller use it?",
+  "model": "TCS base is net taxable value: ₹10 lakh - ₹1 lakh = ₹9 lakh. At 0.5% (0.25% CGST + 0.25% SGST), TCS = ₹4,500 (₹2,250 each). The ECO reports it in GSTR-8. The seller accepts the credit on the portal and it goes to the seller's cash ledger, where it can pay any liability. The seller also reports the sales in GSTR-1 Table 14.",
+  "points": [
+   "Net value after returns",
+   "0.5% rate",
+   "₹4,500 total",
+   "Credited to cash ledger after acceptance"
+  ],
+  "exp": "TCS isn't an extra tax on the buyer, it's an advance collection from the seller.",
+  "ref": "CGST Act, s.52",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "TDS-018",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Does GST TDS apply on a ₹3 lakh contract where the supply is exempt?",
+  "options": [
+   "Yes",
+   "No, TDS is on taxable supplies only",
+   "Only CGST",
+   "Only above ₹10 lakh"
+  ],
+  "answer": 1,
+  "exp": "TDS is deducted on payment for taxable goods or services."
+ },
+ {
+  "id": "TDS-019",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "tf",
+  "q": "The TDS deductor must issue a TDS certificate to the supplier, and it's now auto-generated as GSTR-7A.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "GSTR-7A is available on the portal once GSTR-7 is filed."
+ },
+ {
+  "id": "TDS-020",
+  "topic": "tdstcs",
+  "sub": "TCS",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A marketplace collects TCS but files GSTR-8 late. What's the risk for sellers?",
+  "options": [
+   "None",
+   "Sellers don't see the TCS credit in their cash ledger until the ECO files",
+   "They pay double TCS",
+   "They lose ITC"
+  ],
+  "answer": 1,
+  "exp": "The seller's reconciliation should track TCS credits against payouts."
+ },
+ {
+  "id": "TDS-021",
+  "topic": "tdstcs",
+  "sub": "Platform obligations",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 52(14), an officer can require an ECO to provide:",
+  "options": [
+   "Seller bank passwords",
+   "Details of supplies made through it, the goods' stock held in its warehouses and similar information",
+   "Only turnover",
+   "Nothing"
+  ],
+  "answer": 1,
+  "exp": "ECOs are a key data source for the department.",
+  "ref": "CGST Act, s.52(14)"
+ },
+ {
+  "id": "TDS-022",
+  "topic": "tdstcs",
+  "sub": "Sellers on platforms",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A seller on a marketplace must match its GSTR-1 Table 14 with which ECO filing?",
+  "options": [
+   "GSTR-7",
+   "GSTR-8",
+   "GSTR-6",
+   "GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "Mismatch leads to notices on either side."
+ },
+ {
+  "id": "TDS-023",
+  "topic": "tdstcs",
+  "sub": "TDS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client supplying to a state government department notices 2% less received on every invoice. What should the CA do?",
+  "options": [
+   "Nothing",
+   "Check the TDS credit on the portal, accept it so it moves to the cash ledger, and reconcile it against invoices",
+   "Charge the department again",
+   "Pay 2% extra"
+  ],
+  "answer": 1,
+  "exp": "Unaccepted TDS credit sits idle. Once accepted, it can pay the client's liability.",
+  "case": true
+ },
+ {
+  "id": "TDS-024",
+  "topic": "tdstcs",
+  "sub": "TCS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A marketplace seller's TCS credit on the portal is ₹3,000 lower than the payout statements suggest. What's the likely cause?",
+  "options": [
+   "The seller is wrong",
+   "The ECO filed GSTR-8 with a different net value or hasn't filed yet, or returns were netted differently; the seller should raise it with the ECO",
+   "GST changed",
+   "Portal bug, ignore it"
+  ],
+  "answer": 1,
+  "exp": "Sellers can't claim TCS the ECO hasn't reported, so the fix is on the ECO's side.",
+  "case": true
+ },
+ {
+  "id": "TDS-025",
+  "topic": "tdstcs",
+  "sub": "Sellers on platforms",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client sells on three marketplaces. Where do those sales go in GSTR-1?",
+  "options": [
+   "Only Table 7",
+   "In the normal tables (B2B, B2C) and also Table 14 with each ECO's GSTIN, so TCS can be matched",
+   "Nowhere, the ECO reports them",
+   "Only in GSTR-8"
+  ],
+  "answer": 1,
+  "exp": "Table 14 lets the department compare the seller's figures with each ECO's GSTR-8.",
+  "case": true
+ }
+]

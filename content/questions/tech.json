@@ -1,0 +1,508 @@
+[
+ {
+  "id": "TEC-001",
+  "topic": "tech",
+  "sub": "Institutions",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's GSTN?",
+  "options": [
+   "A tax law",
+   "Goods and Services Tax Network, the company that runs the GST portal and IT system",
+   "A type of return",
+   "A state tax department"
+  ],
+  "answer": 1,
+  "exp": "It provides the shared IT infrastructure for the Centre, states and taxpayers."
+ },
+ {
+  "id": "TEC-002",
+  "topic": "tech",
+  "sub": "Institutions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who owns GSTN today?",
+  "options": [
+   "Private banks",
+   "The Central government and the state governments (fully government-owned since 2023)",
+   "CBIC alone",
+   "A public-private partnership with majority private"
+  ],
+  "answer": 1,
+  "exp": "It was originally 49% government and 51% private financial institutions, then converted to fully government ownership.",
+  "volatile": true
+ },
+ {
+  "id": "TEC-003",
+  "topic": "tech",
+  "sub": "Institutions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who runs the e-way bill portal and the first e-invoice IRP?",
+  "options": [
+   "GSTN",
+   "NIC (National Informatics Centre)",
+   "CBIC",
+   "RBI"
+  ],
+  "answer": 1,
+  "exp": "NIC runs ewaybillgst.gov.in and einvoice1.gst.gov.in."
+ },
+ {
+  "id": "TEC-004",
+  "topic": "tech",
+  "sub": "Institutions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's CBIC?",
+  "options": [
+   "A GST software company",
+   "Central Board of Indirect Taxes and Customs, which administers CGST, IGST and customs",
+   "A state authority",
+   "The GST Council secretariat"
+  ],
+  "answer": 1,
+  "exp": "CBIC issues circulars and notifications under the central law."
+ },
+ {
+  "id": "TEC-005",
+  "topic": "tech",
+  "sub": "Institutions",
+  "diff": 3,
+  "type": "mcq",
+  "q": "What's the difference between 'Model 1' and 'Model 2' states in GST IT?",
+  "options": [
+   "Tax rates",
+   "Model 1 states use GSTN's back-end for tax administration; Model 2 states run their own back-office systems and get data from GSTN",
+   "Model 2 are UTs",
+   "There's no difference"
+  ],
+  "answer": 1,
+  "exp": "All taxpayers use the same GST portal front-end either way."
+ },
+ {
+  "id": "TEC-006",
+  "topic": "tech",
+  "sub": "GSP & ASP",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's a GSP?",
+  "options": [
+   "GST State Provider",
+   "GST Suvidha Provider, an entity licensed by GSTN to access GST system APIs",
+   "GST Service Plan",
+   "Government Software Programme"
+  ],
+  "answer": 1,
+  "exp": "Compliance software typically connects to the GST system through a GSP."
+ },
+ {
+  "id": "TEC-007",
+  "topic": "tech",
+  "sub": "GSP & ASP",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How does an ASP differ from a GSP?",
+  "options": [
+   "Same thing",
+   "An ASP (Application Service Provider) builds taxpayer-facing apps; it reaches the GST system through a GSP, which holds the API licence",
+   "ASPs are government-run",
+   "ASPs file returns manually"
+  ],
+  "answer": 1,
+  "exp": "Many companies are both."
+ },
+ {
+  "id": "TEC-008",
+  "topic": "tech",
+  "sub": "GSP & ASP",
+  "diff": 2,
+  "type": "mcq",
+  "q": "To use a GSP-based app for filing, the taxpayer must first:",
+  "options": [
+   "Pay GSTN",
+   "Enable API access on the GST portal for a chosen duration and authorise with an OTP",
+   "Get a DSC",
+   "Register again"
+  ],
+  "answer": 1,
+  "exp": "The taxpayer controls how long API access stays enabled.",
+  "volatile": true
+ },
+ {
+  "id": "TEC-009",
+  "topic": "tech",
+  "sub": "GSP & ASP",
+  "diff": 2,
+  "type": "tf",
+  "q": "A GSP can file a taxpayer's return without any authorisation from the taxpayer.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "The taxpayer must authorise through OTP and enable API access. Filing still needs EVC or DSC."
+ },
+ {
+  "id": "TEC-010",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GST APIs typically encrypt request payloads using:",
+  "options": [
+   "Plain HTTPS only",
+   "A symmetric session key (AES-256) for the payload, with the key itself encrypted using GSTN's public key (RSA)",
+   "MD5",
+   "No encryption"
+  ],
+  "answer": 1,
+  "exp": "This is on top of TLS. HMAC is used for integrity in several flows."
+ },
+ {
+  "id": "TEC-011",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Uploading GSTR-1 data via API is typically:",
+  "options": [
+   "Synchronous with instant results",
+   "Asynchronous: you get a reference ID and poll for processing status",
+   "Only through the offline tool",
+   "Email-based"
+  ],
+  "answer": 1,
+  "exp": "Bulk uploads are processed in the background, so software must poll and handle partial errors."
+ },
+ {
+  "id": "TEC-012",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does the auth token in GST APIs represent?",
+  "options": [
+   "The GSTIN",
+   "A time-limited session after OTP-based authentication, which can be refreshed",
+   "The DSC",
+   "The ARN"
+  ],
+  "answer": 1,
+  "exp": "Tokens expire, so long-running jobs need refresh handling."
+ },
+ {
+  "id": "TEC-013",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 2,
+  "type": "mcq",
+  "q": "To call e-invoice APIs via a GSP, a taxpayer needs:",
+  "options": [
+   "Only a GSTIN",
+   "An API user (username and password) created on the IRP portal for that GSP, along with the GSP's client credentials",
+   "A DSC",
+   "Aadhaar"
+  ],
+  "answer": 1,
+  "exp": "E-way bill APIs work the same way."
+ },
+ {
+  "id": "TEC-014",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A common design mistake in e-invoice integrations is:",
+  "options": [
+   "Using JSON",
+   "Retrying a timed-out IRN request without first checking whether the IRN was already generated",
+   "Using HTTPS",
+   "Storing the IRN"
+  ],
+  "answer": 1,
+  "exp": "Always check by document details before regenerating to avoid duplicate errors."
+ },
+ {
+  "id": "TEC-015",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which public data can be fetched with just a GSTIN (no taxpayer login)?",
+  "options": [
+   "Full GSTR-1 data",
+   "Taxpayer details like legal name, status, registration date and return filing status",
+   "Bank details",
+   "Turnover"
+  ],
+  "answer": 1,
+  "exp": "'Search taxpayer' is used for validating vendor GSTINs."
+ },
+ {
+  "id": "TEC-016",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Software can detect a mistyped GSTIN without calling the portal by:",
+  "options": [
+   "Checking the length only",
+   "Validating the format (state code, PAN pattern, 'Z' default) and the check character",
+   "Checking the state code only",
+   "It can't"
+  ],
+  "answer": 1,
+  "exp": "The 15th character is computed from the first 14, so most single-character typos fail the check."
+ },
+ {
+  "id": "TEC-017",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the pattern for the PAN portion (characters 3 to 12) of a GSTIN?",
+  "options": [
+   "10 digits",
+   "5 letters, 4 digits, 1 letter",
+   "4 letters, 6 digits",
+   "Any alphanumeric"
+  ],
+  "answer": 1,
+  "exp": "E.g. AAACM1234C. The 4th letter shows the holder type (C for company, P for person, F for firm, etc.)."
+ },
+ {
+  "id": "TEC-018",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 3,
+  "type": "mcq",
+  "q": "In a PAN, what does the 4th character 'P' indicate?",
+  "options": [
+   "Partnership",
+   "Individual (person)",
+   "Public company",
+   "Proprietorship firm"
+  ],
+  "answer": 1,
+  "exp": "C company, P individual, H HUF, F firm, A AOP, T trust, B BOI, L local authority, J artificial juridical person, G government."
+ },
+ {
+  "id": "TEC-019",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which validation should a billing system run before choosing CGST+SGST vs IGST?",
+  "options": [
+   "Customer's name",
+   "Compare the supplier's state with the place of supply",
+   "HSN code",
+   "Invoice number"
+  ],
+  "answer": 1,
+  "exp": "Also special cases like SEZ (always IGST) and exports."
+ },
+ {
+  "id": "TEC-020",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A billing system lets users type HSN freely. What's the risk?",
+  "options": [
+   "None",
+   "Invalid or wrong-length HSN codes get rejected by the IRP or cause GSTR-1 errors",
+   "Slower billing",
+   "Only cosmetic"
+  ],
+  "answer": 1,
+  "exp": "Validate against the HSN master and turnover-based digit rules."
+ },
+ {
+  "id": "TEC-021",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 1,
+  "type": "mcq",
+  "q": "The main GST portal for taxpayers is:",
+  "options": [
+   "incometax.gov.in",
+   "gst.gov.in",
+   "cbic.gov.in",
+   "mca.gov.in"
+  ],
+  "answer": 1,
+  "exp": "Returns, registration, payments and ledgers."
+ },
+ {
+  "id": "TEC-022",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 1,
+  "type": "mcq",
+  "q": "E-way bills are generated on:",
+  "options": [
+   "gst.gov.in",
+   "ewaybillgst.gov.in",
+   "icegate.gov.in",
+   "einvoice.gov.in"
+  ],
+  "answer": 1,
+  "exp": "Run by NIC."
+ },
+ {
+  "id": "TEC-023",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which portal handles customs data like bills of entry that flow into GSTR-2B?",
+  "options": [
+   "ICEGATE",
+   "GSTN",
+   "MCA",
+   "DGFT"
+  ],
+  "answer": 0,
+  "exp": "ICEGATE is the customs e-commerce gateway."
+ },
+ {
+  "id": "TEC-024",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The Returns Offline Tool is used for:",
+  "options": [
+   "Filing income tax",
+   "Preparing GSTR-1 and other returns offline and uploading a JSON file",
+   "E-way bills",
+   "Registration"
+  ],
+  "answer": 1,
+  "exp": "Used by smaller taxpayers without GSP software."
+ },
+ {
+  "id": "TEC-025",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the 'GST Prime' or similar analytics offering from GSTN?",
+  "options": [
+   "A new tax",
+   "Value-added analytics services for taxpayers on their own compliance data",
+   "A premium return",
+   "A refund scheme"
+  ],
+  "answer": 1,
+  "exp": "GSTN has launched analytics tools for taxpayers over time. Check the current name and scope.",
+  "volatile": true
+ },
+ {
+  "id": "TEC-026",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 2,
+  "type": "tf",
+  "q": "Two-factor authentication is mandatory for generating e-way bills.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "GSTN rolled out mandatory 2FA for EWB and e-invoice portals in phases through 2024 and 2025.",
+  "volatile": true
+ },
+ {
+  "id": "TEC-027",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 3,
+  "type": "scenario",
+  "q": "You're building a GSTR-1 upload feature. The API returns a reference ID, and later the status shows 'processed with error' for 20 out of 5,000 invoices. How should the product handle this?",
+  "model": "Store the reference ID with the batch and poll status with backoff. When status comes back 'processed with error', fetch the error report, map each error back to the source invoice by document number, and show the user an actionable list (e.g. invalid GSTIN, duplicate invoice, wrong POS). The 4,980 valid invoices are already saved on the portal, so only corrected invoices should be re-uploaded, not the full batch, to avoid duplicates. Keep an audit trail of every upload and its result.",
+  "points": [
+   "Store reference ID, poll asynchronously",
+   "Fetch and map error report to invoices",
+   "Show actionable errors",
+   "Re-upload only corrected records",
+   "Audit trail"
+  ],
+  "exp": "Partial success is the norm with bulk GST APIs.",
+  "case": true
+ },
+ {
+  "id": "TEC-028",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Write the key validations you'd run on an invoice before sending it to the IRP.",
+  "model": "Supplier GSTIN active and matches the logged-in registration; buyer GSTIN format and check digit valid (or URP for exports); document number up to 16 characters, allowed characters only, unique in the FY; document date not in the future and within the 30-day reporting window if applicable; place of supply is a valid state code and tax type matches (IGST if supplier state differs from POS or for SEZ/exports, else CGST+SGST); HSN valid and meets the digit requirement; line totals equal quantity x rate minus discount, and tax equals taxable value x rate within rounding; invoice total equals sum of lines plus taxes plus other charges; pincode valid for the state.",
+  "points": [
+   "GSTIN format and check digit",
+   "Document number rules and uniqueness",
+   "Date and reporting window",
+   "POS vs tax type",
+   "HSN validity",
+   "Arithmetic checks"
+  ],
+  "exp": "Most IRP rejections come from a small set of preventable validation failures.",
+  "case": true
+ },
+ {
+  "id": "TEC-029",
+  "topic": "tech",
+  "sub": "APIs",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client says your software can't fetch their GSTR-2B through the API, though their login works on the portal. What's the first thing to check?",
+  "options": [
+   "Their password",
+   "Whether 'API access' is enabled on the portal for their profile (with a duration), since GSP apps need it",
+   "Their PAN",
+   "The e-way bill password"
+  ],
+  "answer": 1,
+  "exp": "Taxpayers enable API access under their profile; it expires after the chosen duration.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "TEC-030",
+  "topic": "tech",
+  "sub": "Validation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A user types a GSTIN into your app and it passes the regex but the portal says it doesn't exist. What's the cheapest extra check before calling the API?",
+  "options": [
+   "None",
+   "Validate the 15th check character using the GSTIN checksum algorithm",
+   "Check the PAN on the income tax site",
+   "Ask the user again"
+  ],
+  "answer": 1,
+  "exp": "A checksum catches most typos, though it can't prove the GSTIN is actually registered.",
+  "case": true
+ },
+ {
+  "id": "TEC-031",
+  "topic": "tech",
+  "sub": "Portals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "On the 20th evening, a client's GSTR-3B keeps failing with portal timeouts. What should a CA or software do?",
+  "options": [
+   "Keep retrying every second",
+   "Retry with back-off, save work, and file as soon as possible; GSTN sometimes extends deadlines for proven portal outages, but don't rely on it",
+   "Give up",
+   "File a complaint only"
+  ],
+  "answer": 1,
+  "exp": "Due-date traffic spikes are common. Software should queue and retry gracefully.",
+  "volatile": true,
+  "case": true
+ }
+]

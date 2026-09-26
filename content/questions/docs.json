@@ -1,0 +1,444 @@
+[
+ {
+  "id": "DOC-001",
+  "topic": "docs",
+  "sub": "Timelines",
+  "diff": 1,
+  "type": "mcq",
+  "q": "When must a tax invoice be issued for goods involving movement?",
+  "options": [
+   "Within 30 days",
+   "Before or at the time of removal of goods",
+   "At the end of the month",
+   "When payment is received"
+  ],
+  "answer": 1,
+  "exp": "For supplies without movement, it's before or at the time of delivery.",
+  "ref": "CGST Act, s.31(1)"
+ },
+ {
+  "id": "DOC-002",
+  "topic": "docs",
+  "sub": "Timelines",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the time limit for a normal service provider to issue a tax invoice?",
+  "options": [
+   "Immediately",
+   "Within 30 days from the date of supply",
+   "Within 45 days",
+   "Within 60 days"
+  ],
+  "answer": 1,
+  "exp": "Banks, insurance companies and NBFCs get 45 days.",
+  "ref": "CGST Rules, r.47"
+ },
+ {
+  "id": "DOC-003",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the maximum length of an invoice serial number?",
+  "options": [
+   "10 characters",
+   "16 characters, unique for the financial year",
+   "20 characters",
+   "No limit"
+  ],
+  "answer": 1,
+  "exp": "It can contain letters, digits, hyphen and slash.",
+  "ref": "CGST Rules, r.46(b)"
+ },
+ {
+  "id": "DOC-004",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is NOT a mandatory field on a tax invoice under rule 46?",
+  "options": [
+   "HSN code",
+   "Place of supply with state name for inter-state supplies",
+   "Customer's PAN",
+   "Taxable value net of discount"
+  ],
+  "answer": 2,
+  "exp": "Recipient's GSTIN is needed for registered buyers, but not PAN.",
+  "ref": "CGST Rules, r.46"
+ },
+ {
+  "id": "DOC-005",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For a B2C invoice of ₹60,000 to an unregistered buyer, what recipient details must appear?",
+  "options": [
+   "None",
+   "Name and address of the recipient, delivery address, and state name and code",
+   "Only phone number",
+   "Only PAN"
+  ],
+  "answer": 1,
+  "exp": "For unregistered recipients, these are required when the invoice value is ₹50,000 or more.",
+  "ref": "CGST Rules, r.46(e)",
+  "volatile": true
+ },
+ {
+  "id": "DOC-006",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many copies of an invoice are needed for goods?",
+  "options": [
+   "One",
+   "Triplicate: original for recipient, duplicate for transporter, triplicate for supplier",
+   "Duplicate",
+   "Four"
+  ],
+  "answer": 1,
+  "exp": "Services need duplicate. E-invoices reduce the reliance on physical copies.",
+  "ref": "CGST Rules, r.48"
+ },
+ {
+  "id": "DOC-007",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A retailer sells many items under ₹200 each to walk-in unregistered customers who don't ask for invoices. What can it do?",
+  "options": [
+   "Issue one invoice per item",
+   "Issue one consolidated invoice at the end of each day",
+   "Not issue any invoice",
+   "Issue a bill of supply"
+  ],
+  "answer": 1,
+  "exp": "Proviso to rule 46.",
+  "ref": "CGST Rules, r.46 proviso",
+  "case": true
+ },
+ {
+  "id": "DOC-008",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "tf",
+  "q": "A business can have separate invoice series for different branches in the same state under one GSTIN.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Multiple series are fine as long as each number is unique within the financial year. All series are reported in GSTR-1 Table 13.",
+  "case": true
+ },
+ {
+  "id": "DOC-009",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An export invoice without IGST must carry which endorsement?",
+  "options": [
+   "'Tax invoice'",
+   "'Supply meant for export under bond or letter of undertaking without payment of integrated tax'",
+   "'Zero rated'",
+   "Nothing special"
+  ],
+  "answer": 1,
+  "exp": "With IGST paid, the endorsement is 'supply meant for export on payment of integrated tax'.",
+  "ref": "CGST Rules, r.46 proviso"
+ },
+ {
+  "id": "DOC-010",
+  "topic": "docs",
+  "sub": "Other documents",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A composition taxpayer or a supplier of exempt goods issues a:",
+  "options": [
+   "Tax invoice",
+   "Bill of supply",
+   "Delivery challan",
+   "Receipt voucher"
+  ],
+  "answer": 1,
+  "exp": "Bill of supply has no tax charged.",
+  "ref": "CGST Act, s.31(3)(c); r.49"
+ },
+ {
+  "id": "DOC-011",
+  "topic": "docs",
+  "sub": "Other documents",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When a supplier receives an advance, what document does it issue?",
+  "options": [
+   "Tax invoice",
+   "Receipt voucher",
+   "Refund voucher",
+   "Payment voucher"
+  ],
+  "answer": 1,
+  "exp": "If the supply is later cancelled and no invoice issued, it issues a refund voucher.",
+  "ref": "CGST Act, s.31(3)(d),(e)"
+ },
+ {
+  "id": "DOC-012",
+  "topic": "docs",
+  "sub": "Other documents",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which situation calls for a delivery challan instead of a tax invoice?",
+  "options": [
+   "Sale of goods",
+   "Goods sent to a job worker",
+   "Supply of services",
+   "Exports"
+  ],
+  "answer": 1,
+  "exp": "Other cases: liquid gas where quantity isn't known, transport not constituting a supply, and SKD/CKD goods in lots.",
+  "ref": "CGST Rules, r.55"
+ },
+ {
+  "id": "DOC-013",
+  "topic": "docs",
+  "sub": "Other documents",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A business that has just received its registration certificate can issue revised invoices for supplies made between the effective date and the grant date within:",
+  "options": [
+   "7 days",
+   "One month from the date of issue of the registration certificate",
+   "90 days",
+   "Six months"
+  ],
+  "answer": 1,
+  "exp": "Section 31(3)(a).",
+  "ref": "CGST Act, s.31(3)(a)",
+  "case": true
+ },
+ {
+  "id": "DOC-014",
+  "topic": "docs",
+  "sub": "Other documents",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A registered person buys from an unregistered supplier under RCM. What does it issue?",
+  "options": [
+   "Nothing",
+   "A self-invoice (and a payment voucher when paying)",
+   "A bill of supply",
+   "A debit note"
+  ],
+  "answer": 1,
+  "exp": "Section 31(3)(f), now required within 30 days under rule 47A.",
+  "ref": "CGST Act, s.31(3)(f)"
+ },
+ {
+  "id": "DOC-015",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 1,
+  "type": "mcq",
+  "q": "When does a supplier issue a credit note?",
+  "options": [
+   "When the invoice value was too low",
+   "When the taxable value or tax charged exceeds what's payable, goods are returned, or services are deficient",
+   "To charge extra freight",
+   "For advances"
+  ],
+  "answer": 1,
+  "exp": "A debit note is for when the value or tax charged was lower than what's payable.",
+  "ref": "CGST Act, s.34(1)"
+ },
+ {
+  "id": "DOC-016",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the last date to declare a credit note for an FY 2024-25 supply?",
+  "options": [
+   "31 March 2025",
+   "30 November 2025, or the annual return date, whichever is earlier",
+   "No limit",
+   "31 December 2025"
+  ],
+  "answer": 1,
+  "exp": "After that date, the supplier can't reduce its output tax through the credit note, though a commercial credit note is still possible.",
+  "ref": "CGST Act, s.34(2)"
+ },
+ {
+  "id": "DOC-017",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 2,
+  "type": "tf",
+  "q": "One credit note can be issued against multiple invoices.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "The 2018 amendment allowed a credit note for 'one or more tax invoices'.",
+  "ref": "CGST Act, s.34(1)"
+ },
+ {
+  "id": "DOC-018",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A supplier issues a credit note reducing tax. What must the recipient do?",
+  "options": [
+   "Nothing",
+   "Reduce its ITC by the corresponding amount",
+   "Pay a penalty",
+   "Issue a debit note back"
+  ],
+  "answer": 1,
+  "exp": "The supplier's reduction in output tax is allowed only if the recipient reduces its ITC. With IMS, the recipient's accept or reject action on credit notes now flows through directly.",
+  "ref": "CGST Act, s.34(2) proviso"
+ },
+ {
+  "id": "DOC-019",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Is there a time limit for issuing a debit note?",
+  "options": [
+   "Yes, 30 November",
+   "No time limit for issuing it, though ITC on it is subject to section 16(4)",
+   "6 months",
+   "Same as the invoice"
+  ],
+  "answer": 1,
+  "exp": "Debit notes increase liability, so the law doesn't cap when they can be issued.",
+  "ref": "CGST Act, s.34(3),(4)"
+ },
+ {
+  "id": "DOC-020",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where are credit and debit notes issued to registered persons reported in GSTR-1?",
+  "options": [
+   "Table 4",
+   "Table 9B (CDNR)",
+   "Table 7",
+   "Table 12"
+  ],
+  "answer": 1,
+  "exp": "CDNR for registered, CDNUR for unregistered recipients."
+ },
+ {
+  "id": "DOC-021",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A customer returns goods worth ₹1,00,000 + ₹18,000 IGST in December 2025, from a sale made in June 2024. Can the supplier reduce its tax through a GST credit note?",
+  "model": "The credit note is for a supply of FY 2024-25. The time limit for declaring it is 30 November 2025 (or the annual return date if earlier). December 2025 is past that, so the supplier can't reduce its output tax. It can issue a financial credit note without GST, and bear the ₹18,000 as a cost or settle it commercially. The recipient keeps its ITC.",
+  "points": [
+   "Credit note linked to FY of original supply",
+   "Deadline: 30 November after FY end",
+   "Past the deadline, no GST reduction",
+   "Financial credit note option"
+  ],
+  "exp": "The software should warn when a user tries to raise a GST credit note against an invoice from a closed period.",
+  "ref": "CGST Act, s.34(2)",
+  "case": true
+ },
+ {
+  "id": "DOC-022",
+  "topic": "docs",
+  "sub": "Other documents",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A tax invoice can be issued by a registered person who is:",
+  "options": [
+   "Only a manufacturer",
+   "Any registered person making a taxable supply (other than composition taxpayers, who issue bills of supply)",
+   "Only a trader",
+   "Only a service provider"
+  ],
+  "answer": 1,
+  "exp": "Composition taxpayers issue bills of supply."
+ },
+ {
+  "id": "DOC-023",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A signature or digital signature on a tax invoice:",
+  "options": [
+   "Isn't needed",
+   "Is required, but invoices issued through e-invoicing with the IRP's digital signature don't need a separate signature",
+   "Only for exports",
+   "Only for B2C"
+  ],
+  "answer": 1,
+  "exp": "Rule 46(q), with the e-invoice exception.",
+  "ref": "CGST Rules, r.46(q)"
+ },
+ {
+  "id": "DOC-024",
+  "topic": "docs",
+  "sub": "Timelines",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For goods sent on approval (sale or return), when must the invoice be issued?",
+  "options": [
+   "When sent",
+   "When it becomes known the supply has occurred, or 6 months from removal, whichever is earlier",
+   "After 1 year",
+   "Never"
+  ],
+  "answer": 1,
+  "exp": "Section 31(7).",
+  "ref": "CGST Act, s.31(7)"
+ },
+ {
+  "id": "DOC-025",
+  "topic": "docs",
+  "sub": "Tax invoice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's invoice number format is 'MUM/2025-26/INV/000123' (22 characters). What's the issue?",
+  "options": [
+   "None",
+   "Invoice numbers are limited to 16 characters, so the IRP or portal will reject it",
+   "Slashes aren't allowed",
+   "It needs the GSTIN"
+  ],
+  "answer": 1,
+  "exp": "Common fix: drop the redundant 'INV' and shorten the year, e.g. 'MUM/2526/000123'.",
+  "ref": "CGST Rules, r.46(b)",
+  "case": true
+ },
+ {
+  "id": "DOC-026",
+  "topic": "docs",
+  "sub": "Credit & debit notes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client gives a customer a 2% cash discount for early payment, not agreed on the original invoice. How should it be documented?",
+  "options": [
+   "GST credit note",
+   "A financial credit note without GST, since it doesn't meet the section 15(3) conditions",
+   "Revised invoice",
+   "No document"
+  ],
+  "answer": 1,
+  "exp": "GST stays as originally charged, and the customer keeps its ITC.",
+  "ref": "Circular 92/11/2019",
+  "case": true
+ }
+]

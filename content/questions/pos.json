@@ -1,0 +1,472 @@
+[
+ {
+  "id": "POS-001",
+  "topic": "pos",
+  "sub": "Goods",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Goods move from a supplier in Pune to a buyer's warehouse in Nagpur. Place of supply?",
+  "options": [
+   "Pune",
+   "Nagpur, Maharashtra",
+   "Buyer's head office state",
+   "Wherever the invoice says"
+  ],
+  "answer": 1,
+  "exp": "Where there's movement, place of supply is where movement terminates for delivery to the recipient.",
+  "ref": "IGST Act, s.10(1)(a)"
+ },
+ {
+  "id": "POS-002",
+  "topic": "pos",
+  "sub": "Goods",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A (Delhi) sells goods to B (Mumbai). On B's instruction, A ships them directly to C in Delhi. Place of supply for A's invoice to B?",
+  "options": [
+   "Delhi, because goods moved within Delhi",
+   "Maharashtra, B's principal place of business",
+   "Wherever C is registered",
+   "It's two separate supplies, both in Delhi"
+  ],
+  "answer": 1,
+  "exp": "Bill-to ship-to: where goods are delivered to a third person on the recipient's direction, the recipient is deemed to have received them and place of supply is the recipient's principal place of business. So A charges IGST even though goods moved within Delhi.",
+  "ref": "IGST Act, s.10(1)(b)",
+  "case": true
+ },
+ {
+  "id": "POS-003",
+  "topic": "pos",
+  "sub": "Goods",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A machine is supplied and installed at a factory in Tamil Nadu by a supplier from Karnataka. Place of supply?",
+  "options": [
+   "Karnataka",
+   "Tamil Nadu, the place of installation",
+   "Recipient's registered office",
+   "Where the machine was manufactured"
+  ],
+  "answer": 1,
+  "exp": "For goods assembled or installed at site, place of supply is the place of assembly or installation.",
+  "ref": "IGST Act, s.10(1)(d)",
+  "case": true
+ },
+ {
+  "id": "POS-004",
+  "topic": "pos",
+  "sub": "Goods",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Goods are sold on board a train running from Delhi to Kolkata. Where's the place of supply?",
+  "options": [
+   "Delhi",
+   "Kolkata",
+   "Where the goods were taken on board",
+   "The state the train is in at the time of sale"
+  ],
+  "answer": 2,
+  "exp": "For supply on board a conveyance, place of supply is where the goods are taken on board.",
+  "ref": "IGST Act, s.10(1)(e)"
+ },
+ {
+  "id": "POS-005",
+  "topic": "pos",
+  "sub": "Goods",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A customer in Jaipur buys goods at a shop counter in Jaipur and carries them to Gujarat. Place of supply?",
+  "options": [
+   "Gujarat",
+   "Rajasthan",
+   "Either, customer's choice",
+   "Where the customer lives"
+  ],
+  "answer": 1,
+  "exp": "When the recipient takes delivery at the shop, the goods' movement for delivery ends there. Intra-state sale, CGST + SGST.",
+  "ref": "IGST Act, s.10(1)(a)",
+  "case": true
+ },
+ {
+  "id": "POS-006",
+  "topic": "pos",
+  "sub": "Services general rule",
+  "diff": 1,
+  "type": "mcq",
+  "q": "The default place of supply for services to a registered person (B2B), both in India, is:",
+  "options": [
+   "Location of the supplier",
+   "Location of the recipient",
+   "Where the service is performed",
+   "Where payment is made"
+  ],
+  "answer": 1,
+  "exp": "For B2B services the general rule is the recipient's location.",
+  "ref": "IGST Act, s.12(2)(a)"
+ },
+ {
+  "id": "POS-007",
+  "topic": "pos",
+  "sub": "Services general rule",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A Bengaluru consultant provides services to an unregistered individual whose address in Kerala is on record. Place of supply?",
+  "options": [
+   "Karnataka",
+   "Kerala",
+   "Either",
+   "Recipient's place of work"
+  ],
+  "answer": 1,
+  "exp": "For B2C, place of supply is the recipient's location if the address is on record, otherwise the supplier's location.",
+  "ref": "IGST Act, s.12(2)(b)",
+  "case": true
+ },
+ {
+  "id": "POS-008",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An architect in Delhi designs a building to be constructed in Goa for a Delhi client. Place of supply?",
+  "options": [
+   "Delhi",
+   "Goa, where the immovable property is located",
+   "Client's registered office",
+   "Architect's office"
+  ],
+  "answer": 1,
+  "exp": "Services directly related to immovable property (including architects, interior decorators, surveyors) take place of supply where the property is located. The Delhi architect charges IGST.",
+  "ref": "IGST Act, s.12(3)(a)",
+  "case": true
+ },
+ {
+  "id": "POS-009",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A Haryana company's employee stays at a hotel in Rajasthan. The hotel charges CGST + SGST of Rajasthan. Can the Haryana GSTIN claim this ITC?",
+  "options": [
+   "Yes, it's a business expense",
+   "No, Rajasthan CGST/SGST can't be credited against a Haryana registration",
+   "Yes, but only 50%",
+   "Only after filing a refund"
+  ],
+  "answer": 1,
+  "exp": "Hotel accommodation's place of supply is the hotel's location, so it's intra-state in Rajasthan. The Haryana GSTIN can't use Rajasthan SGST. This is why companies register in states where they incur large hotel or event spends, or accept the cost.",
+  "ref": "IGST Act, s.12(3)(b)",
+  "case": true
+ },
+ {
+  "id": "POS-010",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Place of supply for restaurant, beauty or fitness services is:",
+  "options": [
+   "Recipient's location",
+   "Where the services are actually performed",
+   "Supplier's registered office",
+   "Where payment is made"
+  ],
+  "answer": 1,
+  "exp": "These are location-of-performance services.",
+  "ref": "IGST Act, s.12(4)"
+ },
+ {
+  "id": "POS-011",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A Mumbai company buys conference tickets for an event in Hyderabad. Place of supply for admission?",
+  "options": [
+   "Maharashtra",
+   "Telangana, where the event is held",
+   "Organiser's office",
+   "Where the tickets were bought online"
+  ],
+  "answer": 1,
+  "exp": "Admission to events (cultural, educational, amusement parks) is taxed where the event is actually held.",
+  "ref": "IGST Act, s.12(6)",
+  "case": true
+ },
+ {
+  "id": "POS-012",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Goods transport service by a Delhi GTA to a registered recipient in Punjab, for goods moving from Delhi to Rajasthan. Place of supply?",
+  "options": [
+   "Delhi",
+   "Rajasthan",
+   "Punjab, the recipient's location",
+   "Split between states"
+  ],
+  "answer": 2,
+  "exp": "For transport of goods to a registered person, place of supply is the recipient's location.",
+  "ref": "IGST Act, s.12(8)"
+ },
+ {
+  "id": "POS-013",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An unregistered passenger books a flight from Chennai to Delhi. Place of supply for the airline's service?",
+  "options": [
+   "Delhi",
+   "Tamil Nadu, where the passenger embarks",
+   "Airline's head office",
+   "Passenger's home state"
+  ],
+  "answer": 1,
+  "exp": "For passenger transport to an unregistered person, place of supply is where the passenger embarks for a continuous journey.",
+  "ref": "IGST Act, s.12(9)",
+  "case": true
+ },
+ {
+  "id": "POS-014",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Place of supply for a prepaid mobile recharge bought online by an individual:",
+  "options": [
+   "Where the SIM was issued",
+   "Location of the recipient in the supplier's records",
+   "The telecom company's office",
+   "Always Delhi"
+  ],
+  "answer": 1,
+  "exp": "For prepaid recharges through the internet or e-payment, it's the recipient's location in the supplier's records. Recharges through a selling agent use the agent's location.",
+  "ref": "IGST Act, s.12(11)(d)"
+ },
+ {
+  "id": "POS-015",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A bank provides services to a customer with no address on record. Place of supply?",
+  "options": [
+   "Customer's location",
+   "Location of the supplier of services",
+   "Bank's head office",
+   "Where the account was opened"
+  ],
+  "answer": 1,
+  "exp": "For banking and financial services, it's the recipient's location on the supplier's records, or the supplier's location if that isn't available.",
+  "ref": "IGST Act, s.12(12)"
+ },
+ {
+  "id": "POS-016",
+  "topic": "pos",
+  "sub": "Cross-border",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When either the supplier or recipient is outside India, the default place of supply for services is:",
+  "options": [
+   "Supplier's location",
+   "Recipient's location, or supplier's location if that's not available",
+   "Always India",
+   "Where payment is received"
+  ],
+  "answer": 1,
+  "exp": "Section 13(2) is the default. Specific rules in s.13(3) to (13) override it.",
+  "ref": "IGST Act, s.13(2)"
+ },
+ {
+  "id": "POS-017",
+  "topic": "pos",
+  "sub": "Cross-border",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under section 13(8)(b) of the IGST Act as originally enacted, the place of supply for intermediary services is:",
+  "options": [
+   "Recipient's location",
+   "Supplier's location",
+   "Where the underlying goods are",
+   "India, always"
+  ],
+  "answer": 1,
+  "exp": "This rule made Indian intermediaries serving foreign clients unable to treat their services as exports. The GST Council in September 2025 recommended omitting 13(8)(b), which would move intermediaries to the default recipient-location rule. Check whether the amendment is in force.",
+  "ref": "IGST Act, s.13(8)(b)",
+  "volatile": true
+ },
+ {
+  "id": "POS-018",
+  "topic": "pos",
+  "sub": "Cross-border",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A foreign client sends a machine to an Indian company for repair, and it's re-exported after repair. Place of supply of the repair service?",
+  "options": [
+   "Outside India",
+   "India, where the service is performed",
+   "The client's country",
+   "Depends on payment currency"
+  ],
+  "answer": 1,
+  "exp": "Services on goods that must be physically available with the supplier take place of supply where performed, subject to exceptions for goods temporarily imported for repair and re-export.",
+  "ref": "IGST Act, s.13(3)(a)",
+  "case": true
+ },
+ {
+  "id": "POS-019",
+  "topic": "pos",
+  "sub": "Cross-border",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An Indian consumer subscribes to a foreign streaming service (OIDAR). Place of supply?",
+  "options": [
+   "Outside India",
+   "Location of the recipient, India",
+   "Supplier's server location",
+   "Exempt"
+  ],
+  "answer": 1,
+  "exp": "For OIDAR services, place of supply is the recipient's location. The foreign supplier must register in India and pay IGST on supplies to non-taxable online recipients.",
+  "ref": "IGST Act, s.13(12), s.14",
+  "case": true
+ },
+ {
+  "id": "POS-020",
+  "topic": "pos",
+  "sub": "Cross-border",
+  "diff": 2,
+  "type": "tf",
+  "q": "Place of supply rules in section 12 apply only when both supplier and recipient are in India.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Section 12 is for domestic supplies. Section 13 covers cases where either party is outside India."
+ },
+ {
+  "id": "POS-021",
+  "topic": "pos",
+  "sub": "Wrong tax paid",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A supplier charged CGST + SGST on what was actually an inter-state supply. What should it do?",
+  "options": [
+   "Adjust the CGST/SGST against future IGST",
+   "Pay IGST, then claim a refund of the CGST/SGST paid",
+   "Nothing, since total tax is the same",
+   "Pay only interest"
+  ],
+  "answer": 1,
+  "exp": "You pay the correct tax and claim a refund of the wrong one. The CGST/SGST credit doesn't simply convert.",
+  "ref": "CGST Act, s.77; IGST Act, s.19",
+  "case": true
+ },
+ {
+  "id": "POS-022",
+  "topic": "pos",
+  "sub": "Wrong tax paid",
+  "diff": 3,
+  "type": "tf",
+  "q": "If you pay IGST later after wrongly paying CGST + SGST, interest is payable on the IGST amount.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "When the tax was paid under the wrong head in good faith and the correct tax is later paid, no interest is charged on the correct tax.",
+  "ref": "IGST Act, s.19(2)"
+ },
+ {
+  "id": "POS-023",
+  "topic": "pos",
+  "sub": "Wrong tax paid",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Your client in Uttar Pradesh bills a buyer in UP, but the goods are shipped from UP to the buyer's site in Bihar on the buyer's instruction. The invoice shows CGST + SGST. Is this right? What should the software flag?",
+  "model": "Goods move and the movement ends in Bihar, but place of supply depends on who the recipient is. If the invoice is to the UP buyer and goods go to the buyer's own site in Bihar, place of supply is where movement terminates (Bihar), so IGST applies and CGST+SGST is wrong. If Bihar is a third party's site delivered on the buyer's instruction, section 10(1)(b) makes place of supply the buyer's principal place of business (UP), and CGST+SGST would be right. The software should compare the billing state, shipping state and place of supply field and flag when POS and the tax type don't agree.",
+  "points": [
+   "Movement ending in Bihar points to IGST",
+   "Bill-to ship-to to a third person uses the recipient's principal place",
+   "POS field must drive the IGST vs CGST+SGST choice",
+   "Validate tax type against POS and supplier state"
+  ],
+  "exp": "Most tax-type errors on invoices come from confusing ship-to state with place of supply.",
+  "ref": "IGST Act, s.10(1)(a),(b)",
+  "case": true
+ },
+ {
+  "id": "POS-024",
+  "topic": "pos",
+  "sub": "Services general rule",
+  "diff": 2,
+  "type": "scenario",
+  "q": "An IT company in Noida (UP) provides software development services to a registered client whose GSTIN is in Maharashtra, but the work is used at the client's Chennai office. Which tax applies?",
+  "model": "Place of supply for B2B services under the general rule is the recipient's location. The recipient here is the Maharashtra GSTIN on the contract and invoice, so place of supply is Maharashtra and the Noida company charges IGST. Where the service is used doesn't change it unless a specific rule applies.",
+  "points": [
+   "General rule, s.12(2)(a)",
+   "Recipient's registered location",
+   "Supplier in UP, POS Maharashtra, so IGST"
+  ],
+  "exp": "Usage location matters only for specific rules like immovable property or performance-based services.",
+  "ref": "IGST Act, s.12(2)(a)",
+  "case": true
+ },
+ {
+  "id": "POS-025",
+  "topic": "pos",
+  "sub": "Services specific rules",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A Gurugram (Haryana) company books a hotel in Goa for a client event and gets a Goa CGST+SGST invoice. The CA is asked why the ITC isn't showing as usable. What's the explanation?",
+  "options": [
+   "The hotel made an error",
+   "Place of supply for hotel accommodation is the hotel's location, so it's Goa tax and the Haryana GSTIN can't use it",
+   "ITC on hotels is always blocked",
+   "It will show next month"
+  ],
+  "answer": 1,
+  "exp": "The invoice may even show in 2B under the Haryana GSTIN if the hotel entered it, but Goa SGST can't be used in Haryana. Companies with frequent events sometimes register in those states.",
+  "ref": "IGST Act, s.12(3)",
+  "case": true
+ },
+ {
+  "id": "POS-026",
+  "topic": "pos",
+  "sub": "Goods",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client in Noida (UP) invoices a buyer in Noida, but the goods are delivered from the client's Noida warehouse to the buyer's own factory in Rajasthan. The client charged CGST+SGST. Right or wrong?",
+  "options": [
+   "Right, both are in UP",
+   "Wrong, movement ends in Rajasthan, so place of supply is Rajasthan and IGST applies",
+   "Right, bill-to ship-to applies",
+   "Depends on the e-way bill"
+  ],
+  "answer": 1,
+  "exp": "Bill-to ship-to under 10(1)(b) only applies when goods go to a third person. Here they go to the buyer's own site, so 10(1)(a) applies.",
+  "ref": "IGST Act, s.10(1)(a)",
+  "case": true
+ },
+ {
+  "id": "POS-027",
+  "topic": "pos",
+  "sub": "Cross-border",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An Indian freelancer designs a website for a Canadian client, paid in USD. POS?",
+  "options": [
+   "India",
+   "Outside India (recipient's location), so it's an export of services if the other conditions hold",
+   "Canada, but taxable in India",
+   "Where the freelancer lives"
+  ],
+  "answer": 1,
+  "exp": "Default rule under s.13(2). Under LUT, no IGST is charged.",
+  "ref": "IGST Act, s.13(2)",
+  "case": true
+ }
+]

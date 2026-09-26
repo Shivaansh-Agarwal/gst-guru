@@ -1,0 +1,487 @@
+[
+ {
+  "id": "REC-001",
+  "topic": "recon",
+  "sub": "2A vs 2B",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the key difference between GSTR-2A and GSTR-2B?",
+  "options": [
+   "2A is for exports",
+   "2A is dynamic and keeps updating as suppliers file; 2B is a static monthly statement",
+   "2B is annual",
+   "There's no difference"
+  ],
+  "answer": 1,
+  "exp": "2B is fixed for the period and is the basis for claiming ITC."
+ },
+ {
+  "id": "REC-002",
+  "topic": "recon",
+  "sub": "2A vs 2B",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GSTR-2B for a month is generally made available on:",
+  "options": [
+   "1st of the next month",
+   "14th of the next month",
+   "20th of the next month",
+   "End of the quarter"
+  ],
+  "answer": 1,
+  "exp": "With IMS, 2B can be regenerated after acting on documents, before filing GSTR-3B.",
+  "volatile": true
+ },
+ {
+  "id": "REC-003",
+  "topic": "recon",
+  "sub": "2A vs 2B",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GSTR-2B for October (monthly filer) includes documents that suppliers filed between:",
+  "options": [
+   "1 and 31 October",
+   "12 October and 11 November (after October's GSTR-1 cut-off)",
+   "1 and 14 November",
+   "Any time"
+  ],
+  "answer": 1,
+  "exp": "The cut-off follows GSTR-1 due dates, so an invoice filed late by the supplier lands in a later month's 2B.",
+  "volatile": true
+ },
+ {
+  "id": "REC-004",
+  "topic": "recon",
+  "sub": "2A vs 2B",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Import of goods ITC (IGST paid at customs) appears in GSTR-2B from:",
+  "options": [
+   "The supplier's GSTR-1",
+   "ICEGATE bill of entry data",
+   "The importer's own entry",
+   "It doesn't appear"
+  ],
+  "answer": 1,
+  "exp": "It shows in the IMPG section, and IMPGSEZ for SEZ imports."
+ },
+ {
+  "id": "REC-005",
+  "topic": "recon",
+  "sub": "2A vs 2B",
+  "diff": 2,
+  "type": "tf",
+  "q": "Import of services paid under RCM appears in GSTR-2B.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "There's no Indian supplier filing a return, so you self-assess it. It's reported directly in GSTR-3B."
+ },
+ {
+  "id": "REC-006",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What does IMS stand for?",
+  "options": [
+   "Input Management System",
+   "Invoice Management System",
+   "Integrated Matching Service",
+   "ITC Monitoring Scheme"
+  ],
+  "answer": 1,
+  "exp": "It lets recipients act on inward invoices before 2B is finalised."
+ },
+ {
+  "id": "REC-007",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "From which tax period was IMS introduced on the GST portal?",
+  "options": [
+   "April 2024",
+   "October 2024",
+   "July 2025",
+   "January 2023"
+  ],
+  "answer": 1,
+  "exp": "Initially optional, it's the main way recipients now manage inward documents.",
+  "volatile": true
+ },
+ {
+  "id": "REC-008",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What actions can a recipient take on a document in IMS?",
+  "options": [
+   "Approve or delete",
+   "Accept, Reject, or keep Pending",
+   "Edit and resubmit",
+   "Only Accept"
+  ],
+  "answer": 1,
+  "exp": "Documents with no action are deemed accepted when GSTR-2B is generated.",
+  "volatile": true
+ },
+ {
+  "id": "REC-009",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A recipient rejects a supplier's credit note in IMS. What's the effect?",
+  "options": [
+   "Nothing",
+   "The recipient doesn't have to reverse ITC for it, and the supplier's liability reduction is undone (liability goes back up)",
+   "The credit note is deleted from GSTR-1",
+   "The supplier gets a refund"
+  ],
+  "answer": 1,
+  "exp": "This makes the recipient's action on credit notes directly affect the supplier's liability.",
+  "volatile": true
+ },
+ {
+  "id": "REC-010",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "If a recipient keeps an invoice 'Pending' in IMS, what happens to it in the current GSTR-2B?",
+  "options": [
+   "It's included as accepted",
+   "It's excluded from the current 2B and carried forward so it can be acted on later",
+   "It's rejected",
+   "It's deleted"
+  ],
+  "answer": 1,
+  "exp": "Pending is useful when goods haven't arrived yet. Some document types have limits on how long they can stay pending.",
+  "volatile": true
+ },
+ {
+  "id": "REC-011",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 2,
+  "type": "tf",
+  "q": "Under IMS, no action by the recipient means the document is deemed accepted.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "That's why companies with large vendor bases need to act before 2B is generated.",
+  "volatile": true
+ },
+ {
+  "id": "REC-012",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Your books show an invoice that isn't in GSTR-2B. What's the most likely cause?",
+  "options": [
+   "You made a typo",
+   "The supplier hasn't filed GSTR-1/IFF yet, or reported it under a different GSTIN or period",
+   "IMS deleted it",
+   "It's an import"
+  ],
+  "answer": 1,
+  "exp": "You can't claim that ITC until it appears in 2B. Follow up with the supplier."
+ },
+ {
+  "id": "REC-013",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An invoice appears in GSTR-2B but not in your books. What should you check?",
+  "options": [
+   "Nothing, claim it",
+   "Whether it's genuinely yours: it may be a wrong GSTIN, an unrecorded purchase, or a fraudulent invoice",
+   "Only the amount",
+   "Only the date"
+  ],
+  "answer": 1,
+  "exp": "Claiming ITC on something you didn't receive is a classic audit problem, and IMS lets you reject it."
+ },
+ {
+  "id": "REC-014",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Books show invoice 'INV/001/24-25' and 2B shows 'INV-1'. What kind of mismatch is it?",
+  "options": [
+   "Value mismatch",
+   "Document number format mismatch that fuzzy matching should catch",
+   "GSTIN mismatch",
+   "Period mismatch"
+  ],
+  "answer": 1,
+  "exp": "Reconciliation engines normalise numbers (strip separators, leading zeros, FY suffixes) before matching."
+ },
+ {
+  "id": "REC-015",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which mismatch category poses the most risk if ITC is claimed anyway?",
+  "options": [
+   "Invoice in 2B with a slightly different date",
+   "ITC claimed on invoices missing from 2B",
+   "Same invoice, different rounding",
+   "Matched invoices"
+  ],
+  "answer": 1,
+  "exp": "Section 16(2)(aa) restricts ITC to 2B, and rule 88D flags excess claims."
+ },
+ {
+  "id": "REC-016",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A supplier reported an invoice as B2C instead of B2B. What does the buyer see?",
+  "options": [
+   "It appears in 2B",
+   "It doesn't appear in the buyer's 2B, so ITC can't be claimed until the supplier amends it",
+   "It appears as a credit note",
+   "It appears in 2A only"
+  ],
+  "answer": 1,
+  "exp": "The supplier must amend it to B2B with the buyer's GSTIN in a later GSTR-1."
+ },
+ {
+  "id": "REC-017",
+  "topic": "recon",
+  "sub": "Liability checks",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Rule 88C: if liability in GSTR-1 exceeds that paid in GSTR-3B beyond a threshold, the taxpayer gets:",
+  "options": [
+   "A refund",
+   "An intimation in DRC-01B and must pay the difference or explain; otherwise the next GSTR-1 is blocked",
+   "A penalty notice straightaway",
+   "Nothing"
+  ],
+  "answer": 1,
+  "exp": "Rule 88C was introduced to catch under-reporting in 3B.",
+  "ref": "CGST Rules, r.88C",
+  "volatile": true
+ },
+ {
+  "id": "REC-018",
+  "topic": "recon",
+  "sub": "Liability checks",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Rule 88D: if ITC claimed in GSTR-3B exceeds what's in GSTR-2B beyond a threshold, the taxpayer gets:",
+  "options": [
+   "Nothing",
+   "An intimation in DRC-01C and must reverse the excess or explain",
+   "Instant blocking",
+   "A refund"
+  ],
+  "answer": 1,
+  "exp": "Non-response can lead to blocking of GSTR-1 filing.",
+  "ref": "CGST Rules, r.88D",
+  "volatile": true
+ },
+ {
+  "id": "REC-019",
+  "topic": "recon",
+  "sub": "Liability checks",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the Electronic Credit Reversal and Re-claimed Statement for?",
+  "options": [
+   "Refunds",
+   "Tracking ITC temporarily reversed in 3B Table 4(B)(2) and re-claimed later, so you can't re-claim more than you reversed",
+   "Composition credit",
+   "Exports"
+  ],
+  "answer": 1,
+  "exp": "Introduced in 2023 with an opening balance declaration.",
+  "volatile": true
+ },
+ {
+  "id": "REC-020",
+  "topic": "recon",
+  "sub": "Practice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why do buyers check a supplier's return filing status before paying invoices?",
+  "options": [
+   "It's mandatory",
+   "If the supplier hasn't filed, the buyer's ITC is at risk, so holding payment gives leverage",
+   "To calculate interest",
+   "To generate an e-way bill"
+  ],
+  "answer": 1,
+  "exp": "Vendor compliance ratings are a common feature in reconciliation software."
+ },
+ {
+  "id": "REC-021",
+  "topic": "recon",
+  "sub": "Practice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How often should large businesses reconcile purchases with GSTR-2B?",
+  "options": [
+   "Once a year",
+   "Monthly, before filing GSTR-3B",
+   "Only during audit",
+   "Quarterly for QRMP only"
+  ],
+  "answer": 1,
+  "exp": "Monthly reconciliation (and IMS action) keeps ITC accurate and reduces year-end surprises."
+ },
+ {
+  "id": "REC-022",
+  "topic": "recon",
+  "sub": "Practice",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Which reconciliation compares GSTR-1 invoices with e-invoices generated on the IRP?",
+  "options": [
+   "2B vs books",
+   "IRN vs GSTR-1: e-invoices should auto-populate GSTR-1, so gaps suggest invoices issued outside the IRP",
+   "3B vs 2B",
+   "Books vs 3B"
+  ],
+  "answer": 1,
+  "exp": "B2B invoices in GSTR-1 without IRNs (for an e-invoice-applicable taxpayer) are a red flag."
+ },
+ {
+  "id": "REC-023",
+  "topic": "recon",
+  "sub": "Practice",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Design the core matching logic for a books-vs-GSTR-2B reconciliation. What keys would you match on and what categories would you report?",
+  "model": "Match on supplier GSTIN plus normalised document number plus financial year as the primary key, then compare document type, date, taxable value and tax heads with tolerances (e.g. ₹1 rounding). Normalise document numbers by trimming, uppercasing and removing separators and leading zeros, and consider the FY suffix. Report categories: exact match, matched with value or date differences, probable match (fuzzy number, same GSTIN and amount), missing in 2B, missing in books, and duplicates. Also separate by document type (invoice vs credit note vs amendment) and by period, since timing differences (supplier filed late) resolve themselves.",
+  "points": [
+   "Key: GSTIN + normalised doc number + FY",
+   "Tolerance on values",
+   "Fuzzy match for number formats",
+   "Categories: matched, mismatch, missing each side, duplicates",
+   "Handle timing and amendments"
+  ],
+  "exp": "This is essentially how commercial reconciliation tools work.",
+  "case": true
+ },
+ {
+  "id": "REC-024",
+  "topic": "recon",
+  "sub": "2A vs 2B",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's supplier filed October invoices on 15 November, after the GSTR-1 due date. In which month's 2B will the client see them?",
+  "options": [
+   "October",
+   "November",
+   "December",
+   "Never"
+  ],
+  "answer": 1,
+  "exp": "They're filed after October's cut-off, so they land in November's 2B. The client claims ITC in November's 3B.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "REC-025",
+  "topic": "recon",
+  "sub": "IMS",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client rejects a genuine supplier invoice in IMS by mistake before filing 3B. What can be done?",
+  "options": [
+   "Nothing",
+   "Change the action before GSTR-2B is regenerated and 3B is filed; after that, the supplier may need to re-report it",
+   "Call GSTN",
+   "Claim it in GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "IMS actions can be changed until 2B is finalised for the period and 3B is filed.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "REC-026",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Reconciliation shows a supplier's invoice with ₹18,000 tax in 2B but ₹1,800 in the client's books. What's the likely cause and fix?",
+  "options": [
+   "Supplier fraud",
+   "Data-entry error on one side; check the physical invoice and ask whichever side is wrong to correct it (books entry, or supplier amendment in GSTR-1)",
+   "Claim the higher amount",
+   "Claim the lower and forget it"
+  ],
+  "answer": 1,
+  "exp": "Value mismatches are usually typos. Claim only what's actually on the valid invoice and in 2B.",
+  "case": true
+ },
+ {
+  "id": "REC-027",
+  "topic": "recon",
+  "sub": "Mismatch types",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client has purchase invoices from a supplier whose GSTIN was cancelled retrospectively from last year. What's the ITC risk?",
+  "options": [
+   "None, invoices are genuine",
+   "The department may deny ITC on invoices from the cancellation date, since the supplier wasn't registered; the client may have to prove genuineness",
+   "Only interest",
+   "The supplier pays"
+  ],
+  "answer": 1,
+  "exp": "Checking supplier GSTIN status (active, cancelled, suspended) is a standard reconciliation step. Courts have given relief to genuine buyers in some cases.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "REC-028",
+  "topic": "recon",
+  "sub": "Liability checks",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client received DRC-01C because 3B ITC exceeded 2B by ₹2 lakh. The difference is IGST on imports whose bill of entry wasn't in 2B. How is it answered?",
+  "options": [
+   "Pay ₹2 lakh",
+   "Explain in Part B with bill of entry details; import ITC is valid when BoE data flows from ICEGATE, and timing gaps are a legitimate explanation",
+   "Ignore it",
+   "Cancel registration"
+  ],
+  "answer": 1,
+  "exp": "Explanations with supporting documents are accepted where the difference is genuine.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "REC-029",
+  "topic": "recon",
+  "sub": "Practice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "It's the 19th, and a client's 2B shows ₹40,000 more ITC than the purchase register. The client's accounts team says 'just claim 2B'. What's the CA's view?",
+  "options": [
+   "Claim 2B, it's the government's data",
+   "Claim only invoices that are actually the client's and received; unrecorded invoices could be wrong-GSTIN or fake, so reject them in IMS or follow up",
+   "Claim half",
+   "Wait for GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "2B is a ceiling, not an entitlement. ITC still needs a valid invoice and actual receipt.",
+  "ref": "CGST Act, s.16(2)",
+  "case": true
+ }
+]

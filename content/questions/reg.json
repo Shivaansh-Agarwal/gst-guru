@@ -1,0 +1,472 @@
+[
+ {
+  "id": "REG-001",
+  "topic": "reg",
+  "sub": "Thresholds",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the general registration threshold for a service provider in most states?",
+  "options": [
+   "₹10 lakh",
+   "₹20 lakh aggregate turnover",
+   "₹40 lakh",
+   "₹1.5 crore"
+  ],
+  "answer": 1,
+  "exp": "₹20 lakh for services (₹10 lakh in some special category states).",
+  "ref": "CGST Act, s.22(1)",
+  "volatile": true
+ },
+ {
+  "id": "REG-002",
+  "topic": "reg",
+  "sub": "Thresholds",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A trader exclusively supplying goods intra-state in Maharashtra has a turnover of ₹35 lakh. Must it register?",
+  "options": [
+   "Yes, above ₹20 lakh",
+   "No, the threshold for exclusive goods suppliers is ₹40 lakh in states that opted for it",
+   "Yes, all traders must register",
+   "Only if it buys inter-state"
+  ],
+  "answer": 1,
+  "exp": "Notification 10/2019-CT raised the goods threshold to ₹40 lakh, but a few states kept lower limits.",
+  "ref": "Notfn. 10/2019-CT",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "REG-003",
+  "topic": "reg",
+  "sub": "Thresholds",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Aggregate turnover for registration includes:",
+  "options": [
+   "Only taxable supplies",
+   "Taxable, exempt, exports and inter-state supplies of all registrations under the same PAN, all-India",
+   "Only supplies within the state",
+   "Inward supplies under RCM"
+  ],
+  "answer": 1,
+  "exp": "It excludes GST itself and inward supplies on which you paid tax under reverse charge.",
+  "ref": "CGST Act, s.2(6)"
+ },
+ {
+  "id": "REG-004",
+  "topic": "reg",
+  "sub": "Thresholds",
+  "diff": 2,
+  "type": "tf",
+  "q": "Aggregate turnover is computed on an all-India basis for the same PAN, even for businesses registered in multiple states.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "This is why a small branch in one state may still need GST registration if the PAN's total is above the limit."
+ },
+ {
+  "id": "REG-005",
+  "topic": "reg",
+  "sub": "Compulsory registration",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A small trader (turnover ₹8 lakh) sells goods to a buyer in another state. Must it register?",
+  "options": [
+   "No, below threshold",
+   "Yes, persons making inter-state taxable supplies of goods must register regardless of turnover",
+   "Only if the buyer is registered",
+   "Only above ₹5 lakh"
+  ],
+  "answer": 1,
+  "exp": "Section 24(i). Inter-state service suppliers below the threshold are exempted by notification.",
+  "ref": "CGST Act, s.24(i); Notfn. 10/2017-IT",
+  "case": true
+ },
+ {
+  "id": "REG-006",
+  "topic": "reg",
+  "sub": "Compulsory registration",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these must register regardless of turnover?",
+  "options": [
+   "A freelance designer with ₹10 lakh turnover in one state",
+   "A casual taxable person",
+   "A shop selling only fresh vegetables",
+   "A salaried employee"
+  ],
+  "answer": 1,
+  "exp": "Others under s.24 include persons liable under RCM, NRTPs, ISDs, ECOs, TDS deductors and OIDAR suppliers from abroad.",
+  "ref": "CGST Act, s.24"
+ },
+ {
+  "id": "REG-007",
+  "topic": "reg",
+  "sub": "Compulsory registration",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A person liable to pay tax under reverse charge (e.g. an unregistered business receiving GTA services) must:",
+  "options": [
+   "Not register",
+   "Register compulsorily under section 24(iii)",
+   "Register only above ₹20 lakh",
+   "Pay tax without registration"
+  ],
+  "answer": 1,
+  "exp": "Section 24(iii) requires registration for persons liable to pay tax under reverse charge.",
+  "ref": "CGST Act, s.24(iii)",
+  "case": true
+ },
+ {
+  "id": "REG-008",
+  "topic": "reg",
+  "sub": "Process",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which form is used to apply for regular GST registration?",
+  "options": [
+   "REG-01",
+   "REG-06",
+   "CMP-02",
+   "REG-16"
+  ],
+  "answer": 0,
+  "exp": "REG-01 is the application. REG-06 is the certificate and REG-16 is for cancellation.",
+  "ref": "CGST Rules, r.8"
+ },
+ {
+  "id": "REG-009",
+  "topic": "reg",
+  "sub": "Process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's generated after Part A of REG-01 is validated (PAN, email, mobile)?",
+  "options": [
+   "GSTIN",
+   "TRN, Temporary Reference Number",
+   "ARN",
+   "CIN"
+  ],
+  "answer": 1,
+  "exp": "You use the TRN to complete Part B. On submission you get an ARN (Application Reference Number)."
+ },
+ {
+  "id": "REG-010",
+  "topic": "reg",
+  "sub": "Process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "If Aadhaar authentication is done and no issues are flagged, when is registration normally granted?",
+  "options": [
+   "Instantly",
+   "Within 7 working days, otherwise it's deemed approved",
+   "Within 30 days",
+   "After physical verification"
+  ],
+  "answer": 1,
+  "exp": "Without Aadhaar authentication or where risk parameters flag it, physical verification applies and the limit is 30 days.",
+  "ref": "CGST Rules, r.9",
+  "volatile": true
+ },
+ {
+  "id": "REG-011",
+  "topic": "reg",
+  "sub": "Process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "If a person applies within 30 days of becoming liable to register, the effective date of registration is:",
+  "options": [
+   "Date of approval",
+   "Date on which liability to register arose",
+   "Start of the FY",
+   "Date of application"
+  ],
+  "answer": 1,
+  "exp": "If applied after 30 days, it's the date of grant.",
+  "ref": "CGST Rules, r.10(2)"
+ },
+ {
+  "id": "REG-012",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 1,
+  "type": "mcq",
+  "q": "How many characters does a GSTIN have?",
+  "options": [
+   "12",
+   "15",
+   "16",
+   "10"
+  ],
+  "answer": 1,
+  "exp": "15 characters."
+ },
+ {
+  "id": "REG-013",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "In GSTIN 07AAACM1234C1Z5, what do the first two digits indicate?",
+  "options": [
+   "Year of registration",
+   "State code (07 = Delhi)",
+   "Business type",
+   "Tax office"
+  ],
+  "answer": 1,
+  "exp": "The first two digits are the state code from the Census 2011 list."
+ },
+ {
+  "id": "REG-014",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Characters 3 to 12 of a regular GSTIN are:",
+  "options": [
+   "Aadhaar number",
+   "The PAN of the taxpayer",
+   "A random number",
+   "The TAN"
+  ],
+  "answer": 1,
+  "exp": "That's why any change in PAN requires a fresh registration."
+ },
+ {
+  "id": "REG-015",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does the 13th character of a GSTIN represent?",
+  "options": [
+   "Checksum",
+   "Entity number: how many registrations the PAN has in that state",
+   "Always 'Z'",
+   "Business type"
+  ],
+  "answer": 1,
+  "exp": "It's 1 for the first registration in a state, 2 for the second, and so on, continuing with letters after 9."
+ },
+ {
+  "id": "REG-016",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 3,
+  "type": "mcq",
+  "q": "What's the 15th character of a GSTIN?",
+  "options": [
+   "State code",
+   "A check character calculated from the first 14",
+   "Always 'Z'",
+   "Registration year"
+  ],
+  "answer": 1,
+  "exp": "It's a checksum (a mod-36 algorithm), which lets software catch typos without calling the portal. The 14th is 'Z' by default."
+ },
+ {
+  "id": "REG-017",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which state code belongs to Karnataka?",
+  "options": [
+   "27",
+   "29",
+   "33",
+   "36"
+  ],
+  "answer": 1,
+  "exp": "27 Maharashtra, 29 Karnataka, 33 Tamil Nadu, 36 Telangana."
+ },
+ {
+  "id": "REG-018",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "State code 06 is:",
+  "options": [
+   "Delhi",
+   "Haryana",
+   "Punjab",
+   "Uttar Pradesh"
+  ],
+  "answer": 1,
+  "exp": "03 Punjab, 06 Haryana, 07 Delhi, 09 Uttar Pradesh."
+ },
+ {
+  "id": "REG-019",
+  "topic": "reg",
+  "sub": "GSTIN structure",
+  "diff": 3,
+  "type": "mcq",
+  "q": "State code 97 in e-invoices or GSTINs stands for:",
+  "options": [
+   "Ladakh",
+   "Other Territory (like offshore areas)",
+   "Centre jurisdiction",
+   "Foreign country"
+  ],
+  "answer": 1,
+  "exp": "97 is 'Other Territory'. For exports, place of supply is state code 96 (foreign country)."
+ },
+ {
+  "id": "REG-020",
+  "topic": "reg",
+  "sub": "Amendment & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A company wants to change its legal name after a restructuring (same PAN). This is:",
+  "options": [
+   "A non-core amendment, auto-approved",
+   "A core field amendment needing officer approval",
+   "Not allowed, fresh registration needed",
+   "Done through GSTR-1"
+  ],
+  "answer": 1,
+  "exp": "Legal name (without PAN change), principal and additional places of business, and partners/directors are core fields filed in REG-14.",
+  "ref": "CGST Rules, r.19"
+ },
+ {
+  "id": "REG-021",
+  "topic": "reg",
+  "sub": "Amendment & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A business moves its principal place from Pune to Bengaluru. What's needed?",
+  "options": [
+   "Amend the address",
+   "Fresh registration in Karnataka, since registration is state-specific",
+   "Nothing",
+   "Only update the e-way bill profile"
+  ],
+  "answer": 1,
+  "exp": "A GSTIN is tied to a state. Moving to another state needs a new GSTIN there."
+ },
+ {
+  "id": "REG-022",
+  "topic": "reg",
+  "sub": "Amendment & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Within how long can you apply to revoke a cancellation of registration ordered by the officer?",
+  "options": [
+   "30 days",
+   "90 days from the cancellation order, extendable by up to 180 days",
+   "1 year",
+   "7 days"
+  ],
+  "answer": 1,
+  "exp": "The time limit was extended by the Finance Act 2022 amendments to rule 23.",
+  "ref": "CGST Act, s.30; r.23",
+  "volatile": true
+ },
+ {
+  "id": "REG-023",
+  "topic": "reg",
+  "sub": "Amendment & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After cancellation, which return must be filed?",
+  "options": [
+   "GSTR-9",
+   "GSTR-10 (final return) within 3 months of the cancellation date or order date, whichever is later",
+   "GSTR-4",
+   "No return needed"
+  ],
+  "answer": 1,
+  "exp": "GSTR-10 captures stock on hand and the ITC to be paid back.",
+  "ref": "CGST Act, s.45"
+ },
+ {
+  "id": "REG-024",
+  "topic": "reg",
+  "sub": "Special persons",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A casual taxable person registering for a trade fair must:",
+  "options": [
+   "Register after the event",
+   "Apply at least 5 days before starting business and make an advance deposit of estimated tax",
+   "Get registration for one year",
+   "Not register if below threshold"
+  ],
+  "answer": 1,
+  "exp": "Registration is valid for 90 days, extendable once by 90 days.",
+  "ref": "CGST Act, s.27"
+ },
+ {
+  "id": "REG-025",
+  "topic": "reg",
+  "sub": "Special persons",
+  "diff": 2,
+  "type": "tf",
+  "q": "An SEZ unit must take a separate registration from the same company's unit outside the SEZ in the same state.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "SEZ units or developers need registration as a business vertical distinct from other units.",
+  "ref": "CGST Rules, r.8 proviso",
+  "case": true
+ },
+ {
+  "id": "REG-026",
+  "topic": "reg",
+  "sub": "Special persons",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A GSTIN for a TDS deductor (a government department) is based on:",
+  "options": [
+   "PAN",
+   "TAN",
+   "Aadhaar",
+   "Department code"
+  ],
+  "answer": 1,
+  "exp": "TDS registrations under section 51 use the TAN, since many government departments don't have a PAN."
+ },
+ {
+  "id": "REG-027",
+  "topic": "reg",
+  "sub": "Compulsory registration",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A Delhi consultant with ₹12 lakh turnover gets a project from a Mumbai client. Must the consultant register?",
+  "options": [
+   "Yes, inter-state supply",
+   "No, inter-state service suppliers below the threshold are exempt from compulsory registration",
+   "Only if the client asks",
+   "Yes, if the client is a company"
+  ],
+  "answer": 1,
+  "exp": "The goods-only rule in s.24(i) doesn't apply to services thanks to Notification 10/2017-IT.",
+  "ref": "Notfn. 10/2017-IT",
+  "case": true
+ },
+ {
+  "id": "REG-028",
+  "topic": "reg",
+  "sub": "Amendment & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client adds a new godown in the same state. What's needed?",
+  "options": [
+   "New GSTIN",
+   "A core-field amendment adding an additional place of business, approved by the officer",
+   "Nothing",
+   "Only update the e-way bill portal"
+  ],
+  "answer": 1,
+  "exp": "Goods stored at an unregistered place of business can be treated as unaccounted.",
+  "ref": "CGST Rules, r.19",
+  "case": true
+ }
+]

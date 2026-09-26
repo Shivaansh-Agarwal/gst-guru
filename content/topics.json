@@ -1,0 +1,272 @@
+[
+ {
+  "id": "ca",
+  "code": "CA",
+  "name": "At the CA's desk",
+  "blurb": "How a CA actually runs GST compliance for clients: the monthly filing cycle, what happens when a deadline is missed, fixing mistakes after filing, and handling notices from the department.",
+  "subtopics": [
+   "Monthly cycle",
+   "Missed deadlines",
+   "Fixing mistakes",
+   "Notices",
+   "Client management"
+  ]
+ },
+ {
+  "id": "basics",
+  "code": "BAS",
+  "name": "Foundations of GST",
+  "blurb": "Why GST exists, the dual structure of CGST, SGST, UTGST and IGST, what it replaced, what stays outside it, and how the GST Council works.",
+  "subtopics": [
+   "Structure",
+   "Constitution & Council",
+   "Subsumed taxes",
+   "Outside GST",
+   "Rate structure"
+  ]
+ },
+ {
+  "id": "supply",
+  "code": "SUP",
+  "name": "Meaning and scope of supply",
+  "blurb": "What counts as a supply, the schedules that stretch or shrink that definition, composite versus mixed supplies, and intra-state versus inter-state.",
+  "subtopics": [
+   "Scope",
+   "Schedule I",
+   "Schedule III",
+   "Composite & mixed",
+   "Inter vs intra-state",
+   "Types of supply"
+  ]
+ },
+ {
+  "id": "pos",
+  "code": "POS",
+  "name": "Place of supply",
+  "blurb": "The rules that decide which state gets the tax, and therefore whether you charge IGST or CGST plus SGST. The single most tested area in GST.",
+  "subtopics": [
+   "Goods",
+   "Services general rule",
+   "Services specific rules",
+   "Cross-border",
+   "Wrong tax paid"
+  ]
+ },
+ {
+  "id": "tos",
+  "code": "TOS",
+  "name": "Time and value of supply",
+  "blurb": "When the tax liability arises and on what amount: invoices, advances, reverse charge timing, discounts, related parties and valuation rules.",
+  "subtopics": [
+   "Time of supply",
+   "Advances",
+   "Value inclusions",
+   "Discounts",
+   "Valuation rules"
+  ]
+ },
+ {
+  "id": "itc",
+  "code": "ITC",
+  "name": "Input tax credit",
+  "blurb": "The credit mechanism that makes GST a value-added tax: conditions, time limits, blocked credits, reversals and the order in which credit is used.",
+  "subtopics": [
+   "Conditions",
+   "Time limits",
+   "Blocked credits",
+   "Reversal",
+   "Utilisation",
+   "ISD & special cases"
+  ]
+ },
+ {
+  "id": "rcm",
+  "code": "RCM",
+  "name": "Reverse charge",
+  "blurb": "When the buyer pays the tax instead of the seller: notified goods and services, imports of services, self-invoicing and e-commerce operators paying as supplier.",
+  "subtopics": [
+   "Concept",
+   "Notified services",
+   "Notified goods",
+   "Compliance",
+   "Section 9(5)"
+  ]
+ },
+ {
+  "id": "reg",
+  "code": "REG",
+  "name": "Registration and GSTIN",
+  "blurb": "Who must register, thresholds, the registration process, what each part of a GSTIN means, amendments and cancellation.",
+  "subtopics": [
+   "Thresholds",
+   "Compulsory registration",
+   "Process",
+   "GSTIN structure",
+   "Amendment & cancellation",
+   "Special persons"
+  ]
+ },
+ {
+  "id": "comp",
+  "code": "CMP",
+  "name": "Composition scheme",
+  "blurb": "The simplified scheme for small businesses: who qualifies, the rates, what they can't do, and how they file.",
+  "subtopics": [
+   "Eligibility",
+   "Rates",
+   "Restrictions",
+   "Compliance"
+  ]
+ },
+ {
+  "id": "docs",
+  "code": "DOC",
+  "name": "Invoices and documents",
+  "blurb": "Tax invoices, bills of supply, credit and debit notes, vouchers and delivery challans: what each must contain and when it must be issued.",
+  "subtopics": [
+   "Tax invoice",
+   "Other documents",
+   "Credit & debit notes",
+   "Timelines"
+  ]
+ },
+ {
+  "id": "returns",
+  "code": "RET",
+  "name": "Returns and filing",
+  "blurb": "GSTR-1, GSTR-3B, the annual return and the rest: what goes in which table, due dates, QRMP, sequencing rules and late fees.",
+  "subtopics": [
+   "GSTR-1",
+   "GSTR-3B",
+   "QRMP",
+   "Annual return",
+   "Other returns",
+   "Rules & late fees"
+  ]
+ },
+ {
+  "id": "einv",
+  "code": "EIN",
+  "name": "E-invoicing",
+  "blurb": "How invoices get registered on the IRP: applicability, IRN and QR codes, the JSON schema, cancellation, time limits and exemptions.",
+  "subtopics": [
+   "Applicability",
+   "IRN & QR",
+   "Schema",
+   "Cancellation & limits",
+   "Flow"
+  ]
+ },
+ {
+  "id": "ewb",
+  "code": "EWB",
+  "name": "E-way bill",
+  "blurb": "The document that must travel with goods: when it's needed, Part A and Part B, validity, extensions, cancellation and what happens without one.",
+  "subtopics": [
+   "Applicability",
+   "Parts & generation",
+   "Validity",
+   "Changes & cancellation",
+   "Enforcement"
+  ]
+ },
+ {
+  "id": "recon",
+  "code": "REC",
+  "name": "Reconciliation and IMS",
+  "blurb": "Matching your books with what suppliers reported: GSTR-2A versus 2B, the Invoice Management System, mismatch types and the rules that flag gaps.",
+  "subtopics": [
+   "2A vs 2B",
+   "IMS",
+   "Mismatch types",
+   "Liability checks",
+   "Practice"
+  ]
+ },
+ {
+  "id": "pay",
+  "code": "PAY",
+  "name": "Payments, ledgers and interest",
+  "blurb": "How tax actually gets paid: the cash and credit ledgers, challans, interest, late fees and what credit can and can't pay for.",
+  "subtopics": [
+   "Ledgers",
+   "Challans",
+   "Interest",
+   "Rules of payment"
+  ]
+ },
+ {
+  "id": "exports",
+  "code": "EXP",
+  "name": "Exports, SEZ and refunds",
+  "blurb": "Zero-rated supplies, LUT versus paying IGST, export of services conditions, SEZ supplies, deemed exports and how refunds work.",
+  "subtopics": [
+   "Zero rating",
+   "Export of services",
+   "SEZ & deemed exports",
+   "Refund process",
+   "Inverted duty"
+  ]
+ },
+ {
+  "id": "tdstcs",
+  "code": "TDS",
+  "name": "TDS, TCS and e-commerce",
+  "blurb": "Tax deducted by government buyers, tax collected by e-commerce platforms, and the special rules for selling online.",
+  "subtopics": [
+   "TDS",
+   "TCS",
+   "Sellers on platforms",
+   "Platform obligations"
+  ]
+ },
+ {
+  "id": "hsn",
+  "code": "HSN",
+  "name": "Classification and rates",
+  "blurb": "HSN and SAC codes, how many digits you need where, how goods get classified, and how rate changes flow through.",
+  "subtopics": [
+   "HSN & SAC",
+   "Digits & reporting",
+   "Classification rules",
+   "Rates"
+  ]
+ },
+ {
+  "id": "enf",
+  "code": "ENF",
+  "name": "Assessment, notices and appeals",
+  "blurb": "Scrutiny, audits, demand notices, penalties, the appeal ladder and advance rulings. What happens when the department comes asking.",
+  "subtopics": [
+   "Scrutiny & audit",
+   "Demands",
+   "Penalties",
+   "Appeals",
+   "Advance ruling"
+  ]
+ },
+ {
+  "id": "tech",
+  "code": "TEC",
+  "name": "The GST tech ecosystem",
+  "blurb": "GSTN, the portals, GSPs and ASPs, APIs and the plumbing that compliance software is built on.",
+  "subtopics": [
+   "Institutions",
+   "GSP & ASP",
+   "APIs",
+   "Validation",
+   "Portals"
+  ]
+ },
+ {
+  "id": "terms",
+  "code": "TRM",
+  "name": "Terms and abbreviations",
+  "blurb": "The vocabulary: acronyms on the portal, legal definitions that decide outcomes, and words that sound alike but aren't.",
+  "subtopics": [
+   "Acronyms",
+   "Definitions",
+   "Look-alikes"
+  ]
+ }
+]

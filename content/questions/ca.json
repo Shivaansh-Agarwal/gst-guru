@@ -1,0 +1,785 @@
+[
+ {
+  "id": "CA-001",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A CA files for a monthly client. In what order do the main steps happen each month?",
+  "options": [
+   "GSTR-3B, then GSTR-1, then reconcile",
+   "Collect sales data and file GSTR-1 (by the 11th), act on IMS and check GSTR-2B (from the 14th), reconcile purchases, then pay tax and file GSTR-3B (by the 20th)",
+   "Reconcile once a year, file GSTR-9, then monthly returns",
+   "Pay tax first, then file everything on the 20th"
+  ],
+  "answer": 1,
+  "exp": "GSTR-1 comes first because GSTR-3B liability is auto-populated from it and 3B can't be filed until GSTR-1 is. Purchases are reconciled against 2B before claiming ITC.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-002",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 2,
+  "type": "mcq",
+  "q": "On the 18th, a CA sees ₹6 lakh of the client's purchase invoices are in the books but missing from GSTR-2B. What should go into this month's GSTR-3B?",
+  "options": [
+   "Claim all of it, the invoices are genuine",
+   "Claim only what's in GSTR-2B; follow up with those suppliers and claim the rest in the month it appears in 2B",
+   "Claim half as a compromise",
+   "Skip claiming ITC this month altogether"
+  ],
+  "answer": 1,
+  "exp": "Section 16(2)(aa) and rule 36(4) restrict ITC to what's in 2B. Claiming more also triggers a rule 88D intimation. The missed ITC isn't lost; it can be claimed later within the section 16(4) deadline.",
+  "ref": "CGST Act, s.16(2)(aa)",
+  "case": true
+ },
+ {
+  "id": "CA-003",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's GSTR-3B shows ₹3 lakh output tax and ₹2.2 lakh ITC. Its cash ledger has ₹50,000. What does the CA do before filing?",
+  "options": [
+   "File anyway, the portal will adjust",
+   "Create a PMT-06 challan for the ₹30,000 shortfall, get the client to pay, then offset liability and file",
+   "Claim more ITC to cover it",
+   "File a nil return and pay later"
+  ],
+  "answer": 1,
+  "exp": "GSTR-3B can only be filed once liability is fully offset. Net cash needed is ₹80,000; with ₹50,000 in the ledger, ₹30,000 more must be deposited.",
+  "case": true
+ },
+ {
+  "id": "CA-004",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client with ₹3 crore turnover asks whether to switch to QRMP. What's the main trade-off the CA should explain?",
+  "options": [
+   "QRMP means paying tax quarterly",
+   "Returns become quarterly but tax is still paid monthly (PMT-06); B2B buyers may want IFF uploads so their ITC isn't delayed",
+   "QRMP removes the need for GSTR-1",
+   "QRMP has a lower tax rate"
+  ],
+  "answer": 1,
+  "exp": "QRMP reduces filing effort, but monthly payments continue and B2B clients' ITC depends on when invoices are uploaded.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-005",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 2,
+  "type": "mcq",
+  "q": "In IMS, a client's supplier has uploaded an invoice for goods that haven't arrived yet. What's the right action this month?",
+  "options": [
+   "Accept it",
+   "Keep it Pending so it doesn't enter this month's 2B, and accept it once goods are received",
+   "Reject it",
+   "Ignore it"
+  ],
+  "answer": 1,
+  "exp": "ITC needs actual receipt of goods (s.16(2)(b)). Pending defers it. Ignoring means it's deemed accepted.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-006",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A CA notices a client's biggest supplier hasn't filed GSTR-1 for two months. What's the most useful advice to the client?",
+  "options": [
+   "Nothing can be done",
+   "Hold part of the payment until the supplier files, since the client can't claim that ITC and may have to reverse it if the supplier never pays the tax",
+   "Report the supplier to the police",
+   "Claim ITC anyway"
+  ],
+  "answer": 1,
+  "exp": "Vendor compliance directly affects the buyer's ITC. Many clients add clauses allowing them to withhold GST amounts until invoices reflect in 2B.",
+  "case": true
+ },
+ {
+  "id": "CA-007",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 2,
+  "type": "mcq",
+  "q": "At year end a CA prepares GSTR-9 for a client. Where do the figures mostly come from?",
+  "options": [
+   "Only the books",
+   "Auto-populated from the year's GSTR-1, GSTR-3B and GSTR-2B, then checked against books; differences are explained or paid through DRC-03",
+   "Only from GSTR-2A",
+   "The client's bank statement"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9 isn't a chance to revise earlier returns. It reports the year as filed, and extra liability found is paid via DRC-03.",
+  "case": true
+ },
+ {
+  "id": "CA-008",
+  "topic": "ca",
+  "sub": "Monthly cycle",
+  "diff": 3,
+  "type": "scenario",
+  "q": "You've just taken on a new trading client in Delhi who files monthly. Walk through what you'd set up and check in the first week.",
+  "model": "Get the GSTIN, portal login, and the authorised signatory's mobile for EVC OTPs (or DSC if it's a company or LLP). Check the portal for filing status of past returns, any notices under 'View notices and orders' and the additional notices tab, and the cash and credit ledger balances. Enrol as the client's GST practitioner if you'll be filing on their behalf. Agree a monthly calendar: sales data by around the 5th for GSTR-1 on the 11th, purchase data before the 14th for 2B reconciliation, and payment before the 20th. Check whether e-invoicing applies (turnover above ₹5 crore in any year) and whether HSN digits on invoices are right.",
+  "points": [
+   "Credentials, OTP or DSC",
+   "Past filing status and pending notices",
+   "Ledger balances",
+   "GSTP enrolment",
+   "Monthly data calendar",
+   "E-invoice and HSN applicability"
+  ],
+  "exp": "Most compliance failures come from data arriving late, not from not knowing the law.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-009",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A client's GSTR-3B for August is filed on 5 October instead of 20 September. What does the client owe on top of the tax?",
+  "options": [
+   "Nothing",
+   "Late fee per day of delay (subject to a cap) plus 18% interest on the tax paid in cash, for the days of delay",
+   "Only a flat ₹10,000 penalty",
+   "Only interest on the full liability"
+  ],
+  "answer": 1,
+  "exp": "Late fee under s.47 and interest under s.50 on the net cash portion. Both are paid in cash before filing.",
+  "ref": "CGST Act, s.47, s.50",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-010",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client missed filing GSTR-1 for July and it's now 18 August. What else is affected?",
+  "options": [
+   "Nothing else",
+   "July's GSTR-3B can't be filed until July's GSTR-1 is filed, and the client's B2B buyers won't see the invoices in their July 2B",
+   "Only a late fee",
+   "The GSTIN is cancelled"
+  ],
+  "answer": 1,
+  "exp": "Section 39(10) links the two. Buyers get the ITC only in the 2B of the month the invoices are eventually filed.",
+  "ref": "CGST Act, s.39(10)",
+  "case": true
+ },
+ {
+  "id": "CA-011",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client hasn't filed GSTR-3B for two consecutive months. What operational problem hits first?",
+  "options": [
+   "Nothing",
+   "E-way bill generation gets blocked for the GSTIN, which can stop dispatches",
+   "Bank account frozen",
+   "Income tax refund stopped"
+  ],
+  "answer": 1,
+  "exp": "Rule 138E. For a trading or manufacturing client this stops trucks leaving, which is usually what makes them call.",
+  "ref": "CGST Rules, r.138E",
+  "case": true
+ },
+ {
+  "id": "CA-012",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A non-filer client receives a GSTR-3A notice. What is it?",
+  "options": [
+   "A demand order",
+   "A notice to file the pending return within 15 days, before the officer can do a best judgement assessment",
+   "An audit notice",
+   "A registration certificate"
+  ],
+  "answer": 1,
+  "exp": "If the return still isn't filed, the officer may assess under s.62 (ASMT-13). That order is withdrawn if the return is filed within 60 days.",
+  "ref": "CGST Act, s.46, s.62",
+  "case": true
+ },
+ {
+  "id": "CA-013",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client hasn't filed returns for six months straight. What's the risk?",
+  "options": [
+   "None",
+   "The officer can start cancellation of registration (REG-17 show cause notice)",
+   "Automatic ₹1 lakh fine",
+   "Only a warning email"
+  ],
+  "answer": 1,
+  "exp": "Section 29(2)(c) allows cancellation for non-filing over a continuous period. Once cancelled, the client can't issue tax invoices.",
+  "ref": "CGST Act, s.29(2)(c)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-014",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client wants to file an old GSTR-3B from more than three years ago. What will happen?",
+  "options": [
+   "Allowed with late fee",
+   "The portal won't accept it, returns are time-barred three years after their due date",
+   "Allowed if the officer approves",
+   "Allowed with 24% interest"
+  ],
+  "answer": 1,
+  "exp": "Enforced from July 2025. Any tax still due gets settled through DRC-03 or proceedings, not a return.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-015",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client files GSTR-3B late with a nil liability. Is there a late fee?",
+  "options": [
+   "No, nil returns have no late fee",
+   "Yes, a reduced late fee per day applies to nil returns, subject to a cap",
+   "Only interest",
+   "Only if more than 90 days late"
+  ],
+  "answer": 1,
+  "exp": "Nil returns carry a lower per-day fee but aren't free. They can be filed by SMS.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-016",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's supplier invoice dated June 2024 appears in 2B only in December 2025 because the supplier filed very late. Can the client claim that ITC now?",
+  "options": [
+   "Yes, whenever it appears",
+   "No, the section 16(4) deadline for FY 2024-25 invoices was 30 November 2025",
+   "Yes, with interest",
+   "Only with officer approval"
+  ],
+  "answer": 1,
+  "exp": "This is why chasing suppliers before 30 November matters. The ITC is lost if it doesn't reach 2B in time.",
+  "ref": "CGST Act, s.16(4)",
+  "case": true
+ },
+ {
+  "id": "CA-017",
+  "topic": "ca",
+  "sub": "Missed deadlines",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client calls on 22nd evening: 'I forgot to send you data, GSTR-3B was due on the 20th.' What do you tell them and what do you do?",
+  "model": "Reassure them it's fixable. File GSTR-1 first if it's pending, since 3B depends on it. Prepare 3B as soon as data arrives. Late fee accrues per day, so each day counts, and interest at 18% runs on the tax paid in cash from the 21st. Pay both through the cash ledger before filing. If two consecutive 3Bs go unfiled, e-way bills get blocked, so file this before next month's due date. Then fix the process: agree a data cut-off date and send reminders.",
+  "points": [
+   "File GSTR-1 first if pending",
+   "Late fee per day plus 18% interest on cash tax",
+   "Pay through cash ledger before filing",
+   "Watch the two-period e-way bill block",
+   "Fix the data calendar"
+  ],
+  "exp": "CAs deal with this constantly. The skill is minimising the damage quickly.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-018",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A CA realises an invoice was reported with the wrong taxable value in last month's GSTR-1, already filed. How is it corrected?",
+  "options": [
+   "Revise last month's GSTR-1",
+   "Amend it in the current or a later GSTR-1 using the amendment table (9A), since filed returns can't be revised",
+   "Delete it from the portal",
+   "Call GSTN"
+  ],
+  "answer": 1,
+  "exp": "There's no revision of filed GST returns. Amendments are made in later returns within the section 37(3) time limit.",
+  "ref": "CGST Act, s.37(3)",
+  "case": true
+ },
+ {
+  "id": "CA-019",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the last date to amend errors in FY 2024-25 GSTR-1 details?",
+  "options": [
+   "31 March 2025",
+   "30 November 2025, or the date the annual return is filed if earlier",
+   "31 December 2025",
+   "Any time"
+  ],
+  "answer": 1,
+  "exp": "The same time limit applies to rectifying GSTR-3B under s.39(9).",
+  "ref": "CGST Act, s.37(3), s.39(9)",
+  "case": true
+ },
+ {
+  "id": "CA-020",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's B2B invoice went out under the wrong buyer GSTIN in GSTR-1. The buyer complains the ITC isn't showing. What's the fix?",
+  "options": [
+   "Buyer claims it anyway",
+   "Amend the invoice in the next GSTR-1 (Table 9A) with the correct GSTIN, so it moves to the right buyer's 2B",
+   "Issue a new invoice with a new number",
+   "Nothing can be done"
+  ],
+  "answer": 1,
+  "exp": "The wrongly named recipient may have seen it in their 2B, which is why their team may also flag it.",
+  "case": true
+ },
+ {
+  "id": "CA-021",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A CA spots the error before filing GSTR-3B but after filing GSTR-1 for the same month. What's the quickest correction?",
+  "options": [
+   "Wait for next month",
+   "Use GSTR-1A for that month, so the corrected figures auto-populate this month's GSTR-3B",
+   "Edit the 3B figure manually",
+   "Revise GSTR-1"
+  ],
+  "answer": 1,
+  "exp": "GSTR-1A exists exactly for this window.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-022",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client under-reported ₹2 lakh of output tax in April's GSTR-3B. It's now July. How is it fixed?",
+  "options": [
+   "Revise April's 3B",
+   "Add the ₹2 lakh to July's GSTR-3B (or pay through DRC-03) with interest from April's due date",
+   "Only pay in GSTR-9",
+   "It's too late"
+  ],
+  "answer": 1,
+  "exp": "Additional liability is declared in a later return with interest calculated from the original due date.",
+  "ref": "CGST Act, s.39(9), s.50",
+  "case": true
+ },
+ {
+  "id": "CA-023",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client forgot to claim eligible ITC of ₹80,000 in May's GSTR-3B, though it was in May's 2B. Can it be claimed in August?",
+  "options": [
+   "No, it's lost",
+   "Yes, in a later 3B's Table 4(A)(5), within the section 16(4) time limit",
+   "Only through a refund",
+   "Only in GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "ITC isn't lost for being claimed late, as long as it's within the time limit.",
+  "ref": "CGST Act, s.16(4)",
+  "case": true
+ },
+ {
+  "id": "CA-024",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client paid IGST on a sale that should have been CGST+SGST. The tax amount is the same. What's the correct fix?",
+  "options": [
+   "Nothing, total is equal",
+   "Pay CGST+SGST correctly, then claim a refund of the IGST paid under section 77/19",
+   "Transfer IGST to CGST using PMT-09",
+   "Adjust via credit ledger"
+  ],
+  "answer": 1,
+  "exp": "Wrong-head tax can't simply be moved once it's discharged in a return. The refund is claimed within two years of paying the correct tax.",
+  "ref": "CGST Act, s.77; IGST Act, s.19",
+  "case": true
+ },
+ {
+  "id": "CA-025",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A CA over-reported liability by ₹50,000 in GSTR-3B for a month, and it's been paid. What are the options?",
+  "options": [
+   "Revise the return",
+   "Reduce liability in a later GSTR-3B (where the portal allows), or claim a refund of excess tax paid",
+   "Nothing",
+   "Transfer to next year"
+  ],
+  "answer": 1,
+  "exp": "Excess payment can be adjusted in later returns within limits or refunded under s.54. With auto-populated liability now locked, most corrections start at GSTR-1 or GSTR-1A.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-026",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "While preparing GSTR-9, a CA finds ₹1.2 lakh of tax that was never paid during the year. How is it settled?",
+  "options": [
+   "Revise GSTR-3B",
+   "Pay it through DRC-03 with interest, and report it in GSTR-9",
+   "Ignore it, the year is closed",
+   "Pay in next year's GSTR-3B with no interest"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9 itself can't be used to pay tax. DRC-03 is the voluntary payment form.",
+  "case": true
+ },
+ {
+  "id": "CA-027",
+  "topic": "ca",
+  "sub": "Fixing mistakes",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client issued an invoice of ₹5 lakh + ₹90,000 IGST to a customer, reported it in GSTR-1 and paid the tax. Two months later, the customer says half the goods were defective and returns them. What should the CA do?",
+  "model": "Issue a GST credit note for the returned half (₹2.5 lakh + ₹45,000 IGST), referencing the original invoice, and report it in GSTR-1 Table 9B. If the client is on e-invoicing, register the credit note on the IRP. The supplier's liability reduces in the month the credit note is reported, subject to the customer accepting it in IMS (a rejected credit note won't reduce liability). The customer reverses the matching ITC. This must happen by 30 November after the FY of the original supply.",
+  "points": [
+   "Credit note, not a revised invoice",
+   "Report in GSTR-1 Table 9B, and on the IRP if applicable",
+   "Customer's IMS action matters",
+   "Customer reverses ITC",
+   "Section 34 time limit"
+  ],
+  "exp": "Returns of goods are the most common reason for credit notes.",
+  "ref": "CGST Act, s.34",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-028",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Where does a CA check whether a client has received any GST notice?",
+  "options": [
+   "Email only",
+   "On the GST portal under Services > User Services > View Notices and Orders, and also the Additional Notices and Orders tab",
+   "Only by post",
+   "On the income tax portal"
+  ],
+  "answer": 1,
+  "exp": "Notices uploaded on the portal count as valid service under section 169. Missing the Additional Notices tab is a common, expensive mistake.",
+  "ref": "CGST Act, s.169",
+  "case": true
+ },
+ {
+  "id": "CA-029",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client receives ASMT-10 saying GSTR-3B ITC is higher than GSTR-2B. How is it answered?",
+  "options": [
+   "Ignore it",
+   "Reply in ASMT-11 within the time given (usually 30 days), with a reconciliation explaining the difference or accepting and paying through DRC-03",
+   "File an appeal",
+   "Cancel the registration"
+  ],
+  "answer": 1,
+  "exp": "If the officer accepts the reply, ASMT-12 closes it. If not, it can lead to a demand under s.73/74 (or 74A for FY 2024-25 onwards).",
+  "ref": "CGST Act, s.61; r.99",
+  "case": true
+ },
+ {
+  "id": "CA-030",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client gets DRC-01B saying GSTR-1 liability exceeds GSTR-3B. What's the deadline and consequence?",
+  "options": [
+   "No deadline",
+   "Reply in Part B within 7 days, paying the difference or explaining it; otherwise the next GSTR-1 is blocked",
+   "90 days",
+   "Only a warning"
+  ],
+  "answer": 1,
+  "exp": "The explanation might be that invoices were reported in GSTR-1 but tax was paid in a different month.",
+  "ref": "CGST Rules, r.88C",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-031",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client receives a show cause notice (DRC-01) for FY 2022-23 under section 73 demanding ₹4 lakh. If the client agrees with the demand, what's the cheapest option?",
+  "options": [
+   "Wait for the order",
+   "Pay the tax and interest within 30 days of the SCN, which means no penalty under section 73",
+   "Appeal immediately",
+   "Ignore it"
+  ],
+  "answer": 1,
+  "exp": "Under s.73(8) no penalty applies if tax and interest are paid within 30 days of the notice.",
+  "ref": "CGST Act, s.73(8)",
+  "case": true
+ },
+ {
+  "id": "CA-032",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A demand relates to FY 2024-25. Which section governs it?",
+  "options": [
+   "Section 73 or 74",
+   "Section 74A, the single section for all demands from FY 2024-25 onwards",
+   "Section 61",
+   "Section 129"
+  ],
+  "answer": 1,
+  "exp": "74A merged the fraud and non-fraud routes, with a common time limit of 42 months from the annual return due date for the notice.",
+  "ref": "CGST Act, s.74A",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-033",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client disagrees with a demand order (DRC-07). What must happen within three months?",
+  "options": [
+   "Nothing",
+   "File an appeal before the Appellate Authority (APL-01) with a pre-deposit of 10% of the disputed tax",
+   "Pay the full amount",
+   "File a fresh return"
+  ],
+  "answer": 1,
+  "exp": "The pre-deposit stops recovery of the balance while the appeal is pending. A further appeal goes to the GSTAT.",
+  "ref": "CGST Act, s.107",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-034",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's cancellation show cause notice (REG-17) arrives for non-filing. What should the CA do?",
+  "options": [
+   "Nothing",
+   "File the pending returns with late fee and interest, and reply in REG-18 within the time allowed (7 working days)",
+   "Apply for a new GSTIN",
+   "Appeal at once"
+  ],
+  "answer": 1,
+  "exp": "If the registration is cancelled anyway, a revocation application (REG-21) can be filed within the allowed time after filing pending returns.",
+  "ref": "CGST Rules, r.22",
+  "case": true
+ },
+ {
+  "id": "CA-035",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 3,
+  "type": "mcq",
+  "q": "The officer blocks a client's electronic credit ledger under rule 86A without any notice. What should the CA know?",
+  "options": [
+   "It's permanent",
+   "Blocking can happen without prior notice, lasts up to one year, and the client can make a representation; courts have required reasons to be recorded",
+   "Only the court can block it",
+   "It can be undone by filing GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "Many writ petitions have been filed on this. Blocked credit can't be used for payment or refund.",
+  "ref": "CGST Rules, r.86A",
+  "case": true
+ },
+ {
+  "id": "CA-036",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client is issued summons under section 70. What is it?",
+  "options": [
+   "A tax demand",
+   "A direction to appear and give evidence or produce documents in an inquiry",
+   "A notice to file a return",
+   "An audit report"
+  ],
+  "answer": 1,
+  "exp": "Summons is part of an investigation, not an assessment. Ignoring it can lead to penalties.",
+  "ref": "CGST Act, s.70",
+  "case": true
+ },
+ {
+  "id": "CA-037",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client receives an ASMT-10 for FY 2020-21: ITC in GSTR-3B is ₹4.2 lakh more than GSTR-2A. The client says every invoice is genuine. How would you draft the reply?",
+  "model": "Reply in ASMT-11 within the deadline. Attach an invoice-wise reconciliation of the ₹4.2 lakh gap: invoices where suppliers filed late (show them in later 2A), wrong GSTIN or period reported by suppliers, and IGST on imports from ICEGATE that doesn't appear in 2A. For this period, cite Circular 183/15/2022 as extended by Circular 193/05/2023 (covering April 2019 to December 2021), which lets a buyer prove genuine credit with a supplier's CA certificate (above ₹5 lakh) or supplier certificate (up to ₹5 lakh) that tax was paid. Attach invoices, payment proof and e-way bills. Pay through DRC-03 only for anything genuinely ineligible, so the rest isn't conceded.",
+  "points": [
+   "ASMT-11 within the deadline",
+   "Invoice-wise reconciliation",
+   "Circulars 183/15/2022 and 193/05/2023",
+   "Supplier or CA certificates",
+   "Payment only for truly ineligible amounts"
+  ],
+  "exp": "2A-vs-3B notices for old years are among the most common notices CAs handle.",
+  "ref": "CGST Act, s.61; Circulars 183/15/2022, 193/05/2023",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-038",
+  "topic": "ca",
+  "sub": "Notices",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client ignored a show cause notice and now has a demand order of ₹12 lakh (tax ₹8 lakh, interest and penalty the rest). Their bank account has just been attached. What are the options?",
+  "model": "The order can still be appealed within three months (plus one month on sufficient cause) under section 107. Paying the 10% pre-deposit (₹80,000 on disputed tax) with the appeal stays recovery of the balance, and the CA can ask the officer to lift the attachment once the appeal is filed. If the appeal deadline has passed, a writ petition in the High Court is the remaining route, usually only where there's a breach of natural justice. For the future: check the portal notices section regularly.",
+  "points": [
+   "Appeal within 3 months, plus 1",
+   "10% pre-deposit on disputed tax",
+   "Stay of recovery on filing the appeal",
+   "Writ if the appeal window closed",
+   "Monitor notices"
+  ],
+  "exp": "Most bank attachments CAs see come from missed portal notices.",
+  "ref": "CGST Act, s.107, s.79",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "CA-039",
+  "topic": "ca",
+  "sub": "Client management",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A private limited company client needs its GSTR-3B filed. How is it signed?",
+  "options": [
+   "EVC OTP on the CA's mobile",
+   "DSC of the authorised signatory registered on the portal",
+   "Aadhaar OTP of any employee",
+   "No signature needed"
+  ],
+  "answer": 1,
+  "exp": "Companies and LLPs must use DSC. Other taxpayers can use EVC, with the OTP going to the authorised signatory's mobile.",
+  "ref": "CGST Rules, r.26",
+  "case": true
+ },
+ {
+  "id": "CA-040",
+  "topic": "ca",
+  "sub": "Client management",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does a CA's enrolment as a GST Practitioner (GSTP) allow on the portal?",
+  "options": [
+   "Filing without client involvement",
+   "Preparing and furnishing returns and other forms on the client's behalf once the client authorises the GSTP, with the client confirming",
+   "Approving registrations",
+   "Waiving late fees"
+  ],
+  "answer": 1,
+  "exp": "The taxpayer remains responsible for what's filed.",
+  "ref": "CGST Rules, r.83",
+  "case": true
+ },
+ {
+  "id": "CA-041",
+  "topic": "ca",
+  "sub": "Client management",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A proprietor client's authorised signatory mobile number is lost, so EVC OTPs aren't coming. What's the fix?",
+  "options": [
+   "File with the CA's number",
+   "Update the authorised signatory's contact details through a non-core amendment (with email/mobile OTP and verification steps), then file",
+   "Use DSC of the CA",
+   "Wait for GSTN to call"
+  ],
+  "answer": 1,
+  "exp": "Keeping authorised signatory details current avoids a scramble at due dates.",
+  "case": true
+ },
+ {
+  "id": "CA-042",
+  "topic": "ca",
+  "sub": "Client management",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client asks the CA to 'just show some purchase bills' to increase ITC. What's the right response?",
+  "options": [
+   "Do it quietly",
+   "Refuse; claiming ITC on fake invoices is an offence under section 132 with penalties and possible arrest",
+   "Do it if under ₹1 lakh",
+   "Do it and reverse later"
+  ],
+  "answer": 1,
+  "exp": "Fake invoice ITC is one of the department's main enforcement targets, and a professional helping with it is also exposed.",
+  "ref": "CGST Act, s.122, s.132",
+  "case": true
+ },
+ {
+  "id": "CA-043",
+  "topic": "ca",
+  "sub": "Client management",
+  "diff": 3,
+  "type": "scenario",
+  "q": "You manage 60 GST clients. What would you want from a GST compliance software to make the monthly cycle manageable?",
+  "model": "A dashboard of every client's filing status and due dates, with pending data flagged. Bulk GSTR-1 preparation from sales data or e-invoices. Automatic 2B download and reconciliation with the purchase register, with IMS actions done in bulk. A vendor follow-up list for missing invoices. Payment computation and challan creation. Alerts for new portal notices, rule 88C/88D intimations and e-way bill blocking risk. Audit trails of who filed what. This is essentially the product surface a GST SaaS company builds for CAs.",
+  "points": [
+   "Multi-client status dashboard",
+   "Bulk GSTR-1 from sales or e-invoices",
+   "2B reconciliation and bulk IMS",
+   "Vendor follow-ups",
+   "Notice and intimation alerts",
+   "Audit trail"
+  ],
+  "exp": "Thinking from the CA's side is the fastest way to understand why each feature exists.",
+  "case": true
+ }
+]

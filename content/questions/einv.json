@@ -1,0 +1,474 @@
+[
+ {
+  "id": "EIN-001",
+  "topic": "einv",
+  "sub": "Applicability",
+  "diff": 1,
+  "type": "mcq",
+  "q": "From 1 August 2023, e-invoicing applies to businesses whose aggregate turnover in any preceding FY (from 2017-18) exceeds:",
+  "options": [
+   "₹10 crore",
+   "₹5 crore",
+   "₹20 crore",
+   "₹1 crore"
+  ],
+  "answer": 1,
+  "exp": "The threshold came down in phases from ₹500 crore to ₹5 crore.",
+  "ref": "Notfn. 10/2023-CT",
+  "volatile": true
+ },
+ {
+  "id": "EIN-002",
+  "topic": "einv",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which documents need e-invoicing (IRN) for an applicable taxpayer?",
+  "options": [
+   "All invoices including B2C",
+   "B2B invoices, credit notes and debit notes, exports, and supplies to SEZ",
+   "Only exports",
+   "Only invoices above ₹50,000"
+  ],
+  "answer": 1,
+  "exp": "B2C invoices don't need an IRN. Very large taxpayers need a dynamic QR code on B2C invoices instead.",
+  "ref": "CGST Rules, r.48(4)"
+ },
+ {
+  "id": "EIN-003",
+  "topic": "einv",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which entity is exempt from e-invoicing regardless of turnover?",
+  "options": [
+   "IT companies",
+   "Banking companies and NBFCs",
+   "Pharma companies",
+   "Manufacturers"
+  ],
+  "answer": 1,
+  "exp": "Others exempt: insurers, GTAs, passenger transport, multiplex admissions, SEZ units, and government departments and local authorities.",
+  "ref": "Notfn. 13/2020-CT",
+  "volatile": true
+ },
+ {
+  "id": "EIN-004",
+  "topic": "einv",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "tf",
+  "q": "Once a business crosses the e-invoice threshold in any year, it must continue e-invoicing even if turnover later falls below it.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "The test is 'any preceding FY from 2017-18'."
+ },
+ {
+  "id": "EIN-005",
+  "topic": "einv",
+  "sub": "Applicability",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A company exceeding the threshold issues a B2B invoice without generating an IRN. What's the legal consequence?",
+  "options": [
+   "None",
+   "The invoice isn't considered a valid tax invoice",
+   "Only a warning",
+   "Penalty only if above ₹1 lakh"
+  ],
+  "answer": 1,
+  "exp": "Rule 48(5). The buyer's ITC is also at risk, and penalties can apply.",
+  "ref": "CGST Rules, r.48(5)",
+  "case": true
+ },
+ {
+  "id": "EIN-006",
+  "topic": "einv",
+  "sub": "IRN & QR",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What does IRN stand for?",
+  "options": [
+   "Invoice Reference Number",
+   "Invoice Registration Number",
+   "Integrated Return Number",
+   "Input Registration Number"
+  ],
+  "answer": 0,
+  "exp": "The Invoice Reference Number is a unique hash for the document."
+ },
+ {
+  "id": "EIN-007",
+  "topic": "einv",
+  "sub": "IRN & QR",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The IRN is a 64-character hash generated using which algorithm?",
+  "options": [
+   "MD5",
+   "SHA-256",
+   "RSA",
+   "AES"
+  ],
+  "answer": 1,
+  "exp": "It's computed over the supplier's GSTIN, financial year, document type and document number."
+ },
+ {
+  "id": "EIN-008",
+  "topic": "einv",
+  "sub": "IRN & QR",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which fields generate the IRN hash?",
+  "options": [
+   "Supplier GSTIN, buyer GSTIN, invoice value",
+   "Supplier GSTIN, financial year, document type, document number",
+   "Document number and date only",
+   "HSN and value"
+  ],
+  "answer": 1,
+  "exp": "That's why the same document number can't be reused in the same FY for the same document type."
+ },
+ {
+  "id": "EIN-009",
+  "topic": "einv",
+  "sub": "IRN & QR",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who generates the IRN?",
+  "options": [
+   "Always the taxpayer's ERP",
+   "The IRP (Invoice Registration Portal), though the taxpayer can pre-compute it",
+   "GSTN only",
+   "The buyer"
+  ],
+  "answer": 1,
+  "exp": "The IRP validates the invoice, generates or validates the IRN, and digitally signs the invoice and QR code."
+ },
+ {
+  "id": "EIN-010",
+  "topic": "einv",
+  "sub": "IRN & QR",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is NOT in the signed QR code of an e-invoice?",
+  "options": [
+   "Supplier and buyer GSTIN",
+   "Invoice number, date and value",
+   "Main HSN code",
+   "Buyer's bank account number"
+  ],
+  "answer": 3,
+  "exp": "The QR also includes number of line items, IRN and IRN date."
+ },
+ {
+  "id": "EIN-011",
+  "topic": "einv",
+  "sub": "IRN & QR",
+  "diff": 2,
+  "type": "tf",
+  "q": "In e-invoicing, the government generates the invoice for the taxpayer.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "The taxpayer creates the invoice in its own system. The IRP only registers, validates and signs it."
+ },
+ {
+  "id": "EIN-012",
+  "topic": "einv",
+  "sub": "Schema",
+  "diff": 2,
+  "type": "mcq",
+  "q": "In the e-invoice JSON schema, what does supply type 'SEZWOP' mean?",
+  "options": [
+   "SEZ without purchase",
+   "Supply to SEZ without payment of tax (under LUT)",
+   "SEZ with payment",
+   "Deemed export"
+  ],
+  "answer": 1,
+  "exp": "Other values: B2B, SEZWP (with payment), EXPWP, EXPWOP, DEXP (deemed export)."
+ },
+ {
+  "id": "EIN-013",
+  "topic": "einv",
+  "sub": "Schema",
+  "diff": 3,
+  "type": "mcq",
+  "q": "For an export invoice in the e-invoice schema, what's entered as the buyer's GSTIN?",
+  "options": [
+   "Blank",
+   "URP (unregistered person)",
+   "The foreign tax ID",
+   "000000000000000"
+  ],
+  "answer": 1,
+  "exp": "For exports, the buyer GSTIN is 'URP', place of supply state code 96, and pincode 999999."
+ },
+ {
+  "id": "EIN-014",
+  "topic": "einv",
+  "sub": "Schema",
+  "diff": 3,
+  "type": "mcq",
+  "q": "What's state code 96 used for in e-invoices?",
+  "options": [
+   "Ladakh",
+   "Foreign country (exports)",
+   "Other Territory",
+   "Centre jurisdiction"
+  ],
+  "answer": 1,
+  "exp": "97 is Other Territory. 96 marks a destination outside India."
+ },
+ {
+  "id": "EIN-015",
+  "topic": "einv",
+  "sub": "Schema",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the 'IgstOnIntra' flag in the e-invoice schema for?",
+  "options": [
+   "Marking composition dealers",
+   "Cases where IGST applies even though supplier and POS are in the same state, like SEZ supplies",
+   "Imports",
+   "RCM supplies"
+  ],
+  "answer": 1,
+  "exp": "Without it, validation expects CGST+SGST when supplier state equals POS."
+ },
+ {
+  "id": "EIN-016",
+  "topic": "einv",
+  "sub": "Schema",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Minimum HSN digits required on e-invoices for businesses with AATO above ₹5 crore:",
+  "options": [
+   "4",
+   "6",
+   "8",
+   "2"
+  ],
+  "answer": 1,
+  "exp": "Those at or below ₹5 crore need 4 digits for B2B.",
+  "ref": "Notfn. 78/2020-CT",
+  "volatile": true
+ },
+ {
+  "id": "EIN-017",
+  "topic": "einv",
+  "sub": "Cancellation & limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Within how long can an e-invoice (IRN) be cancelled on the IRP?",
+  "options": [
+   "No cancellation allowed",
+   "Within 24 hours of generation",
+   "Within 7 days",
+   "Till GSTR-1 filing"
+  ],
+  "answer": 1,
+  "exp": "After 24 hours, you have to cancel it manually in GSTR-1 before filing, or issue a credit note."
+ },
+ {
+  "id": "EIN-018",
+  "topic": "einv",
+  "sub": "Cancellation & limits",
+  "diff": 2,
+  "type": "tf",
+  "q": "Partial cancellation of an e-invoice is allowed on the IRP.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Only full cancellation. To change something, cancel it and issue a new one with a different number, or use a credit or debit note."
+ },
+ {
+  "id": "EIN-019",
+  "topic": "einv",
+  "sub": "Cancellation & limits",
+  "diff": 3,
+  "type": "tf",
+  "q": "After cancelling an IRN, you can generate a new IRN using the same invoice number.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "The number is locked once used, since the hash would be identical. Use a new document number."
+ },
+ {
+  "id": "EIN-020",
+  "topic": "einv",
+  "sub": "Cancellation & limits",
+  "diff": 3,
+  "type": "mcq",
+  "q": "From 1 April 2025, taxpayers with AATO of ₹10 crore or more can't report e-invoices to the IRP older than:",
+  "options": [
+   "7 days",
+   "30 days from the invoice date",
+   "90 days",
+   "180 days"
+  ],
+  "answer": 1,
+  "exp": "This time limit earlier applied only to AATO ≥ ₹100 crore, from November 2023.",
+  "volatile": true
+ },
+ {
+  "id": "EIN-021",
+  "topic": "einv",
+  "sub": "Cancellation & limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can an e-invoice be amended on the IRP?",
+  "options": [
+   "Yes, any time",
+   "No, amendments aren't allowed on the IRP; changes are made through GSTR-1 amendment or credit/debit notes",
+   "Yes, within 72 hours",
+   "Only the value"
+  ],
+  "answer": 1,
+  "exp": "This is why validation before submission matters."
+ },
+ {
+  "id": "EIN-022",
+  "topic": "einv",
+  "sub": "Flow",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After the IRP registers an e-invoice, where does the data flow automatically?",
+  "options": [
+   "Only to the buyer",
+   "To GSTN (auto-populating the supplier's GSTR-1 and buyer's GSTR-2B) and to the e-way bill system if transport details are given",
+   "Only to the income tax department",
+   "Nowhere"
+  ],
+  "answer": 1,
+  "exp": "This is the core efficiency gain of e-invoicing."
+ },
+ {
+  "id": "EIN-023",
+  "topic": "einv",
+  "sub": "Flow",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can an e-way bill be generated along with the IRN?",
+  "options": [
+   "No, separately always",
+   "Yes, if transport details (Part B or transporter ID) are included in the e-invoice request",
+   "Only for exports",
+   "Only above ₹1 lakh"
+  ],
+  "answer": 1,
+  "exp": "The IRP passes the data to the e-way bill system."
+ },
+ {
+  "id": "EIN-024",
+  "topic": "einv",
+  "sub": "Flow",
+  "diff": 2,
+  "type": "tf",
+  "q": "There are multiple IRPs, including the NIC-run IRP and several private IRPs authorised by GSTN.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Taxpayers can choose any IRP; they all feed the same GST system."
+ },
+ {
+  "id": "EIN-025",
+  "topic": "einv",
+  "sub": "Flow",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client's ERP generates an e-invoice but the IRP rejects it with a duplicate IRN error. The client says the invoice was never registered. What are the likely causes and how would you debug?",
+  "model": "A duplicate IRN error means an IRN already exists for the same supplier GSTIN, financial year, document type and document number. Likely causes: a previous request did succeed but the response was lost (timeout or network error) so the ERP didn't store it; someone generated it through another IRP or the portal; or the same number was used earlier in the FY. Debug by calling the get-IRN-by-document-details API to fetch the existing IRN, then store and print it. If it was cancelled earlier, the number can't be reused, so issue a new number. Also make IRN requests idempotent by checking before retrying.",
+  "points": [
+   "Duplicate = same GSTIN + FY + doc type + doc number",
+   "Lost response after a successful call",
+   "Generated elsewhere or number reused",
+   "Fetch by document details",
+   "Idempotent retry logic"
+  ],
+  "exp": "Timeout handling is one of the most common real-world e-invoice bugs.",
+  "case": true
+ },
+ {
+  "id": "EIN-026",
+  "topic": "einv",
+  "sub": "Cancellation & limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client generated an e-invoice with the wrong buyer GSTIN two days ago. What's the fix?",
+  "options": [
+   "Cancel on the IRP",
+   "It's past 24 hours, so issue a credit note for the full value and a fresh e-invoice with a new number to the correct buyer",
+   "Edit the e-invoice",
+   "Amend the IRN"
+  ],
+  "answer": 1,
+  "exp": "After the 24-hour window the IRN can't be cancelled on the IRP.",
+  "case": true
+ },
+ {
+  "id": "EIN-027",
+  "topic": "einv",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's turnover was ₹6 crore in FY 2022-23 but only ₹4 crore since. It stopped generating IRNs. Is that okay?",
+  "options": [
+   "Yes",
+   "No, crossing the threshold in any year from 2017-18 keeps e-invoicing mandatory",
+   "Only if it informs GSTN",
+   "Yes, after two years"
+  ],
+  "answer": 1,
+  "exp": "The test is 'any preceding financial year'.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "EIN-028",
+  "topic": "einv",
+  "sub": "Flow",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's ERP was down on the 28th, so a salesperson issued a handwritten B2B invoice without an IRN. What's the problem?",
+  "options": [
+   "None, it's fine",
+   "For an e-invoice-applicable client, an invoice without IRN isn't a valid tax invoice; generate the e-invoice on the IRP (within the reporting time limit) before goods go",
+   "Only a penalty of ₹100",
+   "The buyer generates the IRN"
+  ],
+  "answer": 1,
+  "exp": "The buyer's ITC depends on it, and e-way bill checks can flag goods moving without an IRN.",
+  "ref": "CGST Rules, r.48(5)",
+  "case": true
+ },
+ {
+  "id": "EIN-029",
+  "topic": "einv",
+  "sub": "Schema",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The IRP rejects an e-invoice because the buyer's GSTIN is 'cancelled'. The client insists the buyer is active. What's the check?",
+  "options": [
+   "Force-generate it",
+   "Search the GSTIN on the portal to confirm status and effective date; if cancelled, the sale should be treated as B2C",
+   "Change the GSTIN",
+   "Use the buyer's PAN"
+  ],
+  "answer": 1,
+  "exp": "IRPs validate GSTIN status against GSTN master data.",
+  "case": true
+ }
+]

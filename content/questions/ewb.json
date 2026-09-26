@@ -1,0 +1,476 @@
+[
+ {
+  "id": "EWB-001",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 1,
+  "type": "mcq",
+  "q": "An e-way bill is generally required for movement of goods where the consignment value exceeds:",
+  "options": [
+   "₹10,000",
+   "₹50,000",
+   "₹1 lakh",
+   "₹2.5 lakh"
+  ],
+  "answer": 1,
+  "exp": "Some states set a higher limit for intra-state movement.",
+  "ref": "CGST Rules, r.138(1)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "EWB-002",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Consignment value for the e-way bill threshold includes:",
+  "options": [
+   "Only taxable value",
+   "Value in the invoice including taxes, excluding value of exempt goods on the same invoice",
+   "Only tax",
+   "Freight"
+  ],
+  "answer": 1,
+  "exp": "Explanation 2 to rule 138(1).",
+  "ref": "CGST Rules, r.138"
+ },
+ {
+  "id": "EWB-003",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which movement needs an e-way bill regardless of consignment value?",
+  "options": [
+   "Intra-state movement below ₹50,000",
+   "Inter-state movement of goods by a principal to a job worker",
+   "Movement of fresh vegetables",
+   "Movement of currency"
+  ],
+  "answer": 1,
+  "exp": "Also inter-state movement of handicraft goods by a person exempt from registration.",
+  "ref": "CGST Rules, r.138(1) provisos"
+ },
+ {
+  "id": "EWB-004",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "tf",
+  "q": "An e-way bill is required only when goods are being sold.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "It's required for movement 'in relation to a supply, for reasons other than supply, or due to inward supply from an unregistered person'. Stock transfers, job work and returns all count.",
+  "ref": "CGST Rules, r.138(1)"
+ },
+ {
+  "id": "EWB-005",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which goods don't need an e-way bill?",
+  "options": [
+   "Electronics",
+   "Goods transported by a non-motorised conveyance",
+   "Machinery",
+   "Textiles"
+  ],
+  "answer": 1,
+  "exp": "Other exemptions include specified goods in the Annexure, goods under customs seal, empty containers, and alcohol and petroleum products outside GST.",
+  "ref": "CGST Rules, r.138(14)"
+ },
+ {
+  "id": "EWB-006",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Part A of an e-way bill contains:",
+  "options": [
+   "Vehicle number",
+   "Invoice details, GSTINs, place of delivery (pincode), value, HSN and reason for movement",
+   "Driver details",
+   "Toll details"
+  ],
+  "answer": 1,
+  "exp": "Part B has the vehicle number or transport document."
+ },
+ {
+  "id": "EWB-007",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who can generate an e-way bill?",
+  "options": [
+   "Only the supplier",
+   "The consignor, consignee, or the transporter",
+   "Only the transporter",
+   "Only a GST officer"
+  ],
+  "answer": 1,
+  "exp": "If neither consignor nor consignee has generated it, the transporter must.",
+  "ref": "CGST Rules, r.138(2)-(3)"
+ },
+ {
+  "id": "EWB-008",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Goods move 30 km from the consignor's place to a transporter's godown in the same state, for onward transport. Is Part B needed for this leg?",
+  "options": [
+   "Yes",
+   "No, Part B isn't required for movement up to 50 km within a state to the transporter's place",
+   "Only if above ₹1 lakh",
+   "Only for inter-state"
+  ],
+  "answer": 1,
+  "exp": "The transporter updates Part B before onward movement.",
+  "ref": "CGST Rules, r.138(3) proviso"
+ },
+ {
+  "id": "EWB-009",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many digits does an e-way bill number have?",
+  "options": [
+   "10",
+   "12",
+   "15",
+   "16"
+  ],
+  "answer": 1,
+  "exp": "12-digit EBN."
+ },
+ {
+  "id": "EWB-010",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When multiple consignments go in one vehicle, the transporter can generate a:",
+  "options": [
+   "Combined invoice",
+   "Consolidated e-way bill (EWB-02)",
+   "Delivery challan",
+   "Single EWB for all"
+  ],
+  "answer": 1,
+  "exp": "It references each individual EWB."
+ },
+ {
+  "id": "EWB-011",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 3,
+  "type": "mcq",
+  "q": "The distance entered in an e-way bill can exceed the portal's auto-calculated pincode distance by at most:",
+  "options": [
+   "5%",
+   "10%",
+   "25%",
+   "It can't differ"
+  ],
+  "answer": 1,
+  "exp": "The portal auto-computes distance between pincodes and allows up to 10% more to account for real routes.",
+  "volatile": true
+ },
+ {
+  "id": "EWB-012",
+  "topic": "ewb",
+  "sub": "Validity",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Validity of an e-way bill for normal cargo is:",
+  "options": [
+   "1 day per 100 km",
+   "1 day per 200 km or part",
+   "1 day per 500 km",
+   "15 days flat"
+  ],
+  "answer": 1,
+  "exp": "Over-dimensional cargo gets 1 day per 20 km.",
+  "ref": "CGST Rules, r.138(10)",
+  "volatile": true
+ },
+ {
+  "id": "EWB-013",
+  "topic": "ewb",
+  "sub": "Validity",
+  "diff": 3,
+  "type": "mcq",
+  "q": "An e-way bill for 150 km is generated at 10 AM on 5 June. When does it expire?",
+  "options": [
+   "10 AM on 6 June",
+   "Midnight between 6 and 7 June",
+   "Midnight on 5 June",
+   "5 PM on 6 June"
+  ],
+  "answer": 1,
+  "exp": "A 'day' ends at midnight of the day immediately following the generation date. So one day of validity runs to midnight at the end of 6 June.",
+  "ref": "CGST Rules, r.138(10) Explanation"
+ },
+ {
+  "id": "EWB-014",
+  "topic": "ewb",
+  "sub": "Validity",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When can the validity of an e-way bill be extended?",
+  "options": [
+   "Any time",
+   "Within 8 hours before or after expiry, for exceptional reasons",
+   "Only by the officer",
+   "Never"
+  ],
+  "answer": 1,
+  "exp": "The transporter in charge extends it with a reason like breakdown or accident.",
+  "ref": "CGST Rules, r.138(10) proviso"
+ },
+ {
+  "id": "EWB-015",
+  "topic": "ewb",
+  "sub": "Validity",
+  "diff": 3,
+  "type": "mcq",
+  "q": "From January 2025, e-way bills can be generated only for base documents (invoices) not older than:",
+  "options": [
+   "30 days",
+   "180 days",
+   "1 year",
+   "90 days"
+  ],
+  "answer": 1,
+  "exp": "The total extension was also capped at 360 days from original generation.",
+  "volatile": true
+ },
+ {
+  "id": "EWB-016",
+  "topic": "ewb",
+  "sub": "Changes & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Within how long can an e-way bill be cancelled?",
+  "options": [
+   "No cancellation",
+   "Within 24 hours of generation, if not verified in transit",
+   "Within 72 hours",
+   "Within 8 hours"
+  ],
+  "answer": 1,
+  "exp": "Once an officer has verified it en route, it can't be cancelled.",
+  "ref": "CGST Rules, r.138(9)"
+ },
+ {
+  "id": "EWB-017",
+  "topic": "ewb",
+  "sub": "Changes & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The recipient can accept or reject an e-way bill within:",
+  "options": [
+   "24 hours",
+   "72 hours of the details being made available, or the time of delivery, whichever is earlier",
+   "7 days",
+   "It can't reject"
+  ],
+  "answer": 1,
+  "exp": "No response means deemed acceptance.",
+  "ref": "CGST Rules, r.138(12)"
+ },
+ {
+  "id": "EWB-018",
+  "topic": "ewb",
+  "sub": "Changes & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The truck breaks down and goods move to another vehicle. What's done?",
+  "options": [
+   "New e-way bill",
+   "Update Part B with the new vehicle number",
+   "Nothing",
+   "Cancel and regenerate"
+  ],
+  "answer": 1,
+  "exp": "Part B can be updated any number of times within validity."
+ },
+ {
+  "id": "EWB-019",
+  "topic": "ewb",
+  "sub": "Enforcement",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under rule 138E, e-way bill generation is blocked if a taxpayer hasn't filed:",
+  "options": [
+   "One GSTR-1",
+   "GSTR-3B (or CMP-08 for composition) for two consecutive periods",
+   "GSTR-9",
+   "Any return in a year"
+  ],
+  "answer": 1,
+  "exp": "This applies to the taxpayer as consignor or consignee.",
+  "ref": "CGST Rules, r.138E"
+ },
+ {
+  "id": "EWB-020",
+  "topic": "ewb",
+  "sub": "Enforcement",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Goods are moving without a valid e-way bill and the owner comes forward. Under section 129, what's the penalty to release goods?",
+  "options": [
+   "10% of value",
+   "200% of the tax payable",
+   "Equal to value",
+   "₹25,000 flat"
+  ],
+  "answer": 1,
+  "exp": "If the owner doesn't come forward, it's the higher of 50% of the goods' value or 200% of tax. For exempt goods, 2% of value or ₹25,000, whichever is less.",
+  "ref": "CGST Act, s.129(1)"
+ },
+ {
+  "id": "EWB-021",
+  "topic": "ewb",
+  "sub": "Enforcement",
+  "diff": 2,
+  "type": "tf",
+  "q": "A minor error in an e-way bill (like one digit wrong in the pincode) always leads to detention of goods.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "CBIC Circular 64/38/2018 lists minor discrepancies (spelling errors, one or two digits in pincode or document number) where only a nominal penalty of ₹500 each under CGST and SGST applies, not detention.",
+  "ref": "Circular 64/38/2018-GST",
+  "case": true
+ },
+ {
+  "id": "EWB-022",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A manufacturer in Gujarat sends goods with a taxable value of ₹40,000 to its own branch in Maharashtra (same PAN), at 18% IGST. Is an e-way bill needed, and what document goes with the goods?",
+  "model": "It's an inter-state stock transfer between distinct persons, which is a supply under Schedule I, so a tax invoice with IGST is issued. For the e-way bill, consignment value includes tax: ₹40,000 + ₹7,200 = ₹47,200. That's below ₹50,000 and it isn't job work or handicraft goods, so an e-way bill isn't mandatory. If the taxable value were ₹43,000, the value including tax would be ₹50,740 and an e-way bill would be needed. Software should compute the threshold on value including tax, not on taxable value.",
+  "points": [
+   "Inter-state branch transfer is a supply",
+   "Tax invoice with IGST",
+   "Threshold uses value including tax",
+   "₹47,200 is below ₹50,000, so not mandatory"
+  ],
+  "exp": "Checking the value including tax is the easy-to-miss step.",
+  "ref": "CGST Rules, r.138(1)",
+  "case": true
+ },
+ {
+  "id": "EWB-023",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For movement of goods by rail, what's special about the e-way bill?",
+  "options": [
+   "Not required",
+   "Required, but Part B (vehicle) isn't needed; the railways won't deliver without it",
+   "Only railway staff generate it",
+   "Required only for inter-state"
+  ],
+  "answer": 1,
+  "exp": "Rule 138(2) and later provisos.",
+  "ref": "CGST Rules, r.138"
+ },
+ {
+  "id": "EWB-024",
+  "topic": "ewb",
+  "sub": "Changes & cancellation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Goods under an e-way bill are handed from one transporter to another. What's done?",
+  "options": [
+   "New EWB",
+   "The original transporter assigns the EWB to the new transporter ID on the portal",
+   "Cancel and regenerate",
+   "Nothing"
+  ],
+  "answer": 1,
+  "exp": "The new transporter then updates Part B."
+ },
+ {
+  "id": "EWB-025",
+  "topic": "ewb",
+  "sub": "Enforcement",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which form is issued when a vehicle is intercepted and verified?",
+  "options": [
+   "EWB-01",
+   "MOV-01 (statement of the person in charge) and MOV-02 (order for physical verification)",
+   "DRC-01",
+   "ADT-01"
+  ],
+  "answer": 1,
+  "exp": "MOV-06 is for detention and MOV-09 for penalty orders.",
+  "ref": "CGST Rules, r.138B"
+ },
+ {
+  "id": "EWB-026",
+  "topic": "ewb",
+  "sub": "Enforcement",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A truck is stopped and the e-way bill expired four hours ago due to traffic. What's the right step for the transporter?",
+  "options": [
+   "Nothing",
+   "It should have been extended within 8 hours of expiry; now, explain the delay to the officer, who may still detain the goods",
+   "Generate a new e-way bill with a new invoice",
+   "Pay a flat ₹500"
+  ],
+  "answer": 1,
+  "exp": "Extending before or within 8 hours after expiry is the fix. Transporters often miss it.",
+  "ref": "CGST Rules, r.138(10)",
+  "case": true
+ },
+ {
+  "id": "EWB-027",
+  "topic": "ewb",
+  "sub": "Parts & generation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client generates an e-way bill but puts the wrong vehicle number. The truck has left. What's the fix?",
+  "options": [
+   "Cancel and regenerate",
+   "Update Part B with the correct vehicle number",
+   "Nothing",
+   "Issue a new invoice"
+  ],
+  "answer": 1,
+  "exp": "Part B can be updated. Cancellation is only possible within 24 hours and if not verified in transit.",
+  "case": true
+ },
+ {
+  "id": "EWB-028",
+  "topic": "ewb",
+  "sub": "Applicability",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client sends a machine worth ₹2 lakh to a repair shop in another state and it comes back after repair. Is an e-way bill needed?",
+  "options": [
+   "No, it's not a sale",
+   "Yes, for both legs, since movement for reasons other than supply still needs one; send it with a delivery challan",
+   "Only on return",
+   "Only if the repairer is registered"
+  ],
+  "answer": 1,
+  "exp": "The reason for transport would be 'others' or job work, depending on the arrangement.",
+  "ref": "CGST Rules, r.138",
+  "case": true
+ }
+]

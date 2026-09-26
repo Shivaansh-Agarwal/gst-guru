@@ -1,0 +1,412 @@
+[
+ {
+  "id": "BAS-001",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A dealer in Delhi sells goods to a buyer in Uttar Pradesh. Which tax applies?",
+  "options": [
+   "CGST + SGST",
+   "IGST",
+   "CGST + UTGST",
+   "SGST only"
+  ],
+  "answer": 1,
+  "exp": "Inter-state supplies attract IGST, levied and collected by the Centre and later apportioned to the destination state.",
+  "ref": "IGST Act, s.5"
+ },
+ {
+  "id": "BAS-002",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 1,
+  "type": "mcq",
+  "q": "A supplier in Chandigarh sells goods to a buyer in Chandigarh. Which taxes apply?",
+  "options": [
+   "CGST + SGST",
+   "IGST",
+   "CGST + UTGST",
+   "UTGST only"
+  ],
+  "answer": 2,
+  "exp": "Chandigarh is a Union Territory without a legislature, so intra-UT supplies attract CGST plus UTGST.",
+  "ref": "UTGST Act, s.7"
+ },
+ {
+  "id": "BAS-003",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these Union Territories levies SGST rather than UTGST?",
+  "options": [
+   "Chandigarh",
+   "Ladakh",
+   "Delhi",
+   "Lakshadweep"
+  ],
+  "answer": 2,
+  "exp": "Delhi, Puducherry and Jammu & Kashmir have legislatures and are treated as 'States' for GST, so they levy SGST.",
+  "ref": "CGST Act, s.2(103)"
+ },
+ {
+  "id": "BAS-004",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 1,
+  "type": "tf",
+  "q": "GST is a destination-based consumption tax.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Tax revenue goes to the state where goods or services are consumed, which is why place of supply rules matter so much."
+ },
+ {
+  "id": "BAS-005",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under which Act is IGST on imported goods actually levied?",
+  "options": [
+   "IGST Act, section 5",
+   "Customs Tariff Act, section 3(7)",
+   "CGST Act, section 9",
+   "Customs Act, section 12"
+  ],
+  "answer": 1,
+  "exp": "The IGST Act says IGST on imports is levied under the Customs Tariff Act, collected at the border along with customs duty.",
+  "ref": "IGST Act, s.5(1) proviso"
+ },
+ {
+  "id": "BAS-006",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which statement about IGST is correct?",
+  "options": [
+   "It is shared only among states",
+   "It is collected by the Centre and apportioned between the Centre and the destination state",
+   "It is collected by the origin state",
+   "It is a cess over and above CGST"
+  ],
+  "answer": 1,
+  "exp": "IGST roughly equals CGST plus SGST; the Centre collects it and settles the state's share with the consuming state.",
+  "ref": "IGST Act, s.17"
+ },
+ {
+  "id": "BAS-007",
+  "topic": "basics",
+  "sub": "Structure",
+  "diff": 2,
+  "type": "tf",
+  "q": "A company with branches in Maharashtra and Karnataka can use one GSTIN for both states.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Registration is state-wise. A business needs a separate GSTIN in every state or UT from which it makes taxable supplies.",
+  "ref": "CGST Act, s.22 & 25",
+  "case": true
+ },
+ {
+  "id": "BAS-008",
+  "topic": "basics",
+  "sub": "Constitution & Council",
+  "diff": 1,
+  "type": "mcq",
+  "q": "When did GST come into force in India?",
+  "options": [
+   "1 April 2017",
+   "1 July 2017",
+   "1 January 2018",
+   "8 September 2016"
+  ],
+  "answer": 1,
+  "exp": "GST was rolled out on 1 July 2017."
+ },
+ {
+  "id": "BAS-009",
+  "topic": "basics",
+  "sub": "Constitution & Council",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which Constitutional amendment enabled GST?",
+  "options": [
+   "The 73rd Amendment",
+   "The 101st Amendment Act, 2016",
+   "The 103rd Amendment",
+   "The 122nd Amendment Act, 2017"
+  ],
+  "answer": 1,
+  "exp": "The Constitution (One Hundred and First Amendment) Act, 2016 introduced Articles 246A, 269A and 279A. (It was the 122nd Amendment Bill.)"
+ },
+ {
+  "id": "BAS-010",
+  "topic": "basics",
+  "sub": "Constitution & Council",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which Article of the Constitution establishes the GST Council?",
+  "options": [
+   "Article 246A",
+   "Article 269A",
+   "Article 279A",
+   "Article 286"
+  ],
+  "answer": 2,
+  "exp": "Article 279A creates the GST Council. 246A gives concurrent taxing power and 269A covers inter-state supplies."
+ },
+ {
+  "id": "BAS-011",
+  "topic": "basics",
+  "sub": "Constitution & Council",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who chairs the GST Council?",
+  "options": [
+   "The Prime Minister",
+   "The Union Finance Minister",
+   "The Chairman of CBIC",
+   "A state finance minister chosen by rotation"
+  ],
+  "answer": 1,
+  "exp": "The Union Finance Minister chairs it; state finance ministers are members and the Union MoS Finance is also a member.",
+  "ref": "Art. 279A(2)"
+ },
+ {
+  "id": "BAS-012",
+  "topic": "basics",
+  "sub": "Constitution & Council",
+  "diff": 3,
+  "type": "mcq",
+  "q": "How are votes weighted in the GST Council?",
+  "options": [
+   "Centre 1/2, states 1/2",
+   "Centre 1/3, all states together 2/3, with decisions needing a 3/4 majority",
+   "One vote per member, simple majority",
+   "Centre has a veto, states advise"
+  ],
+  "answer": 1,
+  "exp": "The Centre's vote carries one-third weight and the states together two-thirds. A decision needs at least three-fourths of the weighted votes, so neither side can push something through alone.",
+  "ref": "Art. 279A(9)"
+ },
+ {
+  "id": "BAS-013",
+  "topic": "basics",
+  "sub": "Constitution & Council",
+  "diff": 2,
+  "type": "tf",
+  "q": "GST Council recommendations are directly binding law without any notification.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "The Council recommends. Changes take effect through Acts passed by Parliament and legislatures or notifications issued by governments. The Supreme Court in Mohit Minerals (2022) also called its recommendations persuasive rather than binding."
+ },
+ {
+  "id": "BAS-014",
+  "topic": "basics",
+  "sub": "Subsumed taxes",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which of these was NOT subsumed into GST?",
+  "options": [
+   "Service tax",
+   "State VAT",
+   "Basic customs duty",
+   "Central excise duty (on most goods)"
+  ],
+  "answer": 2,
+  "exp": "Basic customs duty continues on imports. Service tax, VAT and most central excise were subsumed."
+ },
+ {
+  "id": "BAS-015",
+  "topic": "basics",
+  "sub": "Subsumed taxes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these taxes still exists alongside GST?",
+  "options": [
+   "Entry tax",
+   "Octroi",
+   "Stamp duty",
+   "Luxury tax"
+  ],
+  "answer": 2,
+  "exp": "Stamp duty, electricity duty, property tax and customs duty are outside GST. Entry tax, octroi and luxury tax were subsumed."
+ },
+ {
+  "id": "BAS-016",
+  "topic": "basics",
+  "sub": "Subsumed taxes",
+  "diff": 2,
+  "type": "tf",
+  "q": "Entertainment tax levied by local bodies (panchayats, municipalities) was fully subsumed into GST.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Entertainment tax levied by states was subsumed, but local bodies' power to tax entertainment survives under Entry 62 of List II."
+ },
+ {
+  "id": "BAS-017",
+  "topic": "basics",
+  "sub": "Outside GST",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which item is outside GST under the Constitution itself?",
+  "options": [
+   "Petrol",
+   "Alcoholic liquor for human consumption",
+   "Tobacco",
+   "Natural gas"
+  ],
+  "answer": 1,
+  "exp": "Alcohol for human consumption is excluded from the definition of goods and services tax in Article 366(12A). Petroleum products are within GST's scope but not taxed until the Council recommends a date."
+ },
+ {
+  "id": "BAS-018",
+  "topic": "basics",
+  "sub": "Outside GST",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is within GST law but GST is not currently levied on it?",
+  "options": [
+   "Alcoholic liquor for human consumption",
+   "Motor spirit (petrol)",
+   "Electricity",
+   "Land"
+  ],
+  "answer": 1,
+  "exp": "Crude oil, high speed diesel, petrol, natural gas and aviation turbine fuel are covered by section 9(2) CGST: GST applies only from a date notified on the Council's recommendation.",
+  "ref": "CGST Act, s.9(2)",
+  "volatile": true
+ },
+ {
+  "id": "BAS-019",
+  "topic": "basics",
+  "sub": "Outside GST",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A company's only sales are petrol and diesel. Does it need GST registration for those sales?",
+  "options": [
+   "Yes, always",
+   "No, persons dealing only in non-taxable supplies are not required to register",
+   "Only if turnover exceeds ₹40 lakh",
+   "Only for inter-state sales"
+  ],
+  "answer": 1,
+  "exp": "Persons engaged exclusively in non-taxable or wholly exempt supplies aren't liable to register.",
+  "ref": "CGST Act, s.23(1)(a)",
+  "case": true
+ },
+ {
+  "id": "BAS-020",
+  "topic": "basics",
+  "sub": "Outside GST",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A restaurant sells both food and liquor. How is each taxed and what's the effect on its input tax credit?",
+  "model": "Food service is taxed under GST. Liquor for human consumption is outside GST and attracts state VAT/excise instead. Because liquor sales are a non-taxable supply, common input tax credit has to be apportioned and the part attributable to liquor reversed.",
+  "points": [
+   "Food under GST, liquor under state VAT",
+   "Liquor is a non-taxable supply",
+   "Common ITC is apportioned under section 17(2) and rule 42/43"
+  ],
+  "exp": "Non-taxable supplies count as exempt supplies for ITC apportionment.",
+  "ref": "CGST Act, s.17(2), s.2(47)",
+  "case": true
+ },
+ {
+  "id": "BAS-021",
+  "topic": "basics",
+  "sub": "Rate structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After the GST rate rationalisation effective 22 September 2025, what are the two main rate slabs for most goods and services?",
+  "options": [
+   "5% and 12%",
+   "12% and 18%",
+   "5% and 18%",
+   "18% and 28%"
+  ],
+  "answer": 2,
+  "exp": "The 12% and 28% slabs were largely folded in: most items moved to 5% or 18%, with a 40% rate for a short list of luxury and sin goods.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "BAS-022",
+  "topic": "basics",
+  "sub": "Rate structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After September 2025, which rate applies to a narrow set of luxury and sin goods (like pan masala or large cars)?",
+  "options": [
+   "28% + cess",
+   "40%",
+   "35%",
+   "50%"
+  ],
+  "answer": 1,
+  "exp": "The 40% special rate replaced 28% plus compensation cess for most of these items. Some tobacco products kept cess until the compensation loans are repaid.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "BAS-023",
+  "topic": "basics",
+  "sub": "Rate structure",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which special low rate applies to gold and silver?",
+  "options": [
+   "0.25%",
+   "1%",
+   "3%",
+   "5%"
+  ],
+  "answer": 2,
+  "exp": "Gold, silver and jewellery are taxed at 3%. Rough diamonds and precious stones have 0.25%.",
+  "volatile": true
+ },
+ {
+  "id": "BAS-024",
+  "topic": "basics",
+  "sub": "Rate structure",
+  "diff": 2,
+  "type": "tf",
+  "q": "GST compensation cess was introduced to compensate states for revenue loss during the transition to GST.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "The GST (Compensation to States) Act, 2017 guaranteed states 14% annual growth on base-year revenue for five years, funded by the cess. After 2022 it continued to repay loans taken to cover shortfalls."
+ },
+ {
+  "id": "BAS-025",
+  "topic": "basics",
+  "sub": "Rate structure",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Individual life and health insurance premiums after 22 September 2025 are:",
+  "options": [
+   "Taxed at 18%",
+   "Taxed at 5% without ITC",
+   "Exempt",
+   "Taxed at 12%"
+  ],
+  "answer": 2,
+  "exp": "The Council exempted individual life and health insurance policies (including reinsurance of these) as part of the 2025 rationalisation.",
+  "volatile": true
+ }
+]

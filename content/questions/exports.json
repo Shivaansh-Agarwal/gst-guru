@@ -1,0 +1,431 @@
+[
+ {
+  "id": "EXP-001",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Which supplies are zero-rated under GST?",
+  "options": [
+   "All exempt supplies",
+   "Exports of goods or services, and supplies to SEZ units or developers for authorised operations",
+   "Supplies by composition dealers",
+   "Nil-rated goods"
+  ],
+  "answer": 1,
+  "exp": "Zero-rated means tax is effectively zero but ITC is still allowed.",
+  "ref": "IGST Act, s.16(1)"
+ },
+ {
+  "id": "EXP-002",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the key difference between zero-rated and exempt supplies?",
+  "options": [
+   "None",
+   "ITC is available for zero-rated supplies but must be reversed for exempt ones",
+   "Exempt supplies get refunds",
+   "Zero-rated supplies need no invoice"
+  ],
+  "answer": 1,
+  "exp": "That's why exporters don't carry GST as a cost.",
+  "ref": "IGST Act, s.16(2)"
+ },
+ {
+  "id": "EXP-003",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What are the two routes for making zero-rated supplies?",
+  "options": [
+   "Composition or regular",
+   "Under bond/LUT without paying IGST and claim refund of unutilised ITC, or pay IGST and claim refund of that IGST",
+   "Pay CGST or SGST",
+   "Pre-deposit or post-deposit"
+  ],
+  "answer": 1,
+  "exp": "From October 2022, the IGST-payment route is limited to notified persons and goods.",
+  "ref": "IGST Act, s.16(3)",
+  "volatile": true
+ },
+ {
+  "id": "EXP-004",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 2,
+  "type": "mcq",
+  "q": "LUT (Letter of Undertaking) is filed in which form, and for how long does it last?",
+  "options": [
+   "RFD-01, one month",
+   "RFD-11, for a financial year",
+   "GST REG-01, permanent",
+   "CMP-02, one year"
+  ],
+  "answer": 1,
+  "exp": "LUT is filed online before exporting and renewed each FY.",
+  "ref": "CGST Rules, r.96A"
+ },
+ {
+  "id": "EXP-005",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 3,
+  "type": "mcq",
+  "q": "For exports of goods on payment of IGST, what serves as the refund application?",
+  "options": [
+   "RFD-01",
+   "The shipping bill, once the export general manifest is filed and GSTR-3B/GSTR-1 details match",
+   "A letter to the officer",
+   "Nothing, it's automatic without conditions"
+  ],
+  "answer": 1,
+  "exp": "Mismatches between GSTR-1 Table 6A, GSTR-3B and the shipping bill hold up these refunds.",
+  "ref": "CGST Rules, r.96"
+ },
+ {
+  "id": "EXP-006",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can an exporter under LUT use domestic ITC for its local sales?",
+  "options": [
+   "No",
+   "Yes, ITC is common and can be used against domestic liability; only the unutilised balance attributable to exports is refunded",
+   "Only 50%",
+   "Only after refund"
+  ],
+  "answer": 1,
+  "exp": "Refund is computed by formula under rule 89(4)."
+ },
+ {
+  "id": "EXP-007",
+  "topic": "exports",
+  "sub": "Export of services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is NOT a condition for export of services?",
+  "options": [
+   "Supplier is located in India",
+   "Recipient is located outside India",
+   "Place of supply is outside India",
+   "The recipient must be a company"
+  ],
+  "answer": 3,
+  "exp": "Also: payment is received in convertible foreign exchange (or INR where RBI permits), and supplier and recipient aren't merely establishments of the same person.",
+  "ref": "IGST Act, s.2(6)"
+ },
+ {
+  "id": "EXP-008",
+  "topic": "exports",
+  "sub": "Export of services",
+  "diff": 3,
+  "type": "mcq",
+  "q": "An Indian company's branch provides services to its own head office in the US. Is it an export of services?",
+  "options": [
+   "Yes",
+   "No, they're merely establishments of a distinct person, so condition (v) of section 2(6) fails",
+   "Yes if paid in USD",
+   "Only if above ₹10 lakh"
+  ],
+  "answer": 1,
+  "exp": "Explanation 1 to s.8 IGST treats them as establishments of distinct persons. A separate subsidiary would qualify.",
+  "ref": "IGST Act, s.2(6)(v)",
+  "case": true
+ },
+ {
+  "id": "EXP-009",
+  "topic": "exports",
+  "sub": "Export of services",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An Indian software firm provides services to a US client but is paid in rupees through an RBI-permitted Special Rupee Vostro account. Is this still an export?",
+  "options": [
+   "No, must be in forex",
+   "Yes, INR payments are allowed where permitted by the RBI",
+   "Only for goods",
+   "Only via LUT"
+  ],
+  "answer": 1,
+  "exp": "The 2023 amendments recognised INR payments where RBI permits.",
+  "ref": "IGST Act, s.2(6)(iv)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "EXP-010",
+  "topic": "exports",
+  "sub": "SEZ & deemed exports",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A DTA supplier sells to an SEZ unit for its authorised operations. How is it treated?",
+  "options": [
+   "Intra-state taxable supply",
+   "Zero-rated inter-state supply, under LUT or with IGST",
+   "Exempt",
+   "Export under customs"
+  ],
+  "answer": 1,
+  "exp": "The SEZ unit must endorse that it's for authorised operations.",
+  "ref": "IGST Act, s.16(1)(b)"
+ },
+ {
+  "id": "EXP-011",
+  "topic": "exports",
+  "sub": "SEZ & deemed exports",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the GST rate on supplies to a merchant exporter under the notified scheme?",
+  "options": [
+   "0%",
+   "0.1%",
+   "5%",
+   "Full rate"
+  ],
+  "answer": 1,
+  "exp": "Conditions include exporting within 90 days.",
+  "ref": "Notfn. 40/2017-CT(R)",
+  "volatile": true
+ },
+ {
+  "id": "EXP-012",
+  "topic": "exports",
+  "sub": "SEZ & deemed exports",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these is a deemed export?",
+  "options": [
+   "Sale to a foreign tourist",
+   "Supply of goods to an Export Oriented Unit (EOU)",
+   "Supply to an SEZ",
+   "Export of services"
+  ],
+  "answer": 1,
+  "exp": "Deemed exports aren't zero-rated. Tax is paid and a refund is claimed by the supplier or recipient.",
+  "ref": "Notfn. 48/2017-CT"
+ },
+ {
+  "id": "EXP-013",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Refund applications are filed in form:",
+  "options": [
+   "RFD-01",
+   "RFD-11",
+   "DRC-03",
+   "PMT-06"
+  ],
+  "answer": 0,
+  "exp": "RFD-02 is acknowledgement, RFD-03 deficiency memo, RFD-04 provisional order, RFD-06 final order."
+ },
+ {
+  "id": "EXP-014",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The time limit to claim a refund under section 54 is:",
+  "options": [
+   "One year",
+   "Two years from the relevant date",
+   "Three years",
+   "No limit"
+  ],
+  "answer": 1,
+  "exp": "Relevant date varies by case.",
+  "ref": "CGST Act, s.54(1)"
+ },
+ {
+  "id": "EXP-015",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For exports of goods by sea, the 'relevant date' for refund is:",
+  "options": [
+   "Invoice date",
+   "Date the ship leaves India",
+   "Date of payment",
+   "Date of LUT"
+  ],
+  "answer": 1,
+  "exp": "By air it's when the aircraft leaves, and by land when the goods pass the frontier.",
+  "ref": "CGST Act, s.54 Explanation 2"
+ },
+ {
+  "id": "EXP-016",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For export of services, relevant date is:",
+  "options": [
+   "Invoice date always",
+   "Date of receipt of payment in convertible foreign exchange (or invoice date if payment was received in advance)",
+   "Date of service",
+   "End of FY"
+  ],
+  "answer": 1,
+  "exp": "Relevant date under Explanation 2(c).",
+  "ref": "CGST Act, s.54"
+ },
+ {
+  "id": "EXP-017",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How much of a zero-rated refund can be sanctioned provisionally?",
+  "options": [
+   "50%",
+   "90%, within 7 days of acknowledgement",
+   "100%",
+   "Nil"
+  ],
+  "answer": 1,
+  "exp": "Section 54(6) and rule 91.",
+  "ref": "CGST Act, s.54(6)"
+ },
+ {
+  "id": "EXP-018",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "If a refund isn't paid within 60 days of a complete application, interest is payable at:",
+  "options": [
+   "18%",
+   "6%",
+   "9%",
+   "12%"
+  ],
+  "answer": 1,
+  "exp": "9% applies where the refund arises from an appellate or court order.",
+  "ref": "CGST Act, s.56"
+ },
+ {
+  "id": "EXP-019",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the minimum refund amount that can be claimed?",
+  "options": [
+   "₹100",
+   "₹1,000",
+   "₹10,000",
+   "No minimum"
+  ],
+  "answer": 1,
+  "exp": "Section 54(14).",
+  "ref": "CGST Act, s.54(14)"
+ },
+ {
+  "id": "EXP-020",
+  "topic": "exports",
+  "sub": "Inverted duty",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's an 'inverted duty structure'?",
+  "options": [
+   "Output tax rate higher than input",
+   "Input tax rate higher than output tax rate, causing ITC to pile up",
+   "Tax on imports",
+   "A composition scheme"
+  ],
+  "answer": 1,
+  "exp": "E.g. inputs at 18% for goods sold at 5%.",
+  "ref": "CGST Act, s.54(3)(ii)"
+ },
+ {
+  "id": "EXP-021",
+  "topic": "exports",
+  "sub": "Inverted duty",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under rule 89(5), refund for inverted duty structure considers ITC on:",
+  "options": [
+   "Inputs, input services and capital goods",
+   "Inputs only (not input services or capital goods)",
+   "Capital goods only",
+   "All ITC"
+  ],
+  "answer": 1,
+  "exp": "The Supreme Court upheld this in VKC Footsteps (2021).",
+  "ref": "CGST Rules, r.89(5)"
+ },
+ {
+  "id": "EXP-022",
+  "topic": "exports",
+  "sub": "Inverted duty",
+  "diff": 2,
+  "type": "tf",
+  "q": "Refund of accumulated ITC due to inverted duty is available even when the output supply is nil-rated or fully exempt.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "No refund is allowed where output supplies are nil-rated or fully exempt, except as notified.",
+  "ref": "CGST Act, s.54(3) proviso"
+ },
+ {
+  "id": "EXP-023",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 3,
+  "type": "scenario",
+  "q": "An IT exporter under LUT has ₹20 lakh of unutilised ITC. Its zero-rated turnover is ₹8 crore and total turnover is ₹10 crore. Roughly how much refund can it claim under the rule 89(4) formula (ignoring adjustments)?",
+  "model": "Refund = (turnover of zero-rated supplies x net ITC) / adjusted total turnover = (8 crore x 20 lakh) / 10 crore = ₹16 lakh. The balance ₹4 lakh is attributable to domestic supplies and is used against domestic liability.",
+  "points": [
+   "Rule 89(4) formula",
+   "Zero-rated turnover / adjusted total turnover x net ITC",
+   "₹16 lakh",
+   "Balance used domestically"
+  ],
+  "exp": "Net ITC here includes inputs and input services, not capital goods.",
+  "ref": "CGST Rules, r.89(4)",
+  "case": true
+ },
+ {
+  "id": "EXP-024",
+  "topic": "exports",
+  "sub": "Refund process",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client exported goods on payment of IGST but the refund isn't coming. What's the usual first check?",
+  "options": [
+   "Nothing, wait",
+   "Whether GSTR-1 Table 6A invoice details match the shipping bill (number, date, value, IGST) and GSTR-3B was filed",
+   "File RFD-01",
+   "Check the LUT"
+  ],
+  "answer": 1,
+  "exp": "Shipping-bill-based refunds fail on mismatch errors, and the fix is usually correcting GSTR-1 data.",
+  "ref": "CGST Rules, r.96",
+  "case": true
+ },
+ {
+  "id": "EXP-025",
+  "topic": "exports",
+  "sub": "Zero rating",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client starts exporting in November but forgot to file an LUT, then exports without paying IGST. What's the risk?",
+  "options": [
+   "None",
+   "Without a valid LUT, the export should have been with IGST; the department can demand tax with interest, though delays in LUT filing are often condoned",
+   "Only a late fee",
+   "Loss of IEC"
+  ],
+  "answer": 1,
+  "exp": "CBIC Circular 37/11/2018 said delays in LUT can be condoned if otherwise eligible. File the LUT before the first export.",
+  "ref": "Circular 37/11/2018",
+  "case": true
+ }
+]

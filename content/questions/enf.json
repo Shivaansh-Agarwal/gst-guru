@@ -1,0 +1,555 @@
+[
+ {
+  "id": "ENF-001",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Scrutiny of returns under section 61 starts with which notice?",
+  "options": [
+   "DRC-01",
+   "ASMT-10",
+   "ADT-01",
+   "REG-17"
+  ],
+  "answer": 1,
+  "exp": "The taxpayer replies in ASMT-11; if accepted, ASMT-12 closes it.",
+  "ref": "CGST Act, s.61"
+ },
+ {
+  "id": "ENF-002",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's section 62 about?",
+  "options": [
+   "Audit",
+   "Best judgement assessment of non-filers",
+   "Search and seizure",
+   "Advance ruling"
+  ],
+  "answer": 1,
+  "exp": "If the taxpayer files the return within 60 days of the assessment order, it's withdrawn.",
+  "ref": "CGST Act, s.62"
+ },
+ {
+  "id": "ENF-003",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Departmental audit under section 65 must generally be completed within:",
+  "options": [
+   "15 days",
+   "3 months from commencement, extendable by up to 6 months",
+   "1 year",
+   "No limit"
+  ],
+  "answer": 1,
+  "exp": "The taxpayer is informed at least 15 working days before (ADT-01).",
+  "ref": "CGST Act, s.65"
+ },
+ {
+  "id": "ENF-004",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A special audit under section 66 is done by:",
+  "options": [
+   "The regular officer",
+   "A chartered or cost accountant nominated by the Commissioner",
+   "The company's own auditor",
+   "GSTN"
+  ],
+  "answer": 1,
+  "exp": "Ordered when the case is complex, considering the nature and complexity of the business.",
+  "ref": "CGST Act, s.66"
+ },
+ {
+  "id": "ENF-005",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which section gives powers of inspection, search and seizure?",
+  "options": [
+   "Section 61",
+   "Section 67",
+   "Section 73",
+   "Section 129"
+  ],
+  "answer": 1,
+  "exp": "Section 69 covers arrest.",
+  "ref": "CGST Act, s.67"
+ },
+ {
+  "id": "ENF-006",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For FY 2023-24 and earlier, which section covers demands where there's no fraud or suppression?",
+  "options": [
+   "Section 73",
+   "Section 74",
+   "Section 74A",
+   "Section 76"
+  ],
+  "answer": 0,
+  "exp": "Section 74 covers fraud, wilful misstatement or suppression.",
+  "ref": "CGST Act, s.73"
+ },
+ {
+  "id": "ENF-007",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under section 73, the time limit to issue an order is:",
+  "options": [
+   "2 years",
+   "3 years from the due date of the annual return for the FY",
+   "5 years",
+   "42 months"
+  ],
+  "answer": 1,
+  "exp": "The notice must be issued at least 3 months before that deadline.",
+  "ref": "CGST Act, s.73(10)"
+ },
+ {
+  "id": "ENF-008",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Under section 74 (fraud), the time limit for the order is:",
+  "options": [
+   "3 years",
+   "5 years from the due date of the annual return",
+   "7 years",
+   "No limit"
+  ],
+  "answer": 1,
+  "exp": "The notice must be issued at least 6 months before.",
+  "ref": "CGST Act, s.74(10)"
+ },
+ {
+  "id": "ENF-009",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 3,
+  "type": "mcq",
+  "q": "From FY 2024-25 onwards, demand notices for both fraud and non-fraud cases are issued under:",
+  "options": [
+   "Section 73",
+   "Section 74",
+   "Section 74A",
+   "Section 128A"
+  ],
+  "answer": 2,
+  "exp": "Section 74A sets one time limit: notice within 42 months from the annual return due date, order within 12 months of notice (extendable by 6). Penalties still differ by fraud or not.",
+  "ref": "CGST Act, s.74A",
+  "volatile": true
+ },
+ {
+  "id": "ENF-010",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 73, if a taxpayer pays tax and interest before a notice is issued, what penalty is due?",
+  "options": [
+   "10%",
+   "No penalty",
+   "25%",
+   "100%"
+  ],
+  "answer": 1,
+  "exp": "If paid within 30 days of the notice, again no penalty.",
+  "ref": "CGST Act, s.73(5),(8)"
+ },
+ {
+  "id": "ENF-011",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 74 (fraud), if the taxpayer pays tax, interest and penalty before the notice, the penalty is:",
+  "options": [
+   "Nil",
+   "15% of tax",
+   "25%",
+   "50%"
+  ],
+  "answer": 1,
+  "exp": "25% within 30 days of the notice, 50% within 30 days of the order.",
+  "ref": "CGST Act, s.74(5)"
+ },
+ {
+  "id": "ENF-012",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which form is the summary of a show cause notice?",
+  "options": [
+   "DRC-01",
+   "DRC-03",
+   "DRC-07",
+   "ASMT-10"
+  ],
+  "answer": 0,
+  "exp": "DRC-01A is the pre-notice intimation, DRC-03 voluntary payment, DRC-07 summary of the order."
+ },
+ {
+  "id": "ENF-013",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 3,
+  "type": "mcq",
+  "q": "The section 128A waiver scheme waives interest and penalty for:",
+  "options": [
+   "All demands",
+   "Demands under section 73 for FY 2017-18 to 2019-20, if the tax is paid by the notified date",
+   "Fraud cases",
+   "Only exporters"
+  ],
+  "answer": 1,
+  "exp": "The deadline for paying tax to use the waiver was 31 March 2025.",
+  "ref": "CGST Act, s.128A",
+  "volatile": true
+ },
+ {
+  "id": "ENF-014",
+  "topic": "enf",
+  "sub": "Penalties",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Under section 122, the penalty for issuing an invoice without supplying goods or services is:",
+  "options": [
+   "₹5,000",
+   "₹10,000 or the tax evaded, whichever is higher",
+   "Double the tax",
+   "Only interest"
+  ],
+  "answer": 1,
+  "exp": "The same applies to fake ITC and several other offences.",
+  "ref": "CGST Act, s.122(1)"
+ },
+ {
+  "id": "ENF-015",
+  "topic": "enf",
+  "sub": "Penalties",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A general penalty under section 125 for contraventions where no specific penalty is provided can be up to:",
+  "options": [
+   "₹5,000",
+   "₹25,000",
+   "₹1 lakh",
+   "₹10,000"
+  ],
+  "answer": 1,
+  "exp": "Covering technical lapses without a specific penalty.",
+  "ref": "CGST Act, s.125",
+  "case": true
+ },
+ {
+  "id": "ENF-016",
+  "topic": "enf",
+  "sub": "Penalties",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Is prosecution possible under GST?",
+  "options": [
+   "No, only penalties",
+   "Yes, under section 132, with imprisonment depending on the amount of tax evaded",
+   "Only for exporters",
+   "Only for government employees"
+  ],
+  "answer": 1,
+  "exp": "The threshold for most offences was raised to ₹2 crore by the Finance Act 2023. Fake invoicing has a lower threshold.",
+  "ref": "CGST Act, s.132",
+  "volatile": true
+ },
+ {
+  "id": "ENF-017",
+  "topic": "enf",
+  "sub": "Penalties",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Section 83 allows provisional attachment of property. How long does it last?",
+  "options": [
+   "30 days",
+   "One year from the order",
+   "Until appeal",
+   "Permanent"
+  ],
+  "answer": 1,
+  "exp": "It lapses after one year.",
+  "ref": "CGST Act, s.83(2)"
+ },
+ {
+  "id": "ENF-018",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 1,
+  "type": "mcq",
+  "q": "The first appeal against a GST order goes to:",
+  "options": [
+   "High Court",
+   "Appellate Authority (first appeal)",
+   "GSTAT",
+   "Supreme Court"
+  ],
+  "answer": 1,
+  "exp": "Then GSTAT, High Court and Supreme Court.",
+  "ref": "CGST Act, s.107"
+ },
+ {
+  "id": "ENF-019",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Time limit for filing the first appeal:",
+  "options": [
+   "30 days",
+   "3 months from the order (plus one month on sufficient cause)",
+   "6 months",
+   "1 year"
+  ],
+  "answer": 1,
+  "exp": "For the department, it's 6 months.",
+  "ref": "CGST Act, s.107(1),(4)"
+ },
+ {
+  "id": "ENF-020",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Pre-deposit for the first appeal is:",
+  "options": [
+   "Nil",
+   "10% of the disputed tax (subject to a maximum cap)",
+   "25%",
+   "50%"
+  ],
+  "answer": 1,
+  "exp": "Admitted tax, interest and penalty must also be paid.",
+  "ref": "CGST Act, s.107(6)",
+  "volatile": true
+ },
+ {
+  "id": "ENF-021",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GSTAT stands for:",
+  "options": [
+   "GST Assessment Tribunal",
+   "Goods and Services Tax Appellate Tribunal",
+   "GST Advisory Team",
+   "GST Audit Team"
+  ],
+  "answer": 1,
+  "exp": "It hears second appeals.",
+  "ref": "CGST Act, s.109"
+ },
+ {
+  "id": "ENF-022",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Pre-deposit for an appeal to GSTAT is:",
+  "options": [
+   "10% of disputed tax, in addition to the first-appeal deposit",
+   "20% total, fresh",
+   "Nil",
+   "100%"
+  ],
+  "answer": 0,
+  "exp": "Caps apply. The Finance Act 2024 reduced the cap amounts.",
+  "ref": "CGST Act, s.112(8)",
+  "volatile": true
+ },
+ {
+  "id": "ENF-023",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 2,
+  "type": "tf",
+  "q": "The GST Appellate Tribunal (GSTAT) started accepting appeals only in 2025, years after GST began.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "Its constitution was delayed by litigation and legislative changes. Its online appeal filing started in late 2025, with timelines for backlog appeals set by notification.",
+  "volatile": true
+ },
+ {
+  "id": "ENF-024",
+  "topic": "enf",
+  "sub": "Advance ruling",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An advance ruling can be sought on:",
+  "options": [
+   "Past transactions",
+   "Questions like classification, applicability of a notification, time and value of supply, ITC admissibility, liability to register, and whether something is a supply",
+   "Income tax matters",
+   "Customs duty"
+  ],
+  "answer": 1,
+  "exp": "Only for proposed or ongoing activity, and not if the question is already pending in proceedings for the applicant.",
+  "ref": "CGST Act, s.97(2)"
+ },
+ {
+  "id": "ENF-025",
+  "topic": "enf",
+  "sub": "Advance ruling",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An advance ruling is binding on:",
+  "options": [
+   "All taxpayers",
+   "Only the applicant and its jurisdictional officer",
+   "The whole state",
+   "Only the department"
+  ],
+  "answer": 1,
+  "exp": "Different states' AARs have given conflicting rulings on the same issue, which is a known pain point.",
+  "ref": "CGST Act, s.103"
+ },
+ {
+  "id": "ENF-026",
+  "topic": "enf",
+  "sub": "Advance ruling",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Appeal against an AAR ruling goes to:",
+  "options": [
+   "High Court",
+   "Appellate Authority for Advance Ruling (AAAR)",
+   "GSTAT",
+   "CBIC"
+  ],
+  "answer": 1,
+  "exp": "Within 30 days.",
+  "ref": "CGST Act, s.100"
+ },
+ {
+  "id": "ENF-027",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client receives an ASMT-10 notice saying GSTR-3B ITC exceeds GSTR-2B by ₹4 lakh for FY 2023-24. What are the next steps, and what data would your software need to help?",
+  "model": "ASMT-10 is a scrutiny notice under section 61. The client should reply in ASMT-11 within the time given (usually 30 days), either explaining the difference with evidence or accepting and paying through DRC-03 with interest. Common valid explanations: invoices reported by suppliers in later periods (timing), import IGST, RCM credits, and ISD credits. Software needs invoice-level books-vs-2B reconciliation for the whole year, a list of mismatched invoices with supplier GSTINs, the period in which each later appeared in 2B, and categorisation of credits that never appear in 2B (RCM, imports). If unresolved, it may escalate to a demand under section 73.",
+  "points": [
+   "ASMT-10 under section 61",
+   "Reply in ASMT-11 or pay via DRC-03",
+   "Timing differences, RCM, imports as explanations",
+   "Invoice-level year reconciliation data",
+   "Escalation to section 73 if unresolved"
+  ],
+  "exp": "Notice-management features are a big part of compliance software.",
+  "ref": "CGST Act, s.61; r.99",
+  "case": true
+ },
+ {
+  "id": "ENF-028",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client gets an ADT-01 notice. What should the CA prepare?",
+  "options": [
+   "Nothing",
+   "Books, returns, reconciliations and documents for the audit under section 65, since officers will visit or ask for records",
+   "An appeal",
+   "A refund application"
+  ],
+  "answer": 1,
+  "exp": "The audit generally has to finish within three months, extendable by six.",
+  "ref": "CGST Act, s.65",
+  "case": true
+ },
+ {
+  "id": "ENF-029",
+  "topic": "enf",
+  "sub": "Demands",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client receives an intimation in DRC-01A before a show cause notice. What's the benefit of responding?",
+  "options": [
+   "None",
+   "It's the chance to pay or explain before a formal SCN; paying at this stage usually means less or no penalty",
+   "It closes the case automatically",
+   "It's an appeal"
+  ],
+  "answer": 1,
+  "exp": "Engaging early often stops a notice from turning into a demand order.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "ENF-030",
+  "topic": "enf",
+  "sub": "Penalties",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's supplier was found issuing fake invoices, and the department alleges the client took ITC on them knowingly. Which penalty provision is it likely to face?",
+  "options": [
+   "None",
+   "Section 122(1A) on beneficiaries, plus recovery of ITC with interest, and possible prosecution under section 132",
+   "Only late fee",
+   "Only section 125"
+  ],
+  "answer": 1,
+  "exp": "The beneficiary provision targets those at whose instance the transaction was done and who retain the benefit.",
+  "ref": "CGST Act, s.122(1A), s.132",
+  "case": true
+ },
+ {
+  "id": "ENF-031",
+  "topic": "enf",
+  "sub": "Appeals",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client missed the three-month appeal window by two weeks because the order was in the Additional Notices tab. Options?",
+  "options": [
+   "None",
+   "Appeal within the extra one month allowed on sufficient cause, explaining the delay",
+   "Only a writ",
+   "Re-file returns"
+  ],
+  "answer": 1,
+  "exp": "The Appellate Authority can condone delay of up to one month.",
+  "ref": "CGST Act, s.107(4)",
+  "case": true
+ },
+ {
+  "id": "ENF-032",
+  "topic": "enf",
+  "sub": "Scrutiny & audit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client gets ASMT-10 with a 30-day reply window but needs supplier documents that will take 45 days. What should the CA do?",
+  "options": [
+   "Not reply",
+   "Reply within time with what's available and request more time in writing for the rest",
+   "Wait 45 days",
+   "Pay the whole amount"
+  ],
+  "answer": 1,
+  "exp": "Silence is treated as acceptance of the discrepancy. A partial reply keeps the record clean.",
+  "case": true
+ }
+]
