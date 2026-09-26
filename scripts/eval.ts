@@ -13,9 +13,9 @@ const arg = (name: string) => {
 };
 const n = Number(arg("n") ?? 30);
 const only = arg("models")?.split(",");
-const models = availableModels().filter((m) => !only || only.includes(m.key));
+const models = (await availableModels()).filter((m) => !only || only.includes(m.key));
 if (!models.length) {
-  console.log("No models enabled. Add a provider key to .env.local first (see the Setup page).");
+  console.log("No models enabled. Start Ollama or LM Studio, or add a provider key to .env.local (see the Connect AI page).");
   process.exit(0);
 }
 

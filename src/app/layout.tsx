@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import ThemeSwitch from "@/components/ThemeSwitch";
-import { loadContent, topicGroups } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "GST Guru",
@@ -12,24 +11,16 @@ export const metadata: Metadata = {
   icons: { icon: "/icon.svg", apple: "/icon.svg" },
 };
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#edf1ee" },
-    { media: "(prefers-color-scheme: dark)", color: "#10171d" },
-  ],
+  themeColor: "#edf1ee",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
 };
 
-// Runs before first paint so a saved light or dark choice never flashes the other theme.
-const themeBootScript = `try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}`;
+// Runs before first paint so a saved dark choice never flashes the light theme.
+const themeBootScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // Short labels for the return shortcuts in the rail, e.g. "GSTR-1: outward supplies" becomes "GSTR-1".
-  const returns = (topicGroups(loadContent().topics).find((g) => g.label === "Returns")?.topics ?? []).map((t) => ({
-    id: t.id,
-    label: t.name.includes(":") ? t.name.split(":")[0] : "Other returns",
-  }));
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -41,13 +32,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Link href="/" className="wordmark">
               GST<span>.</span>Guru
             </Link>
-            <Nav returns={returns} />
-            <div className="rail-foot">
-              <ThemeSwitch />
-              <p className="muted small">Your progress is saved on this machine.</p>
-            </div>
+            <Nav />
+            <p className="muted small rail-foot">Your progress is saved on this machine.</p>
           </aside>
-          <main>{children}</main>
+          <div className="page">
+            <header className="topbar">
+              <Link href="/" className="wordmark topbar-mark">
+                GST<span>.</span>Guru
+              </Link>
+              <ThemeSwitch />
+            </header>
+            <main>{children}</main>
+          </div>
         </div>
       </body>
     </html>

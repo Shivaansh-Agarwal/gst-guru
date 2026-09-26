@@ -8,7 +8,7 @@ const Body = z.object({ task: z.enum(Object.keys(TASKS) as [keyof typeof TASKS])
 
 export async function POST(req: Request) {
   const b = Body.parse(await req.json());
-  if (!availableModels().some((m) => m.key === b.model)) return NextResponse.json({ error: "That model isn't enabled." }, { status: 400 });
+  if (!(await availableModels()).some((m) => m.key === b.model)) return NextResponse.json({ error: "That model isn't enabled." }, { status: 400 });
   setSetting(`model:${b.task}`, b.model);
   return NextResponse.json({ ok: true });
 }

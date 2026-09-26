@@ -88,3 +88,92 @@ export function loadGlossary(): GlossaryEntry[] {
   glossaryCache = fs.existsSync(file) ? GlossarySchema.parse(JSON.parse(fs.readFileSync(file, "utf8"))) : [];
   return glossaryCache;
 }
+
+// Further reading: official manuals first, then a few independent sources. Every link is checked by hand.
+export const ReadingLinkSchema = z.object({
+  title: z.string(),
+  url: z.url(),
+  source: z.string(),
+  kind: z.enum(["official", "article"]),
+  note: z.string().optional(),
+});
+export type ReadingLink = z.infer<typeof ReadingLinkSchema>;
+export const ReadingSchema = z.object({ general: z.array(ReadingLinkSchema), topics: z.record(z.string(), z.array(ReadingLinkSchema)) });
+
+let readingCache: z.infer<typeof ReadingSchema> | null = null;
+export function loadReading() {
+  if (readingCache) return readingCache;
+  const file = path.join(CONTENT_DIR, "reading.json");
+  readingCache = fs.existsSync(file) ? ReadingSchema.parse(JSON.parse(fs.readFileSync(file, "utf8"))) : { general: [], topics: {} };
+  return readingCache;
+}
+
+/** One line under each group heading on the topics page. Keyed by the `group` label in topics.json. */
+export const GROUP_BLURBS: Record<string, string> = {
+  Foundations: "What GST is, what counts as a supply, where and when it's taxed.",
+  "Registration and invoicing": "Getting registered, and the documents every sale or movement of goods needs.",
+  "Tax credit and payment": "Claiming credit on purchases, reverse charge and paying the tax.",
+  Reconciliation: "Matching books with returns, and returns with each other: the monthly and annual checks every CA runs.",
+  Returns: "One section per return, from monthly GSTR-1 and 3B to the annual GSTR-9 and 9C.",
+  "Special situations": "Exports, SEZs and refunds, and tax deducted or collected at source.",
+  "GST in practice": "How CAs run compliance for clients, notices and appeals, and the tech behind it.",
+};
+
+// Dashboard content: a fact and a small case study, rotated daily.
+const InsightSchema = z.object({
+  facts: z.array(
+    z.object({
+      title: z.string(),
+      hook: z.string().optional(),
+      text: z.string(),
+      example: z.string(),
+      ref: z.string().optional(),
+      volatile: z.boolean().optional(),
+      topic: z.string(),
+    })
+  ),
+  cases: z.array(
+    z.object({
+      title: z.string(),
+      topic: z.string(),
+      situation: z.string(),
+      question: z.string(),
+      answer: z.string(),
+      ref: z.string().optional(),
+      volatile: z.boolean().optional(),
+    })
+  ),
+});
+export type Insights = z.infer<typeof InsightSchema>;
+export { InsightSchema };
+
+let insightsCache: Insights | null = null;
+export function loadInsights(): Insights {
+  if (insightsCache) return insightsCache;
+  const file = path.join(CONTENT_DIR, "insights.json");
+  insightsCache = fs.existsSync(file) ? InsightSchema.parse(JSON.parse(fs.readFileSync(file, "utf8"))) : { facts: [], cases: [] };
+  return insightsCache;
+}
+
+// Curated videos per topic. YouTube entries were checked against YouTube's oEmbed API when added;
+// GST software vendors' channels are left out to keep the app neutral.
+const VideoSchema = z
+  .object({
+    youtube: z.string().regex(/^[\w-]{11}$/).optional(),
+    url: z.url().optional(),
+    title: z.string(),
+    channel: z.string(),
+    kind: z.enum(["official", "professional", "educator", "course"]),
+    lang: z.string().optional(),
+  })
+  .refine((v) => !!v.youtube !== !!v.url, "a video needs exactly one of youtube or url");
+export type Video = z.infer<typeof VideoSchema>;
+export const VideosSchema = z.record(z.string(), z.array(VideoSchema));
+
+let videosCache: Record<string, Video[]> | null = null;
+export function loadVideos(): Record<string, Video[]> {
+  if (videosCache) return videosCache;
+  const file = path.join(CONTENT_DIR, "videos.json");
+  videosCache = fs.existsSync(file) ? VideosSchema.parse(JSON.parse(fs.readFileSync(file, "utf8"))) : {};
+  return videosCache;
+}

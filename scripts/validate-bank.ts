@@ -2,12 +2,13 @@
 // Run: npm run validate
 import fs from "node:fs";
 import path from "node:path";
-import { QuestionSchema, TopicSchema, GlossarySchema } from "../src/lib/content";
+import { QuestionSchema, TopicSchema, GlossarySchema, ReadingSchema, InsightSchema, VideosSchema } from "../src/lib/content";
 import { z } from "zod";
 
 const dir = path.join(process.cwd(), "content");
 const topics = z.array(TopicSchema).parse(JSON.parse(fs.readFileSync(path.join(dir, "topics.json"), "utf8")));
 GlossarySchema.parse(JSON.parse(fs.readFileSync(path.join(dir, "glossary.json"), "utf8")));
+const reading = ReadingSchema.parse(JSON.parse(fs.readFileSync(path.join(dir, "reading.json"), "utf8")));
 
 let errors = 0;
 const ids = new Set<string>();
@@ -44,6 +45,21 @@ for (const t of topics) {
   }
   rows.push({ topic: t.id, total: arr.length, cases, free, volatile: vol });
 }
+
+const insights = InsightSchema.parse(JSON.parse(fs.readFileSync(path.join(dir, "insights.json"), "utf8")));
+for (const i of [...insights.facts, ...insights.cases])
+  if (!topics.some((t) => t.id === i.topic)) (console.error(`✗ insight "${i.title}" points to unknown topic ${i.topic}`), errors++);
+const factTitles = new Set<string>();
+for (const f of insights.facts) {
+  if (factTitles.has(f.title)) (console.error(`✗ duplicate fact title "${f.title}" (titles track what's been discovered)`), errors++);
+  factTitles.add(f.title);
+}
+for (const t of topics) if (!t.group) (console.error(`✗ topic ${t.id} has no group`), errors++);
+const videos = VideosSchema.parse(JSON.parse(fs.readFileSync(path.join(dir, "videos.json"), "utf8")));
+for (const id of Object.keys(videos))
+  if (!topics.some((t) => t.id === id)) (console.error(`✗ videos.json lists videos for unknown topic ${id}`), errors++);
+for (const id of Object.keys(reading.topics))
+  if (!topics.some((t) => t.id === id)) (console.error(`✗ reading.json lists links for unknown topic ${id}`), errors++);
 
 console.table(rows);
 const total = rows.reduce((s, r) => s + r.total, 0);

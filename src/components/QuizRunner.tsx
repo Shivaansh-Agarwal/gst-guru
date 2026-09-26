@@ -29,6 +29,42 @@ type Grade = { verdict: "correct" | "partial" | "incorrect"; score: number; feed
 const LETTERS = "ABCDE";
 const DIFF = ["", "Easy", "Medium", "Tricky"];
 
+// Feedback lines rotate by question so the round doesn't feel canned.
+const CHEERS = ["Nailed it!", "Sharp!", "Spot on.", "That's the one.", "Exactly right."];
+const NUDGES = ["Not quite. Here's the twist.", "Close, but no.", "Tricky one. Here's why.", "Good guess, wrong answer."];
+const PARTLY = ["Partly there.", "Half the story."];
+
+function streakAt(results: Result[], upto: number) {
+  let n = 0;
+  for (let k = upto; k >= 0 && results[k] === "ok"; k--) n++;
+  return n;
+}
+
+function bestStreak(results: Result[]) {
+  let best = 0;
+  let run = 0;
+  for (const r of results) {
+    run = r === "ok" ? run + 1 : 0;
+    best = Math.max(best, run);
+  }
+  return best;
+}
+
+function kindOf(q: Q) {
+  if (q.type === "scenario") return { label: "Write it out", cls: "violet" };
+  if (q.case) return { label: "Client situation", cls: "coral" };
+  if (q.type === "tf") return { label: "True or false", cls: "sun" };
+  return { label: "Quick check", cls: "mint" };
+}
+
+function verdictFor(ok: number, total: number) {
+  const r = total ? ok / total : 0;
+  if (r === 1) return { title: "Clean sheet!", line: "Every one right. The scheduler will push these further out." };
+  if (r >= 0.8) return { title: "Strong round", line: "Only a couple slipped. They'll come back tomorrow so they stick." };
+  if (r >= 0.5) return { title: "Solid work", line: "More right than wrong. The misses return tomorrow for another go." };
+  return { title: "Every miss is tomorrow's win", line: "These come back soon, and a second look is when things click." };
+}
+
 export default function QuizRunner(props: {
   mode: "daily" | "topic" | "scenarios";
   topic?: string;
@@ -61,7 +97,25 @@ export default function QuizRunner(props: {
       .then((d) => setQs(d.questions));
   }, [props.mode, props.topic, props.sub, props.size]);
 
-  if (!qs) return <p className="muted">Pulling your questions…</p>;
+  // Keyboard: A–E or 1–5 picks an option; Enter moves on once answered.
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      const el = e.target as HTMLElement;
+      if (!qs || i >= qs.length || e.metaKey || e.ctrlKey || e.altKey || el.closest("textarea, input, select")) return;
+      const cur = qs[i];
+      if (cur.type === "scenario" || !cur.options || picked !== null) return;
+      const k = e.key.toUpperCase();
+      const idx = LETTERS.indexOf(k) >= 0 && k.length === 1 ? LETTERS.indexOf(k) : Number(e.key) - 1;
+      if (idx >= 0 && idx < cur.options.length) {
+        e.preventDefault();
+        document.getElementById(`opt-${idx}`)?.click();
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [qs, i, picked]);
+
+  if (!qs) return <p className="muted">Shuffling your questions…</p>;
   if (!qs.length)
     return (
       <p>
@@ -72,24 +126,49 @@ export default function QuizRunner(props: {
   if (i >= qs.length) {
     const ok = results.filter((r) => r === "ok").length;
     const mid = results.filter((r) => r === "mid").length;
+    const v = verdictFor(ok, qs.length);
+    const party = ok / qs.length >= 0.8;
     return (
-      <div className="stack">
-        <div className="count" style={{ fontFamily: "var(--display)", fontWeight: 800, fontSize: "4rem", lineHeight: 1 }}>
-          {ok}/{qs.length}
-        </div>
-        <p>
-          {mid ? `Plus ${mid} partly right. ` : ""}
-          {ok === qs.length
-            ? "Clean sheet. The scheduler will push these further out."
-            : "The ones you missed will come back tomorrow, so they stick."}
+      <div className="finish">
+        {party && (
+          <div className="confetti" aria-hidden>
+            {Array.from({ length: 28 }, (_, k) => (
+              <i key={k} style={{ left: `${(k * 37) % 100}%`, animationDelay: `${(k % 7) * 90}ms`, ["--r" as string]: `${(k * 53) % 360}deg` }} />
+            ))}
+          </div>
+        )}
+        <p className="finish-sticker">Round complete</p>
+        <p className="finish-score num">
+          {ok}
+          <small>/{qs.length}</small>
         </p>
-        <div className="row">
-          <Link className="btn" href="/">
-            Back to today
-          </Link>
-          <button className="btn ghost" onClick={() => location.reload()}>
-            Run another set
+        <h2>{v.title}</h2>
+        <p className="finish-line">{v.line}</p>
+        <ul className="finish-stats">
+          <li>
+            <b className="num">{bestStreak(results)}</b> best streak
+          </li>
+          <li>
+            <b className="num">{Math.round((ok / qs.length) * 100)}%</b> accuracy
+          </li>
+          {mid > 0 && (
+            <li>
+              <b className="num">{mid}</b> partly right
+            </li>
+          )}
+        </ul>
+        <div className="coins finish-coins" aria-hidden>
+          {qs.map((_, k) => (
+            <i key={k} className={results[k] === "ok" ? "ok" : results[k] === "mid" ? "mid" : "bad"} />
+          ))}
+        </div>
+        <div className="row" style={{ justifyContent: "center" }}>
+          <button className="btn" onClick={() => location.reload()}>
+            Play another round
           </button>
+          <Link className="btn ghost" href="/">
+            Back to dashboard
+          </Link>
         </div>
       </div>
     );
@@ -161,26 +240,47 @@ export default function QuizRunner(props: {
 
   const seen = new Set<string>();
   const stampText = result === "ok" ? "Correct" : result === "mid" ? "Partly" : "Not quite";
+  const kind = kindOf(q);
+  const score = results.filter((r) => r === "ok").length;
+  const combo = streakAt(results, result ? i : i - 1);
 
   return (
     <div>
-      <div className="progress" aria-label={`Question ${i + 1} of ${qs.length}`}>
-        {qs.map((_, k) => (
-          <i key={k} className={k === i ? "now" : results[k] === "ok" ? "done-ok" : results[k] ? "done-bad" : ""} />
-        ))}
+      <div className="hud">
+        <p className="hud-count">
+          Question <b className="num">{i + 1}</b> of {qs.length}
+        </p>
+        <p className="hud-score">
+          Score <b className="num">{score}</b>
+        </p>
+        {combo >= 2 && (
+          <p className="hud-combo" key={combo}>
+            {combo} in a row!
+          </p>
+        )}
+        <div className="coins" aria-hidden>
+          {qs.map((_, k) => (
+            <i key={k} className={k === i && !result ? "now" : results[k] === "ok" ? "ok" : results[k] === "mid" ? "mid" : results[k] ? "bad" : ""} />
+          ))}
+        </div>
       </div>
 
-      <article className="sheet">
+      <article className={`sheet play ${result ? `is-${result}` : ""}`}>
         {result && (
           <div className={`stamp ${result}`} role="status">
             {stampText}
           </div>
         )}
         <div className="sheet-head">
-          <span className="ref">{q.id}</span>
-          <span>
-            {(q.case || q.type === "scenario") && <span className="kind">Situation. </span>}
-            {q.sub}, {DIFF[q.diff]}
+          <span className={`q-sticker ${kind.cls}`}>{kind.label}</span>
+          <span className="q-meta">
+            {q.sub}
+            <span className="diff" aria-label={`Difficulty: ${DIFF[q.diff]}`}>
+              {[1, 2, 3].map((d) => (
+                <i key={d} className={d <= q.diff ? "on" : ""} />
+              ))}
+              <span>{DIFF[q.diff]}</span>
+            </span>
           </span>
         </div>
 
@@ -211,14 +311,19 @@ export default function QuizRunner(props: {
           </div>
         )}
 
+        {q.type !== "scenario" && q.options && picked === null && (
+          <p className="q-hint">Trust your gut. Press {LETTERS.slice(0, q.options.length).split("").join(", ")} or tap an answer.</p>
+        )}
         {q.type !== "scenario" && q.options && (
           <div className="opts">
             {q.options.map((o, k) => {
-              const cls = picked === null ? "" : k === q.answer ? "right" : k === picked ? "wrong" : "";
+              const cls = picked === null ? "" : k === q.answer ? "right" : k === picked ? "wrong" : "faded";
               return (
-                <button key={k} className={`opt ${cls}`} onClick={() => choose(k)} disabled={picked !== null}>
-                  <span className="key">{q.type === "tf" ? "" : LETTERS[k]}</span>
-                  <span>{o}</span>
+                <button id={`opt-${k}`} key={k} className={`opt ${cls}`} onClick={() => choose(k)} disabled={picked !== null}>
+                  <span className="key">{LETTERS[k]}</span>
+                  <span className="opt-text">{o}</span>
+                  {cls === "right" && <span className="opt-mark">✓</span>}
+                  {cls === "wrong" && <span className="opt-mark">✗</span>}
                 </button>
               );
             })}
@@ -255,6 +360,11 @@ export default function QuizRunner(props: {
 
         {((q.type !== "scenario" && answered) || (q.type === "scenario" && revealed)) && (
           <div className="explain">
+            {result && (
+              <p className={`feedback ${result}`} role="status">
+                {result === "ok" ? (combo >= 3 ? `${combo} in a row! You're on a roll.` : CHEERS[i % CHEERS.length]) : result === "mid" ? PARTLY[i % PARTLY.length] : NUDGES[i % NUDGES.length]}
+              </p>
+            )}
             {grade && (
               <>
                 <p>{grade.feedback}</p>
@@ -274,10 +384,13 @@ export default function QuizRunner(props: {
                 <p>{q.model}</p>
               </>
             )}
-            <p>
-              <TermText text={q.exp} matcher={matcher} onPick={setTerm} seen={seen} />
-            </p>
-            {q.ref && <p className="muted small">Reference: {q.ref}</p>}
+            <div className="why">
+              <p className="why-label">Why</p>
+              <p>
+                <TermText text={q.exp} matcher={matcher} onPick={setTerm} seen={seen} />
+              </p>
+              {q.ref && <p className="small why-ref">{q.ref}</p>}
+            </div>
             {q.volatile && <p className="note">This depends on current rates, limits or dates, which change by notification. Verify against the latest CBIC notification before relying on it.</p>}
             {q.source === "ai" && <p className="note">Written by {q.model_used} and not yet reviewed. Double-check it.</p>}
             {q.type === "scenario" && !grade && !result && (
@@ -301,8 +414,8 @@ export default function QuizRunner(props: {
       {props.aiReady ? (
         <div className="help-toggle">
           {!helpOpen ? (
-            <button className="btn ghost small" onClick={() => setHelpOpen(true)}>
-              Ask about this question
+            <button className="btn ghost small ask-btn" onClick={() => setHelpOpen(true)}>
+              {answered ? "Still curious? Ask about this" : "Stuck? Get a hint without the answer"}
             </button>
           ) : (
             <QuestionHelp key={q.id} question={q} answered={answered} seed={helpSeed} onSeedUsed={() => setHelpSeed(undefined)} />
@@ -315,18 +428,18 @@ export default function QuizRunner(props: {
       )}
 
       {answered && (
-        <div className="row" style={{ marginTop: 18, justifyContent: "space-between" }}>
-          <button className="btn ghost small" onClick={flag} disabled={flagged}>
-            {flagged ? "Flagged for review" : "This looks wrong"}
-          </button>
-          <div className="row">
-            <Link className="btn ghost small" href={`/deep-dive?topic=${q.topic}&q=${encodeURIComponent(q.id)}`}>
-              Explain this more
-            </Link>
-            <button className="btn" onClick={next} autoFocus>
-              {i + 1 === qs.length ? "See results" : "Next question"}
+        <div className="next-row">
+          <p className="small curious">
+            <span>Curious?</span>
+            <Link href={`/gpt?topic=${q.topic}&q=${encodeURIComponent(q.id)}`}>Go deeper with GST GPT</Link>
+            <Link href={`/topics/${q.topic}`}>Open the topic</Link>
+            <button className="linkish" onClick={flag} disabled={flagged}>
+              {flagged ? "Flagged for review" : "This looks wrong"}
             </button>
-          </div>
+          </p>
+          <button className="btn next-btn" onClick={next} autoFocus>
+            {i + 1 === qs.length ? "See my results" : "Next question"} <span aria-hidden>→</span>
+          </button>
         </div>
       )}
     </div>

@@ -4,6 +4,6 @@ import { availableModels } from "@/lib/providers";
 
 export const dynamic = "force-dynamic";
 
-export function GET() {
-  return NextResponse.json({ ...todaySummary(), aiReady: availableModels().length > 0 });
+export async function GET() {
+  return NextResponse.json({ ...todaySummary(), aiReady: (await availableModels()).length > 0 });
 }

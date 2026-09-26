@@ -1,0 +1,141 @@
+[
+ {
+  "id": "REW-001",
+  "topic": "recewb",
+  "sub": "Why it matters",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why does the department compare e-way bills with GSTR-1?",
+  "options": [
+   "To calculate ITC",
+   "Every e-way bill for a sale should match an invoice in GSTR-1; e-way bill values far above reported sales suggest unreported turnover",
+   "To set rates",
+   "To issue refunds"
+  ],
+  "answer": 1,
+  "exp": "E-way bill data is one of the richest sources for the department's analytics."
+ },
+ {
+  "id": "REW-002",
+  "topic": "recewb",
+  "sub": "Matching",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What links an e-way bill for a sale to its GSTR-1 entry?",
+  "options": [
+   "The vehicle number",
+   "The tax invoice number, date and the supplier and buyer GSTINs",
+   "The transporter ID",
+   "The distance"
+  ],
+  "answer": 1,
+  "exp": "That's the match key when reconciling the two."
+ },
+ {
+  "id": "REW-003",
+  "topic": "recewb",
+  "sub": "Matching",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can GSTR-1 be pre-filled from e-way bill data?",
+  "options": [
+   "No",
+   "Yes, the portal lets you import invoice details declared in the e-way bill system into GSTR-1",
+   "Only for exports",
+   "Only for composition taxpayers"
+  ],
+  "answer": 1,
+  "exp": "It saves typing and keeps the two consistent, but the details still need checking before filing.",
+  "volatile": true
+ },
+ {
+  "id": "REW-004",
+  "topic": "recewb",
+  "sub": "Matching",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's March e-way bills total ₹80 lakh but its GSTR-1 shows ₹65 lakh of sales. What could explain the gap legitimately?",
+  "options": [
+   "Nothing; it's always unreported sales",
+   "Movements that aren't sales, like goods sent for job work or on approval, or returns, and trips that didn't happen where the e-way bill wasn't cancelled in time",
+   "E-way bills include GST twice",
+   "GSTR-1 excludes B2B"
+  ],
+  "answer": 1,
+  "exp": "Each non-sale movement should be backed by a delivery challan.",
+  "ref": "CGST Rules, r.55 and r.138",
+  "case": true
+ },
+ {
+  "id": "REW-005",
+  "topic": "recewb",
+  "sub": "Fixing gaps",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An e-way bill was generated but the sale was called off two days later. What now?",
+  "options": [
+   "Cancel it on the portal",
+   "It can't be cancelled after 24 hours, so keep evidence that the goods never moved, since it will show up in comparisons with GSTR-1",
+   "Report the sale anyway",
+   "Pay a penalty"
+  ],
+  "answer": 1,
+  "exp": "Cancellation is only possible within 24 hours and before verification in transit.",
+  "ref": "CGST Rules, r.138(9)",
+  "case": true
+ },
+ {
+  "id": "REW-006",
+  "topic": "recewb",
+  "sub": "Why it matters",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What blocks a taxpayer from generating e-way bills?",
+  "options": [
+   "A pending refund",
+   "Not filing GSTR-3B (or CMP-08 for composition) for two consecutive tax periods",
+   "Late GSTR-9",
+   "An unpaid late fee on GSTR-1"
+  ],
+  "answer": 1,
+  "exp": "Filing the pending returns unblocks it.",
+  "ref": "CGST Rules, r.138E",
+  "volatile": true
+ },
+ {
+  "id": "REW-007",
+  "topic": "recewb",
+  "sub": "Fixing gaps",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An e-way bill shows buyer GSTIN A, but the invoice in GSTR-1 shows buyer GSTIN B. What should the CA do?",
+  "options": [
+   "Nothing",
+   "Find out which document is right; if GSTR-1 is wrong, amend it so the right buyer gets the credit, and note the reason since the e-way bill can't be edited",
+   "Cancel both",
+   "Report the sale twice"
+  ],
+  "answer": 1,
+  "exp": "The buyer's ITC follows GSTR-1, not the e-way bill.",
+  "case": true
+ },
+ {
+  "id": "REW-008",
+  "topic": "recewb",
+  "sub": "Fixing gaps",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Before the year closes, how would you reconcile a manufacturer's outward e-way bills with its GSTR-1?",
+  "model": "Download the year's outward e-way bills and match them to GSTR-1 and e-invoice data on document number, date, value and buyer GSTIN. Sort into matched, e-way bills with no invoice in GSTR-1 (non-sale movements, which need delivery challans on file, or genuinely missed invoices), invoices for goods that moved above the threshold with no e-way bill (a compliance gap to fix going forward), and value or GSTIN mismatches. Report missed invoices in GSTR-1 and pay tax with interest, and document the rest.",
+  "points": [
+   "Download e-way bills and match on number, date, value, GSTIN",
+   "Separate non-sale movements with challans",
+   "Catch missed invoices and pay tax with interest",
+   "Flag goods moved without e-way bills",
+   "Document every difference"
+  ],
+  "exp": "Doing this before the department does turns a notice into a non-event.",
+  "ref": "CGST Rules, r.138",
+  "case": true
+ }
+]

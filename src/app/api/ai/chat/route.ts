@@ -1,11 +1,14 @@
 import { streamText } from "ai";
 import { z } from "zod";
 import { modelFor, NoModelError } from "@/lib/ai";
+import { availableModels, resolveModel } from "@/lib/providers";
+import { setSetting } from "@/lib/db";
 import { loadContent, topicById } from "@/lib/content";
 import { factSheet, TUTOR_BASE } from "@/lib/prompts";
 
 const Body = z.object({
   topic: z.string().optional(),
+  modelKey: z.string().optional(),
   context: z.string().max(12000).optional(),
   question: z
     .object({
@@ -22,7 +25,7 @@ const Body = z.object({
 
 const DEEP_DIVE = `${TUTOR_BASE}
 
-You are running a deep-dive session. Teach in layers: first what the concept is and why the law has it, then how it works step by step, then edge cases and common mistakes, then how software (portal APIs, validations, reconciliation) deals with it.
+You are GST GPT, a tutor the learner is chatting with. Answer what they ask directly first. When they want to learn a concept, teach in layers: what it is and why the law has it, how it works step by step, then edge cases and common mistakes, and how it plays out in practice for a CA and on the GST portal.
 Keep each reply focused and under about 350 words unless asked for more. End most replies with one short question that checks understanding, and when the learner answers, tell them honestly whether they were right.
 Use Markdown sparingly: short paragraphs, a small table when comparing things.`;
 
@@ -48,7 +51,14 @@ export async function POST(req: Request) {
   let model;
   let key;
   try {
-    ({ model, key } = modelFor("chat"));
+    // A model picked in GST GPT wins, and becomes the default for chat next time.
+    if (b.modelKey && (await availableModels()).some((m) => m.key === b.modelKey)) {
+      key = b.modelKey;
+      model = resolveModel(key);
+      setSetting("model:chat", key);
+    } else {
+      ({ model, key } = await modelFor("chat"));
+    }
   } catch (e) {
     return new Response(e instanceof Error ? e.message : String(e), { status: e instanceof NoModelError ? 412 : 500 });
   }

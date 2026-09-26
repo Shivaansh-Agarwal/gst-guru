@@ -1,0 +1,412 @@
+{
+ "general": [
+  {
+   "title": "GST Acts, rules, notifications and circulars",
+   "url": "https://cbic-gst.gov.in/gst-acts.html",
+   "source": "CBIC",
+   "kind": "official",
+   "note": "The law itself. Check here for the latest notification before relying on a rate, limit or date."
+  },
+  {
+   "title": "Searchable Acts, rules and notifications",
+   "url": "https://taxinformation.cbic.gov.in/",
+   "source": "CBIC",
+   "kind": "official"
+  },
+  {
+   "title": "GST Council meetings and recommendations",
+   "url": "https://gstcouncil.gov.in/",
+   "source": "GST Council",
+   "kind": "official"
+  },
+  {
+   "title": "GST portal tutorials and user manuals",
+   "url": "https://tutorial.gst.gov.in/",
+   "source": "GSTN",
+   "kind": "official"
+  },
+  {
+   "title": "GST articles by practitioners",
+   "url": "https://taxguru.in/goods-and-service-tax/",
+   "source": "TaxGuru",
+   "kind": "article",
+   "note": "Community-written. Useful for worked examples; check the date and the law it cites."
+  }
+ ],
+ "topics": {
+  "gstr1": [
+   {
+    "title": "GSTR-1: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Creation_of_Outward_Supplies_Return_in_GSTR-1.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-1: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR_1.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr1a": [
+   {
+    "title": "GSTR-1A: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_Creation_of_Outward_Supplies_Return_in_GSTR-1A.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-1A: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQs_Creation_of_Outward_Supplies_Return_in_GSTR-1A.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr2b": [
+   {
+    "title": "GSTR-2B: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_gstr2b.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-2B: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQ_gstr2b.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Invoice Management System (IMS): how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_IMS_Dashboard.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Invoice Management System (IMS): frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQ_IMS_Dashboard.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr3b": [
+   {
+    "title": "GSTR-3B: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Create_and_Submit_GSTR3B.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-3B: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR3B.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr9": [
+   {
+    "title": "GSTR-9: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_gstr9.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-9: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQs_gstr9.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr9c": [
+   {
+    "title": "GSTR-9C: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_9c.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-9C: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/faq_9c.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr6": [
+   {
+    "title": "GSTR-6: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR-6.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-6: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR-6_faq.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "gstr7": [
+   {
+    "title": "GSTR-7: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR7_Manual.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-7: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR7_FAQ.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Accepting TDS and TCS credit as a supplier",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/manual_tds_and_tcs_credit_received.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "itc04": [
+   {
+    "title": "ITC-04: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/Manual_itc04.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "ITC-04: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/FAQs_itc04.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "returns": [
+   {
+    "title": "QRMP: invoice furnishing facility (IFF)",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_IFF.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "QRMP: switching between monthly and quarterly",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/manual_change_profile.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "All return user manuals",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/index.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "recon": [
+   {
+    "title": "GSTR-2B: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_gstr2b.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Invoice Management System (IMS): how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_IMS_Dashboard.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Invoice Management System (IMS): frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQ_IMS_Dashboard.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "tdstcs": [
+   {
+    "title": "GSTR-7: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/GSTR7_Manual.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Accepting TDS and TCS credit as a supplier",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/manual_tds_and_tcs_credit_received.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "reg": [
+   {
+    "title": "Registration user manuals",
+    "url": "https://tutorial.gst.gov.in/userguide/registration/index.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "pay": [
+   {
+    "title": "Payment and ledger user manuals",
+    "url": "https://tutorial.gst.gov.in/userguide/payments/index.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "exports": [
+   {
+    "title": "Refund user manuals",
+    "url": "https://tutorial.gst.gov.in/userguide/refund/index.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "itc": [
+   {
+    "title": "Input tax credit user manuals",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/index.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "einv": [
+   {
+    "title": "E-invoice portal (IRP): schema, FAQs and notices",
+    "url": "https://einvoice1.gst.gov.in/",
+    "source": "GSTN",
+    "kind": "official"
+   }
+  ],
+  "ewb": [
+   {
+    "title": "E-way bill portal: user manuals, FAQs and rules",
+    "url": "https://ewaybillgst.gov.in/",
+    "source": "GSTN",
+    "kind": "official"
+   }
+  ],
+  "recpur": [
+   {
+    "title": "GSTR-2B: how to view and use it",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_gstr2b.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Invoice Management System (IMS): accepting and rejecting invoices",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_IMS_Dashboard.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-2A: how to view inward supplies",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/View_of_Inward_Supplies_Returns_1.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "recsales": [
+   {
+    "title": "GSTR-1: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Creation_of_Outward_Supplies_Return_in_GSTR-1.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "E-invoice portal (IRP): schema, FAQs and notices",
+    "url": "https://einvoice1.gst.gov.in/",
+    "source": "GSTN",
+    "kind": "official"
+   }
+  ],
+  "rec1v3b": [
+   {
+    "title": "Comparison of liability declared and ITC claimed",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/Manual_comparison_of_liability_declared_and_ITC_claimed.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Replying to DRC-01B (GSTR-1 vs GSTR-3B difference)",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_Return_Compliance.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "DRC-01B: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQs_Return_Compliance.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "rec2bv3b": [
+   {
+    "title": "Comparison of liability declared and ITC claimed",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/Manual_comparison_of_liability_declared_and_ITC_claimed.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Comparison report: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/FAQs_comparison_of_liability_declared_and_ITC_claimed.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-2B: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQ_gstr2b.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "recewb": [
+   {
+    "title": "Importing e-way bill data into GSTR-1",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_Importing_e-Way_Bill_Data_in_Form_GSTR-1.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Importing e-way bill data: frequently asked questions",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/FAQs_Importing_e-Way_Bill_Data_in_Form_GSTR-1.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "E-way bill portal: reports, user manuals and FAQs",
+    "url": "https://ewaybillgst.gov.in/",
+    "source": "GSTN",
+    "kind": "official"
+   }
+  ],
+  "recannual": [
+   {
+    "title": "GSTR-9: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_gstr9.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-9C: how to file, step by step",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_9c.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ],
+  "recledger": [
+   {
+    "title": "Accepting TDS and TCS credit as a supplier",
+    "url": "https://tutorial.gst.gov.in/userguide/inputtaxcredit/manual_tds_and_tcs_credit_received.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "GSTR-8: how e-commerce operators report TCS",
+    "url": "https://tutorial.gst.gov.in/userguide/returns/Manual_GSTR-8.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   },
+   {
+    "title": "Payment and ledger user manuals",
+    "url": "https://tutorial.gst.gov.in/userguide/payments/index.htm",
+    "source": "GST portal user manual",
+    "kind": "official"
+   }
+  ]
+ }
+}

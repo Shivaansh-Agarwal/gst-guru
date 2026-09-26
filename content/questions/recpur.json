@@ -1,0 +1,156 @@
+[
+ {
+  "id": "RPB-001",
+  "topic": "recpur",
+  "sub": "Matching",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What is the purchase register vs GSTR-2B reconciliation for?",
+  "options": [
+   "Calculating output tax",
+   "Claiming ITC only on invoices suppliers have reported, and catching invoices that are missing, wrong or not yours",
+   "Preparing GSTR-1",
+   "Checking e-way bills"
+  ],
+  "answer": 1,
+  "exp": "Since ITC follows GSTR-2B, the purchase register has to be matched against it every month before GSTR-3B.",
+  "ref": "CGST Act, s.16(2)(aa)"
+ },
+ {
+  "id": "RPB-002",
+  "topic": "recpur",
+  "sub": "Matching",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which fields make the most reliable primary key for matching an invoice?",
+  "options": [
+   "Invoice date alone",
+   "Supplier GSTIN + normalised invoice number + financial year",
+   "Taxable value alone",
+   "Supplier name + amount"
+  ],
+  "answer": 1,
+  "exp": "Date, value and tax heads are then compared as checks, with a small tolerance for rounding. Normalising means ignoring case, spaces, separators and leading zeros."
+ },
+ {
+  "id": "RPB-003",
+  "topic": "recpur",
+  "sub": "Matching",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The books show supplier invoice 'SI/045'; GSTR-2B shows 'SI-45' with the same GSTIN, date and value. How should the reconciliation treat it?",
+  "options": [
+   "As missing in 2B, so don't claim",
+   "As a match once the number is normalised, noting the format difference",
+   "As a duplicate",
+   "Ask the supplier to cancel it"
+  ],
+  "answer": 1,
+  "exp": "Exact-string matching would wrongly flag it. Good reconciliation logic normalises numbers before comparing.",
+  "case": true
+ },
+ {
+  "id": "RPB-004",
+  "topic": "recpur",
+  "sub": "Mismatch types",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An invoice is in the books but not in GSTR-2B. What are the usual reasons?",
+  "options": [
+   "The buyer's accounting software is wrong",
+   "The supplier hasn't filed or filed late, reported it under another GSTIN or as B2C, or it will appear in a later month's 2B",
+   "GSTR-2B only shows imports",
+   "The invoice is below ₹50,000"
+  ],
+  "answer": 1,
+  "exp": "Each reason needs a different follow-up with the supplier, so the reconciliation should say which one it is where it can."
+ },
+ {
+  "id": "RPB-005",
+  "topic": "recpur",
+  "sub": "Mismatch types",
+  "diff": 3,
+  "type": "mcq",
+  "q": "GSTR-2B shows a ₹2.4 lakh + ₹43,200 GST invoice from a supplier the client has never bought from. What should the CA do?",
+  "options": [
+   "Claim it, since it's in 2B",
+   "Leave it; IMS will sort it out",
+   "Don't claim it, reject it in IMS, and tell the supplier, since it may be a wrong GSTIN or misuse of the client's GSTIN",
+   "Accept it and reverse later"
+  ],
+  "answer": 2,
+  "exp": "Left alone, it is deemed accepted in IMS and shows as available credit. Claiming credit on a purchase that never happened invites a demand with penalty.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "RPB-006",
+  "topic": "recpur",
+  "sub": "Mismatch types",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A Haryana client's GSTR-2B shows a Delhi supplier's invoice with Delhi CGST and SGST, under 'ITC not available'. What's wrong?",
+  "options": [
+   "Nothing, it's claimable",
+   "The supplier charged the wrong type of tax for an inter-state sale; it should issue a credit note and a fresh IGST invoice",
+   "The client must pay the tax again",
+   "It's an import"
+  ],
+  "answer": 1,
+  "exp": "A Delhi-to-Haryana sale of goods needs IGST. CGST and SGST of Delhi can't be used in Haryana.",
+  "ref": "IGST Act, s.7 and s.10",
+  "case": true
+ },
+ {
+  "id": "RPB-007",
+  "topic": "recpur",
+  "sub": "Acting on results",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How often should the purchase reconciliation run?",
+  "options": [
+   "Once a year for GSTR-9",
+   "Every month before GSTR-3B, with a year-end sweep before 30 November for anything still missing",
+   "Only when a notice arrives",
+   "Quarterly"
+  ],
+  "answer": 1,
+  "exp": "30 November after the year is the last date to claim that year's ITC, so misses found in December are lost.",
+  "ref": "CGST Act, s.16(4)"
+ },
+ {
+  "id": "RPB-008",
+  "topic": "recpur",
+  "sub": "Acting on results",
+  "diff": 2,
+  "type": "tf",
+  "q": "If a supplier's invoice is missing from this month's GSTR-2B, the ITC on it is lost for good.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Claim it in the month it appears in 2B, as long as that's within the s.16(4) time limit.",
+  "ref": "CGST Act, s.16(4)",
+  "case": true
+ },
+ {
+  "id": "RPB-009",
+  "topic": "recpur",
+  "sub": "Acting on results",
+  "diff": 3,
+  "type": "scenario",
+  "q": "At month end the reconciliation shows ₹3.2 lakh of ITC on 14 invoices in the books but not in 2B, ₹60,000 in 2B but not in the books, and 30 invoices with small value differences. What does the CA do before filing GSTR-3B?",
+  "model": "Claim ITC only on what's in 2B and matches the books. For the 14 missing invoices, don't claim now: list them by supplier, send follow-ups, and track them so they're claimed when they appear in a later 2B within the s.16(4) limit. For the ₹60,000 in 2B but not in the books, find out whether they're genuine purchases not yet recorded (get the invoices and book them) or not the client's (reject in IMS so the supplier corrects). For value differences, accept those within a small rounding tolerance; for the rest, look for credit notes or amendments and claim the correct, lower figure. Share a short exceptions report with the client.",
+  "points": [
+   "Claim only matched ITC that's in 2B",
+   "Chase suppliers for the missing 14 and track them",
+   "Book or reject the 2B-only invoices",
+   "Rounding tolerance for small differences, investigate the rest",
+   "Report exceptions to the client"
+  ],
+  "exp": "This monthly routine is what most GST software automates.",
+  "ref": "CGST Act, s.16(2)(aa) and s.16(4)",
+  "case": true
+ }
+]

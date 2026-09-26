@@ -1,0 +1,156 @@
+[
+ {
+  "id": "R13-001",
+  "topic": "rec1v3b",
+  "sub": "Why they differ",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What does the GSTR-1 vs GSTR-3B reconciliation compare?",
+  "options": [
+   "ITC in 2B and 3B",
+   "The liability declared in GSTR-1 (and IFF, GSTR-1A) with the tax actually paid in GSTR-3B, period by period",
+   "Books and GSTR-9",
+   "E-way bills and invoices"
+  ],
+  "answer": 1,
+  "exp": "The portal's 'Comparison of liability declared and ITC claimed' report shows this side by side."
+ },
+ {
+  "id": "R13-002",
+  "topic": "rec1v3b",
+  "sub": "Why they differ",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which is a legitimate reason for GSTR-1 to show more liability than GSTR-3B for a month?",
+  "options": [
+   "The client forgot to pay",
+   "An invoice reported in this month's GSTR-1 whose tax was already paid in an earlier month's 3B",
+   "GSTR-1 includes ITC",
+   "3B excludes B2B sales"
+  ],
+  "answer": 1,
+  "exp": "Timing differences like this are fine, but should be explainable if an intimation arrives."
+ },
+ {
+  "id": "R13-003",
+  "topic": "rec1v3b",
+  "sub": "Rule 88C",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does rule 88C do?",
+  "options": [
+   "Blocks ITC",
+   "If GSTR-1 liability exceeds GSTR-3B by more than a notified threshold, the taxpayer gets DRC-01B and must pay the difference or explain it within seven days",
+   "Cancels registration",
+   "Starts an audit"
+  ],
+  "answer": 1,
+  "exp": "The reply goes in Part B of DRC-01B.",
+  "ref": "CGST Rules, r.88C",
+  "volatile": true
+ },
+ {
+  "id": "R13-004",
+  "topic": "rec1v3b",
+  "sub": "Rule 88C",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What happens if a DRC-01B intimation is ignored?",
+  "options": [
+   "Nothing",
+   "The next GSTR-1 or IFF can't be filed until it's answered",
+   "Registration is cancelled at once",
+   "The buyer loses ITC"
+  ],
+  "answer": 1,
+  "exp": "The block also stops buyers from getting the next month's invoices in their 2B.",
+  "ref": "CGST Rules, r.59(6)",
+  "volatile": true
+ },
+ {
+  "id": "R13-005",
+  "topic": "rec1v3b",
+  "sub": "Why they differ",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why do fewer GSTR-1 vs GSTR-3B gaps arise from the July 2025 period onwards?",
+  "options": [
+   "GSTR-1 was abolished",
+   "GSTR-3B liability is auto-populated from GSTR-1 and GSTR-1A and can't be edited, so corrections go through GSTR-1A",
+   "3B became annual",
+   "Rule 88C was removed"
+  ],
+  "answer": 1,
+  "exp": "Differences can still arise from past periods and from items reported in one month and paid in another.",
+  "volatile": true
+ },
+ {
+  "id": "R13-006",
+  "topic": "rec1v3b",
+  "sub": "Settling gaps",
+  "diff": 3,
+  "type": "mcq",
+  "q": "April's GSTR-1 showed ₹12 lakh of liability, but April's 3B paid ₹9 lakh because the tax on a ₹3 lakh invoice dated 30 April was paid in May's 3B. What's the position?",
+  "options": [
+   "No issue",
+   "The ₹3 lakh was paid late, so interest is due from April's 3B due date to the day it was paid in May",
+   "The invoice must be cancelled",
+   "It must be paid again"
+  ],
+  "answer": 1,
+  "exp": "Timing gaps are fine as explanations, but not free: late tax always carries interest.",
+  "ref": "CGST Act, s.50(1)",
+  "case": true
+ },
+ {
+  "id": "R13-007",
+  "topic": "rec1v3b",
+  "sub": "Settling gaps",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's GSTR-3B shows more liability than its GSTR-1 for a month. What's the main risk?",
+  "options": [
+   "A DRC-01B intimation",
+   "Invoices missing from GSTR-1, so buyers can't see them in their 2B; the missing invoices need reporting",
+   "A refund",
+   "None at all"
+  ],
+  "answer": 1,
+  "exp": "Rule 88C only targets the opposite gap, but this one usually hurts customers.",
+  "case": true
+ },
+ {
+  "id": "R13-008",
+  "topic": "rec1v3b",
+  "sub": "Settling gaps",
+  "diff": 1,
+  "type": "tf",
+  "q": "Comparing GSTR-1 with GSTR-3B once a year is enough.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "It should be monthly, because the DRC-01B clock is seven days and interest runs from each month's due date.",
+  "case": true
+ },
+ {
+  "id": "R13-009",
+  "topic": "rec1v3b",
+  "sub": "Settling gaps",
+  "diff": 3,
+  "type": "scenario",
+  "q": "At year end, the CA's GSTR-1 vs GSTR-3B comparison shows differences in five months. How should they be classified and settled?",
+  "model": "Build a month-wise table by tax head. Classify each gap as timing (reported in one month, paid in another: pay interest for the delay if tax was paid late), a GSTR-1 error (amend through Table 9A or GSTR-1A where still possible), tax genuinely not paid (pay through the next 3B or DRC-03 with interest), or excess paid in 3B (adjust in a later return or claim a refund). Record the explanation for each, since the same differences show up in GSTR-9 and in scrutiny notices like ASMT-10.",
+  "points": [
+   "Month-wise, tax-head-wise table",
+   "Timing gaps: interest if paid late",
+   "Errors: amend GSTR-1",
+   "Unpaid tax: DRC-03 or next 3B with interest",
+   "Keep explanations for GSTR-9 and notices"
+  ],
+  "exp": "A clean monthly record of explanations saves weeks at notice time.",
+  "ref": "CGST Act, s.50; CGST Rules, r.88C",
+  "case": true
+ }
+]

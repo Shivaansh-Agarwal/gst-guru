@@ -6,12 +6,12 @@ import { getSetting } from "./db";
 export const TASKS = {
   generate: { label: "Writing new questions", hint: "Runs in the background. A free or local model is usually fine." },
   grade: { label: "Grading your written answers", hint: "Accuracy matters here. Use the strongest model you have." },
-  chat: { label: "Deep dives and explanations", hint: "Long answers. A strong model gives noticeably better teaching." },
+  chat: { label: "GST GPT and explanations", hint: "Long answers. A strong model gives noticeably better teaching." },
 } as const;
 export type Task = keyof typeof TASKS;
 
-export function modelKeyFor(task: Task): string | null {
-  const models = availableModels();
+export async function modelKeyFor(task: Task): Promise<string | null> {
+  const models = await availableModels();
   if (!models.length) return null;
   const saved = getSetting(`model:${task}`);
   if (saved && models.some((m) => m.key === saved)) return saved;
@@ -19,15 +19,15 @@ export function modelKeyFor(task: Task): string | null {
   return (models.find((m) => m.cost !== "paid") ?? models[0]).key;
 }
 
-export function modelFor(task: Task) {
-  const key = modelKeyFor(task);
+export async function modelFor(task: Task) {
+  const key = await modelKeyFor(task);
   if (!key) throw new NoModelError();
   return { key, model: resolveModel(key) };
 }
 
 export class NoModelError extends Error {
   constructor() {
-    super("No AI model is set up yet. Add a provider key to .env (see the Connect AI page) and restart the app.");
+    super("No AI model is available. Start Ollama or LM Studio, or add a provider key to .env (see the Connect AI page).");
   }
 }
 
@@ -44,7 +44,7 @@ export function extractJSON(text: string): unknown {
 
 /** Ask for JSON, validate it with zod, and retry once with the validation error if it fails. */
 export async function generateJSON<T>(opts: { task: Task; instructions: string; prompt: string; schema: z.ZodType<T> }) {
-  const { key, model } = modelFor(opts.task);
+  const { key, model } = await modelFor(opts.task);
   let prompt = opts.prompt;
   let lastErr = "";
   for (let attempt = 0; attempt < 2; attempt++) {

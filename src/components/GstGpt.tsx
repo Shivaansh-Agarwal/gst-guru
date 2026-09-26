@@ -1,17 +1,20 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 import { marked } from "marked";
 import { renderMarkdown, useStreamChat } from "./useStreamChat";
 
 const md = (s: string) => renderMarkdown(s, (x) => marked.parse(x, { async: false }) as string);
 
 type TopicGroup = { label: string; topics: { id: string; name: string }[] };
+type ModelChoice = { key: string; label: string; group: string };
 
-export default function DeepDive(props: { groups: TopicGroup[]; initialTopic?: string; seed?: string }) {
+export default function GstGpt(props: { models: ModelChoice[]; initialModel: string; groups: TopicGroup[]; initialTopic?: string; seed?: string }) {
+  const [modelKey, setModelKey] = useState(props.initialModel);
   const [topic, setTopic] = useState(props.initialTopic ?? "");
-  const [context, setContext] = useState("");
   const [input, setInput] = useState(props.seed ?? "");
-  const chat = useStreamChat(() => ({ topic: topic || undefined, context: context.trim() || undefined }));
+  const chat = useStreamChat(() => ({ topic: topic || undefined, modelKey }));
+  const providers = Array.from(new Set(props.models.map((m) => m.group)));
 
   function send() {
     chat.send(input);
@@ -20,34 +23,43 @@ export default function DeepDive(props: { groups: TopicGroup[]; initialTopic?: s
 
   return (
     <div>
-      {chat.msgs.length === 0 && (
-        <div className="stack" style={{ maxWidth: 640 }}>
-          <div>
-            <label htmlFor="topic">Topic</label>
-            <select id="topic" value={topic} onChange={(e) => setTopic(e.target.value)}>
-              <option value="">Any, or I'll describe it</option>
-              {props.groups.map((g) => (
-                <optgroup key={g.label} label={g.label}>
-                  {g.topics.map((t) => (
-                    <option key={t.id} value={t.id}>
-                      {t.name}
+      <div className="gpt-bar">
+        <div>
+          <label htmlFor="gpt-model">Model</label>
+          <select id="gpt-model" value={modelKey} onChange={(e) => setModelKey(e.target.value)}>
+            {providers.map((g) => (
+              <optgroup key={g} label={g}>
+                {props.models
+                  .filter((m) => m.group === g)
+                  .map((m) => (
+                    <option key={m.key} value={m.key}>
+                      {m.label}
                     </option>
                   ))}
-                </optgroup>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label htmlFor="ctx">What you want to understand (optional)</label>
-            <textarea
-              id="ctx"
-              value={context}
-              onChange={(e) => setContext(e.target.value)}
-              placeholder="Describe it in your own words, e.g. 'how purchase invoices get matched against GSTR-2B before claiming ITC'. Leave out anything confidential."
-            />
-          </div>
+              </optgroup>
+            ))}
+          </select>
         </div>
-      )}
+        <div>
+          <label htmlFor="gpt-topic">Topic</label>
+          <select id="gpt-topic" value={topic} onChange={(e) => setTopic(e.target.value)}>
+            <option value="">Any topic</option>
+            {props.groups.map((g) => (
+              <optgroup key={g.label} label={g.label}>
+                {g.topics.map((t) => (
+                  <option key={t.id} value={t.id}>
+                    {t.name}
+                  </option>
+                ))}
+              </optgroup>
+            ))}
+          </select>
+        </div>
+      </div>
+      <p className="muted small gpt-links">
+        <Link href="/settings">Model settings</Link>
+        <Link href="/setup">Connect more models</Link>
+      </p>
 
       <div className="chat" aria-live="polite">
         {chat.msgs.map((m, k) =>
@@ -70,7 +82,7 @@ export default function DeepDive(props: { groups: TopicGroup[]; initialTopic?: s
           onKeyDown={(e) => {
             if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) send();
           }}
-          placeholder={chat.msgs.length ? "Answer its question, or ask your own." : "e.g. How does a CA handle a DRC-01B intimation?"}
+          placeholder={chat.msgs.length ? "Reply, or ask something new." : "e.g. When can I use GSTR-1A instead of amending in the next GSTR-1?"}
           style={{ minHeight: 90 }}
         />
         <div className="row" style={{ justifyContent: "space-between" }}>
@@ -78,7 +90,7 @@ export default function DeepDive(props: { groups: TopicGroup[]; initialTopic?: s
           <div className="row">
             {chat.msgs.length > 0 && !chat.busy && (
               <button className="btn ghost small" onClick={chat.reset}>
-                New session
+                New chat
               </button>
             )}
             {chat.busy ? (

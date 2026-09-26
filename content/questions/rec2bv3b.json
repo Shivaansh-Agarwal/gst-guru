@@ -1,0 +1,157 @@
+[
+ {
+  "id": "R23-001",
+  "topic": "rec2bv3b",
+  "sub": "Expected differences",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What does the GSTR-2B vs GSTR-3B reconciliation compare?",
+  "options": [
+   "Sales and purchases",
+   "The ITC claimed in GSTR-3B Table 4 with the ITC available in GSTR-2B",
+   "E-way bills and invoices",
+   "Books and GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "It answers one question: is every rupee of credit claimed supported?"
+ },
+ {
+  "id": "R23-002",
+  "topic": "rec2bv3b",
+  "sub": "Expected differences",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which ITC can legitimately appear in GSTR-3B without being in GSTR-2B?",
+  "options": [
+   "All B2B invoices",
+   "Tax paid under reverse charge on purchases from unregistered persons and on imports of services",
+   "Credit on blocked items",
+   "Invoices the supplier hasn't filed"
+  ],
+  "answer": 1,
+  "exp": "Nobody reports these to you, because you pay the tax yourself. Imports of goods, on the other hand, do show in 2B from customs data.",
+  "ref": "CGST Act, s.9(3), s.9(4); IGST Act, s.5(3)"
+ },
+ {
+  "id": "R23-003",
+  "topic": "rec2bv3b",
+  "sub": "Expected differences",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why is GSTR-3B ITC often lower than GSTR-2B?",
+  "options": [
+   "It never is",
+   "Blocked and ineligible credits, and reversals for exempt supplies or unpaid suppliers, are reversed in Table 4(B)",
+   "2B double-counts",
+   "3B excludes IGST"
+  ],
+  "answer": 1,
+  "exp": "The recommended practice is to show the full 2B figure in 4(A) and the reversals in 4(B), so the two stay comparable.",
+  "ref": "Circular 170/02/2022"
+ },
+ {
+  "id": "R23-004",
+  "topic": "rec2bv3b",
+  "sub": "Rule 88D",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does rule 88D do?",
+  "options": [
+   "Blocks e-way bills",
+   "If ITC claimed in 3B exceeds 2B by more than a notified threshold, the taxpayer gets DRC-01C and must reverse or pay the excess with interest, or explain it, within seven days",
+   "Cancels ITC for the year",
+   "Triggers an audit automatically"
+  ],
+  "answer": 1,
+  "exp": "It's the ITC-side twin of rule 88C.",
+  "ref": "CGST Rules, r.88D",
+  "volatile": true
+ },
+ {
+  "id": "R23-005",
+  "topic": "rec2bv3b",
+  "sub": "Rule 88D",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What happens if a DRC-01C intimation isn't answered?",
+  "options": [
+   "Nothing",
+   "The next GSTR-1 or IFF is blocked until it is",
+   "ITC is cancelled for the year",
+   "A late fee applies"
+  ],
+  "answer": 1,
+  "exp": "Both 88C and 88D use the GSTR-1 block as the lever.",
+  "ref": "CGST Rules, r.59(6)",
+  "volatile": true
+ },
+ {
+  "id": "R23-006",
+  "topic": "rec2bv3b",
+  "sub": "Settling gaps",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's August 3B claims ₹5.6 lakh of ITC; August's 2B shows ₹4.8 lakh. ₹50,000 is reverse charge tax on a lawyer's bill and ₹30,000 is on invoices suppliers filed after the 2B cut-off. What's the position?",
+  "options": [
+   "All ₹80,000 is wrong",
+   "The ₹50,000 of reverse charge is fine; the ₹30,000 was claimed too early and should be reversed and claimed next month, with interest if it was used",
+   "All ₹80,000 is fine",
+   "The lawyer should have charged GST"
+  ],
+  "answer": 1,
+  "exp": "Wrongly availed ITC that's used carries 18% interest.",
+  "ref": "CGST Act, s.16(2)(aa) and s.50(3)",
+  "case": true
+ },
+ {
+  "id": "R23-007",
+  "topic": "rec2bv3b",
+  "sub": "Settling gaps",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GSTR-2B shows supplier credit notes carrying ₹40,000 of GST, but the client's 3B ignores them. What's the risk?",
+  "options": [
+   "None",
+   "ITC is overstated by ₹40,000, since credit notes reduce the credit available",
+   "The supplier pays more",
+   "Only a late fee"
+  ],
+  "answer": 1,
+  "exp": "Credit notes are the easiest item to miss in a quick 2B vs 3B check.",
+  "case": true
+ },
+ {
+  "id": "R23-008",
+  "topic": "rec2bv3b",
+  "sub": "Expected differences",
+  "diff": 1,
+  "type": "tf",
+  "q": "ITC claimed in GSTR-3B should always equal GSTR-2B exactly.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Reverse charge, reclaims of earlier reversals, and blocked or ineligible credits all create expected differences. What matters is that each one is explainable.",
+  "case": true
+ },
+ {
+  "id": "R23-009",
+  "topic": "rec2bv3b",
+  "sub": "Settling gaps",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Explain how you'd lay out a monthly GSTR-2B vs GSTR-3B ITC check sheet for a client.",
+  "model": "Start with ITC available in 2B, by tax head. Deduct blocked and ineligible credit (shown in 4(B)(1)) and other reversals such as the exempt-supply share or unpaid suppliers (4(B)(2)). Add credit that 2B never shows: reverse charge on purchases from unregistered persons and on imports of services, and reclaims of earlier reversals (tracked in the Electronic Credit Reversal and Reclaimed Statement). The result should equal the net ITC in 3B for each head. Anything left over is either an early claim (reverse and reclaim later) or unsupported (reverse through DRC-03 with interest).",
+  "points": [
+   "Start from 2B by tax head",
+   "Deduct blocked and reversed credit",
+   "Add reverse charge and reclaims",
+   "Should equal 3B net ITC",
+   "Reverse anything unsupported with interest"
+  ],
+  "exp": "The same sheet answers a DRC-01C intimation in minutes.",
+  "ref": "CGST Rules, r.88D",
+  "case": true
+ }
+]

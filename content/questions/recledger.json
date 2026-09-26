@@ -1,0 +1,155 @@
+[
+ {
+  "id": "RLD-001",
+  "topic": "recledger",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why reconcile the electronic cash and credit ledgers with the books?",
+  "options": [
+   "It's not needed",
+   "To catch unused cash balances, deposits under the wrong head, and ITC recorded in the books but not on the portal, or the other way round",
+   "To file GSTR-1",
+   "To generate e-way bills"
+  ],
+  "answer": 1,
+  "exp": "Idle cash in the ledger is real money that can be used or refunded."
+ },
+ {
+  "id": "RLD-002",
+  "topic": "recledger",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does the Electronic Credit Reversal and Reclaimed Statement track?",
+  "options": [
+   "E-way bills",
+   "ITC reversed in GSTR-3B Table 4(B)(2) and later reclaimed, so reclaims can't exceed what was reversed",
+   "Refunds",
+   "TDS credits"
+  ],
+  "answer": 1,
+  "exp": "It needs an opening balance of past reversals, which is why CAs reconcile it with the books.",
+  "volatile": true
+ },
+ {
+  "id": "RLD-003",
+  "topic": "recledger",
+  "sub": "Ledgers",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's cash ledger shows ₹1.2 lakh under CGST, but its books say the balance is nil. What's the likely reason, and what can be done?",
+  "options": [
+   "It's an error on the portal",
+   "An excess or wrong-head deposit that wasn't used; it can pay future tax, be moved with PMT-09, or be refunded",
+   "It's the supplier's money",
+   "It must be paid again"
+  ],
+  "answer": 1,
+  "exp": "Excess cash balances can be refunded.",
+  "ref": "CGST Act, s.49(10) and s.54",
+  "case": true
+ },
+ {
+  "id": "RLD-004",
+  "topic": "recledger",
+  "sub": "TDS and TCS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A supplier to a state PSU sees ₹24,000 of TDS in 'TDS and TCS credit received', but its books show ₹30,000 deducted. What should it do?",
+  "options": [
+   "Accept ₹30,000",
+   "Ask the deductor to correct its GSTR-7 so the right amount flows, and record only what actually reaches the portal",
+   "Ignore it",
+   "Claim ₹30,000 as ITC"
+  ],
+  "answer": 1,
+  "exp": "The supplier can accept or reject each entry; a rejected entry goes back to the deductor to fix.",
+  "case": true
+ },
+ {
+  "id": "RLD-005",
+  "topic": "recledger",
+  "sub": "TDS and TCS",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A seller's GSTR-1 Table 14 shows ₹40 lakh of sales through a marketplace, but the marketplace's GSTR-8 reports ₹42 lakh for the seller. What should the seller check?",
+  "options": [
+   "Nothing",
+   "Returns and cancellations netted differently, or orders tagged to the wrong seller; agree the figures with the marketplace's report and correct whichever side is wrong",
+   "Pay tax on ₹42 lakh",
+   "Deregister"
+  ],
+  "answer": 1,
+  "exp": "The department matches GSTR-8 with sellers' returns.",
+  "ref": "CGST Act, s.52",
+  "case": true
+ },
+ {
+  "id": "RLD-006",
+  "topic": "recledger",
+  "sub": "Imports",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where does IGST paid on imports of goods show up in GSTR-2B?",
+  "options": [
+   "It doesn't",
+   "In the import of goods section (IMPG, and IMPGSEZ for goods from SEZs), from bill of entry data on ICEGATE",
+   "In B2B invoices",
+   "In the ISD section"
+  ],
+  "answer": 1,
+  "exp": "It's claimed in GSTR-3B Table 4(A)(1)."
+ },
+ {
+  "id": "RLD-007",
+  "topic": "recledger",
+  "sub": "Imports",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An importer's bill of entry with ₹5 lakh of IGST isn't in its GSTR-2B. What's the most common cause?",
+  "options": [
+   "Customs forgot to collect IGST",
+   "The GSTIN on the bill of entry is wrong or missing, for example only the PAN or IEC was quoted; it needs correcting with customs",
+   "It's too large",
+   "IGST on imports can't be claimed"
+  ],
+  "answer": 1,
+  "exp": "The customs broker's data entry is usually where this goes wrong.",
+  "case": true
+ },
+ {
+  "id": "RLD-008",
+  "topic": "recledger",
+  "sub": "TDS and TCS",
+  "diff": 1,
+  "type": "tf",
+  "q": "GST TDS deducted by a government buyer lands in the supplier's electronic credit ledger.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "It lands in the cash ledger once accepted, so it can pay tax, interest or fees.",
+  "ref": "CGST Act, s.51"
+ },
+ {
+  "id": "RLD-009",
+  "topic": "recledger",
+  "sub": "Ledgers",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Describe a quarterly ledger health check you'd run for a client.",
+  "model": "Compare the electronic cash ledger, head by head, with the GST cash account in the books; the credit ledger with the ITC account; and the Electronic Credit Reversal and Reclaimed Statement with reversals and reclaims recorded. Check the liability register for outstanding demands, accept or reject pending TDS and TCS credits and match them with the books, and match import IGST with bills of entry. Then act: transfer wrong-head cash with PMT-09, claim refunds of idle cash, correct the books, and chase deductors or customs for missing credits.",
+  "points": [
+   "Cash ledger vs books by head",
+   "Credit ledger vs ITC account",
+   "Reversal and reclaim statement",
+   "TDS and TCS credits accepted and booked",
+   "Import IGST vs bills of entry",
+   "Act on each difference"
+  ],
+  "exp": "Fifteen minutes a quarter here regularly finds money.",
+  "case": true
+ }
+]

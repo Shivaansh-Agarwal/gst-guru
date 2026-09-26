@@ -1,0 +1,155 @@
+[
+ {
+  "id": "RSL-001",
+  "topic": "recsales",
+  "sub": "Books vs GSTR-1",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What does the sales vs GSTR-1 reconciliation check?",
+  "options": [
+   "That ITC matches 2B",
+   "That every sale in the books reached GSTR-1 correctly: right buyer GSTIN, table, rate and place of supply",
+   "That e-way bills were generated",
+   "That payments were received"
+  ],
+  "answer": 1,
+  "exp": "Buyers claim credit from what the supplier reports, so errors here become the customers' problems too."
+ },
+ {
+  "id": "RSL-002",
+  "topic": "recsales",
+  "sub": "Books vs GSTR-1",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why can the books and GSTR-1 differ for a month even when both are right?",
+  "options": [
+   "They can't",
+   "Timing and scope: month-end invoices booked in the next month, and supplies to the company's own GSTINs in other states that are taxable under GST but aren't sales in consolidated books",
+   "GSTR-1 excludes B2B sales",
+   "The books include GST"
+  ],
+  "answer": 1,
+  "exp": "Branches in different states are distinct persons, so stock transfers between them are supplies.",
+  "ref": "CGST Act, Schedule I, para 2"
+ },
+ {
+  "id": "RSL-003",
+  "topic": "recsales",
+  "sub": "Books vs GSTR-1",
+  "diff": 1,
+  "type": "tf",
+  "q": "If total sales in the books match total GSTR-1 for the month, no invoice-level check is needed.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Totals can match while individual invoices sit under the wrong buyer GSTIN, table or place of supply."
+ },
+ {
+  "id": "RSL-004",
+  "topic": "recsales",
+  "sub": "E-invoice data",
+  "diff": 2,
+  "type": "mcq",
+  "q": "For a business that e-invoices, where does most of its GSTR-1 data come from?",
+  "options": [
+   "It's typed in by hand",
+   "It's auto-populated from e-invoices registered on the IRP",
+   "From GSTR-2B",
+   "From e-way bills only"
+  ],
+  "answer": 1,
+  "exp": "The reconciliation then looks for e-invoices with no matching books entry, and books entries with no IRN.",
+  "volatile": true
+ },
+ {
+  "id": "RSL-005",
+  "topic": "recsales",
+  "sub": "E-invoice data",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's sales register shows ₹48 lakh for June, but GSTR-1 auto-populated from e-invoices shows ₹52 lakh. What should the CA check first?",
+  "options": [
+   "Nothing; GSTR-1 is always right",
+   "E-invoices generated for sales later cancelled or rebilled in the books, which must be removed or corrected in GSTR-1 before filing or reversed by credit note",
+   "Whether 2B is correct",
+   "Whether the buyer filed GSTR-3B"
+  ],
+  "answer": 1,
+  "exp": "An IRN can only be cancelled on the IRP within 24 hours, so rebilling after that leaves an extra record behind.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "RSL-006",
+  "topic": "recsales",
+  "sub": "Fixing gaps",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A B2B sale was reported in B2CS in a filed GSTR-1. How is it fixed?",
+  "options": [
+   "It can't be",
+   "Report the invoice in Table 4 of the next GSTR-1 with the buyer's GSTIN, and reduce B2CS through Table 10",
+   "Tell the buyer to claim it anyway",
+   "Pay the tax again"
+  ],
+  "answer": 1,
+  "exp": "Until it's in Table 4, the invoice won't reach the buyer's 2B.",
+  "case": true
+ },
+ {
+  "id": "RSL-007",
+  "topic": "recsales",
+  "sub": "Fixing gaps",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The books show a ₹1 lakh + ₹18,000 GST credit note issued in March, but it isn't in March's GSTR-1. What's the effect?",
+  "options": [
+   "None",
+   "The client's output tax isn't reduced yet and the buyer's credit isn't reduced either; report it in a later GSTR-1 within the s.34(2) time limit",
+   "The buyer must report it",
+   "It's reported in GSTR-9 only"
+  ],
+  "answer": 1,
+  "exp": "Credit notes have a hard deadline of 30 November after the year, or the annual return date if earlier.",
+  "ref": "CGST Act, s.34(2)",
+  "case": true
+ },
+ {
+  "id": "RSL-008",
+  "topic": "recsales",
+  "sub": "Books vs GSTR-1",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which GSTR-1 table should agree with the sales register's HSN-wise totals?",
+  "options": [
+   "Table 4",
+   "Table 12",
+   "Table 13",
+   "Table 8"
+  ],
+  "answer": 1,
+  "exp": "Table 12 is the HSN summary. Table 13 lists documents issued.",
+  "ref": "GSTR-1 Table 12"
+ },
+ {
+  "id": "RSL-009",
+  "topic": "recsales",
+  "sub": "Fixing gaps",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A new client's books for the year show ₹6.1 crore of sales, but its GSTR-1s add up to ₹5.9 crore. How do you plan the sales reconciliation?",
+  "model": "Work month by month, comparing the books with GSTR-1 (and e-invoice data where it applies), split into B2B, B2C, exports, exempt, and credit notes. Sort differences into timing items (booked in one month, reported in another), stock transfers to other GSTINs, cancelled or rebilled invoices, invoices in the wrong table or under the wrong GSTIN, and invoices never reported. Report missed taxable invoices in the next GSTR-1 and pay the tax with interest through GSTR-3B; after the 30 November limit, pay any tax through DRC-03 instead. Keep the working file for GSTR-9 and any future notice.",
+  "points": [
+   "Compare month by month and by category",
+   "Classify timing, transfers, cancellations, wrong tables, misses",
+   "Report missed invoices and pay tax with interest",
+   "After 30 November, use DRC-03",
+   "Keep working papers for GSTR-9"
+  ],
+  "exp": "Starting from categories rather than invoice lists makes large gaps manageable.",
+  "ref": "CGST Act, s.37(3) and s.50",
+  "case": true
+ }
+]

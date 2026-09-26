@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-type M = { key: string; providerName: string; model: string; cost: string };
+type M = { key: string; providerName: string; model: string; cost: string; note?: string };
 const COST: Record<string, string> = { free: "free", "free-tier": "free tier", local: "local", paid: "paid" };
 
 export default function ModelPicker(p: { task: string; label: string; hint: string; models: M[]; current: string }) {
@@ -27,7 +27,7 @@ export default function ModelPicker(p: { task: string; label: string; hint: stri
               .filter((m) => m.providerName === g)
               .map((m) => (
                 <option key={m.key} value={m.key}>
-                  {m.model} ({COST[m.cost]})
+                  {m.model} ({m.note ? `${COST[m.cost]}, ${m.note}` : COST[m.cost]})
                 </option>
               ))}
           </optgroup>

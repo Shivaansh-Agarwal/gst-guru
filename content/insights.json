@@ -1,0 +1,1204 @@
+{
+ "facts": [
+  {
+   "title": "Your hotel bill decides which state gets the tax",
+   "text": "For a hotel stay, the place of supply is where the hotel is, not where the guest's business is registered. So the hotel charges CGST and SGST of its own state, and a guest registered in another state can't use that credit.",
+   "example": "A Delhi company's employee stays at a Mumbai hotel for ₹20,000. The bill shows Maharashtra CGST and SGST. The Delhi registration can't claim that tax, even though it's a business expense.",
+   "ref": "IGST Act, s.12(3)",
+   "topic": "pos",
+   "hook": "Can a Delhi company claim the GST on its Mumbai hotel bill?"
+  },
+  {
+   "title": "Petrol is in GST law, just not taxed yet",
+   "text": "Petrol, diesel, aviation turbine fuel, natural gas and crude oil are within GST, but GST on them applies only from a date the GST Council recommends. Until then, the old central excise and state VAT continue. Alcohol for human consumption is outside GST altogether.",
+   "example": "A transport company pays VAT and excise inside the price of diesel, not GST. That tax can't be claimed as input tax credit, so it becomes a real cost.",
+   "ref": "CGST Act, s.9(2)",
+   "topic": "basics",
+   "hook": "Why is there no GST on your petrol bill?"
+  },
+  {
+   "title": "A GSTIN tells you the state and the PAN",
+   "text": "Every GSTIN has 15 characters: a 2-digit state code, the 10-character PAN, an entity number for that PAN in that state, the letter Z by default, and a check character.",
+   "example": "In a GSTIN like 27ABCDE1234F1Z5 (made up for illustration), 27 is Maharashtra, ABCDE1234F is the PAN, 1 means it's the first registration under that PAN in the state, Z is the default and 5 is the check character.",
+   "topic": "reg",
+   "hook": "What secrets are hiding in a 15-character GSTIN?"
+  },
+  {
+   "title": "Sending stock to your own branch can be a taxable supply",
+   "text": "Branches of one business in different states are 'distinct persons' under GST. Moving goods between them is a supply even without any payment.",
+   "example": "A company moves ₹5 lakh of stock from its Pune warehouse to its Bengaluru branch. The Pune GSTIN raises a tax invoice with ₹90,000 IGST (18%), and the Bengaluru GSTIN claims it as credit.",
+   "ref": "CGST Act, Schedule I, para 2",
+   "topic": "supply",
+   "hook": "Can you owe GST for selling to yourself?"
+  },
+  {
+   "title": "Gifts to employees are free of GST up to ₹50,000 a year",
+   "text": "Gifts from an employer to an employee aren't treated as a supply if their value doesn't cross ₹50,000 per employee in a financial year.",
+   "example": "A company gives each employee a ₹10,000 Diwali hamper. No GST applies on the gift. If one employee's gifts in the year come to ₹60,000, the whole value becomes a supply.",
+   "ref": "CGST Act, Schedule I, para 2 proviso",
+   "topic": "supply",
+   "hook": "Does your Diwali gift to employees attract GST?"
+  },
+  {
+   "title": "Missed input tax credit has a deadline",
+   "text": "Credit on an invoice has to be claimed by 30 November after the end of the financial year it belongs to, or the date the annual return is filed, whichever is earlier. After that, it's lost for good.",
+   "example": "A ₹1.8 lakh ITC invoice from February 2025 (FY 2024-25) must be claimed in a return filed by 30 November 2025. Found in December 2025, it can't be claimed at all.",
+   "ref": "CGST Act, s.16(4)",
+   "topic": "itc",
+   "hook": "Can tax credit expire, like a coupon?"
+  },
+  {
+   "title": "Your lawyer's fees are taxed on you, not on them",
+   "text": "Legal services from an advocate or law firm to a business entity fall under reverse charge. The business pays the GST directly to the government; the advocate doesn't charge it on the bill.",
+   "example": "A law firm bills a company ₹1 lakh for drafting a contract. The company pays the firm ₹1 lakh and deposits ₹18,000 GST itself under reverse charge, then claims it back as credit if it's eligible.",
+   "ref": "Notfn. 13/2017-CT(R)",
+   "topic": "rcm",
+   "hook": "Why doesn't your lawyer's bill show any GST?"
+  },
+  {
+   "title": "Composition dealers can't charge GST to customers",
+   "text": "A business in the composition scheme pays a small flat rate on its turnover out of its own pocket. It issues a bill of supply, can't show tax on it, and can't claim input tax credit.",
+   "example": "A small trader in the composition scheme sells goods for ₹1,000. The bill says ₹1,000, with no GST line, and the trader pays 1% (₹10) to the government from its own margin.",
+   "ref": "CGST Act, s.10 and s.31(3)(c)",
+   "volatile": true,
+   "topic": "comp",
+   "hook": "Why do some shop bills have no GST line at all?"
+  },
+  {
+   "title": "Exports are zero-rated, which is better than exempt",
+   "text": "Exempt supplies carry no GST, but the seller loses credit on its purchases. Zero-rated supplies such as exports also carry no GST, yet the exporter keeps its credit or gets it refunded.",
+   "example": "An exporter paid ₹2 lakh GST on inputs for goods exported under LUT. It pays no GST on the export and can claim a refund of the ₹2 lakh of unused credit.",
+   "ref": "IGST Act, s.16",
+   "topic": "exports",
+   "hook": "No GST on exports and no GST on fresh vegetables. So what's the difference?"
+  },
+  {
+   "title": "0% tax and tax-exempt are not always the same thing",
+   "hook": "What's the difference between 0% tax and tax exempt?",
+   "text": "In GST, '0%' can mean two different things. Nil-rated and exempt supplies both carry no GST, and the law treats both as 'exempt supply', so the seller can't keep input tax credit on what goes into them. Zero-rated supplies (exports and supplies to SEZs) also carry no GST, but the seller keeps the credit and can get it refunded.",
+   "example": "A grocer sells fresh vegetables (exempt) and pays ₹5,000 GST on packaging used for them: that ₹5,000 can't be claimed. An exporter ships goods abroad under LUT and pays no GST on the export, yet gets its ₹5,000 of input GST refunded.",
+   "ref": "CGST Act, s.2(47); IGST Act, s.16",
+   "topic": "basics"
+  },
+  {
+   "title": "Nil-rated, exempt and non-GST are reported separately",
+   "hook": "If none of them carry tax, why does GSTR-1 split nil-rated, exempt and non-GST sales?",
+   "text": "Nil-rated supplies carry a 0% rate, exempt supplies are taxable but exempted by notification, and non-GST supplies (like petrol or liquor for drinking) are outside the GST levy altogether. The tax effect is the same, no GST, but GSTR-1 Table 8 and GSTR-3B report them in separate columns so the department can see what kind of 'no tax' each one is.",
+   "example": "A petrol pump sells ₹40 lakh of diesel (non-GST) and ₹2 lakh of lubricants (taxable). The diesel goes in the non-GST column of Table 8, and the lubricants go in the normal taxable tables.",
+   "ref": "GSTR-1 Table 8; GSTR-3B Table 3.1(c) and (e)",
+   "topic": "basics"
+  },
+  {
+   "title": "An exempt supply still costs you credit",
+   "hook": "Is it always good news when your product is exempt from GST?",
+   "text": "Not always. Because no GST is charged, you can't pass on the GST you paid on inputs, services and capital goods used for the exempt supply. That tax becomes part of your cost. If you make both taxable and exempt supplies, you reverse the share of common credit that relates to the exempt ones.",
+   "example": "A diagnostic lab (exempt healthcare) pays ₹1.8 lakh GST on new equipment. It can't claim that ₹1.8 lakh back, so the equipment effectively costs ₹1.8 lakh more.",
+   "ref": "CGST Act, s.17(2); CGST Rules, r.42 and r.43",
+   "topic": "basics"
+  },
+  {
+   "title": "You can't choose to charge GST on a fully exempt supply",
+   "hook": "Can a supplier charge GST on an exempt item just to keep its input tax credit?",
+   "text": "No. When a supply is exempted absolutely, the supplier is not allowed to collect tax on it. Only zero-rated exporters have the option of paying IGST and claiming it back as a refund.",
+   "example": "A dairy selling fresh milk can't add GST to the bill to unlock credit on its refrigeration equipment. The milk stays exempt and the credit stays blocked.",
+   "ref": "CGST Act, s.11(3)",
+   "topic": "basics"
+  },
+  {
+   "title": "Only exempt supplies means no registration",
+   "hook": "Does a business with ₹5 crore turnover always need GST registration?",
+   "text": "Not if everything it supplies is exempt or non-taxable. A person dealing only in exempt supplies isn't liable to register, however large the turnover. Once even one taxable supply crosses the threshold, registration becomes compulsory.",
+   "example": "A hospital earning ₹5 crore only from healthcare services (exempt) doesn't need GST registration. If it starts running a pharmacy selling to outpatients, it must count those sales and register once the threshold is crossed.",
+   "ref": "CGST Act, s.23(1)(a)",
+   "topic": "reg"
+  },
+  {
+   "title": "Exempt sales still count toward the threshold",
+   "hook": "If your sales are mostly exempt, do they count when checking the registration threshold?",
+   "text": "Yes. Aggregate turnover includes taxable, exempt, export and inter-state supplies across all your registrations under the same PAN. It excludes the GST itself and purchases on which you pay tax under reverse charge.",
+   "example": "A trader sells ₹25 lakh of fresh vegetables (exempt) and ₹20 lakh of packaged spices (taxable). Aggregate turnover is ₹45 lakh, above the ₹40 lakh threshold for goods in most states, so registration is needed.",
+   "ref": "CGST Act, s.2(6)",
+   "volatile": true,
+   "topic": "terms"
+  },
+  {
+   "title": "GST began at midnight",
+   "hook": "When did India switch to GST?",
+   "text": "GST came into force on 1 July 2017, launched at a special midnight session of Parliament. It needed a constitutional amendment first, because both the Centre and the states had to be given power to tax the same transaction.",
+   "example": "A bill raised on 30 June 2017 carried excise, VAT and service tax. The same bill on 1 July 2017 carried CGST and SGST, or IGST.",
+   "ref": "Constitution (101st Amendment) Act, 2016",
+   "topic": "basics"
+  },
+  {
+   "title": "Two taxes on one sale, or one tax that gets shared",
+   "hook": "Why do some bills show CGST and SGST, and others only IGST?",
+   "text": "A sale within one state carries two taxes of equal size: CGST for the Centre and SGST for the state. A sale between states carries a single IGST, which the Centre collects and then settles with the state where the goods or services are consumed.",
+   "example": "A ₹10,000 sale taxed at 18% within Karnataka shows ₹900 CGST + ₹900 SGST. The same sale to a buyer in Kerala shows ₹1,800 IGST.",
+   "ref": "CGST Act, s.9; IGST Act, s.5",
+   "topic": "basics"
+  },
+  {
+   "title": "Some union territories have SGST, others UTGST",
+   "hook": "Does Delhi charge SGST or UTGST?",
+   "text": "Delhi, Puducherry and Jammu and Kashmir have their own legislatures, so they levy SGST like a state. Union territories without a legislature, such as Chandigarh, Ladakh and Lakshadweep, levy UTGST instead.",
+   "example": "A café in Delhi bills CGST + SGST. A café in Chandigarh bills CGST + UTGST. The customer pays the same total either way.",
+   "ref": "UTGST Act, 2017, s.7",
+   "topic": "basics"
+  },
+  {
+   "title": "The GST Council needs a three-quarters vote",
+   "hook": "Who decides GST rates, the Centre or the states?",
+   "text": "Both, through the GST Council, chaired by the Union Finance Minister with the state finance ministers as members. A decision needs three-quarters of the weighted votes: the Centre's vote counts for a third and all the states together for two-thirds, so neither side can push a change through alone.",
+   "example": "When the Council cuts a rate, the Centre and the states each issue their own notifications to put it into effect, usually on the same date.",
+   "ref": "Constitution, Article 279A",
+   "topic": "basics"
+  },
+  {
+   "title": "GST is a destination tax",
+   "hook": "When a Gujarat factory sells to Bihar, which state gets the GST?",
+   "text": "Bihar. GST goes to the state where the goods or services are consumed, not the state where they're made. The seller charges IGST, and the IGST is settled to the destination state through the GST system.",
+   "example": "A Surat mill sells fabric worth ₹5 lakh to a Patna retailer and charges IGST. Once the retailer sells the fabric within Bihar, the tax on that final sale is Bihar's SGST.",
+   "ref": "IGST Act, s.5 and s.17",
+   "topic": "basics"
+  },
+  {
+   "title": "Alcohol for drinking was kept out of GST by the Constitution",
+   "hook": "Why does a bar bill show VAT on drinks but GST on food?",
+   "text": "Alcoholic liquor for human consumption is excluded from the definition of goods and services tax in the Constitution itself. States continue to levy VAT or excise on it, while food and other services on the same bill carry GST.",
+   "example": "A restaurant bill of ₹2,000 food + ₹1,500 beer shows GST on the food and state VAT on the beer.",
+   "ref": "Constitution, Article 366(12A)",
+   "topic": "basics"
+  },
+  {
+   "title": "GST merged a long list of old taxes",
+   "hook": "Which taxes did GST replace?",
+   "text": "GST subsumed central excise, service tax, additional customs duties (CVD and SAD), state VAT, central sales tax, entry tax, luxury tax, and entertainment tax (except where levied by local bodies), among others. Basic customs duty on imports was not subsumed and still applies.",
+   "example": "An importer still pays basic customs duty at the port, but instead of CVD and SAD it now pays IGST, which it can claim as credit.",
+   "ref": "Constitution (101st Amendment) Act, 2016",
+   "topic": "basics"
+  },
+  {
+   "title": "GST rates were simplified in 2025",
+   "hook": "How many main GST rates are there now?",
+   "text": "The GST Council approved a simpler structure in September 2025, moving most goods and services into two main rates of 5% and 18%, with a higher 40% rate for a small list of luxury and sin goods. Rates depend on notifications, so always check the current rate for a specific item.",
+   "example": "Before the change, a business might deal with items at 5%, 12%, 18% and 28%. After it, most of those items fall into either the 5% or the 18% slab.",
+   "ref": "GST Council, 56th meeting",
+   "volatile": true,
+   "topic": "basics"
+  },
+  {
+   "title": "Composite supply takes the rate of the main item",
+   "hook": "Goods sold with freight and insurance on one bill: which rate applies to the freight?",
+   "text": "When items are naturally bundled and one is clearly the principal supply, the whole bundle is a composite supply taxed at the rate of that principal supply. The freight and insurance take the rate of the goods.",
+   "example": "A dealer sells a machine for ₹5 lakh and charges ₹20,000 for delivery and insurance on the same invoice. The ₹20,000 is taxed at the machine's rate, not at the rate for transport or insurance services.",
+   "ref": "CGST Act, s.2(30) and s.8(a)",
+   "topic": "supply"
+  },
+  {
+   "title": "Mixed supply takes the highest rate",
+   "hook": "A festive hamper with sweets, dry fruit and a juice for one price: which rate applies?",
+   "text": "When separate items that could be sold individually are sold together for a single price, it's a mixed supply, taxed at the highest rate among the items. Selling them at separate prices avoids this.",
+   "example": "A shop sells a ₹2,000 Diwali hamper of sweets, dry fruit and an aerated drink for one price. The whole ₹2,000 is taxed at the rate of whichever item has the highest rate.",
+   "ref": "CGST Act, s.2(74) and s.8(b)",
+   "topic": "supply"
+  },
+  {
+   "title": "Salaries are not a supply",
+   "hook": "Does GST apply to your salary?",
+   "text": "No. Services by an employee to an employer in the course of employment are listed in Schedule III as neither a supply of goods nor of services.",
+   "example": "An employee earning ₹1 lakh a month pays income tax on it, but no GST applies to the salary.",
+   "ref": "CGST Act, Schedule III, para 1",
+   "topic": "supply"
+  },
+  {
+   "title": "A finished flat and land carry no GST",
+   "hook": "Why does an under-construction flat carry GST but a ready flat doesn't?",
+   "text": "Sale of land, and sale of a building after its completion certificate is issued, are in Schedule III: neither goods nor services. Construction services provided before completion, including under-construction flat sales, are taxable.",
+   "example": "Buying a ready-to-move flat with an occupancy certificate for ₹80 lakh attracts stamp duty but no GST. Booking one under construction attracts GST on the instalments.",
+   "ref": "CGST Act, Schedule III, para 5",
+   "topic": "supply"
+  },
+  {
+   "title": "Free help from a foreign parent company can be taxable",
+   "hook": "Can a free service still attract GST?",
+   "text": "Yes, in listed cases. Importing services from a related person or your own establishment outside India, in the course of business, is a supply even without payment. The Indian entity pays tax under reverse charge.",
+   "example": "A US parent sends an engineer to help its Indian subsidiary for a month and charges nothing. The subsidiary may still owe IGST on the value of that service under reverse charge.",
+   "ref": "CGST Act, Schedule I, para 4",
+   "topic": "supply"
+  },
+  {
+   "title": "Giving away assets you took credit on is a supply",
+   "hook": "If a company donates its old laptops, does GST apply?",
+   "text": "If the company claimed input tax credit on those laptops, giving them away permanently, even for free, is treated as a supply. If no credit was claimed, it isn't.",
+   "example": "A company donates 20 old laptops to a school. It had claimed ITC when buying them, so it pays GST on their current value.",
+   "ref": "CGST Act, Schedule I, para 1",
+   "topic": "supply"
+  },
+  {
+   "title": "Selling your own used car isn't a GST supply",
+   "hook": "Do you charge GST when you sell your personal car?",
+   "text": "No. GST applies to supplies made in the course or furtherance of business. An individual selling a personal car isn't doing business, so no GST applies.",
+   "example": "A salaried person sells their five-year-old car for ₹4 lakh. No GST. A used-car dealer selling the same car would charge GST on its margin.",
+   "ref": "CGST Act, s.7(1)(a)",
+   "topic": "supply"
+  },
+  {
+   "title": "Concert tickets follow the venue",
+   "hook": "A Bengaluru fan buys a ticket for a Mumbai concert. Which state gets the GST?",
+   "text": "For admission to an event, the place of supply is where the event is held. The organiser charges Maharashtra CGST and SGST, even though the buyer lives in Karnataka.",
+   "example": "A ₹5,000 ticket to a Mumbai concert, bought online from Bengaluru, carries Maharashtra CGST + SGST.",
+   "ref": "IGST Act, s.12(6)",
+   "topic": "pos"
+  },
+  {
+   "title": "Flights follow the passenger's GSTIN",
+   "hook": "Why does a business flight from Mumbai to Chennai show IGST?",
+   "text": "For passenger transport to a registered business, the place of supply is where that business is registered. For an individual, it's where the passenger boards. So a business booking with its GSTIN gets a credit it can use.",
+   "example": "A Delhi-registered company books a Mumbai to Chennai flight for its employee with its GSTIN. The place of supply is Delhi, so the airline charges IGST that the Delhi GSTIN can claim.",
+   "ref": "IGST Act, s.12(9)",
+   "topic": "pos"
+  },
+  {
+   "title": "Bill to one person, ship to another",
+   "hook": "The goods go to Punjab but the invoice goes to Delhi. Where is the place of supply?",
+   "text": "When a supplier delivers goods to a third person on the instructions of the buyer, the place of supply is the buyer's principal place of business, not the delivery address.",
+   "example": "A Gujarat supplier bills a Delhi dealer but ships directly to the dealer's customer in Punjab. The place of supply is Delhi, so the Gujarat supplier charges IGST to the Delhi dealer.",
+   "ref": "IGST Act, s.10(1)(b)",
+   "topic": "pos"
+  },
+  {
+   "title": "Paid the wrong type of tax? Pay the right one and claim a refund",
+   "hook": "What if you charged CGST and SGST on what was really an inter-state sale?",
+   "text": "You pay the correct IGST, and claim a refund of the CGST and SGST wrongly paid. No interest applies on the correct tax in this case. You can't simply move the wrong tax into the right head.",
+   "example": "A supplier charged ₹9,000 CGST + ₹9,000 SGST on a sale that was inter-state. It pays ₹18,000 IGST and claims back the ₹18,000 of CGST and SGST.",
+   "ref": "CGST Act, s.77; IGST Act, s.19",
+   "topic": "pos"
+  },
+  {
+   "title": "Work on a building is taxed where the building is",
+   "hook": "A Delhi company hires a contractor to renovate its Goa guest house. Where is the place of supply?",
+   "text": "Services directly related to immovable property take the place of supply where the property is. The contractor charges Goa CGST and SGST, which the Delhi registration can't claim.",
+   "example": "A ₹10 lakh renovation of a Goa property carries Goa CGST + SGST. Registering in Goa, if there's a business reason, is the only way to use that credit.",
+   "ref": "IGST Act, s.12(3)",
+   "topic": "pos"
+  },
+  {
+   "title": "No GST on advances for goods",
+   "hook": "If a customer pays you in advance for goods, do you pay GST now?",
+   "text": "No. Since November 2017, GST on goods is due when the invoice is issued, not when an advance comes in. For services, an advance still triggers GST when received.",
+   "example": "A furniture maker gets a ₹50,000 advance for a sofa in March and delivers it in May. GST is due in May. A consultant receiving a ₹50,000 advance in March owes GST for March.",
+   "ref": "Notfn. 66/2017-CT",
+   "topic": "tos"
+  },
+  {
+   "title": "Reverse charge has a 60-day fallback",
+   "hook": "Under reverse charge, when do you pay tax if you haven't paid the supplier yet?",
+   "text": "For services under reverse charge, the time of supply is the earlier of the payment date and the 61st day after the supplier's invoice. So delaying payment doesn't delay the tax.",
+   "example": "A company gets a legal bill dated 1 April but pays it on 15 July. Its reverse charge liability arises on 31 May, the 61st day, not in July.",
+   "ref": "CGST Act, s.13(3)",
+   "topic": "tos"
+  },
+  {
+   "title": "Late payment interest is taxable too",
+   "hook": "If a customer pays late and you charge interest, does that interest attract GST?",
+   "text": "Yes. Interest, late fees or penalties for delayed payment of a supply's price are part of the value of that supply, so GST applies at the rate of the main supply.",
+   "example": "A supplier charges ₹3,000 interest on an overdue invoice for machinery. It charges GST on the ₹3,000 at the machinery's rate.",
+   "ref": "CGST Act, s.15(2)(d)",
+   "topic": "tos"
+  },
+  {
+   "title": "Discounts on the invoice reduce GST; later ones need proof",
+   "hook": "Does a year-end discount reduce GST?",
+   "text": "A discount shown on the invoice at the time of supply is simply excluded from value. A discount given later reduces the value only if it was agreed before the supply, linked to specific invoices, and the buyer reverses the matching credit.",
+   "example": "A distributor offers 2% extra discount on reaching a target, as agreed in the dealership agreement. It issues credit notes linked to the invoices, and the dealer reverses the matching ITC.",
+   "ref": "CGST Act, s.15(3)",
+   "topic": "tos"
+  },
+  {
+   "title": "Reimbursements as a pure agent aren't taxed",
+   "hook": "A CA pays a client's ROC fees and recovers them at cost. Does GST apply to that amount?",
+   "text": "Not if the CA acts as a pure agent: paying on the client's behalf with authority, not using the service themselves, and recovering the exact amount, shown separately on the invoice.",
+   "example": "A CA bills ₹25,000 professional fees plus ₹3,000 ROC fees recovered at actuals. GST applies to the ₹25,000 only.",
+   "ref": "CGST Rules, r.33",
+   "topic": "tos"
+  },
+  {
+   "title": "Freight and packing charged by the seller add to value",
+   "hook": "If a seller charges packing and delivery separately, is GST only on the goods?",
+   "text": "No. Incidental expenses like packing, commission and delivery charged by the supplier at or before delivery form part of the value of the supply.",
+   "example": "A seller bills goods at ₹1 lakh plus ₹2,000 packing plus ₹3,000 delivery. GST is on ₹1.05 lakh.",
+   "ref": "CGST Act, s.15(2)(c)",
+   "topic": "tos"
+  },
+  {
+   "title": "The company car usually gets no credit",
+   "hook": "Can a company claim the GST on the car it buys for its director?",
+   "text": "Credit on motor vehicles seating up to 13 people is blocked, unless the business uses them to sell vehicles, carry passengers for hire, train drivers, or carry goods. A director's car isn't one of those uses.",
+   "example": "A company buys an SUV for its director for ₹20 lakh plus GST. No ITC. A driving school buying the same car can claim it.",
+   "ref": "CGST Act, s.17(5)(a)",
+   "topic": "itc"
+  },
+  {
+   "title": "The office party's catering is blocked credit",
+   "hook": "Can a company claim ITC on the caterer's bill for its Diwali party?",
+   "text": "Credit on food and beverages, outdoor catering, beauty treatment, health services, club memberships and similar items is blocked, unless the law requires the employer to provide them to employees.",
+   "example": "A company pays ₹2 lakh + GST for Diwali party catering. It can't claim the GST. A factory that must by law run a canteen for its workers can claim credit on that canteen service.",
+   "ref": "CGST Act, s.17(5)(b)",
+   "topic": "itc"
+  },
+  {
+   "title": "Don't pay the supplier in 180 days, lose the credit (for now)",
+   "hook": "What happens to your ITC if you don't pay your supplier on time?",
+   "text": "If you don't pay a supplier the invoice value, including tax, within 180 days of the invoice date, you reverse the credit with interest. You can take it back once you pay.",
+   "example": "A trader claimed ₹36,000 ITC on a ₹2 lakh invoice dated 1 January but hadn't paid by 30 June. It reverses ₹36,000 plus interest, then reclaims it when it pays in September.",
+   "ref": "CGST Act, s.16(2) second proviso; CGST Rules, r.37",
+   "topic": "itc"
+  },
+  {
+   "title": "No credit on building your own office",
+   "hook": "Can you claim GST on the cement and steel used to build your own office?",
+   "text": "No. Goods and services used to construct immovable property on your own account are blocked credits, even when used for business. Plant and machinery is the exception.",
+   "example": "A company builds a new office block and pays ₹30 lakh GST on materials and contractors. None of it is claimable. The GST on a machine installed inside is claimable.",
+   "ref": "CGST Act, s.17(5)(c) and (d)",
+   "topic": "itc"
+  },
+  {
+   "title": "Tax or depreciation, not both",
+   "hook": "Can you claim ITC on a machine and also depreciate the GST part?",
+   "text": "No. If you claim depreciation on the tax portion of a capital good under income tax, you can't also take ITC on it. Most businesses take the ITC and depreciate only the cost net of GST.",
+   "example": "A machine costs ₹10 lakh + ₹1.8 lakh GST. Claim ₹1.8 lakh ITC and depreciate ₹10 lakh, or skip the ITC and depreciate ₹11.8 lakh.",
+   "ref": "CGST Act, s.16(3)",
+   "topic": "itc"
+  },
+  {
+   "title": "Free samples lose their credit",
+   "hook": "A pharma company gives free samples to doctors. What happens to the ITC on them?",
+   "text": "Credit is blocked on goods lost, stolen, destroyed, written off, or given away as gifts or free samples. The company reverses ITC on inputs used in those samples.",
+   "example": "A company distributes samples costing ₹5 lakh, on which it had claimed ₹60,000 ITC. It reverses the ₹60,000.",
+   "ref": "CGST Act, s.17(5)(h)",
+   "topic": "itc"
+  },
+  {
+   "title": "Five conditions for every credit",
+   "hook": "What do you need before you can claim ITC on a purchase?",
+   "text": "A tax invoice or debit note, actual receipt of the goods or services, the invoice showing in your GSTR-2B, the supplier actually paying the tax, and your own return filed. Miss any one and the credit isn't available.",
+   "example": "A buyer has an invoice and the goods, but the supplier hasn't filed GSTR-1. The invoice isn't in 2B, so the buyer waits.",
+   "ref": "CGST Act, s.16(2)",
+   "topic": "itc"
+  },
+  {
+   "title": "Mixed use means reversing part of the credit",
+   "hook": "What if a business makes both taxable and exempt sales?",
+   "text": "Credit used only for taxable sales is claimed in full, and credit used only for exempt sales isn't claimed at all. Common credit is split in the ratio of exempt to total turnover, and the exempt share is reversed.",
+   "example": "A trader sells ₹80 lakh of taxable goods and ₹20 lakh of exempt goods and has ₹1 lakh of common ITC (rent, phone, audit). It reverses ₹20,000, the exempt share.",
+   "ref": "CGST Act, s.17(2); CGST Rules, r.42",
+   "topic": "itc"
+  },
+  {
+   "title": "Old ITC got a one-time reprieve",
+   "hook": "Were late ITC claims for 2017-18 to 2020-21 lost for good?",
+   "text": "Finance Act 2024 added section 16(5), which treats ITC for those four years as in time if it was claimed in a return filed by 30 November 2021. It settled many notices issued for late claims in those years.",
+   "example": "A client claimed FY 2018-19 ITC in a return filed in October 2021 and got a notice saying it was time-barred. Under section 16(5), the claim is valid.",
+   "ref": "CGST Act, s.16(5)",
+   "topic": "itc"
+  },
+  {
+   "title": "Transporter bills can shift tax to the buyer",
+   "hook": "Why does a factory pay GST on its truck freight?",
+   "text": "Goods transport agency services to factories, companies, partnerships and registered persons fall under reverse charge, unless the GTA chooses to charge GST itself. Then the recipient pays.",
+   "example": "A company pays ₹50,000 freight to a transporter who hasn't opted to charge GST. The company pays the GST under reverse charge and claims it back if eligible.",
+   "ref": "Notfn. 13/2017-CT(R)",
+   "volatile": true,
+   "topic": "rcm"
+  },
+  {
+   "title": "Sponsorship is taxed on the sponsor",
+   "hook": "A company sponsors a college fest. Who pays the GST?",
+   "text": "Sponsorship services provided to a company or partnership are under reverse charge, so the sponsor pays the GST, not the organiser.",
+   "example": "A company pays ₹3 lakh to sponsor a fest. It pays the GST under reverse charge and can usually claim it as ITC.",
+   "ref": "Notfn. 13/2017-CT(R)",
+   "topic": "rcm"
+  },
+  {
+   "title": "Directors' sitting fees are reverse charge, salaries aren't",
+   "hook": "Does a company pay GST on its directors' fees?",
+   "text": "Services by a director to the company are under reverse charge, so the company pays GST on sitting fees. Salary paid to a whole-time director as an employee isn't a supply.",
+   "example": "An independent director gets ₹50,000 as sitting fees: the company pays GST under reverse charge. The MD's salary shown in the company's payroll carries no GST.",
+   "ref": "Notfn. 13/2017-CT(R); Circular 140/10/2020-GST",
+   "topic": "rcm"
+  },
+  {
+   "title": "Security guards from a proprietorship: the business pays",
+   "hook": "Who pays GST on security services from a small agency?",
+   "text": "Security services from a supplier that isn't a body corporate, to a registered person, are under reverse charge. A proprietorship or partnership security agency doesn't charge GST; the business pays it.",
+   "example": "An office hires guards from a proprietorship for ₹60,000 a month. The office pays GST on it under reverse charge.",
+   "ref": "Notfn. 29/2018-CT(R)",
+   "topic": "rcm"
+  },
+  {
+   "title": "Under reverse charge you issue your own invoice",
+   "hook": "When you buy under reverse charge from an unregistered supplier, who issues the invoice?",
+   "text": "You do. The recipient issues a self-invoice for the purchase, and a payment voucher when paying the supplier.",
+   "example": "A company pays ₹1 lakh rent to an unregistered landlord for commercial property. It raises its own self-invoice and pays the GST in cash.",
+   "ref": "CGST Act, s.31(3)(f) and (g)",
+   "topic": "rcm"
+  },
+  {
+   "title": "Reverse charge tax can't be paid from credit",
+   "hook": "Can you use your ITC balance to pay reverse charge tax?",
+   "text": "No. Tax under reverse charge must be paid through the electronic cash ledger. Once paid, it can be claimed as ITC, usually in the same return.",
+   "example": "A company with ₹10 lakh in its credit ledger still pays ₹18,000 of reverse charge tax in cash, then claims the ₹18,000 as credit.",
+   "ref": "CGST Act, s.2(82) and s.49(4)",
+   "topic": "rcm"
+  },
+  {
+   "title": "Registration thresholds differ for goods and services",
+   "hook": "At what turnover must a business register for GST?",
+   "text": "₹40 lakh for businesses supplying only goods in most states, ₹20 lakh for services, and lower limits in some special category states. Some categories must register regardless of turnover.",
+   "example": "A Pune trader selling only goods with ₹35 lakh turnover doesn't need to register. A Pune consultant with ₹25 lakh turnover does.",
+   "ref": "CGST Act, s.22; Notfn. 10/2019-CT",
+   "volatile": true,
+   "topic": "reg"
+  },
+  {
+   "title": "Some businesses must register from the first rupee",
+   "hook": "Can a tiny business still be forced to register?",
+   "text": "Yes. Inter-state suppliers of goods, casual taxable persons, those liable under reverse charge, non-resident taxable persons, TDS deductors, and e-commerce operators must register regardless of turnover.",
+   "example": "A home baker selling ₹3 lakh a year only to local customers doesn't need to register. If they start selling cakes to buyers in another state, they must.",
+   "ref": "CGST Act, s.24",
+   "volatile": true,
+   "topic": "reg"
+  },
+  {
+   "title": "Small inter-state service providers are spared",
+   "hook": "Does a freelance designer with clients in other states need to register at ₹10 lakh turnover?",
+   "text": "No. Unlike goods, inter-state supplies of services don't force registration. A service provider can stay unregistered up to the normal threshold even if clients are in other states.",
+   "example": "A Jaipur designer earns ₹12 lakh from clients in Delhi and Mumbai. No registration needed until turnover crosses ₹20 lakh.",
+   "ref": "Notfn. 10/2017-IT",
+   "volatile": true,
+   "topic": "reg"
+  },
+  {
+   "title": "One registration per state",
+   "hook": "A company operates in five states. How many GSTINs does it need?",
+   "text": "At least five. Registration is state-wise: you need a GSTIN in each state or union territory from which you make taxable supplies. Within one state, a single GSTIN can cover several branches.",
+   "example": "A retail chain with stores in Maharashtra, Karnataka and Tamil Nadu holds three GSTINs, one per state, all built on the same PAN.",
+   "ref": "CGST Act, s.25(1)",
+   "topic": "reg"
+  },
+  {
+   "title": "Casual traders register before they sell",
+   "hook": "A Delhi stall owner goes to a trade fair in Chennai for five days. Does GST registration apply?",
+   "text": "Yes, as a casual taxable person in Tamil Nadu, registered at least five days before starting business there. Registration is valid for up to 90 days, and an advance deposit of estimated tax is required.",
+   "example": "The stall owner estimates ₹5 lakh of sales at the fair, registers in Tamil Nadu in advance and deposits the estimated tax up front.",
+   "ref": "CGST Act, s.27",
+   "topic": "reg"
+  },
+  {
+   "title": "You can register voluntarily below the threshold",
+   "hook": "Why would a small business register for GST when it doesn't have to?",
+   "text": "To claim input tax credit, to sell to large businesses that want GST invoices, or to sell across states. Voluntary registration is allowed, but once registered you must follow all compliance.",
+   "example": "A ₹15 lakh consultancy registers voluntarily because its corporate clients want to claim ITC on its bills.",
+   "ref": "CGST Act, s.25(3)",
+   "topic": "reg"
+  },
+  {
+   "title": "Composition has a turnover ceiling",
+   "hook": "Who can join the composition scheme?",
+   "text": "Businesses with aggregate turnover up to ₹1.5 crore in the previous year (₹75 lakh in some special category states). A separate composition option for small service providers applies up to ₹50 lakh.",
+   "example": "A ₹1.2 crore kirana store can opt for composition. If turnover crosses ₹1.5 crore during the year, it must move to normal GST from that day.",
+   "ref": "CGST Act, s.10; Notfn. 14/2019-CT",
+   "volatile": true,
+   "topic": "comp"
+  },
+  {
+   "title": "Composition dealers must say so on their board",
+   "hook": "How can you tell a shop is under the composition scheme?",
+   "text": "It must display 'composition taxable person' at its premises and on its signboard, and its bill of supply must say it isn't eligible to collect tax.",
+   "example": "A small bakery's billboard reads 'Composition taxable person'. Its bills show no GST line.",
+   "ref": "CGST Rules, r.5(1)(g)",
+   "volatile": true,
+   "topic": "comp"
+  },
+  {
+   "title": "Some manufacturers can't opt for composition",
+   "hook": "Can an ice cream maker join the composition scheme?",
+   "text": "No. Manufacturers of certain notified goods, such as ice cream, pan masala and tobacco products, are excluded from the scheme whatever their turnover.",
+   "example": "A small ice cream factory with ₹50 lakh turnover must pay GST under the normal scheme.",
+   "ref": "Notfn. 14/2019-CT",
+   "volatile": true,
+   "topic": "comp"
+  },
+  {
+   "title": "Composition dealers file quarterly, pay quarterly",
+   "hook": "What returns does a composition taxpayer file?",
+   "text": "A quarterly statement with payment (CMP-08) and one annual return (GSTR-4). No monthly GSTR-1 or GSTR-3B.",
+   "example": "A composition trader pays tax for April to June through CMP-08 by 18 July, and files GSTR-4 for the year by 30 April.",
+   "ref": "CGST Rules, r.62",
+   "volatile": true,
+   "topic": "comp"
+  },
+  {
+   "title": "No inter-state sales of goods under composition",
+   "hook": "Can a composition trader sell goods to a buyer in another state?",
+   "text": "No. A composition taxpayer can't make inter-state outward supplies of goods. It can still buy from other states.",
+   "example": "A Nagpur composition trader wants to ship an order to Indore. It would first have to leave the scheme.",
+   "ref": "CGST Act, s.10(2)(c)",
+   "volatile": true,
+   "topic": "comp"
+  },
+  {
+   "title": "Service invoices have a 30-day window",
+   "hook": "How long after finishing a job can a service provider raise the invoice?",
+   "text": "Within 30 days of supplying the service (45 days for banks, insurers and NBFCs). Invoices for goods are due at or before removal or delivery.",
+   "example": "A consultant finishes a project on 10 March and invoices on 5 April. That's within 30 days, so the time of supply is the invoice date.",
+   "ref": "CGST Rules, r.47",
+   "topic": "docs"
+  },
+  {
+   "title": "Invoice numbers have a 16-character limit",
+   "hook": "Can an invoice number be as long as you like?",
+   "text": "No. It must be a unique, consecutive serial number of up to 16 characters, using letters, numbers, hyphens or slashes, unique for the financial year.",
+   "example": "'INV/2025-26/000123' is 18 characters, too long. 'INV/2526/000123' fits.",
+   "ref": "CGST Rules, r.46(b)",
+   "topic": "docs"
+  },
+  {
+   "title": "Small retail sales can skip individual invoices",
+   "hook": "Must a shop issue a GST invoice for a ₹150 sale?",
+   "text": "Not if the buyer is unregistered and doesn't ask for one. For sales below ₹200, the shop can issue one consolidated invoice for all such sales at the end of the day.",
+   "example": "A tea stall sells ₹8,000 of tea in ₹20 cups through the day and issues one consolidated invoice at closing.",
+   "ref": "CGST Rules, r.46 proviso",
+   "topic": "docs"
+  },
+  {
+   "title": "Delivery challans move goods without a sale",
+   "hook": "What document do you use when goods move but aren't sold, like sending them for repair?",
+   "text": "A delivery challan. It's used for job work, goods sent on approval, transport of liquid gas where quantity isn't known, and similar cases where there's no sale yet.",
+   "example": "A factory sends a motor to a repair shop with a delivery challan, not a tax invoice, and gets it back after repair.",
+   "ref": "CGST Rules, r.55",
+   "topic": "docs"
+  },
+  {
+   "title": "You can re-issue invoices after getting registered",
+   "hook": "What about sales made while your registration was still being processed?",
+   "text": "For supplies between the effective date of registration and the date the certificate was issued, you can issue revised tax invoices within a month of getting the certificate.",
+   "example": "Registration is effective from 1 June but the certificate arrives on 20 June. The business issues revised tax invoices for 1 to 20 June sales by 20 July.",
+   "ref": "CGST Act, s.31(3)(a)",
+   "topic": "docs"
+  },
+  {
+   "title": "A bill of supply is not a tax invoice",
+   "hook": "Why do some bills say 'Bill of supply' instead of 'Tax invoice'?",
+   "text": "A bill of supply is issued for exempt supplies and by composition taxpayers. It carries no GST, so the buyer can't claim credit from it.",
+   "example": "A composition bakery sells ₹5,000 of cakes to an office and issues a bill of supply. The office can't claim ITC on it.",
+   "ref": "CGST Act, s.31(3)(c)",
+   "topic": "docs"
+  },
+  {
+   "title": "Service codes start with 99",
+   "hook": "How can you tell a service code from a goods code?",
+   "text": "Services use SAC codes that all start with 99. Goods use HSN codes based on the international Harmonized System, which India extends to 8 digits.",
+   "example": "Legal services fall under SAC 9982. Mobile phones fall under HSN chapter 85.",
+   "ref": "Notfn. 11/2017-CT(R), Annexure",
+   "topic": "hsn"
+  },
+  {
+   "title": "HSN codes are an international language",
+   "hook": "Where do HSN codes come from?",
+   "text": "The Harmonized System is maintained by the World Customs Organization and used by most countries. The first 6 digits are common worldwide; India adds 2 more for detail.",
+   "example": "HSN 8517 (telephones) means the same thing in India, Germany and Brazil. India's 8-digit code narrows it further.",
+   "ref": "Customs Tariff Act, 1975, First Schedule",
+   "topic": "hsn"
+  },
+  {
+   "title": "How many HSN digits you report depends on turnover",
+   "hook": "Does every business report 8-digit HSN codes?",
+   "text": "No. Businesses with turnover up to ₹5 crore report at least 4 digits on B2B invoices; above ₹5 crore, at least 6 digits on all invoices.",
+   "example": "A ₹3 crore trader writes 4-digit HSN codes on B2B invoices. A ₹50 crore manufacturer uses 6 digits everywhere.",
+   "ref": "Notfn. 78/2020-CT",
+   "volatile": true,
+   "topic": "hsn"
+  },
+  {
+   "title": "Classification decides the rate",
+   "hook": "Why do businesses fight over how a product is classified?",
+   "text": "Because the rate follows the classification. Two similar-looking products can fall under different headings with different rates, so disputes and advance rulings on classification are common.",
+   "example": "A snack maker argues its product is 'namkeen' rather than 'extruded snack' because the headings may carry different rates. An advance ruling settles which one applies.",
+   "ref": "Customs Tariff Act, General Rules of Interpretation",
+   "topic": "hsn"
+  },
+  {
+   "title": "E-invoicing kicks in at ₹5 crore",
+   "hook": "Which businesses must generate e-invoices?",
+   "text": "Those whose aggregate turnover exceeded ₹5 crore in any financial year since 2017-18, for B2B invoices, exports and credit or debit notes. Once crossed, it applies even if turnover later drops.",
+   "example": "A distributor with ₹6 crore turnover in FY 2022-23 must e-invoice today, even if this year's turnover is ₹4 crore.",
+   "ref": "Notfn. 10/2023-CT",
+   "volatile": true,
+   "topic": "einv"
+  },
+  {
+   "title": "The IRN is a 64-character fingerprint",
+   "hook": "What's inside an IRN?",
+   "text": "The Invoice Reference Number is a unique 64-character hash generated by the Invoice Registration Portal from the supplier GSTIN, document type, document number and financial year. The IRP signs the invoice and adds a QR code.",
+   "example": "An invoice without a valid IRN, where e-invoicing applies, isn't a valid tax invoice, so the buyer's credit is at risk.",
+   "ref": "CGST Rules, r.48(4) and (5)",
+   "topic": "einv"
+  },
+  {
+   "title": "You get 24 hours to cancel an e-invoice",
+   "hook": "Made a mistake on an e-invoice. Can you cancel it?",
+   "text": "Yes, on the IRP within 24 hours of generating it, and only the whole invoice. After that, you correct it through a credit note or an amendment in GSTR-1.",
+   "example": "An invoice generated at 10 am Monday can be cancelled on the IRP until 10 am Tuesday. After that, the fix is a credit note.",
+   "ref": "E-invoice portal (IRP)",
+   "volatile": true,
+   "topic": "einv"
+  },
+  {
+   "title": "Some sectors are exempt from e-invoicing",
+   "hook": "Does a bank need to e-invoice?",
+   "text": "No. Banks, insurers, NBFCs, goods transport agencies, passenger transport services, multiplex cinemas and SEZ units are excluded, whatever their turnover.",
+   "example": "A ₹500 crore NBFC issues regular tax invoices without IRNs.",
+   "ref": "Notfn. 13/2020-CT",
+   "volatile": true,
+   "topic": "einv"
+  },
+  {
+   "title": "Old invoices can't be e-invoiced late",
+   "hook": "Can you upload an invoice to the IRP months after issuing it?",
+   "text": "For businesses with aggregate turnover of ₹10 crore or more, the IRP rejects invoices older than 30 days. They must be reported within that window.",
+   "example": "A ₹20 crore company forgets to generate an IRN for an invoice dated 1 May. On 5 June the IRP won't accept it.",
+   "ref": "GSTN advisory, 2024",
+   "volatile": true,
+   "topic": "einv"
+  },
+  {
+   "title": "Big retailers need a QR code on B2C bills",
+   "hook": "Why do some shopping bills have a QR code?",
+   "text": "Businesses with aggregate turnover above ₹500 crore must print a dynamic QR code on B2C invoices so customers can pay and verify the invoice.",
+   "example": "A large electronics chain's receipt carries a QR code that a UPI app can scan to pay the exact amount.",
+   "ref": "Notfn. 14/2020-CT",
+   "volatile": true,
+   "topic": "einv"
+  },
+  {
+   "title": "₹50,000 is the usual e-way bill line",
+   "hook": "When do goods on the road need an e-way bill?",
+   "text": "Generally when a consignment's value exceeds ₹50,000, for inter-state movement, and for intra-state movement subject to each state's limits. Some goods need one regardless of value, and some are exempt.",
+   "example": "A consignment of ₹60,000 from Delhi to Jaipur needs an e-way bill. One of ₹40,000 usually doesn't.",
+   "ref": "CGST Rules, r.138",
+   "volatile": true,
+   "topic": "ewb"
+  },
+  {
+   "title": "An e-way bill lasts one day per 200 km",
+   "hook": "How long is an e-way bill valid?",
+   "text": "One day for every 200 km (or part of it) for normal cargo, and one day per 20 km for over-dimensional cargo. Each day runs until midnight of the day after generation, not a fixed 24 hours.",
+   "example": "A truck travelling 450 km gets 3 days. An e-way bill for a 150 km trip generated at 11 pm on Monday stays valid until midnight on Tuesday.",
+   "ref": "CGST Rules, r.138(10)",
+   "topic": "ewb"
+  },
+  {
+   "title": "Short local trips can skip Part B",
+   "hook": "Do you always need the vehicle number on an e-way bill?",
+   "text": "No. If goods move up to 50 km within a state, from the business to a transporter or from the transporter to the business, Part B (vehicle details) can be left blank.",
+   "example": "A trader sends goods 20 km to a transporter's godown in the same city without filling Part B. The transporter adds it before the long trip.",
+   "ref": "CGST Rules, r.138(3) proviso",
+   "topic": "ewb"
+  },
+  {
+   "title": "Cancel within 24 hours",
+   "hook": "The truck never left. What happens to the e-way bill?",
+   "text": "You can cancel it within 24 hours of generation, as long as it hasn't been verified in transit. After that, it can't be cancelled.",
+   "example": "A generator's truck breaks down before leaving. It cancels the e-way bill the same afternoon and generates a new one later.",
+   "ref": "CGST Rules, r.138(9)",
+   "topic": "ewb"
+  },
+  {
+   "title": "Exempt goods don't need an e-way bill",
+   "hook": "Does a truckload of fresh vegetables need an e-way bill?",
+   "text": "No. Goods exempt from GST under the main exemption notification, and some listed items like household LPG, don't need one, whatever the value.",
+   "example": "A farmer's truck carrying ₹2 lakh of fresh vegetables to a mandi needs no e-way bill.",
+   "ref": "CGST Rules, r.138(14)",
+   "topic": "ewb"
+  },
+  {
+   "title": "Moving without an e-way bill can double the tax as penalty",
+   "hook": "What happens if goods are caught without an e-way bill?",
+   "text": "Goods and the vehicle can be detained. The owner who comes forward can release them by paying a penalty of 200% of the tax on the goods.",
+   "example": "Goods carrying ₹10,000 of tax are stopped without an e-way bill. Release needs ₹20,000 of penalty.",
+   "ref": "CGST Act, s.129(1)(a)",
+   "topic": "ewb"
+  },
+  {
+   "title": "GSTR-2B doesn't change once generated",
+   "hook": "If a supplier files late, does your GSTR-2B for that month update?",
+   "text": "No. GSTR-2B is a fixed monthly statement, generated on the 14th. A late-filed invoice appears in the next month's 2B instead. GSTR-2A, by contrast, keeps changing as suppliers file.",
+   "example": "A July invoice filed on 25 August appears in August's 2B, not July's, and the credit is claimed in August's 3B.",
+   "ref": "CGST Rules, r.60(7)",
+   "topic": "recon"
+  },
+  {
+   "title": "Doing nothing in IMS means accepting",
+   "hook": "What happens to a supplier invoice you ignore in the Invoice Management System?",
+   "text": "It's deemed accepted when GSTR-2B is generated, and its credit shows as available. That's why businesses review IMS before the 14th.",
+   "example": "A duplicate invoice of ₹50,000 + ₹9,000 GST left untouched in IMS lands in 2B as available credit, and claiming it would be wrong.",
+   "ref": "GSTN advisory on IMS",
+   "volatile": true,
+   "topic": "recon"
+  },
+  {
+   "title": "The provisional credit cushion went from 20% to zero",
+   "hook": "Could you once claim ITC on invoices your suppliers hadn't filed?",
+   "text": "Yes, within limits. From October 2019 you could claim up to 20% more than what suppliers had reported, cut to 10%, then 5%, and removed from January 2022. Now credit follows GSTR-2B exactly.",
+   "example": "In 2020, a business with ₹10 lakh ITC in 2A could claim ₹11 lakh. Today it can claim only what's in 2B.",
+   "ref": "CGST Rules, r.36(4)",
+   "topic": "recon"
+  },
+  {
+   "title": "Three ledgers track your tax",
+   "hook": "Where does your GST money actually sit?",
+   "text": "Every registration has an electronic cash ledger (money deposited), an electronic credit ledger (ITC), and an electronic liability register (what you owe). Returns move amounts between them.",
+   "example": "A business deposits ₹50,000 by challan into the cash ledger, has ₹1 lakh ITC in the credit ledger, and settles ₹1.4 lakh of liability using both.",
+   "ref": "CGST Act, s.49",
+   "topic": "pay"
+  },
+  {
+   "title": "Credit pays tax, not penalties",
+   "hook": "Can you pay a late fee from your ITC balance?",
+   "text": "No. The credit ledger can pay only output tax. Interest, late fees, penalties and reverse charge tax must be paid from the cash ledger.",
+   "example": "A business with ₹5 lakh ITC still pays its ₹2,000 late fee in cash.",
+   "ref": "CGST Act, s.49(3) and (4)",
+   "topic": "pay"
+  },
+  {
+   "title": "CGST and SGST credits don't cross over",
+   "hook": "Can CGST credit pay SGST liability?",
+   "text": "No. CGST credit can pay CGST and IGST, and SGST credit can pay SGST and IGST, but CGST and SGST can't be used for each other. IGST credit must be used first.",
+   "example": "A business with only CGST credit left and an SGST liability pays the SGST in cash.",
+   "ref": "CGST Act, s.49(5); CGST Rules, r.88A",
+   "topic": "pay"
+  },
+  {
+   "title": "Cash in the wrong head can be moved",
+   "hook": "Deposited money under CGST that you needed for IGST?",
+   "text": "You can transfer balances in the cash ledger between heads, or to another registration of the same PAN, using form PMT-09.",
+   "example": "A business deposits ₹20,000 under CGST by mistake and moves it to IGST through PMT-09 before filing its return.",
+   "ref": "CGST Act, s.49(10); CGST Rules, r.87(14)",
+   "topic": "pay"
+  },
+  {
+   "title": "Late tax costs 18% interest",
+   "hook": "What does paying GST late cost?",
+   "text": "Interest at 18% a year on the tax paid late in cash, from the day after the due date until payment.",
+   "example": "Paying ₹1 lakh of net cash tax 30 days late costs about ₹1,479 in interest.",
+   "ref": "CGST Act, s.50(1); Notfn. 13/2017-CT",
+   "volatile": true,
+   "topic": "pay"
+  },
+  {
+   "title": "A GST challan expires in 15 days",
+   "hook": "How long is a GST payment challan valid?",
+   "text": "A challan (PMT-06) and its CPIN are valid for 15 days. After payment, the bank gives a CIN, which is proof the money reached the government.",
+   "example": "A business creates a challan on the 1st and forgets it. On the 18th it must generate a fresh one.",
+   "ref": "CGST Rules, r.87(2)",
+   "topic": "pay"
+  },
+  {
+   "title": "Exporters can skip paying IGST with an LUT",
+   "hook": "Does an exporter pay IGST and wait for a refund?",
+   "text": "Not necessarily. With a Letter of Undertaking, filed online once a year, exporters ship without paying IGST and claim a refund of unused credit. The alternative is to pay IGST and claim that back.",
+   "example": "A garment exporter files its LUT in April and exports all year without paying IGST.",
+   "ref": "CGST Rules, r.96A",
+   "topic": "exports"
+  },
+  {
+   "title": "Five tests for an export of services",
+   "hook": "When is a service to a foreign client an export?",
+   "text": "The supplier is in India, the recipient is outside India, the place of supply is outside India, payment comes in convertible foreign exchange (or rupees where RBI allows), and the two aren't just establishments of the same person.",
+   "example": "An Indian design firm bills a London client $5,000, received in dollars. It's an export, zero-rated.",
+   "ref": "IGST Act, s.2(6)",
+   "topic": "exports"
+  },
+  {
+   "title": "Supplies to SEZs are zero-rated too",
+   "hook": "Why doesn't a supplier charge GST to an SEZ unit?",
+   "text": "Supplies to SEZ units and developers for authorised operations are zero-rated, like exports. The supplier uses an LUT or pays IGST and claims a refund.",
+   "example": "A Chennai supplier sells ₹10 lakh of equipment to an SEZ unit under LUT, with no IGST charged.",
+   "ref": "IGST Act, s.16(1)(b)",
+   "topic": "exports"
+  },
+  {
+   "title": "Refunds must be claimed within two years",
+   "hook": "Is there a deadline for claiming a GST refund?",
+   "text": "Yes, generally two years from the relevant date. For exports of goods, that's the date the goods leave India.",
+   "example": "Goods shipped on 15 June 2024 must have their refund claimed by 14 June 2026.",
+   "ref": "CGST Act, s.54(1)",
+   "topic": "exports"
+  },
+  {
+   "title": "Inverted duty refunds exclude services",
+   "hook": "If input tax is higher than output tax, can you get the difference back?",
+   "text": "Yes, through an inverted duty refund, but the formula counts only credit on input goods, not input services. The Supreme Court upheld this in 2021.",
+   "example": "A footwear maker pays 18% on raw materials and sells at a lower rate. It can claim a refund of the excess credit on materials, but not on its audit fees.",
+   "ref": "CGST Rules, r.89(5); Union of India v. VKC Footsteps (2021)",
+   "topic": "exports"
+  },
+  {
+   "title": "Deemed exports aren't zero-rated, but refunds exist",
+   "hook": "Is a supply to an export-oriented unit an export?",
+   "text": "Not for GST. Certain domestic supplies like those to EOUs or against advance authorisation are 'deemed exports'. Tax is charged, and either the supplier or the buyer can claim a refund.",
+   "example": "A supplier sells ₹20 lakh of inputs to an EOU, charges GST, and the EOU claims a refund.",
+   "ref": "CGST Act, s.147; Notfn. 48/2017-CT",
+   "topic": "exports"
+  },
+  {
+   "title": "Food apps pay the GST on your restaurant order",
+   "hook": "Who pays GST on food ordered through a delivery app?",
+   "text": "The app does. Since January 2022, e-commerce operators pay GST on restaurant services supplied through them, as if they were the supplier.",
+   "example": "A restaurant sells ₹1 lakh of food through a delivery app in a month. The app collects and pays the GST; the restaurant reports the sales without tax.",
+   "ref": "CGST Act, s.9(5); Notfn. 17/2021-CT(R)",
+   "topic": "tdstcs"
+  },
+  {
+   "title": "Marketplaces collect a small TCS from sellers",
+   "hook": "Why does a marketplace hold back part of a seller's payout?",
+   "text": "E-commerce operators collect tax at source on sellers' net taxable sales and deposit it. The seller can use it from its cash ledger.",
+   "example": "A seller sells ₹10 lakh of goods on a marketplace in a month. The platform collects TCS at the notified rate and files GSTR-8.",
+   "ref": "CGST Act, s.52",
+   "volatile": true,
+   "topic": "tdstcs"
+  },
+  {
+   "title": "Government buyers deduct 2%",
+   "hook": "Why does a government department pay a contractor less than the bill?",
+   "text": "Government departments and notified bodies deduct 2% TDS (1% CGST + 1% SGST, or 2% IGST) on contracts worth over ₹2.5 lakh, excluding tax, and deposit it. The contractor uses it from the cash ledger.",
+   "example": "A ₹5 lakh + GST contract: the department deducts ₹10,000 TDS and pays the rest.",
+   "ref": "CGST Act, s.51",
+   "topic": "tdstcs"
+  },
+  {
+   "title": "GSTR-1 comes before GSTR-3B",
+   "hook": "Can you file GSTR-3B before GSTR-1?",
+   "text": "No. GSTR-3B liability is auto-filled from GSTR-1, so the portal won't let you file 3B for a period until GSTR-1 for that period is filed.",
+   "example": "A client with GSTR-1 pending on the 20th must file it first, then 3B.",
+   "ref": "CGST Rules, r.59 and r.61",
+   "volatile": true,
+   "topic": "gstr1"
+  },
+  {
+   "title": "Nil returns by SMS",
+   "hook": "Can a business with no activity file its GST returns from a phone?",
+   "text": "Yes. Nil GSTR-1 and nil GSTR-3B can be filed by SMS from the registered mobile number.",
+   "example": "A dormant company sends an SMS in the prescribed format and files its nil 3B in a minute.",
+   "ref": "CGST Rules, r.67A",
+   "topic": "gstr1"
+  },
+  {
+   "title": "GSTR-1A fixes this month before 3B",
+   "hook": "Filed GSTR-1 with a mistake but not yet 3B. Is there a quick fix?",
+   "text": "Yes, GSTR-1A lets you add or change that period's GSTR-1 details before filing GSTR-3B, so the correction flows into the same month's liability.",
+   "example": "A missed ₹3 lakh invoice found on the 15th goes into GSTR-1A, and 3B filed on the 20th picks it up.",
+   "ref": "CGST Rules, r.59(4A)",
+   "volatile": true,
+   "topic": "gstr1a"
+  },
+  {
+   "title": "You can't file returns that are three years overdue",
+   "hook": "Is there a limit on how late you can file a GST return?",
+   "text": "Yes. Monthly and annual returns can't be filed more than three years after their due date. The portal began enforcing this in 2025.",
+   "example": "A GSTR-3B for a period whose due date was more than three years ago can no longer be filed.",
+   "ref": "CGST Act, s.39(11), s.44(2) and s.37(5)",
+   "volatile": true,
+   "topic": "gstr3b"
+  },
+  {
+   "title": "Small taxpayers can skip GSTR-9",
+   "hook": "Is the annual return compulsory for everyone?",
+   "text": "Taxpayers with aggregate turnover up to ₹2 crore have been exempted from filing GSTR-9, year by year, through notifications.",
+   "example": "A ₹1.5 crore business need not file GSTR-9 for the year if the exemption notification covers it.",
+   "ref": "CGST Act, s.44",
+   "volatile": true,
+   "topic": "gstr9"
+  },
+  {
+   "title": "The reconciliation statement is self-certified",
+   "hook": "Does a CA still have to certify GSTR-9C?",
+   "text": "No. Since FY 2020-21, taxpayers above ₹5 crore file GSTR-9C self-certified, without a CA or cost accountant's audit certificate.",
+   "example": "A ₹12 crore company files its GSTR-9C with its own signatory's DSC.",
+   "ref": "Notfn. 30/2021-CT",
+   "volatile": true,
+   "topic": "gstr9c"
+  },
+  {
+   "title": "QRMP lets small businesses file quarterly",
+   "hook": "Can a small business file GST returns quarterly?",
+   "text": "Yes, if aggregate turnover is up to ₹5 crore, under the QRMP scheme. Tax is still paid monthly; B2B invoices can be uploaded monthly through IFF so buyers get credit on time.",
+   "example": "A ₹2 crore trader files GSTR-1 and 3B quarterly but pays tax for the first two months by PMT-06.",
+   "ref": "CGST Rules, r.61A",
+   "volatile": true,
+   "topic": "returns"
+  },
+  {
+   "title": "Every cancelled registration owes a final return",
+   "hook": "Is anything due after cancelling GST registration?",
+   "text": "Yes, GSTR-10, the final return, within three months of cancellation. It declares stock held on the cancellation date, on which ITC is reversed.",
+   "example": "A shop closes on 31 March and files GSTR-10 by 30 June, paying tax on the ITC in its closing stock.",
+   "ref": "CGST Act, s.45",
+   "topic": "returns"
+  },
+  {
+   "title": "Foreign businesses have their own returns",
+   "hook": "How does a Netflix-style foreign service pay Indian GST?",
+   "text": "Online information and database access services (OIDAR) from abroad to Indian consumers are registered under a simplified scheme and file GSTR-5A. Non-resident taxable persons file GSTR-5.",
+   "example": "A foreign streaming service charges IGST to Indian subscribers and files GSTR-5A.",
+   "ref": "IGST Act, s.14; CGST Rules, r.64",
+   "topic": "returns"
+  },
+  {
+   "title": "Embassies claim GST back",
+   "hook": "Do foreign embassies pay GST?",
+   "text": "They pay it on purchases and claim refunds using a Unique Identity Number (UIN), filing GSTR-11.",
+   "example": "An embassy buys ₹1 lakh of furniture plus GST and claims the GST back.",
+   "ref": "CGST Act, s.55; CGST Rules, r.82",
+   "topic": "returns"
+  },
+  {
+   "title": "Head offices distribute credit through ISD",
+   "hook": "How does a head office pass the credit on common services to branches?",
+   "text": "Through an Input Service Distributor registration, which distributes the credit to branches that used the service, in proportion to their turnover. From April 2025, ISD is compulsory for such common services.",
+   "example": "A company's head office receives a ₹10 lakh + GST audit bill covering five state branches. The ISD distributes the GST to the five branches.",
+   "ref": "CGST Act, s.2(61) and s.20",
+   "volatile": true,
+   "topic": "gstr6"
+  },
+  {
+   "title": "Goods at job workers have a return deadline",
+   "hook": "How long can you leave inputs with a job worker?",
+   "text": "One year for inputs and three years for capital goods. If they aren't back in time, they're treated as supplied on the day they were sent, and tax is due with interest. Moulds, dies, jigs and tools have no limit.",
+   "example": "Fabric sent for stitching on 10 June 2024 and not back by 10 June 2025 is treated as sold on 10 June 2024.",
+   "ref": "CGST Act, s.143",
+   "topic": "itc04"
+  },
+  {
+   "title": "GSTR-7 is due by the 10th",
+   "hook": "When do government deductors file GSTR-7?",
+   "text": "By the 10th of the following month, along with depositing the TDS. The supplier then sees it in 'TDS and TCS credit received' and accepts it.",
+   "example": "A municipality deducting TDS in May files GSTR-7 by 10 June.",
+   "ref": "CGST Act, s.39(3)",
+   "volatile": true,
+   "topic": "gstr7"
+  },
+  {
+   "title": "Fraud and non-fraud notices now share one timeline",
+   "hook": "How long can the department take to raise a GST demand?",
+   "text": "From FY 2024-25 onwards, section 74A applies to all cases: a notice within 42 months of the annual return's due date and an order within 12 months after that. Penalties still differ between fraud and non-fraud.",
+   "example": "For FY 2024-25, with GSTR-9 due on 31 December 2025, a notice can come up to 30 June 2029.",
+   "ref": "CGST Act, s.74A",
+   "volatile": true,
+   "topic": "enf"
+  },
+  {
+   "title": "Pay before the notice and skip the penalty",
+   "hook": "Is there a benefit to paying tax you missed before the department asks?",
+   "text": "Yes. In non-fraud cases, paying the tax with interest before a show cause notice is issued, and informing the officer, closes the matter without penalty.",
+   "example": "A business finds ₹1 lakh of unpaid tax, pays it with interest through DRC-03 and informs the officer. No penalty.",
+   "ref": "CGST Act, s.73(5) and s.74A",
+   "topic": "enf"
+  },
+  {
+   "title": "Fraud costs a 100% penalty",
+   "hook": "How much is the penalty when tax is evaded deliberately?",
+   "text": "In fraud or wilful misstatement cases, the penalty equals the tax evaded, reduced if paid early. Non-fraud cases carry a penalty of 10% of tax or ₹10,000, whichever is higher.",
+   "example": "Evading ₹5 lakh of tax through fake invoices can mean ₹5 lakh tax, interest and ₹5 lakh penalty.",
+   "ref": "CGST Act, s.74 and s.74A",
+   "topic": "enf"
+  },
+  {
+   "title": "Appeals need a deposit first",
+   "hook": "Can you appeal a GST demand without paying anything?",
+   "text": "No. Filing a first appeal needs a pre-deposit of 10% of the disputed tax, subject to a cap. The rest of the demand is stayed while the appeal is pending.",
+   "example": "A ₹20 lakh tax demand under dispute: the business deposits ₹2 lakh to file the appeal.",
+   "ref": "CGST Act, s.107(6)",
+   "volatile": true,
+   "topic": "enf"
+  },
+  {
+   "title": "An advance ruling binds only you",
+   "hook": "If another company gets a favourable advance ruling, can you rely on it?",
+   "text": "Not directly. An advance ruling binds only the applicant and its jurisdictional officer. Others can cite it, but the department isn't bound.",
+   "example": "A competitor's ruling that its product is taxed at a lower rate doesn't protect you; you'd need your own ruling.",
+   "ref": "CGST Act, s.103",
+   "topic": "enf"
+  },
+  {
+   "title": "An ASMT-10 gives you 30 days",
+   "hook": "What's the deadline to reply to a scrutiny notice?",
+   "text": "Thirty days from the notice, or longer if the officer allows. If the explanation is accepted, the matter closes; if not, proceedings under section 73 or 74 can follow.",
+   "example": "A client gets an ASMT-10 on 1 March about ITC mismatches and replies in ASMT-11 by 31 March.",
+   "ref": "CGST Rules, r.99",
+   "topic": "enf"
+  },
+  {
+   "title": "GSTN is now fully government-owned",
+   "hook": "Who owns the company that runs the GST portal?",
+   "text": "GSTN (Goods and Services Tax Network) became fully government-owned in 2022, with the Centre and the states together holding all its shares.",
+   "example": "Before 2022, private financial institutions held 51% of GSTN.",
+   "topic": "tech"
+  },
+  {
+   "title": "Software talks to GST through GSPs",
+   "hook": "How does accounting software file your GST return?",
+   "text": "Through a GST Suvidha Provider (GSP), which is licensed to connect to GSTN's APIs. Your software, called an ASP, sends the data through the GSP.",
+   "example": "A billing app uploads your sales data to the GST portal via its GSP partner, so you don't need to log in and type it in.",
+   "topic": "tech"
+  },
+  {
+   "title": "The last character of a GSTIN is a check digit",
+   "hook": "Can a made-up GSTIN pass as real?",
+   "text": "Not easily. The 15th character is a checksum calculated from the first 14, so a random typo is usually caught instantly. Even a valid-looking GSTIN should still be verified on the portal.",
+   "example": "Changing one digit in a real GSTIN makes the check character wrong, and software can flag it before calling the portal.",
+   "topic": "tech"
+  },
+  {
+   "title": "Companies sign returns with a DSC",
+   "hook": "Can a company file its GST return with an OTP?",
+   "text": "No. Companies and LLPs must sign with a Digital Signature Certificate. Others can use an electronic verification code (EVC) sent to the authorised signatory's phone.",
+   "example": "A private limited company's return is signed by its director's DSC. A proprietorship uses an OTP.",
+   "ref": "CGST Rules, r.26(1)",
+   "topic": "ca"
+  },
+  {
+   "title": "Late GSTR-1 hurts your customers too",
+   "hook": "If you file GSTR-1 late, who else suffers?",
+   "text": "Your B2B customers. Their credit on your invoices shows only in the GSTR-2B generated after you file, so they claim it a month later and may hold back your payment.",
+   "example": "A supplier files July's GSTR-1 on 20 August. Its buyers see those invoices only in August's 2B.",
+   "ref": "CGST Act, s.16(2)(aa)",
+   "topic": "ca"
+  },
+  {
+   "title": "A big gap between GSTR-1 and 3B triggers an alert",
+   "hook": "What happens if your GSTR-3B shows less tax than GSTR-1?",
+   "text": "Above a set threshold, the system sends DRC-01B. You have seven days to pay the difference or explain it, or your next GSTR-1 is blocked.",
+   "example": "A client's GSTR-1 shows ₹40 lakh more liability than 3B for a month. It gets DRC-01B and must respond within a week.",
+   "ref": "CGST Rules, r.88C",
+   "volatile": true,
+   "topic": "ca"
+  },
+  {
+   "title": "'Supply' is wider than 'sale'",
+   "hook": "Is every GST supply a sale?",
+   "text": "No. Supply covers sale, transfer, barter, exchange, licence, rental, lease or disposal for consideration in the course of business, plus the Schedule I cases taxed even without payment.",
+   "example": "Swapping ₹1 lakh of your goods for ₹1 lakh of someone else's services is a barter, and both sides are supplies.",
+   "ref": "CGST Act, s.7",
+   "topic": "terms"
+  },
+  {
+   "title": "Input tax excludes composition tax",
+   "hook": "Does all the GST you pay count as 'input tax'?",
+   "text": "No. Input tax is the CGST, SGST, IGST and UTGST charged on supplies to you, plus reverse charge tax and IGST on imports. Tax paid under the composition scheme isn't input tax.",
+   "example": "A registered business can claim the IGST it paid at customs, but a composition dealer's own tax payments can't be claimed by anyone.",
+   "ref": "CGST Act, s.2(62)",
+   "topic": "terms"
+  },
+  {
+   "title": "Business includes one-off deals",
+   "hook": "Does a single transaction count as business?",
+   "text": "It can. 'Business' includes trade, commerce, manufacture, profession and any adventure in the nature of trade, even without frequency or profit motive.",
+   "example": "An individual who buys and resells a large stock of goods once may still be doing business for GST purposes.",
+   "ref": "CGST Act, s.2(17)",
+   "topic": "terms"
+  },
+  {
+   "title": "There are at least seven GST reconciliations",
+   "hook": "How many reconciliations does a GST practice run?",
+   "text": "Purchases vs GSTR-2B, sales vs GSTR-1 and e-invoices, GSTR-1 vs GSTR-3B, GSTR-2B vs GSTR-3B, e-way bills vs GSTR-1, books vs the annual return, and the ledgers, TDS/TCS and import checks. Each one catches a different kind of mistake before the department does.",
+   "example": "A client passes the 2B vs 3B check every month but fails the e-way bill vs GSTR-1 check at year end, because goods sent for job work weren't backed by delivery challans.",
+   "topic": "recpur"
+  },
+  {
+   "title": "A matching key needs normalising",
+   "hook": "Why doesn't 'INV-0012' match 'inv/12' in a reconciliation?",
+   "text": "Because suppliers and buyers type invoice numbers differently. Good reconciliation logic normalises numbers (case, spaces, separators, leading zeros) and matches on supplier GSTIN, number and financial year before comparing values.",
+   "example": "After normalising, 'INV-0012', 'inv/12' and 'INV 12' from the same GSTIN in the same year are treated as one invoice.",
+   "topic": "recpur"
+  },
+  {
+   "title": "Two rules, two intimations",
+   "hook": "What's the difference between DRC-01B and DRC-01C?",
+   "text": "DRC-01B (rule 88C) flags liability in GSTR-1 exceeding tax paid in GSTR-3B. DRC-01C (rule 88D) flags ITC in GSTR-3B exceeding GSTR-2B. Both give seven days to pay or explain, and both block the next GSTR-1 if ignored.",
+   "example": "A client who under-paid tax gets DRC-01B; a client who over-claimed credit gets DRC-01C.",
+   "ref": "CGST Rules, r.88C and r.88D",
+   "volatile": true,
+   "topic": "rec1v3b"
+  },
+  {
+   "title": "Service advances are the classic year-end catch",
+   "hook": "Why do so many annual reconciliations find unpaid tax on advances?",
+   "text": "Because advances for services attract GST when received, even before the invoice, while advances for goods don't. Books often record them as liabilities and forget the GST.",
+   "example": "A consultant receives a ₹5 lakh advance on 25 March for work in April. GST on it was due in March's return.",
+   "ref": "CGST Act, s.13(2)",
+   "topic": "recannual"
+  },
+  {
+   "title": "E-way bills are the department's second sales register",
+   "hook": "How can the department spot sales you didn't report?",
+   "text": "By comparing e-way bills with GSTR-1. Every sale of goods above the e-way bill threshold leaves a trail, so e-way bill values far above reported turnover stand out.",
+   "example": "A trader generated e-way bills for ₹2 crore of goods but reported ₹1.4 crore of sales. The gap invites a notice unless job work, returns or cancelled trips explain it.",
+   "topic": "recewb"
+  }
+ ],
+ "cases": [
+  {
+   "title": "The supplier who filed late",
+   "topic": "gstr2b",
+   "situation": "Asha runs a furniture shop in Jaipur. In July she buys wood worth ₹4 lakh + ₹72,000 GST from a regular supplier. The supplier files July's GSTR-1 on 20 August instead of 11 August.",
+   "question": "Can Asha claim the ₹72,000 in her July GSTR-3B?",
+   "answer": "No. Her July GSTR-2B was generated on 14 August, before the supplier filed, so the invoice isn't in it. Credit follows 2B, so Asha claims the ₹72,000 in August's 3B, when the invoice appears in August's 2B. Meanwhile she pays July's tax with more cash than planned.",
+   "ref": "CGST Act, s.16(2)(aa)"
+  },
+  {
+   "title": "The credit note that came too late",
+   "topic": "docs",
+   "situation": "In January 2026 a Chennai distributor finds that 200 units sold in June 2025 (FY 2025-26) were billed at ₹1,200 instead of the agreed ₹1,000. It wants to give the buyer a credit note for ₹40,000 + ₹7,200 GST.",
+   "question": "Can it still reduce its GST liability?",
+   "answer": "Yes. For FY 2025-26 supplies, a credit note can reduce GST until 30 November 2026, or the date the FY 2025-26 annual return is filed if that's earlier. Issued in January 2026 and reported in that month's GSTR-1, it cuts liability by ₹7,200, and the buyer reverses the same credit.",
+   "ref": "CGST Act, s.34(2)",
+   "volatile": true
+  },
+  {
+   "title": "The branch transfer",
+   "topic": "supply",
+   "situation": "A Gujarat manufacturer sends finished goods to its own Delhi depot for sale. The goods cost ₹8 lakh to make and normally sell for ₹10 lakh. The Delhi depot can claim full credit.",
+   "question": "At what value should the Gujarat GSTIN raise the invoice?",
+   "answer": "Because the Delhi depot is eligible for full credit, whatever value is declared on the invoice is treated as the open market value. The company can invoice at ₹8 lakh with ₹1.44 lakh IGST at 18%, and Delhi claims the ₹1.44 lakh back. Either way, the net cost to the company is nil.",
+   "ref": "CGST Rules, r.28 proviso"
+  },
+  {
+   "title": "The American consultant",
+   "topic": "rcm",
+   "situation": "A Hyderabad software company pays a US consultant $5,000 (about ₹4.2 lakh) for a strategy review. The consultant has no Indian GST registration.",
+   "question": "Who pays GST, and how much?",
+   "answer": "It's an import of services, so the Hyderabad company pays IGST under reverse charge: 18% of ₹4.2 lakh, about ₹75,600. It pays this in cash in its GSTR-3B (Table 3.1(d)) and claims the same amount as credit in Table 4(A)(2) of the same return.",
+   "ref": "IGST Act, s.5(3)"
+  },
+  {
+   "title": "The office rent",
+   "topic": "rcm",
+   "situation": "A registered chartered accountant's firm in Lucknow rents its office from an individual landlord who isn't registered under GST, for ₹60,000 a month.",
+   "question": "Is any GST payable on the rent?",
+   "answer": "Yes. Since 10 October 2024, a registered person renting commercial property from an unregistered person pays GST under reverse charge. The firm pays 18% on ₹60,000, which is ₹10,800 a month, in cash through GSTR-3B, and can claim it as credit if the office is used for its taxable services.",
+   "ref": "Notfn. 9/2024-CT(R)",
+   "volatile": true
+  },
+  {
+   "title": "The truck without an e-way bill",
+   "topic": "ewb",
+   "situation": "A Ludhiana trader sends a consignment of hosiery worth ₹75,000 to a buyer in Delhi by truck. The driver has the invoice but no e-way bill.",
+   "question": "What's the risk if the truck is stopped?",
+   "answer": "An inter-state movement of goods worth more than ₹50,000 needs an e-way bill. Without one, the officer can detain the goods and the vehicle, and release them only on payment of a penalty, which for an owner who comes forward is 200% of the tax on the goods. If the tax on this consignment were ₹3,750, the penalty would be ₹7,500.",
+   "ref": "CGST Rules, r.138; CGST Act, s.129",
+   "volatile": true
+  }
+ ]
+}

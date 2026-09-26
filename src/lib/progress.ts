@@ -140,3 +140,24 @@ export function dueCount(now = Date.now()): number {
 export function todaySummary() {
   return { done: answeredToday(), goal: DAILY_GOAL, streak: streak(), due: dueCount() };
 }
+
+/** Ids of every question answered at least once. */
+export function seenQuestionIds(): Set<string> {
+  return new Set((db().prepare("SELECT DISTINCT question_id FROM attempts").all() as { question_id: string }[]).map((r) => r.question_id));
+}
+
+/** Level names for a topic's mastery, with the threshold for the next one. */
+const LEVELS = [
+  { at: 0, name: "Newcomer" },
+  { at: 1, name: "Explorer" },
+  { at: 35, name: "Practitioner" },
+  { at: 60, name: "Pro" },
+  { at: 85, name: "Master" },
+];
+export function levelFor(mastery: number, started: boolean) {
+  const score = started ? Math.max(mastery, 1) : 0;
+  let i = 0;
+  while (i + 1 < LEVELS.length && score >= LEVELS[i + 1].at) i++;
+  const next = LEVELS[i + 1];
+  return { name: LEVELS[i].name, rank: i, next: next ? { name: next.name, at: next.at } : null };
+}

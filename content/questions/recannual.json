@@ -1,0 +1,142 @@
+[
+ {
+  "id": "RAN-001",
+  "topic": "recannual",
+  "sub": "Turnover",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does the annual reconciliation compare?",
+  "options": [
+   "2A and 2B",
+   "The audited books (turnover, tax and ITC) with GSTR-9, which summarises the year's GSTR-1, GSTR-3B and GSTR-2B",
+   "E-way bills and invoices",
+   "Only the cash ledger"
+  ],
+  "answer": 1,
+  "exp": "For larger taxpayers, GSTR-9C sets out this reconciliation formally.",
+  "ref": "CGST Act, s.44"
+ },
+ {
+  "id": "RAN-002",
+  "topic": "recannual",
+  "sub": "Turnover",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why must turnover be reconciled GSTIN by GSTIN, not just for the whole company?",
+  "options": [
+   "It needn't be",
+   "Books are kept per company (PAN) but GST returns are per GSTIN, and supplies between the company's own GSTINs count as turnover for GST",
+   "GSTINs have separate auditors",
+   "GSTR-9 is filed per PAN"
+  ],
+  "answer": 1,
+  "exp": "Inter-branch supplies disappear in consolidated books but are real supplies for GST.",
+  "ref": "CGST Act, s.25(4); Schedule I"
+ },
+ {
+  "id": "RAN-003",
+  "topic": "recannual",
+  "sub": "Tax and ITC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which GSTR-9 table shows the gap between ITC in GSTR-2B and ITC claimed?",
+  "options": [
+   "Table 4",
+   "Table 8D",
+   "Table 17",
+   "Table 6A"
+  ],
+  "answer": 1,
+  "exp": "8A is auto-populated from 2B, and 8D is the difference that officers often ask about.",
+  "volatile": true
+ },
+ {
+  "id": "RAN-004",
+  "topic": "recannual",
+  "sub": "Turnover",
+  "diff": 3,
+  "type": "mcq",
+  "q": "At year end, a services client's books show ₹20 lakh of unbilled revenue (work done in March, invoiced in April within 30 days) and ₹10 lakh of advances received in March for work starting in April. Which needs GST for March?",
+  "options": [
+   "Both",
+   "The ₹10 lakh advance, since GST on advances for services is due when received; the unbilled revenue is a timing item",
+   "Neither",
+   "Only the unbilled revenue"
+  ],
+  "answer": 1,
+  "exp": "Advances for goods don't attract GST, but advances for services do.",
+  "ref": "CGST Act, s.13(2)",
+  "case": true
+ },
+ {
+  "id": "RAN-005",
+  "topic": "recannual",
+  "sub": "Settling differences",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which statement is filed with GSTR-9 by larger taxpayers to set out the books-vs-returns reconciliation?",
+  "options": [
+   "GSTR-9A",
+   "GSTR-9C, self-certified, for aggregate turnover above ₹5 crore",
+   "GSTR-10",
+   "DRC-03"
+  ],
+  "answer": 1,
+  "exp": "Since FY 2020-21 it no longer needs a CA's certificate.",
+  "ref": "CGST Rules, r.80(3)",
+  "volatile": true
+ },
+ {
+  "id": "RAN-006",
+  "topic": "recannual",
+  "sub": "Settling differences",
+  "diff": 2,
+  "type": "tf",
+  "q": "Extra tax found in the annual reconciliation is paid through DRC-03, not through GSTR-9 itself.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "GSTR-9 records the year; payments of additional tax go through DRC-03 with interest.",
+  "ref": "CGST Rules, r.142(2)",
+  "case": true
+ },
+ {
+  "id": "RAN-007",
+  "topic": "recannual",
+  "sub": "Settling differences",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Why should the annual reconciliation start well before the GSTR-9 due date of 31 December?",
+  "options": [
+   "It shouldn't",
+   "Because 30 November is the last date to claim missed ITC, amend GSTR-1 and issue credit notes for the year; after that, gaps can only be paid, not fixed",
+   "Because GSTR-9 opens only in October",
+   "Because auditors need it by September"
+  ],
+  "answer": 1,
+  "exp": "Reconciling in September to November keeps options open.",
+  "ref": "CGST Act, s.16(4), s.34(2) and s.37(3)",
+  "case": true
+ },
+ {
+  "id": "RAN-008",
+  "topic": "recannual",
+  "sub": "Settling differences",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client asks what the annual reconciliation involves and why you want to start in September. Explain.",
+  "model": "It compares the audited books with what was reported for the year, GSTIN by GSTIN: turnover (taxable, exempt, exports, branch transfers), tax paid, and ITC against GSTR-2B. Starting early matters because 30 November is the last date to claim any missed ITC for the year, to amend GSTR-1 entries and to issue credit notes that reduce tax. After that, extra tax can only be paid through DRC-03 with interest, and missed credit is lost. The finished working papers also support GSTR-9, GSTR-9C where it applies, and any later notice.",
+  "points": [
+   "Books vs returns by GSTIN",
+   "Turnover, tax and ITC",
+   "30 November deadlines for ITC, amendments and credit notes",
+   "After that, DRC-03 only",
+   "Working papers for GSTR-9, 9C and notices"
+  ],
+  "exp": "Most painful annual returns are painful because the reconciliation started in December.",
+  "ref": "CGST Act, s.16(4), s.34(2), s.37(3) and s.44",
+  "case": true
+ }
+]

@@ -1,18 +1,5 @@
 [
  {
-  "id": "ca",
-  "code": "CA",
-  "name": "At the CA's desk",
-  "blurb": "How a CA actually runs GST compliance for clients: the monthly filing cycle, what happens when a deadline is missed, fixing mistakes after filing, and handling notices from the department.",
-  "subtopics": [
-   "Monthly cycle",
-   "Missed deadlines",
-   "Fixing mistakes",
-   "Notices",
-   "Client management"
-  ]
- },
- {
   "id": "basics",
   "code": "BAS",
   "name": "Foundations of GST",
@@ -23,7 +10,8 @@
    "Subsumed taxes",
    "Outside GST",
    "Rate structure"
-  ]
+  ],
+  "group": "Foundations"
  },
  {
   "id": "supply",
@@ -37,7 +25,8 @@
    "Composite & mixed",
    "Inter vs intra-state",
    "Types of supply"
-  ]
+  ],
+  "group": "Foundations"
  },
  {
   "id": "pos",
@@ -50,7 +39,8 @@
    "Services specific rules",
    "Cross-border",
    "Wrong tax paid"
-  ]
+  ],
+  "group": "Foundations"
  },
  {
   "id": "tos",
@@ -63,34 +53,20 @@
    "Value inclusions",
    "Discounts",
    "Valuation rules"
-  ]
+  ],
+  "group": "Foundations"
  },
  {
-  "id": "itc",
-  "code": "ITC",
-  "name": "Input tax credit",
-  "blurb": "The credit mechanism that makes GST a value-added tax: conditions, time limits, blocked credits, reversals and the order in which credit is used.",
+  "id": "terms",
+  "code": "TRM",
+  "name": "Terms and abbreviations",
+  "blurb": "The vocabulary: acronyms on the portal, legal definitions that decide outcomes, and words that sound alike but aren't.",
   "subtopics": [
-   "Conditions",
-   "Time limits",
-   "Blocked credits",
-   "Reversal",
-   "Utilisation",
-   "ISD & special cases"
-  ]
- },
- {
-  "id": "rcm",
-  "code": "RCM",
-  "name": "Reverse charge",
-  "blurb": "When the buyer pays the tax instead of the seller: notified goods and services, imports of services, self-invoicing and e-commerce operators paying as supplier.",
-  "subtopics": [
-   "Concept",
-   "Notified services",
-   "Notified goods",
-   "Compliance",
-   "Section 9(5)"
-  ]
+   "Acronyms",
+   "Definitions",
+   "Look-alikes"
+  ],
+  "group": "Foundations"
  },
  {
   "id": "reg",
@@ -104,7 +80,8 @@
    "GSTIN structure",
    "Amendment & cancellation",
    "Special persons"
-  ]
+  ],
+  "group": "Registration and invoicing"
  },
  {
   "id": "comp",
@@ -116,7 +93,8 @@
    "Rates",
    "Restrictions",
    "Compliance"
-  ]
+  ],
+  "group": "Registration and invoicing"
  },
  {
   "id": "docs",
@@ -128,7 +106,189 @@
    "Other documents",
    "Credit & debit notes",
    "Timelines"
-  ]
+  ],
+  "group": "Registration and invoicing"
+ },
+ {
+  "id": "hsn",
+  "code": "HSN",
+  "name": "Classification and rates",
+  "blurb": "HSN and SAC codes, how many digits you need where, how goods get classified, and how rate changes flow through.",
+  "subtopics": [
+   "HSN & SAC",
+   "Digits & reporting",
+   "Classification rules",
+   "Rates"
+  ],
+  "group": "Registration and invoicing"
+ },
+ {
+  "id": "einv",
+  "code": "EIN",
+  "name": "E-invoicing",
+  "blurb": "How invoices get registered on the IRP: applicability, IRN and QR codes, the JSON schema, cancellation, time limits and exemptions.",
+  "subtopics": [
+   "Applicability",
+   "IRN & QR",
+   "Schema",
+   "Cancellation & limits",
+   "Flow"
+  ],
+  "group": "Registration and invoicing"
+ },
+ {
+  "id": "ewb",
+  "code": "EWB",
+  "name": "E-way bill",
+  "blurb": "The document that must travel with goods: when it's needed, Part A and Part B, validity, extensions, cancellation and what happens without one.",
+  "subtopics": [
+   "Applicability",
+   "Parts & generation",
+   "Validity",
+   "Changes & cancellation",
+   "Enforcement"
+  ],
+  "group": "Registration and invoicing"
+ },
+ {
+  "id": "itc",
+  "code": "ITC",
+  "name": "Input tax credit",
+  "blurb": "The credit mechanism that makes GST a value-added tax: conditions, time limits, blocked credits, reversals and the order in which credit is used.",
+  "subtopics": [
+   "Conditions",
+   "Time limits",
+   "Blocked credits",
+   "Reversal",
+   "Utilisation",
+   "ISD & special cases"
+  ],
+  "group": "Tax credit and payment"
+ },
+ {
+  "id": "rcm",
+  "code": "RCM",
+  "name": "Reverse charge",
+  "blurb": "When the buyer pays the tax instead of the seller: notified goods and services, imports of services, self-invoicing and e-commerce operators paying as supplier.",
+  "subtopics": [
+   "Concept",
+   "Notified services",
+   "Notified goods",
+   "Compliance",
+   "Section 9(5)"
+  ],
+  "group": "Tax credit and payment"
+ },
+ {
+  "id": "pay",
+  "code": "PAY",
+  "name": "Payments, ledgers and interest",
+  "blurb": "How tax actually gets paid: the cash and credit ledgers, challans, interest, late fees and what credit can and can't pay for.",
+  "subtopics": [
+   "Ledgers",
+   "Challans",
+   "Interest",
+   "Rules of payment"
+  ],
+  "group": "Tax credit and payment"
+ },
+ {
+  "id": "recon",
+  "code": "REC",
+  "name": "Reconciliation basics and IMS",
+  "blurb": "Start here: why reconciliation matters, GSTR-2A vs 2B, the Invoice Management System, the common mismatch types and the checks every return needs.",
+  "subtopics": [
+   "2A vs 2B",
+   "IMS",
+   "Mismatch types",
+   "Liability checks",
+   "Practice"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "recpur",
+  "code": "RPB",
+  "name": "Purchases vs GSTR-2B",
+  "blurb": "The monthly ITC reconciliation: matching the purchase register with GSTR-2B, the mismatch types it throws up, and what to do with each before filing GSTR-3B.",
+  "subtopics": [
+   "Matching",
+   "Mismatch types",
+   "Acting on results"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "recsales",
+  "code": "RSL",
+  "name": "Sales vs GSTR-1 and e-invoices",
+  "blurb": "Checking that every sale in the books reached GSTR-1 correctly, with the right buyer, table and place of supply, and that e-invoice data agrees with both.",
+  "subtopics": [
+   "Books vs GSTR-1",
+   "E-invoice data",
+   "Fixing gaps"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "rec1v3b",
+  "code": "R13",
+  "name": "GSTR-1 vs GSTR-3B",
+  "blurb": "The liability check: is the tax paid in GSTR-3B the tax declared in GSTR-1? Why they differ, rule 88C and DRC-01B, and how gaps get settled.",
+  "subtopics": [
+   "Why they differ",
+   "Rule 88C",
+   "Settling gaps"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "rec2bv3b",
+  "code": "R23",
+  "name": "GSTR-2B vs GSTR-3B",
+  "blurb": "The ITC check: is the credit claimed in GSTR-3B supported by GSTR-2B? Expected differences, rule 88D and DRC-01C, and reversing what isn't supported.",
+  "subtopics": [
+   "Expected differences",
+   "Rule 88D",
+   "Settling gaps"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "recewb",
+  "code": "REW",
+  "name": "E-way bills vs GSTR-1",
+  "blurb": "Matching goods movements with reported sales: why the department compares them, legitimate differences, and cleaning up before it asks.",
+  "subtopics": [
+   "Why it matters",
+   "Matching",
+   "Fixing gaps"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "recannual",
+  "code": "RAN",
+  "name": "Books vs annual return",
+  "blurb": "The year-end reconciliation of audited books with GSTR-9 and 9C: turnover by GSTIN, tax and ITC, and why it has to start before 30 November.",
+  "subtopics": [
+   "Turnover",
+   "Tax and ITC",
+   "Settling differences"
+  ],
+  "group": "Reconciliation"
+ },
+ {
+  "id": "recledger",
+  "code": "RLD",
+  "name": "Ledgers, TDS/TCS and imports",
+  "blurb": "The smaller reconciliations that catch real money: electronic ledgers vs books, the credit reversal statement, TDS and TCS credits, and customs data for imports.",
+  "subtopics": [
+   "Ledgers",
+   "TDS and TCS",
+   "Imports"
+  ],
+  "group": "Reconciliation"
  },
  {
   "id": "gstr1",
@@ -255,57 +415,6 @@
   "group": "Returns"
  },
  {
-  "id": "einv",
-  "code": "EIN",
-  "name": "E-invoicing",
-  "blurb": "How invoices get registered on the IRP: applicability, IRN and QR codes, the JSON schema, cancellation, time limits and exemptions.",
-  "subtopics": [
-   "Applicability",
-   "IRN & QR",
-   "Schema",
-   "Cancellation & limits",
-   "Flow"
-  ]
- },
- {
-  "id": "ewb",
-  "code": "EWB",
-  "name": "E-way bill",
-  "blurb": "The document that must travel with goods: when it's needed, Part A and Part B, validity, extensions, cancellation and what happens without one.",
-  "subtopics": [
-   "Applicability",
-   "Parts & generation",
-   "Validity",
-   "Changes & cancellation",
-   "Enforcement"
-  ]
- },
- {
-  "id": "recon",
-  "code": "REC",
-  "name": "Reconciliation and IMS",
-  "blurb": "Matching your books with what suppliers reported: GSTR-2A versus 2B, the Invoice Management System, mismatch types and the rules that flag gaps.",
-  "subtopics": [
-   "2A vs 2B",
-   "IMS",
-   "Mismatch types",
-   "Liability checks",
-   "Practice"
-  ]
- },
- {
-  "id": "pay",
-  "code": "PAY",
-  "name": "Payments, ledgers and interest",
-  "blurb": "How tax actually gets paid: the cash and credit ledgers, challans, interest, late fees and what credit can and can't pay for.",
-  "subtopics": [
-   "Ledgers",
-   "Challans",
-   "Interest",
-   "Rules of payment"
-  ]
- },
- {
   "id": "exports",
   "code": "EXP",
   "name": "Exports, SEZ and refunds",
@@ -316,7 +425,8 @@
    "SEZ & deemed exports",
    "Refund process",
    "Inverted duty"
-  ]
+  ],
+  "group": "Special situations"
  },
  {
   "id": "tdstcs",
@@ -328,19 +438,22 @@
    "TCS",
    "Sellers on platforms",
    "Platform obligations"
-  ]
+  ],
+  "group": "Special situations"
  },
  {
-  "id": "hsn",
-  "code": "HSN",
-  "name": "Classification and rates",
-  "blurb": "HSN and SAC codes, how many digits you need where, how goods get classified, and how rate changes flow through.",
+  "id": "ca",
+  "code": "CA",
+  "name": "At the CA's desk",
+  "blurb": "How a CA actually runs GST compliance for clients: the monthly filing cycle, what happens when a deadline is missed, fixing mistakes after filing, and handling notices from the department.",
   "subtopics": [
-   "HSN & SAC",
-   "Digits & reporting",
-   "Classification rules",
-   "Rates"
-  ]
+   "Monthly cycle",
+   "Missed deadlines",
+   "Fixing mistakes",
+   "Notices",
+   "Client management"
+  ],
+  "group": "GST in practice"
  },
  {
   "id": "enf",
@@ -353,7 +466,8 @@
    "Penalties",
    "Appeals",
    "Advance ruling"
-  ]
+  ],
+  "group": "GST in practice"
  },
  {
   "id": "tech",
@@ -366,17 +480,7 @@
    "APIs",
    "Validation",
    "Portals"
-  ]
- },
- {
-  "id": "terms",
-  "code": "TRM",
-  "name": "Terms and abbreviations",
-  "blurb": "The vocabulary: acronyms on the portal, legal definitions that decide outcomes, and words that sound alike but aren't.",
-  "subtopics": [
-   "Acronyms",
-   "Definitions",
-   "Look-alikes"
-  ]
+  ],
+  "group": "GST in practice"
  }
 ]
