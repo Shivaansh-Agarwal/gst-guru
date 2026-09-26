@@ -11,7 +11,7 @@ export default function Topics() {
     <>
       <h1 style={{ marginBottom: 12 }}>Topics</h1>
       <p className="muted" style={{ maxWidth: "58ch", marginBottom: 32 }}>
-        The whole of GST, split the way it shows up in real compliance work. Pick one to practise, or open a deep dive when you start on a module that touches it.
+        The whole of GST, split the way it shows up in real compliance work. Pick one to practise, or open a deep dive to learn it properly.
       </p>
       {topicGroups(topics).map((g) => (
         <section key={g.label} className="topic-group">

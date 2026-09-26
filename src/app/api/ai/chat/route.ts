@@ -35,7 +35,7 @@ function questionHelp(q: NonNullable<z.infer<typeof Body>["question"]>) {
     : "The learner has NOT answered yet. Do not reveal, confirm or strongly hint which option is correct. Explain terms, background and how to think about it, and let them decide.";
   return `${TUTOR_BASE}
 
-The learner is looking at this quiz question and wants help understanding it. Many learners are software engineers building tools for Chartered Accountants, so connect things to how a CA would actually handle the situation when that helps.
+The learner is looking at this quiz question and wants help understanding it. Connect things to how a CA would actually handle the situation when that helps.
 Question: ${q.q}${opts}${key}
 Explanation in the question bank: ${q.exp}
 
@@ -58,7 +58,7 @@ export async function POST(req: Request) {
   } else {
     const topic = b.topic ? topicById(b.topic) : undefined;
     const grounding = topic ? `\n\n${factSheet(topic, loadContent().questions)}` : "";
-    const ctx = b.context ? `\n\nThe learner is working on this module or pasted this material:\n"""${b.context}"""` : "";
+    const ctx = b.context ? `\n\nThe learner described what they want to understand, or pasted this material:\n"""${b.context}"""` : "";
     instructions = DEEP_DIVE + grounding + ctx;
   }
   const result = streamText({ model, instructions, messages: b.messages, temperature: 0.5 });

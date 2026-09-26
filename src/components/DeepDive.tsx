@@ -38,12 +38,12 @@ export default function DeepDive(props: { groups: TopicGroup[]; initialTopic?: s
             </select>
           </div>
           <div>
-            <label htmlFor="ctx">What you're working on (optional)</label>
+            <label htmlFor="ctx">What you want to understand (optional)</label>
             <textarea
               id="ctx"
               value={context}
               onChange={(e) => setContext(e.target.value)}
-              placeholder="Describe the module in your own words, e.g. 'the screen where CAs match purchase registers against GSTR-2B'. Leave out anything confidential."
+              placeholder="Describe it in your own words, e.g. 'how purchase invoices get matched against GSTR-2B before claiming ITC'. Leave out anything confidential."
             />
           </div>
         </div>

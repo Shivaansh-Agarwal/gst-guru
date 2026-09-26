@@ -1,10 +1,10 @@
 # GST Guru
 
-A local-first app for learning Indian GST a few questions at a time. It's built for people who work on GST software, especially the ones whose users are Chartered Accountants, and who need to understand the domain the way a CA does: not just what a term means, but what happens when a client misses a deadline, how a filed return gets corrected, and how to answer a notice.
+A local-first app for learning Indian GST a few questions at a time. It's for anyone who wants to understand GST the way a practising Chartered Accountant does: not just what a term means, but what happens when a client misses a deadline, how a filed return gets corrected, and how to answer a notice.
 
 It works in two layers:
 
-- **A curated question bank** (600+ questions across 21 topics) that runs fully offline. Around 30% are situations ("Your client…"), including a whole topic on how CAs run the monthly filing cycle, handle missed deadlines, fix mistakes and reply to notices. Every question has an explanation and, where possible, the section or rule it comes from.
+- **A curated question bank** (700+ questions across 30 topics, including a section for each major return) that runs fully offline. Around 30% are situations ("Your client…"), including a whole topic on how CAs run the monthly filing cycle, handle missed deadlines, fix mistakes and reply to notices. Every question has an explanation and, where possible, the section or rule it comes from.
 - **Optional AI** from whichever provider you choose, for grading your written answers, writing new questions from your notes, deep-dive teaching sessions, and a chat box under every question for when you don't follow something.
 
 Your progress lives in one SQLite file on your machine. There's no account and nothing leaves your computer unless you connect a hosted AI provider.
@@ -28,7 +28,7 @@ Open http://localhost:3000.
 - **Today**: a daily set of 10 that mixes questions due for review (spaced repetition) with fresh ones from your weakest topics. At least four in every set are situations.
 - **Topics**: practise a topic, one subtopic, or just its situations.
 - **Question help**: underlined terms in a question (GSTR-2B, IMS, DRC-01B…) show a plain definition when tapped, offline. With a model connected, "Ask about this question" opens a chat that already knows the question. Before you answer, it explains the context without giving the answer away.
-- **Deep dive**: a teaching session on a topic or on the module you're working on.
+- **Deep dive**: a teaching session on a topic, or on anything you're trying to understand.
 - **Stamps**: every answer gets a rubber stamp. It's the one bit of fun.
 
 ## Connecting AI

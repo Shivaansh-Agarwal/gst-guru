@@ -26,7 +26,7 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
     <>
       <h1 style={{ marginBottom: 12 }}>Deep dive</h1>
       <p className="muted" style={{ maxWidth: "58ch", marginBottom: 26 }}>
-        Tell it which module you're working on. It teaches in layers and checks your understanding as it goes.
+        Pick a topic or describe what you want to understand. It teaches in layers and checks your understanding as it goes.
       </p>
       <DeepDive
         groups={topicGroups(topics).map((g) => ({ label: g.label, topics: g.topics.map((t) => ({ id: t.id, name: t.name })) }))}

@@ -2,9 +2,9 @@
 
 ## What this is and who it's for
 
-A local-first app for learning Indian GST, built by a frontend engineer (SDE-3) at a GST compliance SaaS company whose customers are mostly Chartered Accountants. The CTO runs regular GST domain evaluations, so the goal is real working knowledge: how a CA runs the monthly filing cycle, what happens when a deadline is missed, how filed returns get corrected, how notices are handled. Not just definitions.
+A local-first app for anyone who wants to understand Indian GST properly: students, business owners, accountants, and people who build or use GST software. The goal is real working knowledge: how a CA runs the monthly filing cycle, what happens when a deadline is missed, how filed returns get corrected, how notices are handled. Not just definitions.
 
-It lives on the author's personal GitHub and must stay generic. Never add anything specific to the employer (internal APIs, product names, customer data, screenshots). Anyone should be able to clone it, add their own AI key and run it. It's also meant to be shown to the CTO, so quality and polish matter.
+It's an open project and must stay generic. Never add anything specific to a particular company or product (internal APIs, product names, customer data, screenshots). Anyone should be able to clone it, add their own AI key and run it. Quality and polish matter.
 
 ## Product principles
 
@@ -48,7 +48,7 @@ AI SDK v7 notes: use `generateText({ model, instructions, prompt })` (`system` i
 
 Ledger-paper palette (paper #edf1ee, ink #17263a, stamp violet #5a3d9a, ok/bad greens and reds, dark mode tokens). The one loud element is the rubber stamp that lands on the question sheet after answering; keep everything else quiet. Left rail nav on desktop (Practise, Returns shortcuts, Settings, with today's count from `/api/progress`), bottom tabs on mobile. Theme is Auto, Light or Dark: `data-theme` on `<html>` overrides the system setting, saved in localStorage and applied by an inline script before paint. Any new colour must be defined for both themes. On the home page, keep today's set (the card) and overall progress (the table) visibly separate. Respect reduced motion, keep visible focus, keep line lengths under about 70 characters.
 
-## Writing style (UI copy, docs and replies to the author)
+## Writing style (UI copy, docs and replies to the maintainer)
 
 Plain, human prose. No em-dashes. No fixed-width hard line breaks in prose. Sentence case, active voice, buttons say exactly what they do.
 
@@ -69,4 +69,4 @@ Plain, human prose. No em-dashes. No fixed-width hard line breaks in prose. Sent
 - The UI hasn't been reviewed in a real browser yet. Check layout, the stamp animation, mobile tabs and dark mode.
 - No automated tests. Good first targets: `Terms` matching, `extractJSON`, SRS scheduling, daily-set composition.
 - Hosted copy needs an auth layer in front (Cloudflare Access, Tailscale or proxy basic auth); the app has none by design.
-- Ideas: export and import of progress, a "module mode" that builds a study plan from a feature description, review queue for AI-written questions (approve into the bank), showing eval results in the UI, periodic check of volatile questions against new CBIC notifications.
+- Ideas: export and import of progress, a study plan mode that builds a path through topics from a goal the learner describes, review queue for AI-written questions (approve into the bank), showing eval results in the UI, periodic check of volatile questions against new CBIC notifications.
