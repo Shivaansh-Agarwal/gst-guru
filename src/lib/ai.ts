@@ -27,7 +27,7 @@ export function modelFor(task: Task) {
 
 export class NoModelError extends Error {
   constructor() {
-    super("No AI model is set up yet. Add a provider key to .env (see the Setup page) and restart the app.");
+    super("No AI model is set up yet. Add a provider key to .env (see the Connect AI page) and restart the app.");
   }
 }
 

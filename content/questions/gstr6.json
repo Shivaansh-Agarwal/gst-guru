@@ -1,0 +1,195 @@
+[
+ {
+  "id": "G6-001",
+  "topic": "gstr6",
+  "sub": "ISD basics",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Who files GSTR-6?",
+  "options": [
+   "TDS deductors",
+   "Input service distributors",
+   "E-commerce operators",
+   "Job workers"
+  ],
+  "answer": 1,
+  "exp": "It's the ISD's monthly return showing credit received and how it was distributed.",
+  "ref": "CGST Act, s.39(4)"
+ },
+ {
+  "id": "G6-002",
+  "topic": "gstr6",
+  "sub": "ISD basics",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When is GSTR-6 due?",
+  "options": [
+   "The 10th of the next month",
+   "The 13th of the next month",
+   "The 20th of the next month",
+   "Annually on 31 December"
+  ],
+  "answer": 1,
+  "exp": "Filing by the 13th lets the credit reach recipients' 2B generated on the 14th.",
+  "ref": "CGST Rules, r.65",
+  "volatile": true
+ },
+ {
+  "id": "G6-003",
+  "topic": "gstr6",
+  "sub": "ISD basics",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What can an ISD distribute?",
+  "options": [
+   "ITC on input services only, not goods or capital goods",
+   "ITC on goods and capital goods",
+   "Only IGST",
+   "Balances in the cash ledger"
+  ],
+  "answer": 0,
+  "exp": "Goods and capital goods are billed to the unit that receives them.",
+  "ref": "CGST Act, s.2(61)",
+  "volatile": true
+ },
+ {
+  "id": "G6-004",
+  "topic": "gstr6",
+  "sub": "ISD basics",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A company's head office in Maharashtra receives an invoice of ₹10 lakh + ₹1.8 lakh GST for an audit covering branches in five states. From April 2025, how does the credit reach the branches?",
+  "options": [
+   "The head office keeps all of it",
+   "Through its ISD registration and GSTR-6, since ISD became mandatory for common input services",
+   "Only by cross-charge invoices",
+   "Each branch claims it from the auditor's invoice"
+  ],
+  "answer": 1,
+  "exp": "Finance Act 2024 made ISD compulsory for such services from 1 April 2025, including services taxed under reverse charge.",
+  "ref": "CGST Act, s.2(61) and s.20",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G6-005",
+  "topic": "gstr6",
+  "sub": "Distribution",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How is credit on a service used by several branches distributed?",
+  "options": [
+   "Equally",
+   "In proportion to each of those branches' turnover in the state for the relevant period",
+   "By headcount",
+   "However the ISD chooses"
+  ],
+  "answer": 1,
+  "exp": "Only units that actually use the service share in it.",
+  "ref": "CGST Act, s.20; CGST Rules, r.39"
+ },
+ {
+  "id": "G6-006",
+  "topic": "gstr6",
+  "sub": "Distribution",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An ISD receives an invoice for a software licence used only by the Pune unit. How is the credit distributed?",
+  "options": [
+   "Among all units by turnover",
+   "Wholly to the Pune unit",
+   "The ISD keeps it",
+   "Equally among all units"
+  ],
+  "answer": 1,
+  "exp": "Credit attributable to one recipient goes only to that recipient.",
+  "ref": "CGST Act, s.20",
+  "case": true
+ },
+ {
+  "id": "G6-007",
+  "topic": "gstr6",
+  "sub": "Distribution",
+  "diff": 3,
+  "type": "mcq",
+  "q": "An ISD's units had FY 2024-25 turnover of ₹6 crore (Delhi), ₹3 crore (Karnataka) and ₹1 crore (Gujarat). In May 2025 it gets ₹2 lakh of ITC on an ad campaign benefiting all three. How much goes to Karnataka?",
+  "options": [
+   "₹66,667",
+   "₹60,000",
+   "₹20,000",
+   "₹2 lakh"
+  ],
+  "answer": 1,
+  "exp": "₹2 lakh × 3/10. The relevant period is the previous financial year when all the recipients had turnover in it.",
+  "ref": "CGST Rules, r.39(1)(d)",
+  "case": true
+ },
+ {
+  "id": "G6-008",
+  "topic": "gstr6",
+  "sub": "Distribution",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When must an ISD distribute the credit it receives?",
+  "options": [
+   "Any time in the year",
+   "In the same month it becomes available, through GSTR-6",
+   "At year end",
+   "Within 180 days"
+  ],
+  "answer": 1,
+  "exp": "Credit can't be parked at the ISD.",
+  "ref": "CGST Rules, r.39(1)(a)"
+ },
+ {
+  "id": "G6-009",
+  "topic": "gstr6",
+  "sub": "Filing & 6A",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's GSTR-6A?",
+  "options": [
+   "The ISD's annual return",
+   "A read-only statement of the ISD's inward invoices, drawn from suppliers' GSTR-1",
+   "The amendment form for GSTR-6",
+   "The ISD registration form"
+  ],
+  "answer": 1,
+  "exp": "It's to the ISD what GSTR-2A is to a normal taxpayer."
+ },
+ {
+  "id": "G6-010",
+  "topic": "gstr6",
+  "sub": "Filing & 6A",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A branch asks where its ISD credit shows up and how to claim it. What do you tell it?",
+  "options": [
+   "Only in its purchase register",
+   "In its GSTR-2B (from the ISD's GSTR-6), claimed in 3B Table 4(A)(4)",
+   "In GSTR-6A",
+   "In its cash ledger"
+  ],
+  "answer": 1,
+  "exp": "If the ISD files late, the credit slips into the branch's next 2B.",
+  "case": true
+ },
+ {
+  "id": "G6-011",
+  "topic": "gstr6",
+  "sub": "Distribution",
+  "diff": 3,
+  "type": "scenario",
+  "q": "An ISD wrongly distributed ₹80,000 of credit to the Gujarat unit that belonged to the Delhi unit. What's the fix and what's the risk?",
+  "model": "Issue an ISD credit note to Gujarat to take the credit back and an ISD invoice to Delhi, both reported in GSTR-6. If Gujarat has already used the credit, it has to reverse it. Credit distributed in excess or to the wrong unit can be recovered from the recipient with interest under s.21, so fixing it before the department spots it matters.",
+  "points": [
+   "ISD credit note to the wrong unit",
+   "Fresh distribution to the right unit through GSTR-6",
+   "The recipient reverses credit it already used",
+   "Wrong distribution is recoverable with interest under s.21"
+  ],
+  "exp": "The recovery falls on the recipient unit, not only the ISD.",
+  "ref": "CGST Act, s.21",
+  "case": true
+ }
+]

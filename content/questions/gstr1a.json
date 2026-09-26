@@ -1,0 +1,198 @@
+[
+ {
+  "id": "RET-008",
+  "topic": "gstr1a",
+  "sub": "Purpose & window",
+  "diff": 3,
+  "type": "mcq",
+  "q": "What's GSTR-1A?",
+  "options": [
+   "An annual return",
+   "An optional form to amend or add GSTR-1 details for the same period before filing GSTR-3B",
+   "The composition return",
+   "Monthly ITC statement"
+  ],
+  "answer": 1,
+  "exp": "Introduced from July 2024 so that corrections can flow into the same month's GSTR-3B.",
+  "ref": "Notfn. 12/2024-CT",
+  "volatile": true
+ },
+ {
+  "id": "G1A-001",
+  "topic": "gstr1a",
+  "sub": "Purpose & window",
+  "diff": 1,
+  "type": "tf",
+  "q": "GSTR-1A must be filed every month by a regular taxpayer.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "It's optional. Use it only when the filed GSTR-1 needs changes before that period's 3B.",
+  "ref": "CGST Rules, r.59(4A)",
+  "volatile": true
+ },
+ {
+  "id": "G1A-002",
+  "topic": "gstr1a",
+  "sub": "Purpose & window",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When can a monthly filer use GSTR-1A for July?",
+  "options": [
+   "Any time before GSTR-9",
+   "After filing July's GSTR-1 and before filing July's GSTR-3B",
+   "Before filing July's GSTR-1",
+   "Only after July's GSTR-3B is filed"
+  ],
+  "answer": 1,
+  "exp": "The window exists so that corrections flow into the same month's 3B.",
+  "ref": "CGST Rules, r.59(4A)",
+  "volatile": true
+ },
+ {
+  "id": "G1A-003",
+  "topic": "gstr1a",
+  "sub": "Effect on 3B and 2B",
+  "diff": 2,
+  "type": "mcq",
+  "q": "On 15 August a CA finds a ₹3 lakh B2B invoice missing from July's GSTR-1, which was filed on 11 August. July's 3B isn't filed yet. What's the neatest fix?",
+  "options": [
+   "Wait for August's GSTR-1",
+   "Add the invoice through July's GSTR-1A, so July's 3B auto-populates the right liability",
+   "Pay through DRC-03",
+   "Type the extra amount into 3B Table 3.1"
+  ],
+  "answer": 1,
+  "exp": "Adding it in GSTR-1A keeps July's GSTR-1 and 3B consistent and avoids interest for reporting it a month late.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1A-004",
+  "topic": "gstr1a",
+  "sub": "Effect on 3B and 2B",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client files GSTR-1A for July on 18 August to correct a buyer's GSTIN. In which GSTR-2B does the corrected invoice reach the right buyer?",
+  "options": [
+   "July's 2B, already generated on 14 August",
+   "The buyer's next 2B, because 2B picks up documents by the date they're filed",
+   "Never, GSTR-1A doesn't flow into 2B",
+   "Only GSTR-2A, not 2B"
+  ],
+  "answer": 1,
+  "exp": "July's 2B is fixed once generated. Records filed after its cut-off land in the next one, so the buyer claims the ITC in August's 3B.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1A-005",
+  "topic": "gstr1a",
+  "sub": "Limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How many times can GSTR-1A be filed for one tax period?",
+  "options": [
+   "Once",
+   "Twice",
+   "As often as needed until 3B is filed",
+   "Once a year"
+  ],
+  "answer": 0,
+  "exp": "So all the corrections for a period should be collected before filing it.",
+  "volatile": true
+ },
+ {
+  "id": "G1A-006",
+  "topic": "gstr1a",
+  "sub": "Limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "It's 25 August. July's GSTR-3B was filed on 20 August. The client now spots a wrong rate on a July invoice. Can GSTR-1A for July be used?",
+  "options": [
+   "Yes, until the end of August",
+   "No, the window closed when July's 3B was filed; correct it through Table 9A in a later GSTR-1 or with a credit or debit note",
+   "Yes, but only with DRC-03",
+   "No, it can only be fixed in GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "Once 3B is filed for a period, the usual amendment route applies.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1A-007",
+  "topic": "gstr1a",
+  "sub": "Effect on 3B and 2B",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What happens to GSTR-3B when GSTR-1A changes the outward supply figures?",
+  "options": [
+   "Nothing, 3B stays as per GSTR-1",
+   "The auto-populated liability in 3B is recomputed to include the GSTR-1A changes",
+   "3B has to be filed twice",
+   "3B becomes fully editable"
+  ],
+  "answer": 1,
+  "exp": "That's the whole point of the form, now that auto-populated liability in 3B is locked.",
+  "volatile": true
+ },
+ {
+  "id": "G1A-008",
+  "topic": "gstr1a",
+  "sub": "Purpose & window",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A QRMP client wants to correct an invoice reported in the quarter's GSTR-1. When is GSTR-1A available?",
+  "options": [
+   "Monthly, after each IFF",
+   "Quarterly, after the quarterly GSTR-1 and before the quarterly 3B",
+   "Never, QRMP clients can't use it",
+   "Only in the first month of the quarter"
+  ],
+  "answer": 1,
+  "exp": "It follows the client's return frequency.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1A-009",
+  "topic": "gstr1a",
+  "sub": "Limits",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A junior asks when to use GSTR-1A, when to amend through Table 9A, and when to issue a credit note. How would you lay out the choice?",
+  "model": "Use GSTR-1A when the error is in the current period's filed GSTR-1 and that period's 3B isn't filed yet, so the fix flows into the same month's 3B. Once 3B is filed, amend the original document through Table 9A (or 9C for credit and debit notes) in a later GSTR-1, within the time limit in s.37(3): 30 November after the year ends, or the annual return date if earlier. Use a credit note when the transaction itself changed, such as goods returned or a price cut after the sale, not for a reporting error. It goes in Table 9B and has its own 30 November limit under s.34(2).",
+  "points": [
+   "GSTR-1A for the current period, before 3B",
+   "Table 9A or 9C after 3B is filed",
+   "Amendments are time-limited to 30 November after the year (s.37(3))",
+   "Credit notes are for changed transactions, not reporting errors"
+  ],
+  "exp": "Mixing these up is a common source of mismatches between GSTR-1, 3B and the buyer's 2B.",
+  "ref": "CGST Act, s.34(2) and s.37(3); CGST Rules, r.59(4A)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1A-010",
+  "topic": "gstr1a",
+  "sub": "Effect on 3B and 2B",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's July GSTR-1 shows one invoice at ₹15 lakh instead of ₹1.5 lakh. July's 3B isn't filed. What goes wrong if the CA ignores it and files 3B?",
+  "options": [
+   "Nothing, 3B can be typed over",
+   "3B liability auto-populates ₹13.5 lakh too high and is locked, so the client either overpays or ends up with a rule 88C mismatch; GSTR-1A fixes it first",
+   "Only the buyer is affected",
+   "The invoice is dropped automatically"
+  ],
+  "answer": 1,
+  "exp": "Fixing the source figure in GSTR-1A is cleaner than paying excess tax and claiming it back later.",
+  "ref": "CGST Rules, r.88C",
+  "volatile": true,
+  "case": true
+ }
+]

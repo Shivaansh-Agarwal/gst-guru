@@ -2,6 +2,7 @@ import Link from "next/link";
 import { availableModels } from "@/lib/providers";
 import { modelKeyFor, TASKS, type Task } from "@/lib/ai";
 import ModelPicker from "@/components/ModelPicker";
+import ThemeSwitch from "@/components/ThemeSwitch";
 import { db } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -15,13 +16,23 @@ export default function Settings() {
   }[];
   return (
     <>
-      <h1 style={{ marginBottom: 12 }}>Models</h1>
+      <h1 style={{ marginBottom: 30 }}>Settings</h1>
+      <section style={{ marginBottom: 44 }}>
+        <h2 style={{ marginBottom: 12 }}>Appearance</h2>
+        <div style={{ maxWidth: 260 }}>
+          <ThemeSwitch />
+        </div>
+        <p className="muted small" style={{ marginTop: 8 }}>
+          Auto follows your device.
+        </p>
+      </section>
+      <h2 style={{ marginBottom: 12 }}>Models</h2>
       <p className="muted" style={{ maxWidth: "60ch", marginBottom: 30 }}>
         Pick a model for each job. Only providers you've added to <code>.env</code> show up here. Put your strongest model on grading, since that's where a wrong answer teaches you the wrong thing.
       </p>
       {models.length === 0 ? (
         <p>
-          Nothing connected yet. The <Link href="/setup">Setup page</Link> walks through free and paid options.
+          Nothing connected yet. The <Link href="/setup">Connect AI page</Link> walks through free and paid options.
         </p>
       ) : (
         <div className="stack" style={{ gap: 26, maxWidth: 560 }}>

@@ -1,0 +1,196 @@
+[
+ {
+  "id": "I04-001",
+  "topic": "itc04",
+  "sub": "Job work basics",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Who files ITC-04?",
+  "options": [
+   "The job worker",
+   "The principal who sends inputs or capital goods to a job worker",
+   "Both of them",
+   "The transporter"
+  ],
+  "answer": 1,
+  "exp": "It tells the department what the principal's goods are doing at job workers' premises.",
+  "ref": "CGST Rules, r.45(3)"
+ },
+ {
+  "id": "I04-002",
+  "topic": "itc04",
+  "sub": "Job work basics",
+  "diff": 2,
+  "type": "mcq",
+  "q": "On what document does a principal send inputs to a job worker without paying tax?",
+  "options": [
+   "A tax invoice",
+   "A delivery challan",
+   "A bill of supply",
+   "Only an e-way bill"
+  ],
+  "answer": 1,
+  "exp": "An e-way bill may also be needed for the movement, but the challan is the GST document.",
+  "ref": "CGST Rules, r.45(1) and r.55"
+ },
+ {
+  "id": "I04-003",
+  "topic": "itc04",
+  "sub": "Filing",
+  "diff": 2,
+  "type": "mcq",
+  "q": "How often does a principal with ₹12 crore aggregate turnover file ITC-04?",
+  "options": [
+   "Monthly",
+   "Half-yearly, by 25 October and 25 April",
+   "Once a year by 25 April",
+   "Quarterly"
+  ],
+  "answer": 1,
+  "exp": "It was quarterly until October 2021.",
+  "ref": "CGST Rules, r.45(3); Notfn. 35/2021-CT",
+  "volatile": true
+ },
+ {
+  "id": "I04-004",
+  "topic": "itc04",
+  "sub": "Filing",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A manufacturer with ₹3.5 crore turnover sends parts out for plating every month. When is ITC-04 due for FY 2025-26?",
+  "options": [
+   "Every quarter",
+   "Once, by 25 April 2026",
+   "By 25 October 2025 and 25 April 2026",
+   "It isn't needed below ₹5 crore"
+  ],
+  "answer": 1,
+  "exp": "Up to ₹5 crore it's annual; above that, half-yearly.",
+  "ref": "CGST Rules, r.45(3)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "I04-005",
+  "topic": "itc04",
+  "sub": "Time limits",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Within what time must inputs sent to a job worker come back?",
+  "options": [
+   "6 months",
+   "1 year",
+   "3 years",
+   "There's no limit"
+  ],
+  "answer": 1,
+  "exp": "Capital goods get three years.",
+  "ref": "CGST Act, s.143(1)"
+ },
+ {
+  "id": "I04-006",
+  "topic": "itc04",
+  "sub": "Time limits",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A principal sent moulds and dies to a job worker in April 2021 and they're still there in 2026. Is that a supply?",
+  "options": [
+   "Yes, it's a deemed supply after three years",
+   "No, moulds, dies, jigs, fixtures and tools are outside the return time limit",
+   "Yes, after one year",
+   "Only if the job worker is unregistered"
+  ],
+  "answer": 1,
+  "exp": "Tooling often stays with a job worker for years, which is why it's carved out.",
+  "ref": "CGST Act, s.143(1) proviso",
+  "case": true
+ },
+ {
+  "id": "I04-007",
+  "topic": "itc04",
+  "sub": "Time limits",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A principal sent inputs worth ₹5 lakh to a job worker on 10 June 2024, and they weren't back by 10 June 2025. What follows?",
+  "options": [
+   "Nothing, the limit isn't enforced",
+   "It's treated as a supply by the principal on 10 June 2024, so tax is paid with interest from then",
+   "It's a supply by the job worker",
+   "ITC-04 covers it"
+  ],
+  "answer": 1,
+  "exp": "The deemed supply goes back to the day the goods were sent out, which is what makes the interest bite.",
+  "ref": "CGST Act, s.143(3)",
+  "case": true
+ },
+ {
+  "id": "I04-008",
+  "topic": "itc04",
+  "sub": "Job work basics",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can inputs go straight from the principal's supplier to the job worker?",
+  "options": [
+   "No, they must reach the principal first",
+   "Yes, and the principal can still take ITC on them",
+   "Only capital goods can",
+   "Only with IGST"
+  ],
+  "answer": 1,
+  "exp": "Direct dispatch is allowed and doesn't cost the principal its credit.",
+  "ref": "CGST Act, s.19"
+ },
+ {
+  "id": "I04-009",
+  "topic": "itc04",
+  "sub": "Job work basics",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Waste and scrap is generated at a registered job worker's premises. Who can supply it?",
+  "options": [
+   "Only the principal",
+   "The job worker directly, on payment of tax, since it's registered; otherwise the principal",
+   "Nobody, it's exempt",
+   "The transporter"
+  ],
+  "answer": 1,
+  "exp": "An unregistered job worker can't sell it, so the principal has to.",
+  "ref": "CGST Act, s.143(5)",
+  "case": true
+ },
+ {
+  "id": "I04-010",
+  "topic": "itc04",
+  "sub": "Filing",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A principal's goods go from job worker A straight to job worker B for a second process. Does ITC-04 cover this?",
+  "options": [
+   "No",
+   "Yes, it reports goods sent to job workers, moved between job workers, received back and supplied from a job worker's premises",
+   "Only goods received back",
+   "Only inter-state movements"
+  ],
+  "answer": 1,
+  "exp": "The return is a trail of where the principal's goods are at any time.",
+  "case": true
+ },
+ {
+  "id": "I04-011",
+  "topic": "itc04",
+  "sub": "Time limits",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client sends fabric worth ₹8 lakh to a job worker for stitching. A year later, ₹1.5 lakh of it still hasn't come back, and the client has never filed ITC-04. Advise.",
+  "model": "File the missing ITC-04s now, rebuilt from delivery challans and the job worker's records. The ₹1.5 lakh of fabric not back within a year is treated as supplied by the client on the day it was first sent out, so the client pays tax on it with interest from that date. Going forward, keep a challan-wise register of what's with each job worker and when the one-year clock runs out, and file ITC-04 on time. Skipped ITC-04s leave the client open to a general penalty.",
+  "points": [
+   "File the missing ITC-04s from delivery challans",
+   "Goods not back in a year are deemed supplied on the day sent out",
+   "Pay tax with interest from that date",
+   "Track goods with job workers challan by challan"
+  ],
+  "exp": "The one-year clock runs per challan, not per job worker.",
+  "ref": "CGST Act, s.143 and s.125",
+  "case": true
+ }
+]

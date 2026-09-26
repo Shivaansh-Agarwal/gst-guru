@@ -1,0 +1,174 @@
+[
+ {
+  "id": "G2B-001",
+  "topic": "gstr2b",
+  "sub": "How it's built",
+  "diff": 1,
+  "type": "mcq",
+  "q": "When is a month's GSTR-2B generated?",
+  "options": [
+   "On the 11th of the next month",
+   "On the 14th of the next month",
+   "On the 20th of the next month",
+   "Whenever the taxpayer asks"
+  ],
+  "answer": 1,
+  "exp": "It's a fixed statement. Since IMS, it can be recomputed after IMS actions until 3B is filed.",
+  "ref": "CGST Rules, r.60(7)",
+  "volatile": true
+ },
+ {
+  "id": "G2B-002",
+  "topic": "gstr2b",
+  "sub": "How it's built",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these does NOT feed into GSTR-2B?",
+  "options": [
+   "Suppliers' GSTR-1, IFF and GSTR-1A",
+   "An ISD's GSTR-6",
+   "Bills of entry for imports, from ICEGATE",
+   "The recipient's own purchase register"
+  ],
+  "answer": 3,
+  "exp": "2B only shows what others reported. Reconciling it with the purchase register is the recipient's job."
+ },
+ {
+  "id": "G2B-003",
+  "topic": "gstr2b",
+  "sub": "How it's built",
+  "diff": 2,
+  "type": "tf",
+  "q": "Unlike GSTR-2A, GSTR-2B doesn't change when a supplier files late after it's generated.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "A late-filed invoice lands in the next 2B instead. Recomputing after IMS actions is the only change allowed."
+ },
+ {
+  "id": "G2B-004",
+  "topic": "gstr2b",
+  "sub": "Claiming ITC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Since 1 January 2022, what's the key link between ITC and GSTR-2B?",
+  "options": [
+   "ITC can be claimed only if the invoice appears in GSTR-2B",
+   "ITC can be claimed up to 105% of 2B",
+   "2B is only for information",
+   "2B is used only for imports"
+  ],
+  "answer": 0,
+  "exp": "The old provisional 5% margin is gone. Section 16(2)(aa) ties the claim to what the supplier reported.",
+  "ref": "CGST Act, s.16(2)(aa); CGST Rules, r.36(4)"
+ },
+ {
+  "id": "G2B-005",
+  "topic": "gstr2b",
+  "sub": "Sections",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A Delhi-registered client's GSTR-2B shows a Mumbai hotel's invoice with CGST and SGST under 'ITC not available'. Why?",
+  "options": [
+   "The hotel filed late",
+   "The place of supply is Maharashtra, so Maharashtra's CGST and SGST can't be claimed by a Delhi registration",
+   "Hotel stays are always blocked",
+   "The invoice is above ₹50,000"
+  ],
+  "answer": 1,
+  "exp": "For hotel stays the place of supply is where the property is. Asking the hotel to charge IGST isn't the fix.",
+  "ref": "IGST Act, s.12(3)",
+  "case": true
+ },
+ {
+  "id": "G2B-006",
+  "topic": "gstr2b",
+  "sub": "IMS actions",
+  "diff": 2,
+  "type": "mcq",
+  "q": "In IMS, what happens to a supplier invoice the client takes no action on by the time 2B is generated?",
+  "options": [
+   "It's deemed rejected",
+   "It's deemed accepted and shows as ITC available in 2B",
+   "It's deleted",
+   "It stays pending forever"
+  ],
+  "answer": 1,
+  "exp": "That's why CAs review IMS before the 14th rather than letting everything flow through.",
+  "volatile": true
+ },
+ {
+  "id": "G2B-007",
+  "topic": "gstr2b",
+  "sub": "IMS actions",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client rejects a supplier's ₹50,000 credit note in IMS because the goods were never returned. What's the effect?",
+  "options": [
+   "Nothing, credit notes can't be rejected",
+   "The client's ITC isn't reduced for it, and the tax the credit note had knocked off the supplier's liability is added back",
+   "The supplier pays a penalty",
+   "The client pays interest"
+  ],
+  "answer": 1,
+  "exp": "The supplier then has to sort it out with the buyer or pay the tax.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G2B-008",
+  "topic": "gstr2b",
+  "sub": "IMS actions",
+  "diff": 3,
+  "type": "scenario",
+  "q": "Mid-month, a client's IMS shows 300 supplier invoices. The finance head asks why the CA wants to review them before the 14th instead of letting them flow into 2B. Explain.",
+  "model": "Anything left without action is deemed accepted when 2B is generated, so credit on invoices the client never received, duplicates, invoices meant for another GSTIN or ineligible credits would all show as available. The CA matches IMS against the purchase register: accept what matches, reject what isn't the client's or is wrong so the supplier has to correct it, and keep pending the invoices where goods haven't arrived so the ITC is taken in the right month. Wrong claims lead to reversal with interest and rule 88D intimations. If actions change after the 14th, 2B can be recomputed before filing 3B.",
+  "points": [
+   "No action means deemed accepted",
+   "Match IMS against the purchase register",
+   "Reject wrong invoices and keep undelivered ones pending",
+   "Recompute 2B before 3B if actions change"
+  ],
+  "exp": "IMS turns the monthly ITC review into an up-front step instead of an after-the-fact reconciliation.",
+  "ref": "CGST Rules, r.88D",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G2B-009",
+  "topic": "gstr2b",
+  "sub": "Claiming ITC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A supplier's July invoice for ₹2 lakh + ₹36,000 GST shows up only in the client's September 2B because the supplier filed late. When can the client claim it?",
+  "options": [
+   "In July's 3B, backdated",
+   "In September's 3B, when it appears in 2B",
+   "Never",
+   "Only in GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "ITC follows 2B. It's still inside the s.16(4) time limit for that year, which is 30 November after the year ends.",
+  "ref": "CGST Act, s.16(2)(aa) and s.16(4)",
+  "case": true
+ },
+ {
+  "id": "G2B-010",
+  "topic": "gstr2b",
+  "sub": "Claiming ITC",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client imports goods and pays ₹1.8 lakh IGST at customs. Where does it check that the credit is available?",
+  "options": [
+   "Its supplier's GSTR-1",
+   "The import section (IMPG) of GSTR-2B, fed from bill of entry data on ICEGATE",
+   "GSTR-2A only",
+   "Nowhere, imports aren't eligible"
+  ],
+  "answer": 1,
+  "exp": "It's claimed in 3B Table 4(A)(1). A missing bill of entry is usually a GSTIN mismatch on the bill of entry itself.",
+  "case": true
+ }
+]

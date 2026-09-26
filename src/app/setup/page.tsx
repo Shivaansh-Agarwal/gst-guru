@@ -10,7 +10,7 @@ export default function Setup() {
   const claude = providers.find((p) => p.id === "anthropic")!;
   return (
     <>
-      <h1 style={{ marginBottom: 12 }}>Setup</h1>
+      <h1 style={{ marginBottom: 12 }}>Connect AI</h1>
       <p style={{ maxWidth: "62ch" }}>
         The question bank works with no setup at all. Connecting a model adds grading for written answers, new questions from your notes, and deep-dive sessions. Every provider is off until you add its key to <code>.env.local</code> in the project folder and restart the app.
       </p>

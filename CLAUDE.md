@@ -38,15 +38,15 @@ AI SDK v7 notes: use `generateText({ model, instructions, prompt })` (`system` i
 
 ## Content
 
-- `content/topics.json`: 21 topics, each with an id, code (used in question ids), blurb and subtopics. The `ca` topic ("At the CA's desk") covers monthly cycle, missed deadlines, fixing mistakes, notices, client management.
-- `content/questions/<topic>.json`: about 610 questions, about 28% situational. Fields: `id` (CODE-NNN), `topic`, `sub` (must be one of the topic's subtopics), `diff` 1 to 3, `type` mcq | tf | scenario, `q`, `options` + `answer` (0-based) for mcq/tf, `model` + `points` for scenario, `exp`, optional `ref` (section or rule), `volatile`, `case` (situational).
-- `content/glossary.json`: about 84 terms with aliases and one-line plain definitions.
+- `content/topics.json`: 30 topics, each with an id, code (used in question ids), blurb, subtopics and an optional `group`. The `ca` topic ("At the CA's desk") covers monthly cycle, missed deadlines, fixing mistakes, notices, client management. Each major return (GSTR-1, 1A, 2B, 3B, 9, 9C, 6, 7 and ITC-04) has its own topic in the "Returns" group, and `returns` holds the rest (QRMP, other returns, late fees). Grouped topics are listed first on the Topics page, the home table and the deep dive picker.
+- `content/questions/<topic>.json`: about 700 questions, about 31% situational. Questions moved from `returns` into the per-return topics kept their `RET-NNN` ids, so a topic file can mix id prefixes. Fields: `id` (CODE-NNN), `topic`, `sub` (must be one of the topic's subtopics), `diff` 1 to 3, `type` mcq | tf | scenario, `q`, `options` + `answer` (0-based) for mcq/tf, `model` + `points` for scenario, `exp`, optional `ref` (section or rule), `volatile`, `case` (situational).
+- `content/glossary.json`: about 86 terms with aliases and one-line plain definitions.
 - The JSON files are the source of truth. Edit them directly, keep ids stable (progress is keyed by id), append new ids at the end of a topic, and run `npm run validate` afterwards.
 - When writing questions: cite the section or rule when known and never invent one; make distractors plausible; prefer realistic CA situations with rupee amounts; mark anything notification-dependent as volatile.
 
 ## Design
 
-Ledger-paper palette (paper #edf1ee, ink #17263a, stamp violet #5a3d9a, ok/bad greens and reds, dark mode tokens). The one loud element is the rubber stamp that lands on the question sheet after answering; keep everything else quiet. Left rail nav on desktop, bottom tabs on mobile. Respect reduced motion, keep visible focus, keep line lengths under about 70 characters.
+Ledger-paper palette (paper #edf1ee, ink #17263a, stamp violet #5a3d9a, ok/bad greens and reds, dark mode tokens). The one loud element is the rubber stamp that lands on the question sheet after answering; keep everything else quiet. Left rail nav on desktop (Practise, Returns shortcuts, Settings, with today's count from `/api/progress`), bottom tabs on mobile. Theme is Auto, Light or Dark: `data-theme` on `<html>` overrides the system setting, saved in localStorage and applied by an inline script before paint. Any new colour must be defined for both themes. On the home page, keep today's set (the card) and overall progress (the table) visibly separate. Respect reduced motion, keep visible focus, keep line lengths under about 70 characters.
 
 ## Writing style (UI copy, docs and replies to the author)
 

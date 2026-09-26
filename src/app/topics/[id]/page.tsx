@@ -63,7 +63,7 @@ export default async function TopicPage({ params }: { params: Promise<{ id: stri
           <GeneratePanel topic={t.id} />
         ) : (
           <p className="muted">
-            Connect a model on the <Link href="/setup">Setup page</Link> to write new questions for this topic, including from notes or articles you paste in.
+            Connect a model on the <Link href="/setup">Connect AI page</Link> to write new questions for this topic, including from notes or articles you paste in.
           </p>
         )}
       </section>

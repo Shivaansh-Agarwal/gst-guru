@@ -5,7 +5,9 @@ import { renderMarkdown, useStreamChat } from "./useStreamChat";
 
 const md = (s: string) => renderMarkdown(s, (x) => marked.parse(x, { async: false }) as string);
 
-export default function DeepDive(props: { topics: { id: string; name: string }[]; initialTopic?: string; seed?: string }) {
+type TopicGroup = { label: string; topics: { id: string; name: string }[] };
+
+export default function DeepDive(props: { groups: TopicGroup[]; initialTopic?: string; seed?: string }) {
   const [topic, setTopic] = useState(props.initialTopic ?? "");
   const [context, setContext] = useState("");
   const [input, setInput] = useState(props.seed ?? "");
@@ -24,10 +26,14 @@ export default function DeepDive(props: { topics: { id: string; name: string }[]
             <label htmlFor="topic">Topic</label>
             <select id="topic" value={topic} onChange={(e) => setTopic(e.target.value)}>
               <option value="">Any, or I'll describe it</option>
-              {props.topics.map((t) => (
-                <option key={t.id} value={t.id}>
-                  {t.name}
-                </option>
+              {props.groups.map((g) => (
+                <optgroup key={g.label} label={g.label}>
+                  {g.topics.map((t) => (
+                    <option key={t.id} value={t.id}>
+                      {t.name}
+                    </option>
+                  ))}
+                </optgroup>
               ))}
             </select>
           </div>

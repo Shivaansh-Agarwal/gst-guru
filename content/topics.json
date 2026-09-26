@@ -131,18 +131,128 @@
   ]
  },
  {
+  "id": "gstr1",
+  "code": "G1",
+  "name": "GSTR-1: outward supplies",
+  "blurb": "The monthly or quarterly statement of every sale: which table each invoice goes in, due dates, what blocks filing, and how mistakes get fixed after filing.",
+  "subtopics": [
+   "Basics & due dates",
+   "Tables",
+   "Amendments & credit notes",
+   "Filing in practice"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr1a",
+  "code": "G1A",
+  "name": "GSTR-1A: same-period fixes",
+  "blurb": "The optional form for correcting or adding to a filed GSTR-1 before that period's GSTR-3B, so the fix lands in the same month's liability.",
+  "subtopics": [
+   "Purpose & window",
+   "Effect on 3B and 2B",
+   "Limits"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr2b",
+  "code": "G2B",
+  "name": "GSTR-2B: the ITC statement",
+  "blurb": "The fixed statement of credit your suppliers reported, generated on the 14th: where it comes from, its sections, IMS actions and how it caps what you can claim.",
+  "subtopics": [
+   "How it's built",
+   "Sections",
+   "IMS actions",
+   "Claiming ITC"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr3b",
+  "code": "G3B",
+  "name": "GSTR-3B: summary return and payment",
+  "blurb": "Where tax actually gets paid: each table, auto-populated liability and ITC, reverse charge, reversals and reclaims, interest, and what to do when it's wrong.",
+  "subtopics": [
+   "Basics & due dates",
+   "Tables",
+   "Auto-population",
+   "ITC reporting",
+   "Payment & corrections"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr9",
+  "code": "G9",
+  "name": "GSTR-9: annual return",
+  "blurb": "The year in one return: who files, where the figures come from, next-year adjustments, differences, late fees, and why it can't be used to claim missed ITC.",
+  "subtopics": [
+   "Who files & when",
+   "Tables & sources",
+   "Differences & payment"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr9c",
+  "code": "G9C",
+  "name": "GSTR-9C: reconciliation statement",
+  "blurb": "The self-certified bridge between audited accounts and GSTR-9 for larger taxpayers: who files, what gets reconciled and what happens to unpaid differences.",
+  "subtopics": [
+   "Applicability",
+   "Reconciliation",
+   "Differences"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr6",
+  "code": "G6",
+  "name": "GSTR-6: input service distributor",
+  "blurb": "How a head office passes credit on common services to its branches: when ISD is compulsory, distribution rules, GSTR-6A and fixing wrong distributions.",
+  "subtopics": [
+   "ISD basics",
+   "Distribution",
+   "Filing & 6A"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "gstr7",
+  "code": "G7",
+  "name": "GSTR-7: TDS return",
+  "blurb": "Tax deducted by government buyers: who deducts, the 2% rate and ₹2.5 lakh contract threshold, filing by the 10th, and how the supplier gets the credit.",
+  "subtopics": [
+   "Who deducts",
+   "Deduction & deposit",
+   "Deductee side"
+  ],
+  "group": "Returns"
+ },
+ {
+  "id": "itc04",
+  "code": "I04",
+  "name": "ITC-04: job work",
+  "blurb": "Goods sent to job workers without tax: delivery challans, how often ITC-04 is filed, the one-year and three-year return limits, and what happens when they're missed.",
+  "subtopics": [
+   "Job work basics",
+   "Filing",
+   "Time limits"
+  ],
+  "group": "Returns"
+ },
+ {
   "id": "returns",
   "code": "RET",
-  "name": "Returns and filing",
-  "blurb": "GSTR-1, GSTR-3B, the annual return and the rest: what goes in which table, due dates, QRMP, sequencing rules and late fees.",
+  "name": "Other returns and rules",
+  "blurb": "Returns without their own section, like GSTR-5A, 8 and 11, plus the QRMP scheme, the order returns must be filed in, late fees and the three-year bar.",
   "subtopics": [
-   "GSTR-1",
-   "GSTR-3B",
    "QRMP",
-   "Annual return",
    "Other returns",
    "Rules & late fees"
-  ]
+  ],
+  "group": "Returns"
  },
  {
   "id": "einv",

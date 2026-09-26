@@ -16,11 +16,24 @@ export function topicStats(): TopicStat[] {
   const qs = allQuestions();
   const seenRows = db().prepare("SELECT DISTINCT question_id FROM attempts").all() as { question_id: string }[];
   const seen = new Set(seenRows.map((r) => r.question_id));
+  // Attempts store the topic at answer time, but questions can move between topics,
+  // so file each attempt under the question's current topic.
+  const topicOf = new Map(qs.map((q) => [q.id, q.topic]));
+  const recentBy = new Map<string, { correct: number }[]>();
+  const rows = db().prepare("SELECT question_id, topic, correct FROM attempts ORDER BY answered_at DESC").all() as {
+    question_id: string;
+    topic: string;
+    correct: number;
+  }[];
+  for (const r of rows) {
+    const topic = topicOf.get(r.question_id) ?? r.topic;
+    const list = recentBy.get(topic) ?? [];
+    if (list.length < 30) list.push(r);
+    recentBy.set(topic, list);
+  }
   return topics.map((t) => {
     const tq = qs.filter((q) => q.topic === t.id);
-    const recent = db()
-      .prepare("SELECT correct FROM attempts WHERE topic = ? ORDER BY answered_at DESC LIMIT 30")
-      .all(t.id) as { correct: number }[];
+    const recent = recentBy.get(t.id) ?? [];
     const accuracy = recent.length ? recent.filter((r) => r.correct).length / recent.length : null;
     const seenCount = tq.filter((q) => seen.has(q.id)).length;
     const coverage = tq.length ? seenCount / tq.length : 0;
@@ -115,4 +128,15 @@ export function buildTopicSet(topic: string, size = 10, sub?: string): Question[
   const unseen = shuffle(qs.filter((q) => !reviewed.has(q.id)));
   const rest = shuffle(qs.filter((q) => reviewed.has(q.id)));
   return [...unseen, ...rest].slice(0, size);
+}
+
+export const DAILY_GOAL = 10;
+
+export function dueCount(now = Date.now()): number {
+  return (db().prepare("SELECT COUNT(*) c FROM reviews WHERE due_at <= ?").get(now) as { c: number }).c;
+}
+
+/** What the sidebar and home page need to say where today stands. */
+export function todaySummary() {
+  return { done: answeredToday(), goal: DAILY_GOAL, streak: streak(), due: dueCount() };
 }

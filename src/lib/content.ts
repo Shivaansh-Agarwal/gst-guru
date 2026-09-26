@@ -8,8 +8,22 @@ export const TopicSchema = z.object({
   name: z.string(),
   blurb: z.string(),
   subtopics: z.array(z.string()),
+  group: z.string().optional(),
 });
 export type Topic = z.infer<typeof TopicSchema>;
+
+/** Topics bucketed by their `group`, named groups first, the ungrouped rest last. */
+export function topicGroups<T extends { group?: string }>(topics: T[]): { label: string; topics: T[] }[] {
+  const groups = new Map<string, T[]>();
+  for (const t of topics) {
+    const label = t.group ?? "";
+    if (!groups.has(label)) groups.set(label, []);
+    groups.get(label)!.push(t);
+  }
+  const named = [...groups].filter(([label]) => label).map(([label, ts]) => ({ label, topics: ts }));
+  const rest = groups.get("");
+  return rest ? [...named, { label: "The rest of GST", topics: rest }] : named;
+}
 
 export const QuestionSchema = z
   .object({

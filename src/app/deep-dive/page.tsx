@@ -1,4 +1,4 @@
-import { loadContent } from "@/lib/content";
+import { loadContent, topicGroups } from "@/lib/content";
 import { allQuestions } from "@/lib/progress";
 import { availableModels } from "@/lib/providers";
 import DeepDive from "@/components/DeepDive";
@@ -28,7 +28,11 @@ export default async function Page({ searchParams }: { searchParams: Promise<Rec
       <p className="muted" style={{ maxWidth: "58ch", marginBottom: 26 }}>
         Tell it which module you're working on. It teaches in layers and checks your understanding as it goes.
       </p>
-      <DeepDive topics={topics.map((t) => ({ id: t.id, name: t.name }))} initialTopic={sp.topic} seed={seed} />
+      <DeepDive
+        groups={topicGroups(topics).map((g) => ({ label: g.label, topics: g.topics.map((t) => ({ id: t.id, name: t.name })) }))}
+        initialTopic={sp.topic}
+        seed={seed}
+      />
     </>
   );
 }

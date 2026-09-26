@@ -1,0 +1,240 @@
+[
+ {
+  "id": "RET-020",
+  "topic": "gstr9",
+  "sub": "Who files & when",
+  "diff": 1,
+  "type": "mcq",
+  "q": "The annual return for regular taxpayers is:",
+  "options": [
+   "GSTR-4",
+   "GSTR-9",
+   "GSTR-10",
+   "GSTR-11"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9C is the reconciliation statement for larger taxpayers."
+ },
+ {
+  "id": "RET-021",
+  "topic": "gstr9",
+  "sub": "Who files & when",
+  "diff": 2,
+  "type": "mcq",
+  "q": "The due date for GSTR-9 is:",
+  "options": [
+   "30 September",
+   "31 December following the end of the FY",
+   "31 March",
+   "30 November"
+  ],
+  "answer": 1,
+  "exp": "Often extended by notification.",
+  "ref": "CGST Rules, r.80",
+  "volatile": true
+ },
+ {
+  "id": "RET-023",
+  "topic": "gstr9",
+  "sub": "Who files & when",
+  "diff": 2,
+  "type": "tf",
+  "q": "Filing GSTR-9 is optional for taxpayers with aggregate turnover up to ₹2 crore.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "This exemption has been extended year by year by notification.",
+  "volatile": true
+ },
+ {
+  "id": "RET-039",
+  "topic": "gstr9",
+  "sub": "Differences & payment",
+  "diff": 3,
+  "type": "mcq",
+  "q": "While preparing GSTR-9, a CA finds the client reported a sale in GSTR-1 but never paid tax on it in 3B. It's December after the FY. What's the correct step?",
+  "options": [
+   "Report it in GSTR-9 and pay in GSTR-9",
+   "Pay the tax with interest through DRC-03, then report the payment in GSTR-9",
+   "Ignore it",
+   "Amend GSTR-3B"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9 doesn't accept payment directly (except late fees). Also expect a rule 88C intimation if it wasn't caught earlier.",
+  "case": true
+ },
+ {
+  "id": "G9-001",
+  "topic": "gstr9",
+  "sub": "Who files & when",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these files GSTR-9?",
+  "options": [
+   "A composition taxpayer",
+   "An input service distributor",
+   "A regular taxpayer with ₹8 crore turnover",
+   "A non-resident taxable person"
+  ],
+  "answer": 2,
+  "exp": "Composition taxpayers file GSTR-4. ISDs, non-residents, casual taxpayers and TDS and TCS filers don't file GSTR-9.",
+  "ref": "CGST Act, s.44"
+ },
+ {
+  "id": "G9-002",
+  "topic": "gstr9",
+  "sub": "Who files & when",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Can GSTR-9 be filed before all of the year's GSTR-1 and GSTR-3B returns are filed?",
+  "options": [
+   "Yes",
+   "No, every GSTR-1 (or IFF) and 3B for the year must be filed first",
+   "Only 3B is needed",
+   "Only GSTR-1 is needed"
+  ],
+  "answer": 1,
+  "exp": "The annual return summarises what was filed, so the portal insists the year is complete.",
+  "volatile": true
+ },
+ {
+  "id": "G9-003",
+  "topic": "gstr9",
+  "sub": "Who files & when",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After how long can a GSTR-9 no longer be filed at all?",
+  "options": [
+   "There's no limit",
+   "Three years from its due date",
+   "One year",
+   "Five years"
+  ],
+  "answer": 1,
+  "exp": "Finance Act 2023 added the bar, and the portal began enforcing it in 2025.",
+  "ref": "CGST Act, s.44(2)",
+  "volatile": true
+ },
+ {
+  "id": "G9-004",
+  "topic": "gstr9",
+  "sub": "Tables & sources",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where in GSTR-9 does the ITC figure auto-populated from GSTR-2B appear?",
+  "options": [
+   "Table 6A",
+   "Table 8A",
+   "Table 9",
+   "Table 17"
+  ],
+  "answer": 1,
+  "exp": "Table 6 is ITC as claimed in 3B, 8A is what 2B showed, and 8D is the gap that officers later ask about.",
+  "volatile": true
+ },
+ {
+  "id": "G9-005",
+  "topic": "gstr9",
+  "sub": "Tables & sources",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A March 2025 invoice of ₹3 lakh was left out of FY 2024-25 returns and reported in May 2025's GSTR-1 and 3B. Where does it go in GSTR-9 for FY 2024-25?",
+  "options": [
+   "Table 4 as a normal supply",
+   "Table 10 (supplies declared through amendments in the next year's returns), with the tax in Table 14",
+   "Nowhere",
+   "Table 18"
+  ],
+  "answer": 1,
+  "exp": "Part V captures the current year's transactions that were reported in the next year's returns.",
+  "case": true
+ },
+ {
+  "id": "G9-006",
+  "topic": "gstr9",
+  "sub": "Tables & sources",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client claims ₹1.2 lakh of FY 2024-25 ITC in its September 2025 3B. How does GSTR-9 for FY 2024-25 show it?",
+  "options": [
+   "Table 6 only",
+   "Table 13, ITC for the year availed in the next financial year",
+   "Table 12",
+   "It can't be shown"
+  ],
+  "answer": 1,
+  "exp": "Table 12 is the opposite case: ITC of the year reversed in the next year.",
+  "case": true
+ },
+ {
+  "id": "G9-007",
+  "topic": "gstr9",
+  "sub": "Differences & payment",
+  "diff": 3,
+  "type": "mcq",
+  "q": "Preparing GSTR-9 in December 2025, the CA finds ₹90,000 of FY 2024-25 ITC that was never claimed. Can the client take it through GSTR-9?",
+  "options": [
+   "Yes, in Table 6",
+   "No, GSTR-9 isn't a way to claim ITC, and the s.16(4) deadline of 30 November 2025 has passed",
+   "Yes, through DRC-03",
+   "Yes, in next year's 3B"
+  ],
+  "answer": 1,
+  "exp": "This is why the ITC review happens before November, not at annual return time.",
+  "ref": "CGST Act, s.16(4)",
+  "case": true
+ },
+ {
+  "id": "G9-008",
+  "topic": "gstr9",
+  "sub": "Differences & payment",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the late fee on GSTR-9 for a taxpayer with turnover above ₹20 crore?",
+  "options": [
+   "₹50 a day, capped at 0.04% of turnover",
+   "₹100 a day, with no cap",
+   "₹200 a day (₹100 CGST + ₹100 SGST), capped at 0.5% of turnover in the state",
+   "No late fee"
+  ],
+  "answer": 2,
+  "exp": "Smaller taxpayers have lower daily fees and a cap of 0.04% of turnover.",
+  "ref": "CGST Act, s.47(2); Notfn. 7/2023-CT",
+  "volatile": true
+ },
+ {
+  "id": "G9-009",
+  "topic": "gstr9",
+  "sub": "Differences & payment",
+  "diff": 2,
+  "type": "tf",
+  "q": "A filed GSTR-9 can be revised within the same financial year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "There's no revision, which is why CAs reconcile thoroughly before filing."
+ },
+ {
+  "id": "G9-010",
+  "topic": "gstr9",
+  "sub": "Differences & payment",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client's GSTR-9 working shows turnover in the books of ₹4.82 crore against ₹4.75 crore in GSTR-1 and 3B, and ITC of ₹38 lakh in 3B against ₹36.5 lakh in 2B (Table 8A). How does the CA handle each difference?",
+  "model": "Break down the ₹7 lakh turnover gap: unbilled revenue, advances, year-end credit notes, non-GST income or a genuinely missed invoice. Timing items are explained; a missed taxable supply means paying the tax with interest through DRC-03 and showing it in GSTR-9. For the ₹1.5 lakh ITC gap, identify legitimate items that aren't in 2B, such as reverse charge ITC, or invoices suppliers reported late. Anything unsupported or ineligible is reversed through DRC-03 with interest. Keep the working papers, since Table 8D differences are a common source of ASMT-10 notices later. At ₹4.82 crore, GSTR-9C isn't required.",
+  "points": [
+   "Break down the turnover gap into timing and real misses",
+   "Pay missed tax with interest through DRC-03",
+   "Explain the ITC gap with reverse charge and late-reported invoices",
+   "Reverse unsupported ITC",
+   "Keep working papers for later notices"
+  ],
+  "exp": "GSTR-9 records the year as it happened; it's not a correction tool.",
+  "volatile": true,
+  "case": true
+ }
+]

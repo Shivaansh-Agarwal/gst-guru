@@ -1,0 +1,176 @@
+[
+ {
+  "id": "RET-022",
+  "topic": "gstr9c",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "GSTR-9C (reconciliation statement) is required for taxpayers with aggregate turnover above:",
+  "options": [
+   "₹2 crore",
+   "₹5 crore",
+   "₹10 crore",
+   "₹50 crore"
+  ],
+  "answer": 1,
+  "exp": "Since FY 2020-21 it's self-certified; CA certification is no longer required.",
+  "ref": "CGST Rules, r.80(3)",
+  "volatile": true
+ },
+ {
+  "id": "G9C-001",
+  "topic": "gstr9c",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A company's aggregate turnover is ₹22 crore across three states, but its Goa GSTIN only did ₹60 lakh. Does the Goa GSTIN file GSTR-9C?",
+  "options": [
+   "No, it's below ₹5 crore",
+   "Yes, the threshold is tested on aggregate turnover across the PAN, and 9C is filed per GSTIN",
+   "Only the head office files it",
+   "Only if Goa has separate audited accounts"
+  ],
+  "answer": 1,
+  "exp": "Small branch registrations of large companies are a common miss.",
+  "ref": "CGST Rules, r.80(3)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G9C-002",
+  "topic": "gstr9c",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Who certifies GSTR-9C since FY 2020-21?",
+  "options": [
+   "A CA or cost accountant",
+   "The taxpayer self-certifies",
+   "The jurisdictional officer",
+   "Nobody, it's no longer filed"
+  ],
+  "answer": 1,
+  "exp": "The audit certificate part was dropped when 9C became self-certified.",
+  "ref": "Notfn. 30/2021-CT",
+  "volatile": true
+ },
+ {
+  "id": "G9C-003",
+  "topic": "gstr9c",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does GSTR-9C reconcile?",
+  "options": [
+   "GSTR-1 with GSTR-3B",
+   "The audited financial statements with GSTR-9: turnover, tax paid and ITC",
+   "GSTR-2A with GSTR-2B",
+   "E-way bills with invoices"
+  ],
+  "answer": 1,
+  "exp": "It explains why the books and the annual return differ."
+ },
+ {
+  "id": "G9C-004",
+  "topic": "gstr9c",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "tf",
+  "q": "GSTR-9C can be filed before GSTR-9 for the same year.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "GSTR-9 for that GSTIN comes first; 9C follows it or goes with it.",
+  "volatile": true
+ },
+ {
+  "id": "G9C-005",
+  "topic": "gstr9c",
+  "sub": "Reconciliation",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's audited books show ₹12.4 crore of revenue and GSTR-9 shows ₹12.1 crore. ₹30 lakh is for services done in March but invoiced in April, within the time allowed. How is it shown in 9C?",
+  "options": [
+   "Pay tax on ₹30 lakh now",
+   "As a reconciling item for unbilled revenue at year-end, with no extra tax, since the time of supply is the April invoice",
+   "Revise GSTR-9",
+   "Leave it out"
+  ],
+  "answer": 1,
+  "exp": "Accounting accrues revenue when earned, while GST taxes it at the time of supply.",
+  "ref": "CGST Act, s.13",
+  "case": true
+ },
+ {
+  "id": "G9C-006",
+  "topic": "gstr9c",
+  "sub": "Reconciliation",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Why do one set of audited accounts make GSTR-9C harder for a company with several GSTINs?",
+  "options": [
+   "They don't",
+   "The books cover the whole PAN, so turnover has to be split by GSTIN, including cross-charges and stock transfers between branches, which are supplies under GST",
+   "GSTINs don't need books",
+   "9C is filed per PAN"
+  ],
+  "answer": 1,
+  "exp": "Branches in different states are distinct persons, so supplies between them count as turnover.",
+  "ref": "CGST Act, s.25(4); Schedule I"
+ },
+ {
+  "id": "G9C-007",
+  "topic": "gstr9c",
+  "sub": "Differences",
+  "diff": 2,
+  "type": "mcq",
+  "q": "After reconciling, GSTR-9C shows ₹1.1 lakh of tax still unpaid. What happens?",
+  "options": [
+   "It's paid through 9C itself",
+   "It's paid through DRC-03 with interest and shown in 9C's table of additional liability",
+   "Nothing, 9C is just information",
+   "It's carried to next year's 3B without interest"
+  ],
+  "answer": 1,
+  "exp": "Neither GSTR-9 nor 9C collects tax directly.",
+  "case": true
+ },
+ {
+  "id": "G9C-008",
+  "topic": "gstr9c",
+  "sub": "Differences",
+  "diff": 2,
+  "type": "scenario",
+  "q": "A CFO asks why the company should bother with GSTR-9C when the statutory auditor has already signed the accounts. How do you answer?",
+  "model": "The audit confirms the accounts, not the GST returns. GST turnover and tax differ from book revenue: turnover is split by GSTIN, timing follows time of supply rules, and there are items like unbilled revenue, advances, credit notes and branch transfers. 9C sets out those differences so they're explained rather than looking like underreporting. Differences that turn out to be unpaid tax are paid through DRC-03 with interest before the department finds them. Mismatches between accounts and returns are a common trigger for scrutiny and audit, and it's a legal requirement above the threshold with a late fee if missed.",
+  "points": [
+   "An audit covers accounts, not GST returns",
+   "GST turnover differs from book revenue per GSTIN",
+   "Unpaid differences go through DRC-03 with interest",
+   "Unexplained gaps trigger scrutiny and audits"
+  ],
+  "exp": "Self-certification put the responsibility on the taxpayer, not on less of it.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G9C-009",
+  "topic": "gstr9c",
+  "sub": "Applicability",
+  "diff": 2,
+  "type": "mcq",
+  "q": "When is GSTR-9C due?",
+  "options": [
+   "30 September after the year",
+   "31 December after the year, the same as GSTR-9",
+   "31 March after the year",
+   "30 November after the year"
+  ],
+  "answer": 1,
+  "exp": "The date can be extended by notification.",
+  "ref": "CGST Rules, r.80(3)",
+  "volatile": true
+ }
+]

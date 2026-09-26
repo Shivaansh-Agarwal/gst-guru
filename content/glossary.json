@@ -78,6 +78,11 @@
   "def": "Annual return for composition taxpayers."
  },
  {
+  "term": "GSTR-6",
+  "aliases": [],
+  "def": "Monthly return filed by an input service distributor, showing credit received and how it was passed to branches."
+ },
+ {
   "term": "GSTR-7",
   "aliases": [],
   "def": "Return filed by government bodies that deduct GST TDS."
@@ -465,5 +470,10 @@
   "term": "QR code",
   "aliases": [],
   "def": "The signed code on an e-invoice with key details and the IRN, so anyone can verify it."
+ },
+ {
+  "term": "ITC-04",
+  "aliases": [],
+  "def": "Return filed by a principal reporting goods sent to, moved between and received back from job workers."
  }
 ]

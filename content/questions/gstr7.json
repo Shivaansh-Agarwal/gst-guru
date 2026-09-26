@@ -1,0 +1,190 @@
+[
+ {
+  "id": "RET-024",
+  "topic": "gstr7",
+  "sub": "Who deducts",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Match: GSTR-7 is filed by:",
+  "options": [
+   "ISDs",
+   "TDS deductors under section 51",
+   "E-commerce operators for TCS",
+   "Non-resident taxpayers"
+  ],
+  "answer": 1,
+  "exp": "GSTR-6 ISD, GSTR-7 TDS, GSTR-8 ECO TCS, GSTR-5 NRTP."
+ },
+ {
+  "id": "G7-001",
+  "topic": "gstr7",
+  "sub": "Who deducts",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which of these must deduct GST TDS?",
+  "options": [
+   "A private company buying from registered suppliers",
+   "A government department, local authority, government agency or notified public sector body",
+   "Every registered person with turnover above ₹5 crore",
+   "E-commerce operators"
+  ],
+  "answer": 1,
+  "exp": "E-commerce operators collect TCS under s.52, which is a different mechanism.",
+  "ref": "CGST Act, s.51; Notfn. 50/2018-CT"
+ },
+ {
+  "id": "G7-002",
+  "topic": "gstr7",
+  "sub": "Who deducts",
+  "diff": 2,
+  "type": "tf",
+  "q": "A government department that has to deduct TDS must register under GST even if it makes no taxable supplies.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 0,
+  "exp": "It can register as a tax deductor using its TAN.",
+  "ref": "CGST Act, s.24(vi)"
+ },
+ {
+  "id": "G7-003",
+  "topic": "gstr7",
+  "sub": "Deduction & deposit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What's the GST TDS rate and threshold?",
+  "options": [
+   "1% where any invoice exceeds ₹2.5 lakh",
+   "2% (1% CGST + 1% SGST, or 2% IGST) where the total value of supply under a contract exceeds ₹2.5 lakh, excluding tax",
+   "2% on every payment",
+   "5% above ₹10 lakh"
+  ],
+  "answer": 1,
+  "exp": "The tax amount on the invoice is left out both for the threshold and for the deduction.",
+  "ref": "CGST Act, s.51(1)"
+ },
+ {
+  "id": "G7-004",
+  "topic": "gstr7",
+  "sub": "Deduction & deposit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A Delhi government department awards a Delhi contractor a contract of ₹3 lakh + ₹54,000 GST. How much TDS is deducted?",
+  "options": [
+   "₹7,080 on the full ₹3.54 lakh",
+   "₹6,000 (₹3,000 CGST + ₹3,000 SGST) on the ₹3 lakh taxable value",
+   "₹6,000 as IGST",
+   "Nothing, it's under the threshold"
+  ],
+  "answer": 1,
+  "exp": "An intra-state supply means CGST and SGST TDS.",
+  "ref": "CGST Act, s.51",
+  "case": true
+ },
+ {
+  "id": "G7-005",
+  "topic": "gstr7",
+  "sub": "Deduction & deposit",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A Delhi government department pays a Goa hotel ₹3.5 lakh for an officers' conference. Is TDS deducted?",
+  "options": [
+   "Yes, 2% IGST",
+   "No, because the supplier and the place of supply (Goa) are both in a state other than the department's (Delhi)",
+   "Yes, CGST and SGST",
+   "Only if the hotel is unregistered"
+  ],
+  "answer": 1,
+  "exp": "The proviso keeps TDS off supplies where the deductor couldn't take the tax as credit in its own state.",
+  "ref": "CGST Act, s.51(1) proviso",
+  "case": true
+ },
+ {
+  "id": "G7-006",
+  "topic": "gstr7",
+  "sub": "Deduction & deposit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A ₹4 lakh contract (excluding tax) is billed in four invoices of ₹1 lakh each. Is TDS deducted?",
+  "options": [
+   "No, each invoice is under ₹2.5 lakh",
+   "Yes, the threshold looks at the whole contract, so TDS applies to each payment",
+   "Only on the last invoice",
+   "Only if they're paid together"
+  ],
+  "answer": 1,
+  "exp": "Splitting invoices doesn't avoid TDS.",
+  "ref": "CGST Act, s.51(1)",
+  "case": true
+ },
+ {
+  "id": "G7-007",
+  "topic": "gstr7",
+  "sub": "Deduction & deposit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "By when must the deductor deposit TDS and file GSTR-7?",
+  "options": [
+   "The 10th of the next month",
+   "The 11th",
+   "The 20th",
+   "Quarterly"
+  ],
+  "answer": 0,
+  "exp": "Both the payment and the return fall on the same date.",
+  "ref": "CGST Act, s.39(3) and s.51(2)",
+  "volatile": true
+ },
+ {
+  "id": "G7-008",
+  "topic": "gstr7",
+  "sub": "Deduction & deposit",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What happens if the deductor deposits TDS late?",
+  "options": [
+   "Nothing",
+   "Interest at 18% a year, plus a late fee on the delayed GSTR-7",
+   "A penalty on the supplier",
+   "The supplier pays the interest"
+  ],
+  "answer": 1,
+  "exp": "The deductor carries the cost of its own delay.",
+  "ref": "CGST Act, s.51(6)"
+ },
+ {
+  "id": "G7-009",
+  "topic": "gstr7",
+  "sub": "Deductee side",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A contractor sees ₹12,000 of TDS deducted by a department. How does it use this?",
+  "options": [
+   "It's adjusted against liability automatically",
+   "It accepts it in 'TDS and TCS credit received' on the portal, and it then moves to the electronic cash ledger",
+   "It claims it as ITC in 3B Table 4",
+   "Only as a refund"
+  ],
+  "answer": 1,
+  "exp": "TDS lands in the cash ledger, not the credit ledger, so it isn't ITC.",
+  "case": true
+ },
+ {
+  "id": "G7-010",
+  "topic": "gstr7",
+  "sub": "Deductee side",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A contractor client says: 'The municipality deducted ₹20,000 of TDS from my bill three months ago, but it isn't showing on the portal.' What do you check and advise?",
+  "model": "TDS only reaches the supplier once the deductor files GSTR-7 with the supplier's GSTIN. Check 'TDS and TCS credit received': if nothing's there, ask the municipality whether it has filed GSTR-7 and which GSTIN it used, since a wrong GSTIN is common. If the entry is there, accept it so it moves to the cash ledger, or reject it if the amount is wrong. The GSTR-7A certificate is available once the return is filed. Meanwhile the client pays its own tax in full rather than waiting for the TDS credit.",
+  "points": [
+   "TDS flows only after the deductor files GSTR-7",
+   "Check the deductor used the right GSTIN",
+   "Accept it in 'TDS and TCS credit received' to reach the cash ledger",
+   "Don't hold back the client's own tax payment"
+  ],
+  "exp": "Chasing government deductors is a routine part of work for contractors.",
+  "case": true
+ }
+]

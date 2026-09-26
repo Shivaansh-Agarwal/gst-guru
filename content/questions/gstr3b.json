@@ -1,0 +1,347 @@
+[
+ {
+  "id": "RET-010",
+  "topic": "gstr3b",
+  "sub": "Basics & due dates",
+  "diff": 1,
+  "type": "mcq",
+  "q": "GSTR-3B is:",
+  "options": [
+   "An invoice-level return",
+   "A monthly summary return used to declare liability, claim ITC and pay tax",
+   "Annual return",
+   "ITC statement only"
+  ],
+  "answer": 1,
+  "exp": "It's where tax actually gets paid."
+ },
+ {
+  "id": "RET-011",
+  "topic": "gstr3b",
+  "sub": "Basics & due dates",
+  "diff": 1,
+  "type": "mcq",
+  "q": "Due date for monthly GSTR-3B?",
+  "options": [
+   "11th",
+   "18th",
+   "20th of the next month",
+   "25th"
+  ],
+  "answer": 2,
+  "exp": "QRMP taxpayers file quarterly by the 22nd or 24th, depending on their state.",
+  "volatile": true
+ },
+ {
+  "id": "RET-012",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which GSTR-3B table declares outward taxable supplies (other than zero-rated, nil and exempt)?",
+  "options": [
+   "3.1(a)",
+   "3.1(b)",
+   "3.2",
+   "4(A)"
+  ],
+  "answer": 0,
+  "exp": "3.1(b) is zero-rated, 3.1(c) nil/exempt, 3.1(d) inward RCM, 3.1(e) non-GST."
+ },
+ {
+  "id": "RET-013",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does Table 3.2 of GSTR-3B capture?",
+  "options": [
+   "ITC reversed",
+   "Inter-state supplies to unregistered persons, composition taxpayers and UIN holders, place-of-supply wise",
+   "Exempt inward supplies",
+   "Interest"
+  ],
+  "answer": 1,
+  "exp": "It's used to settle IGST between states, so errors here move revenue to the wrong state."
+ },
+ {
+  "id": "RET-014",
+  "topic": "gstr3b",
+  "sub": "ITC reporting",
+  "diff": 2,
+  "type": "mcq",
+  "q": "ITC available on import of goods is reported in GSTR-3B table:",
+  "options": [
+   "4(A)(1)",
+   "4(A)(2)",
+   "4(A)(3)",
+   "4(A)(5)"
+  ],
+  "answer": 0,
+  "exp": "4(A)(1) import of goods, (2) import of services, (3) inward RCM, (4) from ISD, (5) all other ITC."
+ },
+ {
+  "id": "RET-015",
+  "topic": "gstr3b",
+  "sub": "Auto-population",
+  "diff": 3,
+  "type": "mcq",
+  "q": "From which tax period did the GSTR-3B liability auto-populated from GSTR-1 become non-editable?",
+  "options": [
+   "October 2024",
+   "July 2025",
+   "April 2023",
+   "It's always editable"
+  ],
+  "answer": 1,
+  "exp": "From the July 2025 period, auto-populated liability in Table 3 is locked; corrections go through GSTR-1A.",
+  "volatile": true
+ },
+ {
+  "id": "RET-016",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where is the value of exempt, nil-rated and non-GST inward supplies reported in GSTR-3B?",
+  "options": [
+   "Table 3.1(c)",
+   "Table 5",
+   "Table 4(D)",
+   "Not reported"
+  ],
+  "answer": 1,
+  "exp": "Table 5 covers inward supplies from composition, exempt, nil and non-GST suppliers."
+ },
+ {
+  "id": "RET-033",
+  "topic": "gstr3b",
+  "sub": "Auto-population",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A company's GSTR-1 for October shows a liability of ₹10 lakh, but it wants to report ₹9.5 lakh in GSTR-3B because one invoice was wrongly reported. What's the correct approach now?",
+  "model": "Since GSTR-3B liability is auto-populated from GSTR-1 and locked, it can't just type a lower figure in 3B. It should correct the invoice through GSTR-1A for October (before filing 3B) so the auto-populated figure updates, or amend it in the next GSTR-1 and reduce it there. Also, if 3B ends up lower than GSTR-1 beyond the threshold, rule 88C sends a DRC-01B intimation and the next GSTR-1 can be blocked until explained or paid.",
+  "points": [
+   "3B liability is auto-populated and locked",
+   "Use GSTR-1A before filing 3B",
+   "Or amend in the next GSTR-1",
+   "Rule 88C mismatch intimation"
+  ],
+  "exp": "This shows why correct GSTR-1 data matters more than ever.",
+  "ref": "CGST Rules, r.88C",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "RET-035",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client made an inter-state sale to an unregistered customer in Bihar but reported it in 3B Table 3.1(a) without filling Table 3.2. What's wrong?",
+  "options": [
+   "Nothing",
+   "Table 3.2 decides which state gets the IGST; leaving it blank sends the revenue share to the wrong place",
+   "Only a late fee",
+   "The sale should be exempt"
+  ],
+  "answer": 1,
+  "exp": "States track this data closely, and GSTR-1's B2C POS data should match.",
+  "case": true
+ },
+ {
+  "id": "RET-037",
+  "topic": "gstr3b",
+  "sub": "ITC reporting",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client's GSTR-3B Table 4 auto-filled ITC from 2B is ₹5 lakh, but ₹60,000 of it is on a car (blocked). What does the CA enter?",
+  "options": [
+   "Claim ₹5 lakh",
+   "Keep ₹5 lakh in 4(A) and show ₹60,000 as a reversal in 4(B)(1), so net ITC is ₹4.4 lakh",
+   "Delete the car invoice from 2B",
+   "Claim ₹4.4 lakh in 4(A) and nothing in 4(B)"
+  ],
+  "answer": 1,
+  "exp": "The CBIC-recommended practice is to report the full 2B figure in 4(A) and show ineligible amounts as reversals in 4(B), which keeps 2B and 3B comparable.",
+  "ref": "Circular 170/02/2022",
+  "case": true
+ },
+ {
+  "id": "G3B-001",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client pays ₹4 lakh to a US firm for consultancy, an import of services. How does it show in 3B?",
+  "options": [
+   "Table 3.1(a) as an outward supply",
+   "IGST under reverse charge in 3.1(d), paid in cash, and the same amount claimed as ITC in 4(A)(2)",
+   "Only in Table 5",
+   "Nowhere, imports are outside GST"
+  ],
+  "answer": 1,
+  "exp": "Reverse charge tax must be paid in cash, not from ITC, and then becomes ITC in the same return if eligible.",
+  "ref": "IGST Act, s.5(3)",
+  "case": true
+ },
+ {
+  "id": "G3B-002",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client exports goods under LUT without paying IGST. Where does this go in 3B?",
+  "options": [
+   "Table 3.1(a)",
+   "Table 3.1(b), zero-rated supplies, with no tax",
+   "Table 3.1(c)",
+   "Table 5"
+  ],
+  "answer": 1,
+  "exp": "3.1(c) is for nil-rated and exempt supplies, which aren't the same as zero-rated.",
+  "case": true
+ },
+ {
+  "id": "G3B-003",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A registered client rents an office from an unregistered landlord for ₹1 lakh a month. How does this show in 3B?",
+  "options": [
+   "It doesn't",
+   "18% tax under reverse charge in 3.1(d), paid in cash, with ITC in 4(A)(3) if eligible",
+   "Table 5 as a non-GST supply",
+   "Table 3.1(a) as an outward supply"
+  ],
+  "answer": 1,
+  "exp": "Reverse charge on commercial property rented from unregistered persons applies from 10 October 2024; composition taxpayers were later carved out.",
+  "ref": "Notfn. 9/2024-CT(R)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G3B-004",
+  "topic": "gstr3b",
+  "sub": "ITC reporting",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client reversed ₹40,000 of ITC in 4(B)(2) because it hadn't paid a supplier within 180 days. It pays the supplier three months later. How is the ITC reclaimed?",
+  "options": [
+   "It can't be reclaimed",
+   "In 4(A)(5), also shown in 4(D)(1), and tracked in the Electronic Credit Reversal and Reclaimed Statement",
+   "Through DRC-03",
+   "Only in GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "The reclaim can't exceed the balance reversed in that statement, which stops people reclaiming what they never reversed.",
+  "ref": "CGST Rules, r.37",
+  "volatile": true
+ },
+ {
+  "id": "G3B-005",
+  "topic": "gstr3b",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A restaurant sells food through a delivery app, which pays the GST on it under section 9(5). Where does the restaurant show these sales in 3B?",
+  "options": [
+   "Table 3.1(a) with tax",
+   "Table 3.1.1(ii), supplies made through an e-commerce operator that pays the tax, without tax",
+   "Table 5",
+   "Not at all"
+  ],
+  "answer": 1,
+  "exp": "The operator reports and pays the tax in its own 3B under 3.1.1(i). The restaurant still reports the turnover.",
+  "ref": "CGST Act, s.9(5)",
+  "case": true
+ },
+ {
+  "id": "G3B-006",
+  "topic": "gstr3b",
+  "sub": "Payment & corrections",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client files July's 3B 16 days late. Its liability was ₹5 lakh, of which ₹3 lakh was paid from ITC and ₹2 lakh in cash. On what is interest charged?",
+  "options": [
+   "The full ₹5 lakh",
+   "Only the ₹2 lakh paid in cash, at 18% a year for 16 days (about ₹1,578)",
+   "Only the ₹3 lakh of ITC",
+   "Nothing if filed within a month"
+  ],
+  "answer": 1,
+  "exp": "Interest on late 3B is on the net tax paid in cash.",
+  "ref": "CGST Act, s.50(1) proviso",
+  "case": true
+ },
+ {
+  "id": "G3B-007",
+  "topic": "gstr3b",
+  "sub": "Payment & corrections",
+  "diff": 2,
+  "type": "tf",
+  "q": "A filed GSTR-3B can be revised if the client spots an error the next day.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "There's no revision. Differences are adjusted in a later 3B or paid through DRC-03, within the limit in s.39(9).",
+  "ref": "CGST Act, s.39(9)"
+ },
+ {
+  "id": "G3B-008",
+  "topic": "gstr3b",
+  "sub": "Auto-population",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where is the ITC in 3B Table 4 auto-populated from?",
+  "options": [
+   "GSTR-2A",
+   "GSTR-2B, after IMS actions",
+   "The purchase register uploaded by the client",
+   "Last year's GSTR-9"
+  ],
+  "answer": 1,
+  "exp": "The ITC figures stay editable, but claims above 2B draw rule 88D scrutiny.",
+  "volatile": true
+ },
+ {
+  "id": "G3B-009",
+  "topic": "gstr3b",
+  "sub": "Payment & corrections",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A client's ITC in its 3B for a month is ₹6 lakh more than its GSTR-2B, and it has received a DRC-01C intimation. What does the CA do?",
+  "model": "Reconcile the month's 3B ITC with 2B invoice by invoice. Typical reasons are ITC taken on invoices suppliers reported late (they'll show in a later 2B), import ITC missing from 2B because of a GSTIN issue on the bill of entry, ISD credit, or plain wrong claims. Reply in Part B of DRC-01C within seven days: either pay or reverse the excess with interest through DRC-03, or explain the difference with evidence. Without a reply, the client's next GSTR-1 is blocked.",
+  "points": [
+   "Reconcile 3B ITC with 2B invoice by invoice",
+   "Identify timing, import, ISD or wrong claims",
+   "Reply in DRC-01C Part B within seven days",
+   "Pay through DRC-03 or explain; no reply blocks GSTR-1"
+  ],
+  "exp": "Rule 88D is triggered when the gap crosses a notified threshold.",
+  "ref": "CGST Rules, r.88D",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G3B-010",
+  "topic": "gstr3b",
+  "sub": "Basics & due dates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "One QRMP client is in Karnataka and another in Delhi. When are their quarterly 3Bs due?",
+  "options": [
+   "Both on the 20th",
+   "The 22nd for Karnataka and the 24th for Delhi",
+   "The 24th for both",
+   "The 25th for both"
+  ],
+  "answer": 1,
+  "exp": "QRMP 3B due dates are staggered by state to spread the load on the portal.",
+  "volatile": true,
+  "case": true
+ }
+]

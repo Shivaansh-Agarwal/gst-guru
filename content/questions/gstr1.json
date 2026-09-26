@@ -1,0 +1,342 @@
+[
+ {
+  "id": "RET-001",
+  "topic": "gstr1",
+  "sub": "Basics & due dates",
+  "diff": 1,
+  "type": "mcq",
+  "q": "GSTR-1 contains details of:",
+  "options": [
+   "Inward supplies",
+   "Outward supplies",
+   "Only ITC",
+   "Annual summary"
+  ],
+  "answer": 1,
+  "exp": "It's the statement of outward supplies."
+ },
+ {
+  "id": "RET-002",
+  "topic": "gstr1",
+  "sub": "Basics & due dates",
+  "diff": 1,
+  "type": "mcq",
+  "q": "What's the due date for monthly GSTR-1?",
+  "options": [
+   "10th of next month",
+   "11th of next month",
+   "20th of next month",
+   "25th of next month"
+  ],
+  "answer": 1,
+  "exp": "Quarterly filers under QRMP file by the 13th of the month after the quarter.",
+  "volatile": true
+ },
+ {
+  "id": "RET-003",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A B2B invoice to a registered buyer is reported in which GSTR-1 table?",
+  "options": [
+   "Table 4",
+   "Table 5",
+   "Table 7",
+   "Table 12"
+  ],
+  "answer": 0,
+  "exp": "Table 4 is B2B (including RCM and supplies via ECO flagged appropriately)."
+ },
+ {
+  "id": "RET-004",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which invoices go into Table 5 (B2CL) of GSTR-1?",
+  "options": [
+   "All B2C invoices",
+   "Inter-state invoices to unregistered persons with invoice value above ₹1 lakh",
+   "Intra-state B2C above ₹2.5 lakh",
+   "Exports"
+  ],
+  "answer": 1,
+  "exp": "The B2CL threshold was reduced from ₹2.5 lakh to ₹1 lakh from August 2024.",
+  "ref": "Notfn. 12/2024-CT",
+  "volatile": true
+ },
+ {
+  "id": "RET-005",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Intra-state B2C sales and small inter-state B2C sales are reported in:",
+  "options": [
+   "Table 4",
+   "Table 5",
+   "Table 7 (B2CS), in consolidated form by rate and state",
+   "Table 13"
+  ],
+  "answer": 2,
+  "exp": "B2CS is summary-level, not invoice-wise."
+ },
+ {
+  "id": "RET-006",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Which table of GSTR-1 shows the HSN-wise summary?",
+  "options": [
+   "Table 6",
+   "Table 11",
+   "Table 12",
+   "Table 14"
+  ],
+  "answer": 2,
+  "exp": "Table 12 needs HSN codes with a minimum number of digits based on turnover, now split into B2B and B2C sections.",
+  "ref": "GSTR-1 Table 12",
+  "volatile": true
+ },
+ {
+  "id": "RET-007",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "What does Table 13 of GSTR-1 capture?",
+  "options": [
+   "Advances",
+   "Documents issued: invoice series, ranges, totals and cancelled numbers",
+   "HSN summary",
+   "Exports"
+  ],
+  "answer": 1,
+  "exp": "It tells the department how many invoices, credit notes and so on were issued in the period."
+ },
+ {
+  "id": "RET-009",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where are advances received (and later adjusted) for services reported in GSTR-1?",
+  "options": [
+   "Table 7",
+   "Table 11",
+   "Table 9",
+   "Not reported"
+  ],
+  "answer": 1,
+  "exp": "11A for advances received, 11B for adjustments against invoices."
+ },
+ {
+  "id": "RET-034",
+  "topic": "gstr1",
+  "sub": "Filing in practice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client sold to a registered buyer but wants to report it as B2C 'to keep things simple'. What's the problem?",
+  "options": [
+   "None",
+   "The buyer won't see the invoice in GSTR-2B and can't claim ITC; the client is also misreporting",
+   "It's allowed for small invoices",
+   "Only affects HSN reporting"
+  ],
+  "answer": 1,
+  "exp": "B2B supplies must be reported with the buyer's GSTIN in Table 4.",
+  "case": true
+ },
+ {
+  "id": "RET-036",
+  "topic": "gstr1",
+  "sub": "Filing in practice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's accountant uploads 400 invoices to GSTR-1 on the 11th evening, but the portal shows 'Processed with error' for 12. What does the CA do before filing?",
+  "options": [
+   "File anyway",
+   "Download the error report, fix those 12 (usually GSTIN, POS or duplicate numbers), re-upload, and file only when all are processed",
+   "Delete them and never report",
+   "File GSTR-3B first"
+  ],
+  "answer": 1,
+  "exp": "Errored invoices aren't saved to GSTR-1, so filing now would leave them out and the buyers' ITC would be missing.",
+  "case": true
+ },
+ {
+  "id": "G1-001",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "Where does a supply to an SEZ unit go in GSTR-1?",
+  "options": [
+   "Table 4 (B2B)",
+   "Table 6B (supplies to SEZ units and developers)",
+   "Table 6A (exports)",
+   "Table 7 (B2CS)"
+  ],
+  "answer": 1,
+  "exp": "Table 6B covers SEZ supplies with or without payment of IGST. Exports go in 6A and deemed exports in 6C.",
+  "ref": "GSTR-1 Table 6"
+ },
+ {
+  "id": "G1-002",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client's nil-rated, exempt and non-GST sales for the month are reported in which GSTR-1 table?",
+  "options": [
+   "Table 7",
+   "Table 8",
+   "Table 11",
+   "Table 13"
+  ],
+  "answer": 1,
+  "exp": "Table 8 splits them between inter-state and intra-state, and between registered and unregistered buyers."
+ },
+ {
+  "id": "G1-003",
+  "topic": "gstr1",
+  "sub": "Amendments & credit notes",
+  "diff": 2,
+  "type": "mcq",
+  "q": "An export invoice went into August's Table 6A without the shipping bill number, which only arrived later. How does the CA add it?",
+  "options": [
+   "File a revised August GSTR-1",
+   "Amend the invoice in a later GSTR-1 through Table 9A with the shipping bill details",
+   "Issue a debit note",
+   "Nothing, shipping bills aren't reported"
+  ],
+  "answer": 1,
+  "exp": "Shipping bill details often aren't available at filing time. The IGST refund on exports won't process until the invoice and shipping bill data match.",
+  "case": true
+ },
+ {
+  "id": "G1-004",
+  "topic": "gstr1",
+  "sub": "Amendments & credit notes",
+  "diff": 3,
+  "type": "mcq",
+  "q": "What's the last date to issue a credit note for a supply made in FY 2025-26 and still reduce the tax on it?",
+  "options": [
+   "31 March 2026",
+   "30 September 2026",
+   "30 November 2026, or the date the FY 2025-26 annual return is filed if that's earlier",
+   "31 December 2026"
+  ],
+  "answer": 2,
+  "exp": "Finance Act 2022 moved the limit from September to 30 November. After that, a commercial credit note can still be issued, but it can't reduce GST.",
+  "ref": "CGST Act, s.34(2)",
+  "volatile": true
+ },
+ {
+  "id": "G1-005",
+  "topic": "gstr1",
+  "sub": "Amendments & credit notes",
+  "diff": 3,
+  "type": "mcq",
+  "q": "A client gives a credit note to an unregistered walk-in customer against a small intra-state (B2CS) sale. How is it reported in GSTR-1?",
+  "options": [
+   "Table 9B as CDNUR",
+   "Netted off in Table 7 (B2CS) for the month, since CDNUR is only for B2CL and export invoices",
+   "Table 11",
+   "It isn't reported"
+  ],
+  "answer": 1,
+  "exp": "B2CS is reported in summary by rate and place of supply, so credit notes against it reduce that summary rather than being listed note by note.",
+  "case": true
+ },
+ {
+  "id": "G1-006",
+  "topic": "gstr1",
+  "sub": "Basics & due dates",
+  "diff": 1,
+  "type": "tf",
+  "q": "A registered client with no sales this month doesn't need to file GSTR-1.",
+  "options": [
+   "True",
+   "False"
+  ],
+  "answer": 1,
+  "exp": "Every regular taxpayer files GSTR-1 for every period, even if it's nil. A skipped nil return still blocks later returns and attracts late fees."
+ },
+ {
+  "id": "G1-007",
+  "topic": "gstr1",
+  "sub": "Basics & due dates",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client can't file GSTR-1 on the 11th. Which of these is a likely reason?",
+  "options": [
+   "GSTR-9 for last year is pending",
+   "Last month's GSTR-3B isn't filed, or a rule 88C or 88D intimation hasn't been answered",
+   "An e-way bill was cancelled",
+   "A refund claim is pending"
+  ],
+  "answer": 1,
+  "exp": "Rule 59(6) blocks GSTR-1 when the previous period's 3B is missing or a DRC-01B or DRC-01C intimation is unanswered. Section 37(4) also needs the earlier GSTR-1s filed.",
+  "ref": "CGST Rules, r.59(6)",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1-008",
+  "topic": "gstr1",
+  "sub": "Filing in practice",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client raised a ₹12 lakh invoice to a registered buyer on 31 March, but it was left out of March's GSTR-1. It's now 5 May. What does the CA do?",
+  "options": [
+   "Revise March's GSTR-1",
+   "Report it in April's GSTR-1 with its original date, and pay the tax with interest from March's 3B due date",
+   "Wait for GSTR-9",
+   "Issue a fresh invoice dated May"
+  ],
+  "answer": 1,
+  "exp": "A missed invoice goes in the next GSTR-1 filed. The tax joins that period's 3B with interest under s.50, and the buyer gets the ITC in a later 2B.",
+  "ref": "CGST Act, s.50",
+  "case": true
+ },
+ {
+  "id": "G1-009",
+  "topic": "gstr1",
+  "sub": "Filing in practice",
+  "diff": 3,
+  "type": "scenario",
+  "q": "A buyer calls: 'Your June invoices aren't in my GSTR-2B and I can't take ₹4.5 lakh of ITC.' The client says GSTR-1 was filed on 11 July. What does the CA check and do?",
+  "model": "Open the filed June GSTR-1 and confirm those invoices are in Table 4 under the buyer's correct GSTIN, not in B2CS or B2CL and not under a wrong GSTIN. Ask the buyer whether they rejected or parked the invoices in IMS. If the reporting is wrong, correct it through June's GSTR-1A if June's 3B isn't filed yet, otherwise through Table 9A in the next GSTR-1. Tell the buyer which month's 2B the corrected invoices will land in, since 2B picks them up by the date the correction is filed.",
+  "points": [
+   "Confirm the invoices are in Table 4 under the buyer's correct GSTIN",
+   "Check whether the buyer rejected or kept them pending in IMS",
+   "Correct through GSTR-1A (before 3B) or Table 9A (after)",
+   "Tell the buyer which 2B the fix will appear in"
+  ],
+  "exp": "Most 'missing from 2B' complaints come from a wrong GSTIN or B2B invoices reported as B2C.",
+  "volatile": true,
+  "case": true
+ },
+ {
+  "id": "G1-010",
+  "topic": "gstr1",
+  "sub": "Tables",
+  "diff": 2,
+  "type": "mcq",
+  "q": "A client sells through a marketplace that collects TCS. Besides the usual B2B and B2C tables, where does it report these sales in GSTR-1?",
+  "options": [
+   "Table 13",
+   "Table 14, supplies made through e-commerce operators, with the operator's GSTIN",
+   "Table 11",
+   "Nowhere else"
+  ],
+  "answer": 1,
+  "exp": "Table 14 lets the department match the seller's sales with the operator's GSTR-8.",
+  "ref": "GSTR-1 Table 14",
+  "volatile": true,
+  "case": true
+ }
+]
